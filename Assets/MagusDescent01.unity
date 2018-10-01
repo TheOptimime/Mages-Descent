@@ -2005,12 +2005,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1557387806}
-  - component: {fileID: 1557387805}
   - component: {fileID: 1557387804}
   - component: {fileID: 1557387808}
   - component: {fileID: 1557387807}
   - component: {fileID: 1557387809}
+  - component: {fileID: 1557387811}
   - component: {fileID: 1557387810}
+  - component: {fileID: 1557387805}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -2068,10 +2069,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1557387803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53206cf78a68d574da4f61d2ae15406b, type: 3}
+  m_Script: {fileID: 11500000, guid: f9442842b872a9b4a8434af35775ff80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1557387804}
+  speed: 5
+  fallMultiplier: 4
+  lowJumpMultiplier: 2
 --- !u!4 &1557387806
 Transform:
   m_ObjectHideFlags: 0
@@ -2162,11 +2165,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1557387803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aa23d620b03c674198ffc980f648c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 54d7c9eeca9a1d345a52884df11e76fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 4
-  lowJumpMultiplier: 2
+--- !u!114 &1557387811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557387803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b2786357a32e645be22c5223e98071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIndex: 0
 --- !u!1 &1570172439
 GameObject:
   m_ObjectHideFlags: 0
