@@ -121,7 +121,7 @@ public class Fighter : MonoBehaviour {
 		Fire ();
 		yield return new WaitForSeconds(.2f); 
 		Fire ();
-		yield return new WaitForSeconds(.2f); 
+
 	}
 
 }
