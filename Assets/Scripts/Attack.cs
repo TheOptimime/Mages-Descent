@@ -11,7 +11,7 @@ public class Attack {
         MultipleBlast
     }
 
-    public enum Elements
+    public enum Element
     {
         Fire,
         Ice,
@@ -29,14 +29,19 @@ public class Attack {
     }
 
 
-	public Attack(int damage, Elements element,AttackType AT, float knockback)
+	public Attack(int damage, Element element,AttackType AT, float knockback)
     {
 
     }
 
-    public Attack(int damage, Elements element,AttackType AT,int numberOfHits, float knockback)
+    public Attack(int damage, Element element,AttackType AT,int numberOfHits, float knockback)
     {
         // if multiple blast is not selected 
+
+    }
+
+    public virtual void MultiFire()
+    {
 
     }
 }

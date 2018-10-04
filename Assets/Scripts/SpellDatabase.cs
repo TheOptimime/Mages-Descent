@@ -8,7 +8,7 @@ public class SpellDatabase : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        tripleFire = new Attack(10, Attack.Elements.Fire,Attack.AttackType.MultipleBlast, 3, 0.2f);
+        tripleFire = new Attack(10, Attack.Element.Fire,Attack.AttackType.MultipleBlast, 3, 0.2f);
 	}
 	
 	// Update is called once per frame

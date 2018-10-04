@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SpellDatabase))]
 public class GameManager : MonoBehaviour {
 
 	// Use this for initialization

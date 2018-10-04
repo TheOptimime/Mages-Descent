@@ -16,8 +16,6 @@ public class EnemyAI : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
-
-		
 	}
 	
 	// Update is called once per frame
@@ -31,14 +29,10 @@ public class EnemyAI : MonoBehaviour {
 			print("enemy is dead");
 			transform.position = new Vector3 (0, 3000, 0);
 			respawnCalled = true;
-
-
 		}
 		if (respawnCalled) {
 			Respawn ();
 		}
-
-		
 	}
 
 	void Respawn(){
