@@ -14,6 +14,8 @@ public class Fighter : MonoBehaviour {
 
     float runSpeed = 40f;
 
+    
+
     bool jump = false;
 
     public GameObject leftBullet, rightBullet;
@@ -96,6 +98,8 @@ public class Fighter : MonoBehaviour {
     private void FixedUpdate()
     {
         //move character
+
+       
         controller.Move(horizontalMove * Time.deltaTime, false, jump);
         jump = false;
 

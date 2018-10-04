@@ -59,7 +59,7 @@ public class EnemyAI : MonoBehaviour {
 			transform.position = spawnpoint.transform.position;
 		} 
 		else {
-			print ("timer: " + timer);
+			//print ("timer: " + timer);
 			timer += Time.deltaTime;
 		}
 

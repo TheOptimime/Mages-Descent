@@ -13,45 +13,48 @@ public class InputHandler : MonoBehaviour {
     Vector2 Checkpoints;
     bool isListening;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+    [Range(0,1)]
+    public float vibrateLeftMotor, vibrateRightMotor;
+
+
 	void Update () {
+
+        Vector2 joystick = new Vector2(state.ThumbSticks.Left.X, state.ThumbSticks.Left.Y);
+
+        Vector2 pad = new Vector2((int)(state.DPad.Left) * -1 + (int)(state.DPad.Right), (int)(state.DPad.Down) * -1 + (int)(state.DPad.Up));
+
+        if (joystick.x != 0)
+        {
+            //print("X: " + state.ThumbSticks.Left.X);
+        }
+        
+        if(joystick.y != 0)
+        {
+            //print("Y: " + state.ThumbSticks.Left.Y);
+        }
+
+        int joystickPosition =(int)((joystick.x + 2) + (-joystick.y + 3));
+        print(joystickPosition);
 
         FindController();
 
         prevState = state;
         state = GamePad.GetState(playerIndex);
 
-        if(state.Triggers.Left == 0)
-        {
-            print("no");
-            
-        }
-        else
-        {
-            GamePad.SetVibration(playerIndex, state.Triggers.Left * 0.2f, 0.4f);
-            print("yeet");
-        }
-
+        
         if (BeginListening() && isListening == false)
         {
             float timer = Time.deltaTime;
-
-
-
         }
-	}
+
+        
+    }
 
     private void FixedUpdate()
     {
         // Experimental Vibration Control
-
-        if(Input.GetKey(KeyCode.Space))
-        GamePad.SetVibration(playerIndex, 0.2f, 0.4f);
+        
+        GamePad.SetVibration(playerIndex, vibrateLeftMotor, vibrateRightMotor);
         
     }
 
