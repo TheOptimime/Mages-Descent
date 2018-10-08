@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Health))]
 public class EnemyAI : MonoBehaviour {
-	public float health = 30f;
+
+    Health health;
+    //float internalTimer;
 
 	Rigidbody2D rb2d;
 	public GameObject spawnpoint;
@@ -15,13 +18,16 @@ public class EnemyAI : MonoBehaviour {
 	bool isDead, respawnCalled;
 	// Use this for initialization
 	void Start () {
-		rb2d = GetComponent<Rigidbody2D> ();
+		rb2d = GetComponent<Rigidbody2D>();
+        health = GetComponent<Health>();
+        health.maxHealth = 30;
+        health.currentHealth = health.maxHealth;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (health <= 0) {
+		if (health.currentHealth <= 0) {
 			isDead = true;
 		}
 
@@ -46,7 +52,7 @@ public class EnemyAI : MonoBehaviour {
 		if (timer > timeLimit) {
 			print ("respawn");
 			rb2d.velocity = Vector2.zero;
-			health = 30f;
+			health.currentHealth = health.maxHealth;
 			isDead = false;
 			timerSet = false;
 			respawnCalled = false;
@@ -64,10 +70,10 @@ public class EnemyAI : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D other) {
 	
 
-		if (other.transform.tag == "FireBall") {
+		//if (other.transform.tag == "FireBall") {
 		
-			health = health - 10f;
-		}
+		//	health = health - 10f;
+		//}
 	
 	}
 

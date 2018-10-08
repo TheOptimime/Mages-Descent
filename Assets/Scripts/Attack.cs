@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class Attack {
 
+    public string name, description;
+    public int damage, multiFireCount;
+    public float attackLength, animationLength, xDisplacement, multiFireRate;
+
     public enum AttackType
     {
-        Melee,
-        Blast,
-        MultipleBlast
+        Melee,              // Physical Attacks
+        Blast,              // Projectile
+        MultipleBlast,      // Multiple Projectiles
+        Special             // Ultimate Attacks
     }
 
     public enum Element
@@ -22,6 +27,7 @@ public class Attack {
 
     public enum ElementEffect
     {
+        None,
         Burst,
         Burn,
         Freeze,
@@ -29,15 +35,52 @@ public class Attack {
     }
 
 
-	public Attack(int damage, Element element,AttackType AT, float knockback)
-    {
+    AttackType attackType;
+    Element element;
+    ElementEffect elementEffect;
 
+	public Attack(string _name, string _description, int _damage, Element _element, ElementEffect effect, AttackType AT, float knockback, float AttackLength,float AnimationLength)
+    {
+        name = _name;
+        description = _description;
+        damage = _damage;
+        element = _element;
+        damage = _damage;
+        elementEffect = effect;
+        attackLength = AttackLength;
+        animationLength = AnimationLength;
     }
 
-    public Attack(int damage, Element element,AttackType AT,int numberOfHits, float knockback)
+    /// <summary>
+    /// Contains X-Displacement to move the player while attacking
+    /// </summary>
+    public Attack(string _name, string _description, int _damage, Element _element, ElementEffect effect, AttackType AT, float knockback, float AttackLength, float AnimationLength, float _XDisplacement)
     {
-        // if multiple blast is not selected 
+        name = _name;
+        description = _description;
+        damage = _damage;
+        element = _element;
+        damage = _damage;
+        elementEffect = effect;
+        attackLength = AttackLength;
+        animationLength = AnimationLength;
+        xDisplacement = _XDisplacement;
+    }
 
+    /// <summary>
+    /// For Multi-Hitting Attacks
+    /// </summary>
+    public Attack(string _name, string _description, int _damage, Element _element, ElementEffect effect,AttackType AT,int numberOfAttacks, float knockback, float AttackLength, float AnimationLength)
+    {
+        attackType = AttackType.MultipleBlast;
+        name = _name;
+        description = _description;
+        damage = _damage;
+        element = _element;
+        damage = _damage;
+        elementEffect = effect;
+        attackLength = AttackLength;
+        animationLength = AnimationLength;
     }
 
     public virtual void MultiFire()

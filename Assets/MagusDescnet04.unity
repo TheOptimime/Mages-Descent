@@ -1028,6 +1028,7 @@ GameObject:
   - component: {fileID: 549756542}
   - component: {fileID: 549756541}
   - component: {fileID: 549756546}
+  - component: {fileID: 549756547}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1046,7 +1047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8d738e9af92942b84ea1065e3134f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
   spawnpoint: {fileID: 147229399}
 --- !u!50 &549756542
 Rigidbody2D:
@@ -1143,6 +1143,22 @@ CapsuleCollider2D:
   m_Offset: {x: 3.14, y: -0.61}
   m_Size: {x: 0.64, y: 1}
   m_Direction: 0
+--- !u!114 &549756547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 549756540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdf708688770614d9a0d359e3839938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  currentHealth: 0
+  regen: 0
+  timer: 0
+  time: 0
 --- !u!1 &558718479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3432,9 +3448,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1557387803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21efe5913d4310043b43923072213cca, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cdf708688770614d9a0d359e3839938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
+  currentHealth: 0
+  regen: 0
+  timer: 0
+  time: 0
 --- !u!1 &1570172439
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(MoveSet))]
 [RequireComponent(typeof(InputHandler))]
 [RequireComponent(typeof(CharacterController2D))]
+[RequireComponent(typeof(Health))]
 public class Fighter : MonoBehaviour {
 
     public float speed;
