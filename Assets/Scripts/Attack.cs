@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Attack {
 
-    public string name, description;
+    public string name, description, spritePath;
     public int damage, multiFireCount;
-    public float attackLength, animationLength, xDisplacement, multiFireRate;
+    public float attackLength, animationLength, xDisplacement, multiFireRate, speed, lifetime;
 
     public enum AttackType
     {
@@ -35,10 +35,13 @@ public class Attack {
     }
 
 
-    AttackType attackType;
-    Element element;
-    ElementEffect elementEffect;
+    public AttackType attackType;
+    public Element element;
+    public ElementEffect elementEffect;
 
+    /// <summary>
+    /// Most Basic Attack
+    /// </summary>
 	public Attack(string _name, string _description, int _damage, Element _element, ElementEffect effect, AttackType AT, float knockback, float AttackLength,float AnimationLength)
     {
         name = _name;
@@ -47,6 +50,7 @@ public class Attack {
         element = _element;
         damage = _damage;
         elementEffect = effect;
+        attackType = AT;
         attackLength = AttackLength;
         animationLength = AnimationLength;
     }
@@ -63,6 +67,7 @@ public class Attack {
         damage = _damage;
         elementEffect = effect;
         attackLength = AttackLength;
+        attackType = AT;
         animationLength = AnimationLength;
         xDisplacement = _XDisplacement;
     }
@@ -72,7 +77,7 @@ public class Attack {
     /// </summary>
     public Attack(string _name, string _description, int _damage, Element _element, ElementEffect effect,AttackType AT,int numberOfAttacks, float knockback, float AttackLength, float AnimationLength)
     {
-        attackType = AttackType.MultipleBlast;
+        //attackType = AttackType.MultipleBlast;
         name = _name;
         description = _description;
         damage = _damage;
@@ -83,8 +88,46 @@ public class Attack {
         animationLength = AnimationLength;
     }
 
-    public virtual void MultiFire()
+    /// <summary>
+    /// Contains X-Displacement to move the player while attacking + projectile
+    /// </summary>
+    public Attack(string _name, string _description, int _damage, float _speed, Element _element, ElementEffect effect, AttackType AT, float knockback, float _lifetime, float AttackLength, float AnimationLength, float _XDisplacement, string _spritePath)
     {
-
+        attackType = AttackType.Blast;
+        name = _name;
+        description = _description;
+        damage = _damage;
+        element = _element;
+        damage = _damage;
+        speed = _speed;
+        elementEffect = effect;
+        attackLength = AttackLength;
+        animationLength = AnimationLength;
+        xDisplacement = _XDisplacement;
+        spritePath = _spritePath;
+        lifetime = _lifetime;
     }
+
+    /// <summary>
+    /// For Multi-Hitting Projectiles
+    /// </summary>
+    public Attack(string _name, string _description, int _damage, float _speed, Element _element, ElementEffect effect, AttackType AT, int numberOfAttacks, float attackRate, float knockback, float _lifetime, float AttackLength, float AnimationLength, string _spritePath)
+    {
+        attackType = AttackType.MultipleBlast;
+        name = _name;
+        description = _description;
+        damage = _damage;
+        speed = _speed;
+        element = _element;
+        damage = _damage;
+        elementEffect = effect;
+        attackLength = AttackLength;
+        animationLength = AnimationLength;
+        spritePath = _spritePath;
+        lifetime = _lifetime;
+        multiFireCount = numberOfAttacks;
+        multiFireRate = attackRate;
+    }
+
+
 }

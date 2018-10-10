@@ -10,16 +10,19 @@ public class Fighter : MonoBehaviour {
 
     public float speed;
     CharacterController2D controller;
+    SpellDatabase spellList;
+
+    public Transform spellCastPoint;
 
     float horizontalMove = 0f;
 
     float runSpeed = 40f;
 
-    
+    public MoveSet moveset;    
 
     bool jump = false;
 
-    public GameObject leftBullet, rightBullet;
+    public GameObject fireBullet;
 
     Transform firePos;
 
@@ -34,18 +37,15 @@ public class Fighter : MonoBehaviour {
     public float finishedCast = 1;
 
 
-    
-
-
     // Use this for initialization
     void Start()
     {
         fighterController = GetComponent<CharacterController2D>();
         controller = GetComponent<CharacterController2D>();
         rb = GetComponent<Rigidbody2D>();
-
+        moveset = GetComponent<MoveSet>();
         firePos = transform.Find("SpellSpawner");
-       
+        spellList = FindObjectOfType<SpellDatabase>();
     }
 
     void Update()
@@ -62,7 +62,7 @@ public class Fighter : MonoBehaviour {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
 
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        //horizontalMove(); = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         //animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
@@ -73,60 +73,97 @@ public class Fighter : MonoBehaviour {
              
         }
 
+        #region F Key
         if (Input.GetKey(KeyCode.F))
         {
             castTime += Time.deltaTime;
-            
         }
 
         if (Input.GetKeyUp(KeyCode.F) && (castTime > finishedCast))
         {
-			StartCoroutine(FireballSequence());
+            UseAttack(moveset.Attacks[0]);
             castTime = 0;
 
         }
-        if (Input.GetKeyUp(KeyCode.F) && (castTime < finishedCast))
+        else if (Input.GetKeyUp(KeyCode.F) && (castTime < finishedCast))
         {
             castTime = 0;
+        }
+        #endregion
 
+        #region G Key
+        if (Input.GetKey(KeyCode.G))
+        {
+            print("Phase1");
+            castTime += Time.deltaTime;
         }
 
+        if (Input.GetKeyUp(KeyCode.G) && (castTime > 0.3f))
+        {
+            print("Phase3");
+            UseAttack(moveset.Attacks[1]);
+            castTime = 0;
 
+        }
+        else if (Input.GetKeyUp(KeyCode.G) && (castTime < 0.3f))
+        {
+            print("Phase2");
+            castTime = 0;
+        }
+        #endregion
 
-     }
+    }
 
 
     private void FixedUpdate()
     {
         //move character
-
-       
         controller.Move(horizontalMove * Time.deltaTime, false, jump);
         jump = false;
 
     }
 
-    void Fire()
+    void UseAttack(Attack attack)
     {
-        if (fighterController.m_FacingRight)
+        print("in base function");
+        if(attack.attackType == Attack.AttackType.Special)
         {
-            Instantiate(rightBullet, firePos.position, Quaternion.identity);
+            // stop time for attack length
         }
-        if (!fighterController.m_FacingRight)
+        else if(attack.attackType == Attack.AttackType.Blast)
         {
-            Instantiate(leftBullet, firePos.position, Quaternion.identity);
+            print("casting attack");
+            CastProjectile(attack);
         }
+        else if(attack.attackType == Attack.AttackType.MultipleBlast)
+        {
+            StartCoroutine(MultiCast(attack));
+        }
+        else if(attack.attackType == Attack.AttackType.Melee)
+        {
 
+        }
     }
 
-	IEnumerator FireballSequence () {
-	
-		Fire ();
-		yield return new WaitForSeconds(.2f); 
-		Fire ();
-		yield return new WaitForSeconds(.2f); 
-		Fire ();
+    void CastProjectile(Attack projectile)
+    {
+        print("cast projectile");
+        GameObject projectileObject = new GameObject("projectile");
+        AttackScript spell = projectileObject.AddComponent<AttackScript>();
+        spell.attack = projectile;
+        spell.origin = spellCastPoint.position;
+        spell.direction = controller.m_FacingRight? 1 : -1;
+        print(controller.m_FacingRight);
+        print("cast complete");
+    }
 
+	IEnumerator MultiCast (Attack projectile) {
+
+        for(int i = 0; i < projectile.multiFireCount; i++){
+            CastProjectile(projectile);
+            yield return new WaitForSeconds(projectile.multiFireRate);
+        }
+        
 	}
 
 }

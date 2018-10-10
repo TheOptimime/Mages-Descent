@@ -3325,9 +3325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  leftBullet: {fileID: 1773112927574066, guid: 95f1be66f2fc5584785dd106bf83689a, type: 2}
-  rightBullet: {fileID: 1773112927574066, guid: 43427aa2b8d0cec45861dd8195263149,
-    type: 2}
+  spellCastPoint: {fileID: 1704904402}
+  fireBullet: {fileID: 0}
   fallMultiplier: 4
   lowJumpMultiplier: 2
   castTime: 0

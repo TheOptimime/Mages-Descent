@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
             frameCount = 0;
         }
 
-        print("total frames " + totalFrameCount + " frame " + frameCount + " better: " + betterFrameCount);
+        //print("total frames " + totalFrameCount + " frame " + frameCount + " better: " + betterFrameCount);
         
         
         //print( "frame count: " + framecount + " Time: " + Time.time);
