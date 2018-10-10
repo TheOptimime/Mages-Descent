@@ -10,7 +10,7 @@ public class InputHandler : MonoBehaviour {
     GamePadState state;
     GamePadState prevState;
 
-    Vector2 Checkpoints;
+    public Vector2 Checkpoints, joystick;
     bool isListening;
 
     [Range(0,1)]
@@ -19,7 +19,7 @@ public class InputHandler : MonoBehaviour {
 
 	void Update () {
 
-        Vector2 joystick = new Vector2(state.ThumbSticks.Left.X, state.ThumbSticks.Left.Y);
+        joystick = new Vector2(state.ThumbSticks.Left.X, state.ThumbSticks.Left.Y);
 
         Vector2 pad = new Vector2((int)(state.DPad.Left) * -1 + (int)(state.DPad.Right), (int)(state.DPad.Down) * -1 + (int)(state.DPad.Up));
 

@@ -14,6 +14,8 @@ public class Fighter : MonoBehaviour {
 
     public Transform spellCastPoint;
 
+    InputHandler input;
+
     float horizontalMove = 0f;
 
     float runSpeed = 40f;
@@ -46,6 +48,7 @@ public class Fighter : MonoBehaviour {
         moveset = GetComponent<MoveSet>();
         firePos = transform.Find("SpellSpawner");
         spellList = FindObjectOfType<SpellDatabase>();
+        input = GetComponent<InputHandler>();
     }
 
     void Update()
@@ -57,63 +60,102 @@ public class Fighter : MonoBehaviour {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
 
         }
-        else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        else if (rb.velocity.y > 0 && !Input.GetButton("Fire3"))
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
 
-        //horizontalMove(); = Input.GetAxisRaw("Horizontal") * runSpeed;
+       horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        /*
+        if(input.joystick.x != 0 && input.joystick.x > 0.2f || input.joystick.x < 0.2f)
+        {
+            horizontalMove = Mathf.Sign(input.joystick.x) * runSpeed;
+        }
+        */
+        //if(input)
+        
 
         //animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButton("Fire3"))
         {
             jump = true;
              
         }
 
         #region F Key
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.F) || Input.GetButton("Fire1"))
         {
             castTime += Time.deltaTime;
+            if(castTime > 10)
+            {
+                SetVibration(0.4f, 0.4f);
+                SetVibration(0.5f, 0.5f);
+                SetVibration(0.6f, 0.6f);
+            }
+            else
+            {
+                SetVibration((castTime)/2, (castTime)/2);
+            }
+            
         }
 
-        if (Input.GetKeyUp(KeyCode.F) && (castTime > finishedCast))
+        if (Input.GetKeyUp(KeyCode.F) || Input.GetButtonUp("Fire1") && (castTime > finishedCast))
         {
             UseAttack(moveset.Attacks[0]);
+            SetVibration(0, 0);
             castTime = 0;
 
         }
-        else if (Input.GetKeyUp(KeyCode.F) && (castTime < finishedCast))
+        else if (Input.GetKeyUp(KeyCode.F) || Input.GetButtonUp("Fire1") && (castTime < finishedCast))
         {
+            SetVibration(0, 0);
             castTime = 0;
         }
         #endregion
 
         #region G Key
-        if (Input.GetKey(KeyCode.G))
+        if (Input.GetKey(KeyCode.G) || Input.GetButton("Fire2") )
         {
             print("Phase1");
             castTime += Time.deltaTime;
+
+            if (castTime > 3)
+            {
+                SetVibration(0.4f, 0.4f);
+                SetVibration(0.5f, 0.5f);
+            }
+            else
+            {
+                SetVibration((castTime) / 2f, (castTime) / 2f);
+                print((castTime) / 2f);
+            }
         }
 
-        if (Input.GetKeyUp(KeyCode.G) && (castTime > 0.3f))
+        if (Input.GetKeyUp(KeyCode.G) || Input.GetButtonUp("Fire2") && (castTime > 0.3f))
         {
             print("Phase3");
             UseAttack(moveset.Attacks[1]);
+            SetVibration(0f, 0f);
             castTime = 0;
 
         }
-        else if (Input.GetKeyUp(KeyCode.G) && (castTime < 0.3f))
+        else if (Input.GetKeyUp(KeyCode.G) || Input.GetButtonUp("Fire2") && (castTime < 0.3f))
         {
             print("Phase2");
+            SetVibration(0f, 0f);
             castTime = 0;
         }
         #endregion
 
     }
 
+    bool OnButtonPress()
+    {
+        return false;
+    }
 
     private void FixedUpdate()
     {
@@ -166,4 +208,9 @@ public class Fighter : MonoBehaviour {
         
 	}
 
+    void SetVibration(float leftMotor, float rightMotor)
+    {
+        input.vibrateLeftMotor = leftMotor;
+        input.vibrateRightMotor = rightMotor;
+    }
 }

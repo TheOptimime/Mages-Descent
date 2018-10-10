@@ -33,27 +33,7 @@ public class AttackScript : MonoBehaviour {
         print(testSprite);
         sr = gameObject.AddComponent<SpriteRenderer>();
         sr.sprite = testSprite;
-        /*
-        if (attack != null)
-        {
-            projectileSprites = new Sprite[0];
-            projectileSprites = Resources.LoadAll<Sprite>("fireball.png");
-            if(projectileSprites == null)
-            {
-                print("no projectile loaded");
-            }
-            else
-            {
-                print("sprite loaded");
-            }
-            //sr.sprite
-        }
-        else
-        {
-            print("attack is still null");
-        }
-        */
-        //Destroy(this.gameObject, delay);
+        
         sr.sprite = Resources.Load<Sprite>("fireball.png");
         print("attack init complete");
     }
@@ -95,6 +75,8 @@ public class AttackScript : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+    
 
     public void SetProjectile(Attack _attack)
     {
