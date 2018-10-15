@@ -10,30 +10,45 @@ public class InputHandler : MonoBehaviour {
     GamePadState state;
     GamePadState prevState;
 
+    public int joystickPosition;
+
+    public List<int> joystickRecord;
+    
     public Vector2 Checkpoints, joystick;
     bool isListening;
 
     [Range(0,1)]
     public float vibrateLeftMotor, vibrateRightMotor;
-
+    float timeBeforeLastInput, timeForNextInput;
 
 	void Update () {
-
         joystick = new Vector2(state.ThumbSticks.Left.X, state.ThumbSticks.Left.Y);
+        Vector2 joystickRaw = Vector2.zero;
 
-        Vector2 pad = new Vector2((int)(state.DPad.Left) * -1 + (int)(state.DPad.Right), (int)(state.DPad.Down) * -1 + (int)(state.DPad.Up));
+        joystickRaw.x = joystick.x > 0.5f || joystick.x < -0.5f ? Mathf.Sign(joystick.x) : 0;
+        joystickRaw.y = joystick.y > 0.5f || joystick.y < -0.5f ? Mathf.Sign(joystick.y) : 0;
 
-        if (joystick.x != 0)
-        {
-            //print("X: " + state.ThumbSticks.Left.X);
-        }
+        print("X: " + joystickRaw.x + " Y: " + joystickRaw.y);
+
+        //int joystickPosition = (int)((joystickRaw.x + 2) + (-joystickRaw.y + 3));
+
+        joystickPosition = (int)((joystickRaw.x + 2) + (joystickRaw.y == 1? -joystickRaw.y + 1 : joystickRaw.y == -1 ? joystickRaw.y + 7 : 3));
+
+
         
-        if(joystick.y != 0)
+
+        //Vector2 pad = new Vector2((int)(state.DPad.Left) * -1 + (int)(state.DPad.Right), (int)(state.DPad.Down) * -1 + (int)(state.DPad.Up));
+
+        if (timeBeforeLastInput > timeForNextInput && joystickPosition != joystickRecord[joystickRecord.Count-1])
         {
-            //print("Y: " + state.ThumbSticks.Left.Y);
+            joystickRecord.Add(joystickPosition);
+        }
+        else
+        {
+
         }
 
-        int joystickPosition =(int)((joystick.x + 2) + (-joystick.y + 3));
+        
         print(joystickPosition);
 
         FindController();
@@ -42,10 +57,6 @@ public class InputHandler : MonoBehaviour {
         state = GamePad.GetState(playerIndex);
 
         
-        if (BeginListening() && isListening == false)
-        {
-            float timer = Time.deltaTime;
-        }
 
         
     }
@@ -86,4 +97,6 @@ public class InputHandler : MonoBehaviour {
             }
         }
     }
+
+    
 }

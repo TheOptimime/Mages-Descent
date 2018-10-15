@@ -65,14 +65,29 @@ public class Fighter : MonoBehaviour {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
 
-       horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+       //horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
+        
         /*
         if(input.joystick.x != 0 && input.joystick.x > 0.2f || input.joystick.x < 0.2f)
         {
             horizontalMove = Mathf.Sign(input.joystick.x) * runSpeed;
         }
         */
+
+        if(input.joystickPosition == 4)
+        {
+            horizontalMove = -(runSpeed);
+        }
+        else if(input.joystickPosition == 6)
+        {
+            horizontalMove = runSpeed;
+        }
+        else
+        {
+            horizontalMove = 0;
+        }
+
         //if(input)
         
 
