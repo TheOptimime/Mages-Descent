@@ -13,6 +13,8 @@ public class Attack {
         Melee,              // Physical Attacks
         Blast,              // Projectile
         MultipleBlast,      // Multiple Projectiles
+        Beam,               // beam beams
+        Impale,             // Piercing attack
         Special             // Ultimate Attacks
     }
 
@@ -31,7 +33,8 @@ public class Attack {
         Burst,
         Burn,
         Freeze,
-        Stun
+        Stun,
+        Slow
     }
 
 

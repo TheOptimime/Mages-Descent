@@ -8,7 +8,7 @@ public class MoveSet : MonoBehaviour {
 
     public Attack[] Attacks;
 
-	// Use this for initialization
+	
 	void Start () {
         attackIndex = FindObjectOfType<SpellDatabase>();
         Attacks = new Attack[3];
@@ -16,7 +16,7 @@ public class MoveSet : MonoBehaviour {
         Attacks[1] = attackIndex.darkFire;
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
 		
 	}
