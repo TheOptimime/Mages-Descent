@@ -5,15 +5,25 @@ using UnityEngine;
 public class MoveSet : MonoBehaviour {
 
     SpellDatabase attackIndex;
+    public Item.Spellbook spellBook_A_Button, spellBook_B_Button, spellBook_X_Button, spellBook_Y_Button, spellBook_R_Button, spellBook_L_Button;
 
     public Attack[] Attacks;
 
+    
 	
 	void Start () {
+
         attackIndex = FindObjectOfType<SpellDatabase>();
-        Attacks = new Attack[3];
-        Attacks[0] = attackIndex.tripleFire;
-        Attacks[1] = attackIndex.darkFire;
+
+        spellBook_A_Button = new Item.Spellbook();
+        spellBook_B_Button = new Item.Spellbook();
+        spellBook_X_Button = new Item.Spellbook();
+        spellBook_Y_Button = new Item.Spellbook();
+        spellBook_L_Button = new Item.Spellbook();
+        spellBook_R_Button = new Item.Spellbook();
+
+        
+        spellBook_A_Button.attacks.Add(attackIndex.darkFire);
 	}
 	
 	

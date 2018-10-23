@@ -6,11 +6,14 @@ using UnityEngine;
 [RequireComponent(typeof(InputHandler))]
 [RequireComponent(typeof(CharacterController2D))]
 [RequireComponent(typeof(Health))]
+[RequireComponent(typeof(Inventory))]
 public class Fighter : MonoBehaviour {
 
     public float speed;
     CharacterController2D controller;
     SpellDatabase spellList;
+
+    Attack attackInQueue;
 
     public Transform spellCastPoint;
 
@@ -180,7 +183,7 @@ public class Fighter : MonoBehaviour {
 
     }
 
-    void UseAttack(Attack attack)
+    public void UseAttack(Attack attack)
     {
         print("in base function");
         if(attack.attackType == Attack.AttackType.Special)
@@ -202,7 +205,7 @@ public class Fighter : MonoBehaviour {
         }
     }
 
-    void CastProjectile(Attack projectile)
+    public void CastProjectile(Attack projectile)
     {
         print("cast projectile");
         GameObject projectileObject = new GameObject("projectile");
@@ -222,6 +225,11 @@ public class Fighter : MonoBehaviour {
         }
         
 	}
+
+    public void SetAttackQueue(Attack attack)
+    {
+        attackInQueue = attack;
+    }
 
     void SetVibration(float leftMotor, float rightMotor)
     {

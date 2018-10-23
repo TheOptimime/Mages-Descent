@@ -25,8 +25,9 @@ public class OnewayPLatform : MonoBehaviour {
             {
                 effector.rotationalOffset = 180f;
                 waitTime = 0.01f;
-            } else {
-
+            }
+            else
+            {
                 waitTime -= Time.deltaTime;
             }
         }
