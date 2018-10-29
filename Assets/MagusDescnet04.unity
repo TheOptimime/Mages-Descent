@@ -2670,6 +2670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  attackIsInQueue: 0
   spellCastPoint: {fileID: 1704904402}
   moveset: {fileID: 0}
   fireBullet: {fileID: 0}
@@ -2778,11 +2779,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   player: {fileID: 0}
+  deadzone: 0.3
   joystickPosition: 0
   joystickRecord: 
   Checkpoints: {x: 0, y: 0}
   joystick: {x: 0, y: 0}
-  vibrateLeftMotor: 0.369
+  vibrateLeftMotor: 0
   vibrateRightMotor: 0
 --- !u!114 &1557387812
 MonoBehaviour:
@@ -3422,7 +3424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1807979819
 BoxCollider2D:
   m_ObjectHideFlags: 0

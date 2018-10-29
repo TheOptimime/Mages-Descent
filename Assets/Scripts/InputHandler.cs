@@ -12,7 +12,8 @@ public class InputHandler : MonoBehaviour {
     public Fighter player;
     SpellDatabase spellDatabase;
 
-    float deadzone = 0.3f;
+    [Range(0.3f, 0.8f)]
+    public float deadzone = 0.3f;
 
     public int joystickPosition;
 
@@ -45,14 +46,14 @@ public class InputHandler : MonoBehaviour {
 
         //Vector2 pad = new Vector2((int)(state.DPad.Left) * -1 + (int)(state.DPad.Right), (int)(state.DPad.Down) * -1 + (int)(state.DPad.Up));
 
-        print(joystickRecord.Count);
+        // print(joystickRecord.Count);
 
 
             if (joystickRecord.Count == 0 && timeBeforeLastInput == 0 && joystickPosition != 5 )
             {
                 joystickRecord.Add(joystickPosition);
                 timeBeforeLastInput = Time.time;
-                timeForNextInput = timeBeforeLastInput + 0.1f;
+                timeForNextInput = timeBeforeLastInput + 0.3f;
                 print("joystick input detected: " + joystickPosition);
             }
             else if (Time.time > timeForNextInput)
@@ -65,7 +66,7 @@ public class InputHandler : MonoBehaviour {
             {
                 joystickRecord.Add(joystickPosition);
                 timeBeforeLastInput = Time.time;
-                timeForNextInput = timeBeforeLastInput + 0.01f;
+                timeForNextInput = timeBeforeLastInput + 0.3f;
                 print("joystick input detected");
             }
             else if (buttonPressed)
@@ -99,25 +100,37 @@ public class InputHandler : MonoBehaviour {
         {
 //            print("A Button Pressed");
             frozenJoystickRecord = joystickRecord;
+
+            for(int i = 0; i < frozenJoystickRecord.Count; i++)
+            {
+                print("frozen input " + i + " : " + frozenJoystickRecord[i]);
+            }
+
+            print("FrozenJoystickRecord: " + frozenJoystickRecord.Count);
             
 
-            for(int i = 0; i < player.moveset.spellBook_A_Button.attacks.Count-1; i++)
+            for(int i = 0; i < player.moveset.spellBook_A_Button.attacks.Count; i++)
             {
-                int matchCount = player.moveset.spellBook_A_Button.attacks.Count;
+                int matchCount = 0;
                 
 
                 if(player.moveset.spellBook_A_Button.attacks[i].joystickCommand != null && player.moveset.spellBook_A_Button.attacks[i].joystickCommand.Count == frozenJoystickRecord.Count)
                 {
-                    foreach (int joystickNumber in player.moveset.spellBook_A_Button.attacks[i].joystickCommand)
+                    for(int joystickNumber = 0; joystickNumber < player.moveset.spellBook_A_Button.attacks[i].joystickCommand.Count; joystickNumber++)
                     {
+                        print(player.moveset.spellBook_A_Button.attacks[i].joystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
+
                         if(player.moveset.spellBook_A_Button.attacks[i].joystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
                         {
+                            
                             matchCount++;
+                            print("matchfound: " + matchCount);
                         }
+
                     }
                 }
 
-                if(matchCount == player.moveset.spellBook_A_Button.attacks.Count)
+                if(matchCount == player.moveset.spellBook_A_Button.attacks[i].joystickCommand.Count)
                 {
                     print("match found");
                 }
@@ -149,7 +162,8 @@ public class InputHandler : MonoBehaviour {
         }
         else if(prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Pressed)
         {
-            //print("A Button Held");
+            print("A Button Held");
+            
             player.RelayButtonInput();
         }
         else if(prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released)

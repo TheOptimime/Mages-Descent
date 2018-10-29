@@ -23,7 +23,7 @@ public class MoveSet : MonoBehaviour {
         spellBook_R_Button = new Item.Spellbook();
 
         
-        spellBook_A_Button.attacks.Add(attackIndex.darkFire);
+        //spellBook_A_Button.attacks.Add(attackIndex.darkFire);
         spellBook_A_Button.attacks.Add(attackIndex.yeetFire);
         spellBook_A_Button.attacks.Add(attackIndex.tripleFire);
 	}

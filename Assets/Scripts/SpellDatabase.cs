@@ -19,13 +19,16 @@ public class SpellDatabase : MonoBehaviour {
         darkFire = new Attack("Dark Fire", "Fire a dark blast", 10, 15, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, "fireball");
         //dabThunder = new Attack("Dab Thunder", "Unleash Fearsome Bolts", 80, Attack.Element.Thunder, Attack.ElementEffect.Stun, Attack.AttackType.Special)
 
-        yeetFire = new Attack("Yeeet Fire", "Fire a dank blast", 10, 20, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, 0, "fireball",quarterCircleDownRight);
+        yeetFire = new Attack("Yeeet Fire", "Fire a dank blast", 10, 20, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, 0, "fireball",halfCircleLeftRight);
 
         AttackList = new List<Attack>();
 
 
         AttackList.Add(tripleFire);
-        AttackList.Add(dabThunder);
+        //AttackList[0].chargeTime = 5;
+
+        AttackList.Add(darkFire);
+        AttackList.Add(yeetFire);
     }
 	
 

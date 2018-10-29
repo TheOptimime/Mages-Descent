@@ -60,25 +60,7 @@ public class Fighter : MonoBehaviour {
     {
 
 
-        if (rb.velocity.y < 0)
-        {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-
-        }
-        else if (rb.velocity.y > 0 && !Input.GetButton("Fire3"))
-        {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        }
-
-       //horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
         
-        /*
-        if(input.joystick.x != 0 && input.joystick.x > 0.2f || input.joystick.x < 0.2f)
-        {
-            horizontalMove = Mathf.Sign(input.joystick.x) * runSpeed;
-        }
-        */
 
         if(input.joystickPosition == 4)
         {
@@ -98,7 +80,7 @@ public class Fighter : MonoBehaviour {
 
         //animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-
+        /* Legacy Input
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetButton("Fire3"))
         {
             jump = true;
@@ -170,15 +152,22 @@ public class Fighter : MonoBehaviour {
         }
         #endregion
 
-    }
+    */
 
-    bool OnButtonPress()
-    {
-        return false;
     }
 
     private void FixedUpdate()
     {
+        if (rb.velocity.y < 0)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+
+        }
+        else if (rb.velocity.y > 0 && !Input.GetButton("Fire3"))
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+
         //move character
         controller.Move(horizontalMove * Time.deltaTime, false, jump);
         jump = false;
@@ -208,6 +197,12 @@ public class Fighter : MonoBehaviour {
         {
 
         }
+        else if(attack.attackType == Attack.AttackType.Beam)
+        {
+
+        }
+
+        attackInQueue = null;
     }
 
     public void CastProjectile(Attack projectile)
@@ -233,6 +228,13 @@ public class Fighter : MonoBehaviour {
 
     public void SetAttackQueue(Attack attack)
     {
+        castTime = 0;
+        if (attack.instantCast)
+        {
+            UseAttack(attack);
+            return;
+        }
+
         attackIsInQueue = true;
         attackInQueue = attack;
         castTime = 0;
@@ -240,20 +242,40 @@ public class Fighter : MonoBehaviour {
 
     public void RelayButtonInput()
     {
-        castTime += Time.deltaTime;
+        print("holding attack: " + attackInQueue);
 
-        if (castTime > attackInQueue.chargeTime)
+        if(attackInQueue != null)
+        {
+            castTime += Time.deltaTime;
+
+            if (castTime > attackInQueue.chargeTime)
+            {
+
+            }
+        }
+        else
         {
 
         }
+        
     }
 
     public void OnAttackButtonRelease()
     {
-        if (castTime > attackInQueue.chargeTime)
+        print("releasing attack: " + attackInQueue);
+
+        if (attackInQueue != null)
         {
-            UseAttack(attackInQueue);
+            if (castTime >= attackInQueue.chargeTime)
+            {
+                UseAttack(attackInQueue);
+            }
         }
+        else
+        {
+
+        }
+        
     }
 
     void SetVibration(float leftMotor, float rightMotor)
