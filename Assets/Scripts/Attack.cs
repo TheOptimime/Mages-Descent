@@ -6,7 +6,8 @@ public class Attack {
 
     public string name, description, spritePath;
     public int damage, multiFireCount;
-    public float attackLength, animationLength, xDisplacement, multiFireRate, speed, lifetime;
+    public float attackLength, animationLength, xDisplacement, multiFireRate, speed, lifetime, chargeTime;
+    public bool hasSpecialChargeFunction, instantCast;
     public List<int> joystickCommand;
 
     public enum AttackType

@@ -1552,6 +1552,7 @@ GameObject:
   - component: {fileID: 868453649}
   - component: {fileID: 868453648}
   - component: {fileID: 868453651}
+  - component: {fileID: 868453652}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1603,6 +1604,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29ad8519981116141957150a2e3fc1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &868453652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868453647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb94ed058018b014998d76fb0b2540e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &870726222
@@ -2594,6 +2606,7 @@ GameObject:
   - component: {fileID: 1557387811}
   - component: {fileID: 1557387810}
   - component: {fileID: 1557387805}
+  - component: {fileID: 1557387813}
   - component: {fileID: 1557387812}
   m_Layer: 8
   m_Name: Player
@@ -2764,11 +2777,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIndex: 0
+  player: {fileID: 0}
   joystickPosition: 0
   joystickRecord: 
   Checkpoints: {x: 0, y: 0}
   joystick: {x: 0, y: 0}
-  vibrateLeftMotor: 0
+  vibrateLeftMotor: 0.369
   vibrateRightMotor: 0
 --- !u!114 &1557387812
 MonoBehaviour:
@@ -2786,6 +2800,18 @@ MonoBehaviour:
   regen: 0
   timer: 0
   time: 0
+--- !u!114 &1557387813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557387803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d593c2bd108324998d4aaaca6e1029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDB: {fileID: 0}
 --- !u!1 &1630018496
 GameObject:
   m_ObjectHideFlags: 3

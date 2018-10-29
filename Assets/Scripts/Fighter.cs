@@ -13,6 +13,8 @@ public class Fighter : MonoBehaviour {
     CharacterController2D controller;
     SpellDatabase spellList;
 
+    public bool attackIsInQueue;
+
     Attack attackInQueue;
 
     public Transform spellCastPoint;
@@ -186,6 +188,9 @@ public class Fighter : MonoBehaviour {
     public void UseAttack(Attack attack)
     {
         print("in base function");
+
+        castTime = 0;
+
         if(attack.attackType == Attack.AttackType.Special)
         {
             // stop time for attack length
@@ -213,8 +218,8 @@ public class Fighter : MonoBehaviour {
         spell.attack = projectile;
         spell.origin = spellCastPoint.position;
         spell.direction = controller.m_FacingRight? 1 : -1;
-        print(controller.m_FacingRight);
-        print("cast complete");
+        //print(controller.m_FacingRight);
+        //print("cast complete");
     }
 
 	IEnumerator MultiCast (Attack projectile) {
@@ -228,7 +233,27 @@ public class Fighter : MonoBehaviour {
 
     public void SetAttackQueue(Attack attack)
     {
+        attackIsInQueue = true;
         attackInQueue = attack;
+        castTime = 0;
+    }
+
+    public void RelayButtonInput()
+    {
+        castTime += Time.deltaTime;
+
+        if (castTime > attackInQueue.chargeTime)
+        {
+
+        }
+    }
+
+    public void OnAttackButtonRelease()
+    {
+        if (castTime > attackInQueue.chargeTime)
+        {
+            UseAttack(attackInQueue);
+        }
     }
 
     void SetVibration(float leftMotor, float rightMotor)

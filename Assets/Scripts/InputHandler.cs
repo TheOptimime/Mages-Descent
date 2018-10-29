@@ -12,7 +12,7 @@ public class InputHandler : MonoBehaviour {
     public Fighter player;
     SpellDatabase spellDatabase;
 
-    float deadzone = 0.5f;
+    float deadzone = 0.3f;
 
     public int joystickPosition;
 
@@ -32,14 +32,15 @@ public class InputHandler : MonoBehaviour {
     }
 
     void Update () {
-        int directionalInput;
+        //int directionalInput;
 
         FindController();
 
         HandleButtons();
+        HandleShoulderButtons();
         HandleDPad();
 
-        HandleJoystick(out directionalInput);
+        HandleJoystick(out joystickPosition);
 
 
         //Vector2 pad = new Vector2((int)(state.DPad.Left) * -1 + (int)(state.DPad.Right), (int)(state.DPad.Down) * -1 + (int)(state.DPad.Up));
@@ -47,22 +48,22 @@ public class InputHandler : MonoBehaviour {
         print(joystickRecord.Count);
 
 
-            if (joystickRecord.Count == 0 || timeBeforeLastInput == 0 && joystickPosition != 5 )
+            if (joystickRecord.Count == 0 && timeBeforeLastInput == 0 && joystickPosition != 5 )
             {
-                joystickRecord.Add(directionalInput);
+                joystickRecord.Add(joystickPosition);
                 timeBeforeLastInput = Time.time;
-                timeForNextInput = timeBeforeLastInput + 5.5f;
-                print("joystick input detected");
+                timeForNextInput = timeBeforeLastInput + 0.1f;
+                print("joystick input detected: " + joystickPosition);
             }
             else if (Time.time > timeForNextInput)
             {
                 joystickRecord.Clear();
                 timeBeforeLastInput = 0;
-                print("joystick record cleared");
+                //print("joystick record cleared");
             }
             else if(Time.time < timeForNextInput && joystickPosition != joystickRecord[joystickRecord.Count - 1])
             {
-                joystickRecord.Add(directionalInput);
+                joystickRecord.Add(joystickPosition);
                 timeBeforeLastInput = Time.time;
                 timeForNextInput = timeBeforeLastInput + 0.01f;
                 print("joystick input detected");
@@ -73,10 +74,7 @@ public class InputHandler : MonoBehaviour {
                 joystickRecord.Clear();
             }
 
-
-        
-         
-        print(joystickRecord);
+        //print(joystickRecord);
         //print(joystickPosition);
         
         prevState = state;
@@ -94,28 +92,55 @@ public class InputHandler : MonoBehaviour {
 
     void HandleButtons()
     {
+        List<int> frozenJoystickRecord = new List<int>();
+
         #region A Button
         if(prevState.Buttons.A == ButtonState.Released && state.Buttons.A == ButtonState.Pressed)
         {
-            print("A Button Pressed");
-            //player.moveset.spellBook_A_Button.attacks.Find();
-            print(player.moveset.spellBook_A_Button.attacks[0].name);
-
-            //player.moveset.spellBook_A_Button.attacks[player.moveset.spellBook_A_Button.attacks.IndexOf(player.moveset.spellBook_A_Button.attacks.Find()]
+//            print("A Button Pressed");
+            frozenJoystickRecord = joystickRecord;
+            
 
             for(int i = 0; i < player.moveset.spellBook_A_Button.attacks.Count-1; i++)
             {
-                if(player.moveset.spellBook_A_Button.attacks[i].joystickCommand == joystickRecord)
+                int matchCount = player.moveset.spellBook_A_Button.attacks.Count;
+                
+
+                if(player.moveset.spellBook_A_Button.attacks[i].joystickCommand != null && player.moveset.spellBook_A_Button.attacks[i].joystickCommand.Count == frozenJoystickRecord.Count)
                 {
-                    print("command found");
+                    foreach (int joystickNumber in player.moveset.spellBook_A_Button.attacks[i].joystickCommand)
+                    {
+                        if(player.moveset.spellBook_A_Button.attacks[i].joystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                        {
+                            matchCount++;
+                        }
+                    }
+                }
+
+                if(matchCount == player.moveset.spellBook_A_Button.attacks.Count)
+                {
+                    print("match found");
+                }
+                
+
+                foreach (int joystickNumber in frozenJoystickRecord)
+                {
+                  //  print("playerInputRecord: " + joystickNumber);
+                }
+
+                //print("loop running");
+                if(InputCompare(player.moveset.spellBook_A_Button.attacks[i].joystickCommand, frozenJoystickRecord))
+                {
+                    //print("command found");
                     player.SetAttackQueue(player.moveset.spellBook_A_Button.attacks[i]);
                     break;
                 }
-                else if(player.moveset.spellBook_A_Button.attacks[i].joystickCommand == null && i == player.moveset.spellBook_A_Button.attacks.Count)
+                else if(player.moveset.spellBook_A_Button.attacks[i].joystickCommand == null || i >= player.moveset.spellBook_A_Button.attacks.Count)
                 {
                     // this is the generic attack
-                    print("generic attack");
+                    //print("generic attack");
                     player.SetAttackQueue(player.moveset.spellBook_A_Button.attacks[i]);
+                    break;
                 }
             }
 
@@ -124,91 +149,95 @@ public class InputHandler : MonoBehaviour {
         }
         else if(prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Pressed)
         {
-            print("A Button Held");
+            //print("A Button Held");
+            player.RelayButtonInput();
         }
         else if(prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released)
         {
-            print("A Button Released");
+            //print("A Button Released");
+            player.OnAttackButtonRelease();
         }
         #endregion
 
         #region B Button
         if (prevState.Buttons.B == ButtonState.Released && state.Buttons.B == ButtonState.Pressed)
         {
-            print("B Button Pressed");
+            //print("B Button Pressed");
         }
         else if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Pressed)
         {
-            print("B Button Held");
+            //print("B Button Held");
         }
         else if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Released)
         {
-            print("B Button Released");
+            //print("B Button Released");
         }
         #endregion
 
         #region X Button
         if (prevState.Buttons.X == ButtonState.Released && state.Buttons.X == ButtonState.Pressed)
         {
-            print("X Button Pressed");
+            //print("X Button Pressed");
         }
         else if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Pressed)
         {
-            print("X Button Held");
+            //print("X Button Held");
         }
         else if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Released)
         {
-            print("X Button Released");
+            //print("X Button Released");
         }
         #endregion
 
         #region Y Button
         if (prevState.Buttons.Y == ButtonState.Released && state.Buttons.Y == ButtonState.Pressed)
         {
-            print("Y Button Pressed");
+            //print("Y Button Pressed");
         }
         else if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Pressed)
         {
-            print("Y Button Held");
+            //print("Y Button Held");
         }
         else if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Released)
         {
-            print("Y Button Released");
+            //print("Y Button Released");
         }
         #endregion
 
         #region L Button
         if (prevState.Buttons.LeftShoulder == ButtonState.Released && state.Buttons.LeftShoulder == ButtonState.Pressed)
         {
-            print("L Button Pressed");
+            //print("L Button Pressed");
         }
         else if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Pressed)
         {
-            print("L Button Held");
+            //print("L Button Held");
         }
         else if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Released)
         {
-            print("L Button Released");
+            //print("L Button Released");
         }
         #endregion
 
         #region R Button
         if (prevState.Buttons.RightShoulder == ButtonState.Released && state.Buttons.RightShoulder == ButtonState.Pressed)
         {
-            print("R Button Pressed");
+            //print("R Button Pressed");
         }
         else if (prevState.Buttons.RightShoulder == ButtonState.Pressed && state.Buttons.RightShoulder == ButtonState.Pressed)
         {
-            print("R Button Held");
+            //print("R Button Held");
         }
         else if (prevState.Buttons.RightShoulder == ButtonState.Pressed && state.Buttons.RightShoulder == ButtonState.Released)
         {
-            print("R Button Released");
+            //print("R Button Released");
         }
         #endregion
+
+        frozenJoystickRecord = null;
     }
 
-    void HandleShoulderButton()
+    void HandleShoulderButtons()
     {
         #region L2 Button
         if (prevState.Triggers.Left <= 0.2f && state.Triggers.Left >= 0.3f)
@@ -250,30 +279,30 @@ public class InputHandler : MonoBehaviour {
                 #region DPad_Left
                 if (prevState.DPad.Left == ButtonState.Released && state.DPad.Left == ButtonState.Pressed)
                 {
-                    print("Left Button pressed");
+                    //print("Left Button pressed");
                 }
                 else if (prevState.DPad.Left == ButtonState.Pressed && state.DPad.Left == ButtonState.Pressed)
                 {
-                    print("Left Button Held");
+                    //print("Left Button Held");
                 }
                 else if (prevState.DPad.Left == ButtonState.Pressed && state.DPad.Left == ButtonState.Released)
                 {
-                    print("Left Button Released");
+                    //print("Left Button Released");
                 }
                 #endregion
 
                 #region DPad_Right
                 if (prevState.DPad.Right == ButtonState.Released && state.DPad.Right == ButtonState.Pressed)
                 {
-                    print("Right Button pressed");
+                    //print("Right Button pressed");
                 }
                 else if (prevState.DPad.Right == ButtonState.Pressed && state.DPad.Right == ButtonState.Pressed)
                 {
-                    print("Right Button Held");
+                    //print("Right Button Held");
                 }
                 else if (prevState.DPad.Right == ButtonState.Pressed && state.DPad.Right == ButtonState.Released)
                 {
-                    print("Right Button Released");
+                    //print("Right Button Released");
                 }
                 #endregion
             }
@@ -282,15 +311,15 @@ public class InputHandler : MonoBehaviour {
                 #region DPad_Left
                 if (prevState.DPad.Left == ButtonState.Released && state.DPad.Left == ButtonState.Pressed)
                 {
-                    print("Left Button pressed");
+                    //print("Left Button pressed");
                 }
                 else if (prevState.DPad.Left == ButtonState.Pressed && state.DPad.Left == ButtonState.Pressed)
                 {
-                    print("Left Button Held");
+                    //print("Left Button Held");
                 }
                 else if (prevState.DPad.Left == ButtonState.Pressed && state.DPad.Left == ButtonState.Released)
                 {
-                    print("Left Button Released");
+                    //print("Left Button Released");
                 }
                 #endregion
 
@@ -332,15 +361,15 @@ public class InputHandler : MonoBehaviour {
             #region DPad_Right
             if (prevState.DPad.Right == ButtonState.Released && state.DPad.Right == ButtonState.Pressed)
             {
-                print("Right Button pressed");
+                //print("Right Button pressed");
             }
             else if (prevState.DPad.Right == ButtonState.Pressed && state.DPad.Right == ButtonState.Pressed)
             {
-                print("Right Button Held");
+                //print("Right Button Held");
             }
             else if (prevState.DPad.Right == ButtonState.Pressed && state.DPad.Right == ButtonState.Released)
             {
-                print("Right Button Released");
+                //print("Right Button Released");
             }
             #endregion
         }
@@ -350,30 +379,30 @@ public class InputHandler : MonoBehaviour {
         #region DPad_Up
         if (prevState.DPad.Up == ButtonState.Released && state.DPad.Up == ButtonState.Pressed)
         {
-            print("Up Button pressed");
+            //print("Up Button pressed");
         }
         else if (prevState.DPad.Up == ButtonState.Pressed && state.DPad.Up == ButtonState.Pressed)
         {
-            print("Up Button Held");
+            //print("Up Button Held");
         }
         else if (prevState.DPad.Up == ButtonState.Pressed && state.DPad.Up == ButtonState.Released)
         {
-            print("Up Button Released");
+            //print("Up Button Released");
         }
         #endregion
 
         #region DPad_Down
         if (prevState.DPad.Down == ButtonState.Released && state.DPad.Down == ButtonState.Pressed)
         {
-            print("Down Button pressed");
+            //print("Down Button pressed");
         }
         else if (prevState.DPad.Down == ButtonState.Pressed && state.DPad.Down == ButtonState.Pressed)
         {
-            print("Down Button Held");
+            //print("Down Button Held");
         }
         else if (prevState.DPad.Down == ButtonState.Pressed && state.DPad.Down == ButtonState.Released)
         {
-            print("Down Button Released");
+            //print("Down Button Released");
         }
         #endregion
 
@@ -392,9 +421,9 @@ public class InputHandler : MonoBehaviour {
 
         //int joystickPosition = (int)((joystickRaw.x + 2) + (-joystickRaw.y + 3));
 
-        joystickPosition = (int)((joystickRaw.x + 2) + (joystickRaw.y == 1 ? -joystickRaw.y + 1 : joystickRaw.y == -1 ? joystickRaw.y + 7 : 3));
+        directionalInput = (int)((joystickRaw.x + 2) + (joystickRaw.y == 1 ? -joystickRaw.y + 1 : joystickRaw.y == -1 ? joystickRaw.y + 7 : 3));
 
-        directionalInput = joystickPosition;
+        
     }
 
     void FindController()
@@ -409,7 +438,7 @@ public class InputHandler : MonoBehaviour {
                 GamePadState testState = GamePad.GetState(testPlayerIndex);
                 if (testState.IsConnected)
                 {
-                    Debug.Log(string.Format("GamePad found {0}", testPlayerIndex));
+                    //Debug.Log(string.Format("GamePad found {0}", testPlayerIndex));
                     playerIndex = testPlayerIndex;
                     playerIndexSet = true;
                 }
@@ -417,5 +446,17 @@ public class InputHandler : MonoBehaviour {
         }
     }
 
-    
+    static bool InputCompare(List<int> a, List<int> b)
+    {
+        if (a == null) return b == null;
+        if (b == null || a.Count != b.Count) return false;
+        for (int i = 0; i < a.Count; i++)
+        {
+            if (!object.Equals(a[i], b[i]))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }
