@@ -31,6 +31,7 @@ public class AttackScript : MonoBehaviour {
         transform.position = origin;
         rb = gameObject.AddComponent<Rigidbody2D>();
         col = gameObject.AddComponent<CircleCollider2D>();
+        col.isTrigger = true;
         testSprite = Resources.Load<Sprite>(attack.spritePath);
         print(testSprite);
         sr = gameObject.AddComponent<SpriteRenderer>();
@@ -60,6 +61,10 @@ public class AttackScript : MonoBehaviour {
         {
             sr.color = new Color(0.28f, 0f, 0.28f);
         }
+        else if (attack.name == "Dab Ice")
+        {
+            sr.color = new Color(0.16f, 0.2f, 0.56f);
+        }
 
 
         //print(gameObject.name);
@@ -85,10 +90,11 @@ public class AttackScript : MonoBehaviour {
                 rb.velocity = new Vector2(attack.speed * direction, 0);
             }
             
+            
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         // Most likely going to make a tag for interactable ojbects
 

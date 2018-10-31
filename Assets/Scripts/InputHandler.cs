@@ -12,6 +12,8 @@ public class InputHandler : MonoBehaviour {
     public Fighter player;
     SpellDatabase spellDatabase;
 
+    List<List<int>> ComboInput;
+
     public bool keyboardInputInUse, dPadInputInUse;
 
     #region Input Commands
@@ -39,6 +41,7 @@ public class InputHandler : MonoBehaviour {
     {
         player = GetComponent<Fighter>();
         joystickRecord = new List<int>();
+        InitializeJoyStickCommands();
     }
 
     void Update () {
@@ -128,7 +131,8 @@ public class InputHandler : MonoBehaviour {
 //            print("A Button Pressed");
             frozenJoystickRecord = joystickRecord;
 
-           
+            print(quarterCircleDownRight);
+            
             for(int i = 0; i < quarterCircleDownRight.Count; i++)
             {
                 int matchCount = 0;
@@ -150,7 +154,7 @@ public class InputHandler : MonoBehaviour {
                 
             }
 
-            
+            player.jump = true;
 
         }
         else if(prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Pressed)
@@ -184,6 +188,15 @@ public class InputHandler : MonoBehaviour {
             {
                 int matchCount = 0;
 
+                List<int> tempJoystickCommand = player.moveset.spellBook_B_Button.attacks[i].joystickCommand;
+
+                if (!player.controller.m_FacingRight)
+                {
+                    for(int j = 0; j < player.moveset.spellBook_B_Button.attacks[i].joystickCommand.Count; j++)
+                    {
+                        
+                    }
+                }
 
                 if (player.moveset.spellBook_B_Button.attacks[i].joystickCommand != null && player.moveset.spellBook_B_Button.attacks[i].joystickCommand.Count == frozenJoystickRecord.Count)
                 {
@@ -357,7 +370,7 @@ public class InputHandler : MonoBehaviour {
                     }
                 }
 
-                if (matchCount == player.moveset.spellBook_Y_Button.attacks[i].joystickCommand.Count)
+                //if (matchCount == player.moveset.spellBook_Y_Button.attacks[i].joystickCommand.Count)
                 {
                     print("match found");
                 }
@@ -716,6 +729,8 @@ public class InputHandler : MonoBehaviour {
 
     void InitializeJoyStickCommands()
     {
+
+
         #region Right Side
         quarterCircleDownRight = new List<int>() { 8, 9, 6 };
         quarterCircleRightDown = new List<int>() { 6, 9, 8 };
@@ -752,5 +767,19 @@ public class InputHandler : MonoBehaviour {
         fourCircleUpLeft = new List<int>() { 2, 1, 4, 7 };
         #endregion
 
+    }
+
+    void FlipInput(List<int> defaultInput, out List<int> reversedInput)
+    {
+        reversedInput = new List<int>();
+
+        if(InputCompare(defaultInput, quarterCircleDownRight))
+        {
+
+        }
+        //else if ()
+        {
+
+        }
     }
 }

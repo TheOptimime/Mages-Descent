@@ -10,7 +10,7 @@ using UnityEngine;
 public class Fighter : MonoBehaviour {
 
     public float speed;
-    CharacterController2D controller;
+    public CharacterController2D controller;
     SpellDatabase spellList;
 
     public bool attackIsInQueue;
@@ -23,11 +23,11 @@ public class Fighter : MonoBehaviour {
 
     float horizontalMove = 0f;
 
-    float runSpeed = 40f;
+    public float runSpeed = 40f;
 
     public MoveSet moveset;    
 
-    bool jump = false;
+    public bool jump = false;
 
     public float forwardLeapSpeed, backStepSpeed, backwardLeapSpeed;
 

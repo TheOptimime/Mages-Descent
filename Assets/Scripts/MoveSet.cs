@@ -26,6 +26,10 @@ public class MoveSet : MonoBehaviour {
         
         spellBook_B_Button.attacks.Add(attackIndex.yeetFire);
         spellBook_B_Button.attacks.Add(attackIndex.tripleFire);
+
+        spellBook_X_Button.attacks.Add(attackIndex.dabIce);
+
+        spellBook_Y_Button.attacks.Add(attackIndex.darkFire);
 	}
 	
 	

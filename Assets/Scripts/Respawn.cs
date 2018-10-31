@@ -17,7 +17,8 @@ public class Respawn : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-	
+
+        if (other.gameObject.GetComponent<EnemyAI>() || other.gameObject.GetComponent<Fighter>())
 		other.gameObject.transform.position = spawnpoint.transform.position;
 	
 	}
