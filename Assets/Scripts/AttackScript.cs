@@ -21,6 +21,8 @@ public class AttackScript : MonoBehaviour {
     public Vector2 origin;
     public int direction;
 
+    public float time, timer;
+
     int castingPlayer;
 
     void Start()
@@ -33,6 +35,8 @@ public class AttackScript : MonoBehaviour {
         print(testSprite);
         sr = gameObject.AddComponent<SpriteRenderer>();
         sr.sprite = testSprite;
+
+        
         
         sr.sprite = Resources.Load<Sprite>("fireball.png");
         print("attack init complete");
@@ -40,6 +44,8 @@ public class AttackScript : MonoBehaviour {
     
     void Update()
     {
+        timer += Time.deltaTime;
+
         //testSprite = Resources.Load<Sprite>("fireball.png");
         if(sr.sprite == null)
         {
@@ -54,14 +60,31 @@ public class AttackScript : MonoBehaviour {
         {
             sr.color = new Color(0.28f, 0f, 0.28f);
         }
-        
-        
-        print(gameObject.name);
-        
-        if(attack != null )
+
+
+        //print(gameObject.name);
+
+        if (time > attack.lifetime)
         {
-            print("yeet");
-            rb.velocity = new Vector2(attack.speed * direction, 0);
+            // destroy this object
+
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (attack != null)
+        {
+            //print("yeet");
+            if(attack.name == "Yeet Fire")
+            {
+                rb.velocity = new Vector2(attack.speed * direction, 0) * Mathf.Sin(Time.deltaTime * 20) * 0.5f;
+            }
+            else
+            {
+                rb.velocity = new Vector2(attack.speed * direction, 0);
+            }
+            
         }
     }
 

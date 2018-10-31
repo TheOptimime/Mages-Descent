@@ -29,6 +29,8 @@ public class Fighter : MonoBehaviour {
 
     bool jump = false;
 
+    public float forwardLeapSpeed, backStepSpeed, backwardLeapSpeed;
+
     public GameObject fireBullet;
 
     Transform firePos;
@@ -257,6 +259,11 @@ public class Fighter : MonoBehaviour {
         {
 
         }
+        
+    }
+
+    public void RelayJumpButtonInput()
+    {
         
     }
 
