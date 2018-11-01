@@ -16,13 +16,6 @@ public class InputHandler : MonoBehaviour {
 
     public bool keyboardInputInUse, dPadInputInUse;
 
-    #region Input Commands
-    List<int> quarterCircleDownRight, quarterCircleDownLeft, quarterCircleRightDown, quarterCircleLeftDown, quarterCircleUpRight, quarterCircleRightUp, quarterCircleUpLeft, quarterCircleLeftUp;
-    List<int> halfCircleUnderLeftRight, halfCircleUnderRightLeft, halfCircleOverLeftRight, halfCircleRightLeft, halfCircleDownUpRight, halfCircleDownUpLeft, halfCircleUpDownRight, halfCircleUpDownLeft;
-    List<int> fullCircleRightUp, fullCircleRightDown, fullCircleLeftUp, fullCircleLeftDown;
-    List<int> fourCircleDownRight, fourCircleUpRight, fourCircleDownLeft, fourCircleUpLeft;
-    #endregion
-
     [Range(0.3f, 0.8f)]
     public float deadzone = 0.3f;
 
@@ -249,63 +242,61 @@ public class InputHandler : MonoBehaviour {
         #region X Button
         if (prevState.Buttons.X == ButtonState.Released && state.Buttons.X == ButtonState.Pressed)
         {
-            //            print("X Button Pressed");
+            // B button is pressed
+            // Creates a record of the joystick inputs on button press
             frozenJoystickRecord = joystickRecord;
 
-            for (int i = 0; i < frozenJoystickRecord.Count; i++)
-            {
-                print("frozen input " + i + " : " + frozenJoystickRecord[i]);
-            }
-
-            print("FrozenJoystickRecord: " + frozenJoystickRecord.Count);
-
-
+            // Checking if the inputs entered matched any of the spells
             for (int i = 0; i < player.moveset.spellBook_X_Button.attacks.Count; i++)
             {
                 int matchCount = 0;
 
+                // Makes a temporary copy of this joystick command
+                List<int> tempJoystickCommand = new List<int>();
 
-                if (player.moveset.spellBook_X_Button.attacks[i].joystickCommand != null && player.moveset.spellBook_X_Button.attacks[i].joystickCommand.Count == frozenJoystickRecord.Count)
+
+                if (!player.controller.m_FacingRight)
                 {
-                    for (int joystickNumber = 0; joystickNumber < player.moveset.spellBook_X_Button.attacks[i].joystickCommand.Count; joystickNumber++)
+                    FlipInput(player.moveset.spellBook_X_Button.attacks[i].joystickCommand, out tempJoystickCommand);
+                }
+                else
+                {
+                    tempJoystickCommand = player.moveset.spellBook_X_Button.attacks[i].joystickCommand;
+                }
+
+                if (tempJoystickCommand != null)
+                {
+                    if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
                     {
-                        print(player.moveset.spellBook_X_Button.attacks[i].joystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
-
-                        if (player.moveset.spellBook_X_Button.attacks[i].joystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                        for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
                         {
+                            print(tempJoystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
 
-                            matchCount++;
-                            print("matchfound: " + matchCount);
+                            if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                            {
+                                // increments value if a matched input is found
+                                matchCount++;
+                                print("matchfound: " + matchCount);
+                            }
+
                         }
-
                     }
-                }
 
-                if (matchCount == player.moveset.spellBook_X_Button.attacks[i].joystickCommand.Count)
-                {
-                    print("match found");
-                }
+                    // Compares
+                    if (matchCount == tempJoystickCommand.Count)
+                    {
+                        player.SetAttackQueue(player.moveset.spellBook_X_Button.attacks[i]);
+                        break;
+                    }
 
-
-                foreach (int joystickNumber in frozenJoystickRecord)
-                {
-                    //  print("playerInputRecord: " + joystickNumber);
-                }
-
-                //print("loop running");
-                if (InputCompare(player.moveset.spellBook_X_Button.attacks[i].joystickCommand, frozenJoystickRecord))
-                {
-                    //print("command found");
-                    player.SetAttackQueue(player.moveset.spellBook_X_Button.attacks[i]);
-                    break;
                 }
                 else if (player.moveset.spellBook_X_Button.attacks[i].joystickCommand == null || i >= player.moveset.spellBook_X_Button.attacks.Count)
                 {
                     // this is the generic attack
-                    //print("generic attack");
                     player.SetAttackQueue(player.moveset.spellBook_X_Button.attacks[i]);
                     break;
                 }
+
             }
 
 
@@ -327,63 +318,61 @@ public class InputHandler : MonoBehaviour {
         #region Y Button
         if (prevState.Buttons.Y == ButtonState.Released && state.Buttons.Y == ButtonState.Pressed)
         {
-            //            print("Y Button Pressed");
+            // B button is pressed
+            // Creates a record of the joystick inputs on button press
             frozenJoystickRecord = joystickRecord;
 
-            for (int i = 0; i < frozenJoystickRecord.Count; i++)
-            {
-                print("frozen input " + i + " : " + frozenJoystickRecord[i]);
-            }
-
-            print("FrozenJoystickRecord: " + frozenJoystickRecord.Count);
-
-
+            // Checking if the inputs entered matched any of the spells
             for (int i = 0; i < player.moveset.spellBook_Y_Button.attacks.Count; i++)
             {
                 int matchCount = 0;
 
+                // Makes a temporary copy of this joystick command
+                List<int> tempJoystickCommand = new List<int>();
 
-                if (player.moveset.spellBook_Y_Button.attacks[i].joystickCommand != null && player.moveset.spellBook_Y_Button.attacks[i].joystickCommand.Count == frozenJoystickRecord.Count)
+
+                if (!player.controller.m_FacingRight)
                 {
-                    for (int joystickNumber = 0; joystickNumber < player.moveset.spellBook_Y_Button.attacks[i].joystickCommand.Count; joystickNumber++)
+                    FlipInput(player.moveset.spellBook_Y_Button.attacks[i].joystickCommand, out tempJoystickCommand);
+                }
+                else
+                {
+                    tempJoystickCommand = player.moveset.spellBook_Y_Button.attacks[i].joystickCommand;
+                }
+
+                if (tempJoystickCommand != null)
+                {
+                    if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
                     {
-                        print(player.moveset.spellBook_Y_Button.attacks[i].joystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
-
-                        if (player.moveset.spellBook_Y_Button.attacks[i].joystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                        for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
                         {
+                            print(tempJoystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
 
-                            matchCount++;
-                            print("matchfound: " + matchCount);
+                            if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                            {
+                                // increments value if a matched input is found
+                                matchCount++;
+                                print("matchfound: " + matchCount);
+                            }
+
                         }
-
                     }
-                }
 
-                //if (matchCount == player.moveset.spellBook_Y_Button.attacks[i].joystickCommand.Count)
-                {
-                    print("match found");
-                }
+                    // Compares
+                    if (matchCount == tempJoystickCommand.Count)
+                    {
+                        player.SetAttackQueue(player.moveset.spellBook_Y_Button.attacks[i]);
+                        break;
+                    }
 
-
-                foreach (int joystickNumber in frozenJoystickRecord)
-                {
-                    //  print("playerInputRecord: " + joystickNumber);
-                }
-
-                //print("loop running");
-                if (InputCompare(player.moveset.spellBook_Y_Button.attacks[i].joystickCommand, frozenJoystickRecord))
-                {
-                    //print("command found");
-                    player.SetAttackQueue(player.moveset.spellBook_Y_Button.attacks[i]);
-                    break;
                 }
                 else if (player.moveset.spellBook_Y_Button.attacks[i].joystickCommand == null || i >= player.moveset.spellBook_Y_Button.attacks.Count)
                 {
                     // this is the generic attack
-                    //print("generic attack");
                     player.SetAttackQueue(player.moveset.spellBook_Y_Button.attacks[i]);
                     break;
                 }
+
             }
 
 
@@ -752,8 +741,8 @@ public class InputHandler : MonoBehaviour {
             new List<int>() { 4, 1, 2, 3, 6, 9, 8, 7, 4 },
             new List<int>() { 4, 7, 8, 9, 6, 3, 2, 1, 4 },
 
-            new List<int>() { 8, 7, 4, 1 },
             new List<int>() { 2, 1, 4, 7 },
+            new List<int>() { 8, 7, 4, 1 },
     };
     }
 
