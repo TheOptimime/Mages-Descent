@@ -12,7 +12,7 @@ public class InputHandler : MonoBehaviour {
     public Fighter player;
     SpellDatabase spellDatabase;
 
-    List<List<int>> ComboInput;
+    List<List<int>> ComboInputNormal, ComboInputReverse;
 
     public bool keyboardInputInUse, dPadInputInUse;
 
@@ -131,19 +131,19 @@ public class InputHandler : MonoBehaviour {
 //            print("A Button Pressed");
             frozenJoystickRecord = joystickRecord;
 
-            print(quarterCircleDownRight);
+            //print(quarterCircleDownRight);
             
-            for(int i = 0; i < quarterCircleDownRight.Count; i++)
+            for(int i = 0; i < ComboInputNormal[0].Count; i++)
             {
                 int matchCount = 0;
                 
 
-                if(quarterCircleDownRight.Count == frozenJoystickRecord.Count)
+                if(ComboInputNormal[0].Count == frozenJoystickRecord.Count)
                 {
-                    for(int joystickNumber = 0; joystickNumber < quarterCircleDownRight.Count; joystickNumber++)
+                    for(int joystickNumber = 0; joystickNumber < ComboInputNormal[0].Count; joystickNumber++)
                     {
                         
-                        if(quarterCircleDownRight[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                        if(ComboInputNormal[0][joystickNumber] == frozenJoystickRecord[joystickNumber])
                         {
                             matchCount++;
                             print("matchfound: " + matchCount);
@@ -173,72 +173,61 @@ public class InputHandler : MonoBehaviour {
         #region B Button
         if (prevState.Buttons.B == ButtonState.Released && state.Buttons.B == ButtonState.Pressed)
         {
-            //            print("B Button Pressed");
+            // B button is pressed
+            // Creates a record of the joystick inputs on button press
             frozenJoystickRecord = joystickRecord;
-
-            for (int i = 0; i < frozenJoystickRecord.Count; i++)
-            {
-                print("frozen input " + i + " : " + frozenJoystickRecord[i]);
-            }
-
-            print("FrozenJoystickRecord: " + frozenJoystickRecord.Count);
-
-
+            
+            // Checking if the inputs entered matched any of the spells
             for (int i = 0; i < player.moveset.spellBook_B_Button.attacks.Count; i++)
             {
                 int matchCount = 0;
 
-                List<int> tempJoystickCommand = player.moveset.spellBook_B_Button.attacks[i].joystickCommand;
+                // Makes a temporary copy of this joystick command
+                List<int> tempJoystickCommand = new List<int>();
+                
 
                 if (!player.controller.m_FacingRight)
                 {
-                    for(int j = 0; j < player.moveset.spellBook_B_Button.attacks[i].joystickCommand.Count; j++)
-                    {
-                        
-                    }
+                    FlipInput(player.moveset.spellBook_B_Button.attacks[i].joystickCommand, out tempJoystickCommand);
+                }
+                else
+                {
+                    tempJoystickCommand = player.moveset.spellBook_B_Button.attacks[i].joystickCommand;
                 }
 
-                if (player.moveset.spellBook_B_Button.attacks[i].joystickCommand != null && player.moveset.spellBook_B_Button.attacks[i].joystickCommand.Count == frozenJoystickRecord.Count)
+                if(tempJoystickCommand != null)
                 {
-                    for (int joystickNumber = 0; joystickNumber < player.moveset.spellBook_B_Button.attacks[i].joystickCommand.Count; joystickNumber++)
+                    if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
                     {
-                        print(player.moveset.spellBook_B_Button.attacks[i].joystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
-
-                        if (player.moveset.spellBook_B_Button.attacks[i].joystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                        for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
                         {
+                            print(tempJoystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
 
-                            matchCount++;
-                            print("matchfound: " + matchCount);
+                            if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                            {
+                                // increments value if a matched input is found
+                                matchCount++;
+                                print("matchfound: " + matchCount);
+                            }
+
                         }
-
                     }
-                }
 
-                if (matchCount == player.moveset.spellBook_B_Button.attacks[i].joystickCommand.Count)
-                {
-                    print("match found");
-                }
-
-
-                foreach (int joystickNumber in frozenJoystickRecord)
-                {
-                    //  print("playerInputRecord: " + joystickNumber);
-                }
-
-                //print("loop running");
-                if (InputCompare(player.moveset.spellBook_B_Button.attacks[i].joystickCommand, frozenJoystickRecord))
-                {
-                    //print("command found");
-                    player.SetAttackQueue(player.moveset.spellBook_B_Button.attacks[i]);
-                    break;
+                    // Compares
+                    if (matchCount == tempJoystickCommand.Count)
+                    {
+                        player.SetAttackQueue(player.moveset.spellBook_B_Button.attacks[i]);
+                        break;
+                    }
+                    
                 }
                 else if (player.moveset.spellBook_B_Button.attacks[i].joystickCommand == null || i >= player.moveset.spellBook_B_Button.attacks.Count)
                 {
                     // this is the generic attack
-                    //print("generic attack");
                     player.SetAttackQueue(player.moveset.spellBook_B_Button.attacks[i]);
                     break;
                 }
+
             }
 
 
@@ -729,57 +718,56 @@ public class InputHandler : MonoBehaviour {
 
     void InitializeJoyStickCommands()
     {
+        ComboInputNormal = new List<List<int>>
+        {
+            new List<int>() { 8, 9, 6 },
+            new List<int>() { 6, 9, 8 },
+            new List<int>() { 6, 3, 2 },
+            new List<int>() { 2, 3, 6 },
 
+            new List<int>() { 6, 9, 8, 7, 4 },
+            new List<int>() { 4, 1, 2, 3, 6 },
+            new List<int>() { 8, 9, 6, 3, 2 },
+            new List<int>() { 2, 3, 6, 9, 8 },
 
-        #region Right Side
-        quarterCircleDownRight = new List<int>() { 8, 9, 6 };
-        quarterCircleRightDown = new List<int>() { 6, 9, 8 };
-        quarterCircleRightUp = new List<int>() { 6, 3, 2 };
-        quarterCircleUpRight = new List<int>() { 2, 3, 6 };
+            new List<int>() { 6, 3, 2, 1, 4, 7, 8, 9, 6 },
+            new List<int>() { 6, 9, 8, 7, 4, 1, 2, 3, 6 },
 
-        halfCircleUnderRightLeft = new List<int>() { 6, 9, 8, 7, 4 };
-        halfCircleOverLeftRight = new List<int>() { 4, 1, 2, 3, 6 };
-        halfCircleDownUpRight = new List<int>() { 8, 9, 6, 3, 2 };
-        halfCircleUpDownRight = new List<int>() { 2, 3, 6, 9, 8 };
+            new List<int>() { 2, 3, 6, 9 },
+            new List<int>() { 8, 9, 6, 3 },
+        };
 
-        fullCircleRightUp = new List<int>() { 6, 3, 2, 1, 4, 7, 8, 9, 6 };
-        fullCircleRightDown = new List<int>() { 6, 9, 8, 7, 4, 1, 2, 3, 6 };
+        ComboInputReverse = new List<List<int>>
+        {
+            new List<int>() { 8, 7, 4 },
+            new List<int>() { 4, 7, 8 },
+            new List<int>() { 4, 1, 2 },
+            new List<int>() { 2, 1, 4 },
 
-        fourCircleUpRight = new List<int>() { 2, 3, 6, 9 };
-        fourCircleDownRight = new List<int>() { 8, 9, 6, 3 };
-        #endregion
+            new List<int>() { 4, 7, 8, 9, 6 },
+            new List<int>() { 4, 1, 2, 3, 6 },
+            new List<int>() { 8, 7, 4, 1, 2 },
+            new List<int>() { 2, 1, 4, 7, 8 },
 
-        #region Left Side
-        quarterCircleDownLeft = new List<int>() { 8, 7, 4 };
-        quarterCircleLeftDown = new List<int>() { 4, 7, 8 };
-        quarterCircleLeftUp = new List<int>() { 4, 1, 2 };
-        quarterCircleUpLeft = new List<int>() { 2, 1, 4 };
+            new List<int>() { 4, 1, 2, 3, 6, 9, 8, 7, 4 },
+            new List<int>() { 4, 7, 8, 9, 6, 3, 2, 1, 4 },
 
-        halfCircleUnderLeftRight = new List<int>() { 4, 7, 8, 9, 6 };
-        halfCircleOverLeftRight = new List<int>() { 4, 1, 2, 3, 6 };
-        halfCircleDownUpLeft = new List<int>() { 8, 7, 4, 1, 2 };
-        halfCircleUpDownLeft = new List<int>() { 2, 1, 4, 7, 8 };
-
-        fullCircleLeftUp = new List<int>() { 4, 1, 2, 3, 6, 9, 8, 7, 4 };
-        fullCircleLeftDown = new List<int>() { 4, 7, 8, 9, 6, 3, 2, 1, 4 };
-
-        fourCircleDownLeft = new List<int>() { 8, 7, 4, 1 };
-        fourCircleUpLeft = new List<int>() { 2, 1, 4, 7 };
-        #endregion
-
+            new List<int>() { 8, 7, 4, 1 },
+            new List<int>() { 2, 1, 4, 7 },
+    };
     }
 
     void FlipInput(List<int> defaultInput, out List<int> reversedInput)
     {
         reversedInput = new List<int>();
 
-        if(InputCompare(defaultInput, quarterCircleDownRight))
+        for(int i = 0; i < ComboInputNormal.Count; i++)
         {
-
+            if (InputCompare(defaultInput, ComboInputNormal[i]))
+            {
+                reversedInput = ComboInputReverse[i];
+            }
         }
-        //else if ()
-        {
-
-        }
+        
     }
 }
