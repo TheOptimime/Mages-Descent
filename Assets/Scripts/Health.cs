@@ -11,7 +11,7 @@ public class Health : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        currentHealth = maxHealth;
 	}
 	
 	// Update is called once per frame

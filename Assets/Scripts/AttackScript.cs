@@ -17,9 +17,11 @@ public class AttackScript : MonoBehaviour {
     CircleCollider2D col;
 
     SpriteRenderer sr;
+    Sprite[] sprites;
 
     public Vector2 origin;
     public int direction;
+    public bool flipped;
 
     public float time, timer;
 
@@ -36,9 +38,10 @@ public class AttackScript : MonoBehaviour {
         print(testSprite);
         sr = gameObject.AddComponent<SpriteRenderer>();
         sr.sprite = testSprite;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        
-        
+
+        sprites = Resources.LoadAll<Sprite>("fireball.png");
         sr.sprite = Resources.Load<Sprite>("fireball.png");
         print("attack init complete");
     }
@@ -46,8 +49,11 @@ public class AttackScript : MonoBehaviour {
     void Update()
     {
         timer += Time.deltaTime;
+        
+            sr.flipX = flipped;
+        
 
-        //testSprite = Resources.Load<Sprite>("fireball.png");
+        
         if(sr.sprite == null)
         {
             sr.sprite = testSprite;
@@ -55,7 +61,12 @@ public class AttackScript : MonoBehaviour {
 
         if(attack.name == "Triple Fire")
         {
-            sr.color = new Color(1, 0, 0);
+            for(int i = 0; i < sprites.Length; i++)
+            {
+                sr.sprite = sprites[i];
+            }
+            
+            
         }
         else if(attack.name == "Dark Fire")
         {
@@ -80,14 +91,17 @@ public class AttackScript : MonoBehaviour {
     {
         if (attack != null)
         {
+            print("attack is not null");
             //print("yeet");
             if(attack.name == "Yeet Fire")
             {
-                rb.velocity = new Vector2(attack.speed * direction, 0) * Mathf.Sin(Time.deltaTime * 20) * 0.5f;
+                rb.velocity = new Vector2(attack.speed * direction, 0) * Mathf.Sin(Time.fixedDeltaTime * 20) * 0.5f;
             }
             else
             {
-                rb.velocity = new Vector2(attack.speed * direction, 0);
+                print("Should be moving: " + direction);
+                rb.velocity = new Vector2(attack.speed * direction * Time.fixedDeltaTime, 0);
+                
             }
             
             

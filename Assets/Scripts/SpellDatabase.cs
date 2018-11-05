@@ -18,7 +18,7 @@ public class SpellDatabase : MonoBehaviour {
         InitializeJoyStickCommands();
 
         tripleFire = new Attack("Triple Fire", "Fire 3 shots", 10, 30, Attack.Element.Fire, Attack.ElementEffect.Burn, Attack.AttackType.MultipleBlast, 3,0.2f, 0, 2, 1, 0, "fireball", quarterCircleDownRight);
-        darkFire = new Attack("Dark Fire", "Fire a dark blast", 10, 15, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, "fireball");
+        darkFire = new Attack("Dark Fire", "Fire a dark blast", 10, 150, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, "fireball");
         //dabThunder = new Attack("Dab Thunder", "Unleash Fearsome Bolts", 80, Attack.Element.Thunder, Attack.ElementEffect.Stun, Attack.AttackType.Special)
 
         yeetFire = new Attack("Yeet Fire", "Yeet a Fireball", 10, 20, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 2, 3, 4, 4, 0, 0, "fireball",halfCircleUnderRightLeft);
