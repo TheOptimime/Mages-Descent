@@ -59,7 +59,11 @@ public class CharacterController2D : MonoBehaviour
 			{
 				m_Grounded = true;
 				if (!wasGrounded)
-					OnLandEvent.Invoke();
+                {
+                    OnLandEvent.Invoke();
+                    fighter.doubleJumpUsed = false;
+                }
+					
 			}
 		}
 	}
@@ -82,7 +86,7 @@ public class CharacterController2D : MonoBehaviour
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
-            fighter.doubleJumpUsed = false;
+            
 
 			// If crouching
 			if (crouch)

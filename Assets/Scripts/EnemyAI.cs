@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Health))]
 public class EnemyAI : MonoBehaviour {
@@ -8,24 +6,79 @@ public class EnemyAI : MonoBehaviour {
     Health health;
     //float internalTimer;
 
+    Fighter player;
+
+    Vector2 startingPoint;
+
 	Rigidbody2D rb2d;
-	public GameObject spawnpoint;
+    //public GameObject spawnpoint;
+
+    public enum EnemyState
+    {
+        Idle,
+        Walking,
+        Detecting,
+        Attacking,
+        Resting,
+        Attacked
+    }
+
+    public EnemyState enemyState;
+
+    public bool respawnEnabled;
 
 	float timer;
+    float attackRange;
 	bool timerSet;
+    bool hit;
 	float timeLimit;
 
 	bool isDead, respawnCalled;
-	// Use this for initialization
+	
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
         health = GetComponent<Health>();
         health.maxHealth = 30;
         health.currentHealth = health.maxHealth;
+        startingPoint = transform.position;
+        player = FindObjectOfType<Fighter>();
+        
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
+
+        switch (enemyState)
+        {
+            case (EnemyState.Idle):
+
+                break;
+            case (EnemyState.Walking):
+
+                break;
+            case (EnemyState.Detecting):
+
+                break;
+            case (EnemyState.Attacking):
+                float distanceFromPlayer = (transform.position - player.transform.position).magnitude;
+
+                if(distanceFromPlayer < attackRange)
+                {
+                    // can attack
+                }
+                else
+                {
+                    // moves towards player
+                }
+
+                break;
+            case (EnemyState.Resting):
+
+                break;
+            case (EnemyState.Attacked):
+
+                break;
+        }
 
 		if (health.currentHealth <= 0) {
 			isDead = true;
@@ -34,19 +87,27 @@ public class EnemyAI : MonoBehaviour {
 		if(isDead){
 			print("enemy is dead");
 			transform.position = new Vector3 (0, 3000, 0);
-			respawnCalled = true;
+
+            if (respawnEnabled)
+            {
+                respawnCalled = true;
+            }
 		}
 		if (respawnCalled) {
 			Respawn ();
 		}
-	}
+
+        if (hit)
+        {
+            enemyState = EnemyState.Attacked;
+        }
+    }
 
 	void Respawn(){
 		if (!timerSet) {
 			timer = Time.deltaTime;
 			timeLimit = Time.deltaTime + 5f;
 			timerSet = true;
-			print ("timer set");
 		}
 
 		if (timer > timeLimit) {
@@ -56,7 +117,7 @@ public class EnemyAI : MonoBehaviour {
 			isDead = false;
 			timerSet = false;
 			respawnCalled = false;
-			transform.position = spawnpoint.transform.position;
+			transform.position = startingPoint;
 		} 
 		else {
 			//print ("timer: " + timer);
@@ -65,5 +126,12 @@ public class EnemyAI : MonoBehaviour {
 
 	}
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Attack")
+        {
+            hit = true;
+        }
+    }
 
 }
