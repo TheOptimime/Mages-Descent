@@ -39,6 +39,7 @@ public class AttackScript : MonoBehaviour {
         sr = gameObject.AddComponent<SpriteRenderer>();
         sr.sprite = testSprite;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        sr.transform.localScale += new Vector3(3,3,3); 
 
 
         sprites = Resources.LoadAll<Sprite>("fireball.png");
@@ -100,7 +101,7 @@ public class AttackScript : MonoBehaviour {
             else
             {
                 print("Should be moving: " + direction);
-                rb.velocity = new Vector2(attack.speed * direction * Time.fixedDeltaTime, 0);
+                rb.velocity = new Vector2(attack.speed * direction * Time.deltaTime * 20, 0);
                 
             }
             

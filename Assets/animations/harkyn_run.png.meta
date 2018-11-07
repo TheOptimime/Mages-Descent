@@ -1,0 +1,383 @@
+fileFormatVersion: 2
+guid: a9b19c7a9e865d4409613f5873290391
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: harkyn_run
+    21300002: Harkyn_Run00
+    21300004: Harkyn_Run01
+    21300006: Harkyn_Run02
+    21300008: Harkyn_Run03
+    21300010: Harkyn_Run04
+    21300012: Harkyn_Run05
+    21300014: Harkyn_Run06
+    21300016: Harkyn_Run07
+    21300018: Harkyn_Run08
+    21300020: Harkyn_Run09
+    21300022: Harkyn_Run10
+    21300024: Harkyn_Run11
+    21300026: Harkyn_Run12
+    21300028: Harkyn_Run13
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Run00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1599
+        width: 357
+        height: 448
+      alignment: 9
+      pivot: {x: 0.5686275, y: 0.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8a35fe3e2ff8743919b9693a1dc729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run01
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1599
+        width: 357
+        height: 448
+      alignment: 9
+      pivot: {x: 0.5686275, y: 0.52008927}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074bedee3577e0e44917094498fb591d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run02
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1604
+        width: 357
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5686275, y: 0.51918733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c79e71ee21dd6641bf95df555c88cb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run03
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1610
+        width: 361
+        height: 437
+      alignment: 9
+      pivot: {x: 0.56232685, y: 0.51487416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905d4348e45da2444be6dce0b4c48f63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run04
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1617
+        width: 371
+        height: 430
+      alignment: 9
+      pivot: {x: 0.5471698, y: 0.51627904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1200f6a37358ac24d85fa1271ea26989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1180
+        width: 381
+        height: 417
+      alignment: 9
+      pivot: {x: 0.5328084, y: 0.51079136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccf14da382877045b03dfd6c692de85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run06
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1193
+        width: 392
+        height: 404
+      alignment: 9
+      pivot: {x: 0.51785713, y: 0.50247526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850c005f9172dde46ae6f3bd4580903d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run07
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1191
+        width: 395
+        height: 406
+      alignment: 9
+      pivot: {x: 0.51392406, y: 0.5344828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402cfc473df97cd47a27f59c7c21c820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run08
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1194
+        width: 392
+        height: 403
+      alignment: 9
+      pivot: {x: 0.51785713, y: 0.55334985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f0f383f7390ac4cbb1e47db5928fb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run09
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 1188
+        width: 390
+        height: 409
+      alignment: 9
+      pivot: {x: 0.5205128, y: 0.57212716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db32199a8189b094b9b2387c69999344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 756
+        width: 377
+        height: 422
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.56398106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f0b02f57de4254ebc962927d9f437a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run11
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 754
+        width: 367
+        height: 424
+      alignment: 9
+      pivot: {x: 0.5531335, y: 0.5424528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8f0ee514b0c234d84213c971672300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run12
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 755
+        width: 359
+        height: 423
+      alignment: 9
+      pivot: {x: 0.5654596, y: 0.5200946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438c53b4d1c45654daffdb9d74cbe5d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Run13
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 743
+        width: 357
+        height: 435
+      alignment: 9
+      pivot: {x: 0.5686275, y: 0.51724136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc44ef4fe156d7448b46dcdf663e93f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1a782632f4a5b944aac017b982813023
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

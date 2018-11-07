@@ -42,6 +42,8 @@ public partial class Fighter : MonoBehaviour {
 
     public SpriteRenderer sr;
 
+    Animator anim;
+
     //Transform firePos;
 
     //CharacterController2D cc;
@@ -64,6 +66,7 @@ public partial class Fighter : MonoBehaviour {
         moveset = GetComponent<MoveSet>();
         spellList = FindObjectOfType<SpellDatabase>();
         input = GetComponent<InputHandler>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -104,6 +107,11 @@ public partial class Fighter : MonoBehaviour {
         else
         {
             horizontalMove = 0;
+            anim.SetFloat("speed", 0);
+        }
+
+        if (horizontalMove < 0 || horizontalMove > 0) {
+            anim.SetFloat("speed", 1);
         }
     }
 

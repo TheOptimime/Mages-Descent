@@ -1,0 +1,1328 @@
+fileFormatVersion: 2
+guid: 63d426e485412734da67cdff603ed4aa
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: idle
+    21300002: Harkyn_idle00
+    21300004: Harkyn_idle01
+    21300006: Harkyn_idle02
+    21300008: Harkyn_idle03
+    21300010: Harkyn_idle04
+    21300012: Harkyn_idle05
+    21300014: Harkyn_idle06
+    21300016: Harkyn_idle07
+    21300018: Harkyn_idle08
+    21300020: Harkyn_idle09
+    21300022: Harkyn_idle10
+    21300024: Harkyn_idle11
+    21300026: Harkyn_idle12
+    21300028: Harkyn_idle13
+    21300030: Harkyn_idle14
+    21300032: Harkyn_idle15
+    21300034: Harkyn_idle16
+    21300036: Harkyn_idle17
+    21300038: Harkyn_idle18
+    21300040: Harkyn_idle19
+    21300042: Harkyn_idle20
+    21300044: Harkyn_idle21
+    21300046: Harkyn_idle22
+    21300048: Harkyn_idle23
+    21300050: Harkyn_idle24
+    21300052: Harkyn_idle25
+    21300054: Harkyn_idle26
+    21300056: Harkyn_idle27
+    21300058: Harkyn_idle28
+    21300060: Harkyn_idle29
+    21300062: Harkyn_idle30
+    21300064: Harkyn_idle31
+    21300066: Harkyn_idle32
+    21300068: Harkyn_idle33
+    21300070: Harkyn_idle34
+    21300072: Harkyn_idle35
+    21300074: Harkyn_idle36
+    21300076: Harkyn_idle37
+    21300078: Harkyn_idle38
+    21300080: Harkyn_idle39
+    21300082: Harkyn_idle40
+    21300084: Harkyn_idle41
+    21300086: Harkyn_idle42
+    21300088: Harkyn_idle43
+    21300090: Harkyn_idle44
+    21300092: Harkyn_idle45
+    21300094: Harkyn_idle46
+    21300096: Harkyn_idle47
+    21300098: Harkyn_idle48
+    21300100: Harkyn_idle49
+    21300102: Harkyn_idle50
+    21300104: Harkyn_idle51
+    21300106: Harkyn_idle52
+    21300108: Harkyn_idle53
+    21300110: Harkyn_idle54
+    21300112: Harkyn_idle55
+    21300114: Harkyn_idle56
+    21300116: Harkyn_idle57
+    21300118: Harkyn_idle58
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_idle00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3603
+        width: 397
+        height: 492
+      alignment: 9
+      pivot: {x: 0.50377834, y: 0.49186993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336634be1bb6143479e6164d28b6c14d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle01
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3608
+        width: 396
+        height: 487
+      alignment: 9
+      pivot: {x: 0.50757575, y: 0.49691993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9488dcd31f23c3149855407084f25c6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle02
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 3597
+        width: 396
+        height: 498
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48594376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d7c089fedc8b2448fd479814d79b33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle03
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 3606
+        width: 383
+        height: 489
+      alignment: 9
+      pivot: {x: 0.5169713, y: 0.49488753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95899916a4eeb4f46a691b55e0e8434d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle04
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 3605
+        width: 378
+        height: 490
+      alignment: 9
+      pivot: {x: 0.537037, y: 0.49591836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11faaa686554654f99cc53fb30ffcf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle05
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 3612
+        width: 399
+        height: 483
+      alignment: 9
+      pivot: {x: 0.5012531, y: 0.5010352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c2b0a3bb2192f438e7cf3912d34864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle06
+      rect:
+        serializedVersion: 2
+        x: 2362
+        y: 3610
+        width: 397
+        height: 485
+      alignment: 9
+      pivot: {x: 0.49370277, y: 0.49896908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee94b3cd2a6f771478aae7510a2ae452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle07
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 3601
+        width: 405
+        height: 494
+      alignment: 9
+      pivot: {x: 0.5012346, y: 0.48987854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7440ca94ffdff4586b7c546f581367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle08
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 3610
+        width: 397
+        height: 485
+      alignment: 9
+      pivot: {x: 0.49370277, y: 0.49896908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d915eaca1687d4d8f56013e453cc35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle09
+      rect:
+        serializedVersion: 2
+        x: 3567
+        y: 3617
+        width: 398
+        height: 478
+      alignment: 9
+      pivot: {x: 0.4924623, y: 0.5083682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb4d1da4cea4984e951dd2535d505d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3113
+        width: 396
+        height: 482
+      alignment: 9
+      pivot: {x: 0.4949495, y: 0.5041494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe78722b9970ad4698579494c1f838c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle11
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3121
+        width: 387
+        height: 474
+      alignment: 9
+      pivot: {x: 0.52196383, y: 0.51265824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ea561732ea1ba4387986f6e081cb4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle12
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 3119
+        width: 391
+        height: 476
+      alignment: 9
+      pivot: {x: 0.5191816, y: 0.50840336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899354c9f63a3f748b8d45e7a1ec8455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle13
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 3116
+        width: 397
+        height: 479
+      alignment: 9
+      pivot: {x: 0.48866498, y: 0.5052192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7310ddda0c62b54b9e7c3c7bb12ecde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle14
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 3117
+        width: 372
+        height: 478
+      alignment: 9
+      pivot: {x: 0.5188172, y: 0.50627613}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517a0f2bb671b8548af93a703074fe54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle15
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 3111
+        width: 385
+        height: 484
+      alignment: 9
+      pivot: {x: 0.5220779, y: 0.50206614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594d2a5b476082d4bb8c87545f96ded7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle16
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 3109
+        width: 382
+        height: 486
+      alignment: 9
+      pivot: {x: 0.52879584, y: 0.4979424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6633aa5a802a54396ac8c704035dde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle17
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 3105
+        width: 401
+        height: 490
+      alignment: 9
+      pivot: {x: 0.49625936, y: 0.49591836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165e074a09e9c7542b10221923040339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle18
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 3105
+        width: 394
+        height: 490
+      alignment: 9
+      pivot: {x: 0.48730963, y: 0.49591836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37477b9ae6ab5b243b24f93962207f73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle19
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 3104
+        width: 388
+        height: 491
+      alignment: 9
+      pivot: {x: 0.49484536, y: 0.49490836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc0bfb3c92f7db489bea9596fca0f81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2608
+        width: 385
+        height: 494
+      alignment: 9
+      pivot: {x: 0.51688313, y: 0.48987854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3b934c7be7b66428e26b42eb4e1084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle21
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 2611
+        width: 387
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5142119, y: 0.4928717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a14af6abac14c4c8dfbdef5e77e4ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle22
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 2605
+        width: 387
+        height: 497
+      alignment: 9
+      pivot: {x: 0.5142119, y: 0.48692152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bb789233d7b6c4884b9c7e9000ca8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle23
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2604
+        width: 380
+        height: 498
+      alignment: 9
+      pivot: {x: 0.49736843, y: 0.48594376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08c2959c65d220438398a7d21c0ff1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle24
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 2606
+        width: 386
+        height: 496
+      alignment: 9
+      pivot: {x: 0.5103627, y: 0.48991936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd49d760e406674f9a667eeb240dd99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle25
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 2604
+        width: 379
+        height: 498
+      alignment: 9
+      pivot: {x: 0.49868074, y: 0.48795182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6daddf199e4e0489cb91c291b488ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle26
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 2604
+        width: 391
+        height: 498
+      alignment: 9
+      pivot: {x: 0.48081842, y: 0.48795182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e935ae6f5dfb78348a61f658310c2348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle27
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 2609
+        width: 390
+        height: 493
+      alignment: 9
+      pivot: {x: 0.51282054, y: 0.4929006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e18fbd7b7d21042bdd5c4509c1c311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle28
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 2604
+        width: 379
+        height: 498
+      alignment: 9
+      pivot: {x: 0.49868074, y: 0.48594376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86282589a3a605344978c96c288062e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle29
+      rect:
+        serializedVersion: 2
+        x: 3483
+        y: 2605
+        width: 384
+        height: 497
+      alignment: 9
+      pivot: {x: 0.49479166, y: 0.48692152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cae6bb7a44743745a3b0f047689dcfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2117
+        width: 381
+        height: 485
+      alignment: 9
+      pivot: {x: 0.51706034, y: 0.49896908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9416796623d0c0a4d96828bbbfdca6c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2106
+        width: 385
+        height: 496
+      alignment: 9
+      pivot: {x: 0.5090909, y: 0.48790324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ee8c098da6a86408702a07587e0033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle32
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 2122
+        width: 377
+        height: 480
+      alignment: 9
+      pivot: {x: 0.50132626, y: 0.50416666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f045d977b44144eb6852a0fefaa9b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle33
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 2123
+        width: 387
+        height: 479
+      alignment: 9
+      pivot: {x: 0.51937985, y: 0.5052192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5cbe0841c0ddd4b86f0138e1f663c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle34
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 2128
+        width: 388
+        height: 474
+      alignment: 9
+      pivot: {x: 0.52319586, y: 0.51265824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b38b5d699f63364f84a5afc54c1cc6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle35
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 2130
+        width: 383
+        height: 472
+      alignment: 9
+      pivot: {x: 0.5143603, y: 0.5127119}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322051e4c29583c4f86d1df57bb97ca3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle36
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 2125
+        width: 391
+        height: 477
+      alignment: 9
+      pivot: {x: 0.5140665, y: 0.5073375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fb63d76332e67488cbbac8b2df2d83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle37
+      rect:
+        serializedVersion: 2
+        x: 2707
+        y: 2133
+        width: 385
+        height: 469
+      alignment: 9
+      pivot: {x: 0.51688313, y: 0.51599145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016f47f6a88f2d141a15d858d04a2d4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle38
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 2131
+        width: 383
+        height: 471
+      alignment: 9
+      pivot: {x: 0.5143603, y: 0.51380044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a8ea5ab4d88ce4b954efea5f3dc2b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle39
+      rect:
+        serializedVersion: 2
+        x: 3479
+        y: 2136
+        width: 376
+        height: 466
+      alignment: 9
+      pivot: {x: 0.5053192, y: 0.5214592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3388af89092927d47b39d19977765cfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1625
+        width: 378
+        height: 479
+      alignment: 9
+      pivot: {x: 0.51058203, y: 0.5052192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6f50264843a7a4cabf5e081c507dfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle41
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1626
+        width: 374
+        height: 478
+      alignment: 9
+      pivot: {x: 0.51069516, y: 0.5083682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14792b5b92def824eac45feadf4b53f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle42
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1633
+        width: 393
+        height: 471
+      alignment: 9
+      pivot: {x: 0.48854962, y: 0.51380044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ae389cd216ad44890d7c3d260774c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle43
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1635
+        width: 379
+        height: 469
+      alignment: 9
+      pivot: {x: 0.5145119, y: 0.51599145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e339c25a45e0b4bba6685fc9a87e04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle44
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1632
+        width: 395
+        height: 472
+      alignment: 9
+      pivot: {x: 0.4886076, y: 0.5127119}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02831b3a4f4dd5245ad2634c09580894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle45
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1631
+        width: 404
+        height: 473
+      alignment: 9
+      pivot: {x: 0.50247526, y: 0.5116279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed127c4627f032d40ab6e549e3d5070e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle46
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 1628
+        width: 396
+        height: 476
+      alignment: 9
+      pivot: {x: 0.4949495, y: 0.50840336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe918378726e024ca499d3addc2829a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle47
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1632
+        width: 401
+        height: 472
+      alignment: 9
+      pivot: {x: 0.50374067, y: 0.5127119}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3fe9983a170d842859800a69202ea0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle48
+      rect:
+        serializedVersion: 2
+        x: 3137
+        y: 1621
+        width: 371
+        height: 483
+      alignment: 9
+      pivot: {x: 0.52560645, y: 0.5010352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a6fa051ee7d61418718c2ecb7c2332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle49
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 1626
+        width: 397
+        height: 478
+      alignment: 9
+      pivot: {x: 0.49118388, y: 0.50627613}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f7057dc621da44794d0dd6b2863996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1136
+        width: 377
+        height: 483
+      alignment: 9
+      pivot: {x: 0.5331565, y: 0.5010352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a28c1cd2b47c948b707fb598079779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle51
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1138
+        width: 400
+        height: 481
+      alignment: 9
+      pivot: {x: 0.5075, y: 0.5051975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c118367b29dc757488a1a9c1895ad29f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle52
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1136
+        width: 376
+        height: 483
+      alignment: 9
+      pivot: {x: 0.51861703, y: 0.5031056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb4498d549b1084480ef50511ec3466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle53
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1135
+        width: 399
+        height: 484
+      alignment: 9
+      pivot: {x: 0.49874687, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5108a48ab4a3f45b1d9033590e47a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle54
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 1134
+        width: 378
+        height: 485
+      alignment: 9
+      pivot: {x: 0.521164, y: 0.49896908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09631a83e3f18414ea4060f1742a737c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle55
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 1134
+        width: 396
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49896908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763c5ecce0decb9488fc1682ccd98e4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle56
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 1124
+        width: 372
+        height: 495
+      alignment: 9
+      pivot: {x: 0.5322581, y: 0.4888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473dc1045ef04024a91edd8ab7c4fadb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle57
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 1125
+        width: 395
+        height: 494
+      alignment: 9
+      pivot: {x: 0.49873418, y: 0.48987854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d253d1549203854cb0145b4deea6177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_idle58
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 1125
+        width: 375
+        height: 494
+      alignment: 9
+      pivot: {x: 0.53866667, y: 0.48987854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820c22db72e802146bd4329bd02b9a37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4d548a2a5ea919b4ebe627e18b550afe
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

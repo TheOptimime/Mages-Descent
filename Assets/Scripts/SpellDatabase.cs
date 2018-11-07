@@ -6,7 +6,7 @@ public class SpellDatabase : MonoBehaviour {
 
     public List<Attack> AttackList;
 
-    public Attack tripleFire, darkFire, dabThunder, yeetFire, dabIce;
+    public Attack tripleFire, darkFire, dabThunder, yeetFire, dabIce, deLigma;
 
     List<int> quarterCircleDownRight, quarterCircleDownLeft, quarterCircleRightDown, quarterCircleLeftDown, quarterCircleUpRight, quarterCircleRightUp, quarterCircleUpLeft, quarterCircleLeftUp;
     List<int> halfCircleUnderLeftRight, halfCircleUnderRightLeft, halfCircleOverLeftRight, halfCircleRightLeft, halfCircleDownUpRight, halfCircleDownUpLeft, halfCircleUpDownRight, halfCircleUpDownLeft;
@@ -17,7 +17,7 @@ public class SpellDatabase : MonoBehaviour {
 	void Start () {
         InitializeJoyStickCommands();
 
-        tripleFire = new Attack("Triple Fire", "Fire 3 shots", 10, 30, Attack.Element.Fire, Attack.ElementEffect.Burn, Attack.AttackType.MultipleBlast, 3,0.2f, 0, 2, 1, 0, "fireball", quarterCircleDownRight);
+        tripleFire = new Attack("Triple Fire", "Fire 3 shots", 10, 50, Attack.Element.Fire, Attack.ElementEffect.Burn, Attack.AttackType.MultipleBlast, 3,0.2f, 0, 2, 1, 0, "fireball", quarterCircleDownRight);
         darkFire = new Attack("Dark Fire", "Fire a dark blast", 10, 150, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, "fireball");
         //dabThunder = new Attack("Dab Thunder", "Unleash Fearsome Bolts", 80, Attack.Element.Thunder, Attack.ElementEffect.Stun, Attack.AttackType.Special)
 
@@ -25,6 +25,7 @@ public class SpellDatabase : MonoBehaviour {
 
         dabIce = new Attack("Dab Ice", "Ice Swag something something", 40, 5, Attack.Element.Ice, Attack.ElementEffect.Freeze, Attack.AttackType.Blast, 1, 3, 4, 4, 0, 0, "fireball", quarterCircleUpRight);
 
+        //deLigma = new Attack("DeLigma", "Whats DeLigma?", 10, 5, Attack.Element.Blood, Attack.ElementEffect.Burst, Attack.AttackType.MultipleBlast, _ )
 
         AttackList = new List<Attack>();
 

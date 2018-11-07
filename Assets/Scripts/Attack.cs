@@ -6,7 +6,7 @@ public class Attack {
 
     public string name, description, spritePath;
     public int damage, multiFireCount;
-    public float attackLength, animationLength, xDisplacement, multiFireRate, speed, lifetime, chargeTime = 0;
+    public float attackLength, animationLength, xDisplacement, multiFireRate, speed, lifetime, chargeTime = 0, delay;
     public bool hasSpecialChargeFunction, instantCast;
     public List<int> joystickCommand;
 
@@ -151,5 +151,24 @@ public class Attack {
         multiFireCount = numberOfAttacks;
         multiFireRate = attackRate;
         joystickCommand = joystickInput;
+    }
+
+    public Attack(string _name, string _description, int _damage, float _speed, Element _element, ElementEffect effect, AttackType AT, int numberOfAttacks, float attackRate, float knockback, float _lifetime, float AttackLength, float _delay, float AnimationLength, string _spritePath)
+    {
+        attackType = AttackType.MultipleBlast;
+        name = _name;
+        description = _description;
+        damage = _damage;
+        speed = _speed;
+        element = _element;
+        damage = _damage;
+        elementEffect = effect;
+        attackLength = AttackLength;
+        delay = _delay;
+        animationLength = AnimationLength;
+        spritePath = _spritePath;
+        lifetime = _lifetime;
+        multiFireCount = numberOfAttacks;
+        multiFireRate = attackRate;
     }
 }
