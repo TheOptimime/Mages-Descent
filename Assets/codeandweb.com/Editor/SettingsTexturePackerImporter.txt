@@ -2,13 +2,16 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/animations/harkyn_run.tpsheet
+- Assets/animations/hellhoundIdle.tpsheet
 - Assets/animations/idle.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/animations/harkyn_run.png
+- Assets/animations/hellhoundIdle.png
 - Assets/animations/idle.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
 - 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png

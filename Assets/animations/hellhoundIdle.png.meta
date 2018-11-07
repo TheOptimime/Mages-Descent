@@ -1,0 +1,719 @@
+fileFormatVersion: 2
+guid: bcaba0771bd241542a59d43eab5b9aff
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: hellhoundIdle
+    21300002: hellhound_idle00
+    21300004: hellhound_idle01
+    21300006: hellhound_idle02
+    21300008: hellhound_idle03
+    21300010: hellhound_idle04
+    21300012: hellhound_idle05
+    21300014: hellhound_idle06
+    21300016: hellhound_idle07
+    21300018: hellhound_idle08
+    21300020: hellhound_idle09
+    21300022: hellhound_idle10
+    21300024: hellhound_idle11
+    21300026: hellhound_idle12
+    21300028: hellhound_idle13
+    21300030: hellhound_idle14
+    21300032: hellhound_idle15
+    21300034: hellhound_idle16
+    21300036: hellhound_idle17
+    21300038: hellhound_idle18
+    21300040: hellhound_idle19
+    21300042: hellhound_idle20
+    21300044: hellhound_idle21
+    21300046: hellhound_idle22
+    21300048: hellhound_idle23
+    21300050: hellhound_idle24
+    21300052: hellhound_idle25
+    21300054: hellhound_idle26
+    21300056: hellhound_idle27
+    21300058: hellhound_idle28
+    21300060: hellhound_idle29
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hellhound_idle00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3656
+        width: 424
+        height: 439
+      alignment: 9
+      pivot: {x: 0.48584905, y: 0.53758544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93b7b93bba944448bc50ece98c216c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle01
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 3673
+        width: 416
+        height: 422
+      alignment: 9
+      pivot: {x: 0.4783654, y: 0.556872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0ccbf07c0e9214a9d22a14bd187961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle02
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 3677
+        width: 417
+        height: 418
+      alignment: 9
+      pivot: {x: 0.470024, y: 0.5502392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70bb151f944fc24faa41c10814e7639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle03
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 3672
+        width: 408
+        height: 423
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.5555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0186080b8bf9cc74b82de9aee3f6ffa5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3235
+        width: 414
+        height: 419
+      alignment: 9
+      pivot: {x: 0.45652175, y: 0.5775656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4392667c3ef392f46b602d42547d0bde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle05
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 3233
+        width: 404
+        height: 421
+      alignment: 9
+      pivot: {x: 0.4579208, y: 0.5748218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828abf910f8c3414382c781c41b775a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle06
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 3236
+        width: 405
+        height: 418
+      alignment: 9
+      pivot: {x: 0.454321, y: 0.5550239}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d5851c27cdb2444b0fcb8f18477d41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle07
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 3239
+        width: 395
+        height: 415
+      alignment: 9
+      pivot: {x: 0.443038, y: 0.5831325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d885414402376fe41b2229c7f49cb15d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle08
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 3243
+        width: 390
+        height: 411
+      alignment: 9
+      pivot: {x: 0.44615385, y: 0.58880776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938de797585538b478a6847e4fec911f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle09
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2823
+        width: 383
+        height: 408
+      alignment: 9
+      pivot: {x: 0.4464752, y: 0.59068626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4411615a36de1234f8b6bbb11963edbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle10
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2821
+        width: 383
+        height: 410
+      alignment: 9
+      pivot: {x: 0.43603134, y: 0.5902439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c6bc45b8d89cd4d8ac1639c53d101f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle11
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 2818
+        width: 368
+        height: 413
+      alignment: 9
+      pivot: {x: 0.44293478, y: 0.58353513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e79c26393daf7342a31e93ff6864160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle12
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 2806
+        width: 358
+        height: 425
+      alignment: 9
+      pivot: {x: 0.4385475, y: 0.5647059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155ca239f002b464d841a3604ca73b6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle13
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 2804
+        width: 346
+        height: 427
+      alignment: 9
+      pivot: {x: 0.43930635, y: 0.5620609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10af628a003b90e4eb0be7bdec595b18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2364
+        width: 343
+        height: 438
+      alignment: 9
+      pivot: {x: 0.44023323, y: 0.5479452}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2b26307748bd4459150142ccb8f1ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle15
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2358
+        width: 334
+        height: 444
+      alignment: 9
+      pivot: {x: 0.4520958, y: 0.5405405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabd5490383236e419c4a2ac055714c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle16
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2367
+        width: 322
+        height: 435
+      alignment: 9
+      pivot: {x: 0.4627329, y: 0.55172414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a378c83c3791a7c4fbc788317b0ce06e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle17
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 2375
+        width: 315
+        height: 427
+      alignment: 9
+      pivot: {x: 0.46984127, y: 0.5409836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9d8a83a5573ad45b1758f68f8aaf7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle18
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 2375
+        width: 322
+        height: 427
+      alignment: 9
+      pivot: {x: 0.47204968, y: 0.5620609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289047fb4316d1a40952e1a5c489bedc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle19
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 2389
+        width: 321
+        height: 413
+      alignment: 9
+      pivot: {x: 0.46417445, y: 0.5811138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e457e68a9fef344f994b220c24d495e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1949
+        width: 324
+        height: 407
+      alignment: 9
+      pivot: {x: 0.4722222, y: 0.5921376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aebd0b4861a397419eb77eb84b3f1a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle21
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1951
+        width: 353
+        height: 405
+      alignment: 9
+      pivot: {x: 0.48725212, y: 0.5950617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc93bec24d238948a174ed17f202548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle22
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1952
+        width: 363
+        height: 404
+      alignment: 9
+      pivot: {x: 0.5013774, y: 0.5990099}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70fd5200fe207eb4797b4da64701c9d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle23
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1959
+        width: 383
+        height: 397
+      alignment: 9
+      pivot: {x: 0.5065274, y: 0.6095718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868027f88aed3c8458132d03bb4248f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle24
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1951
+        width: 388
+        height: 405
+      alignment: 9
+      pivot: {x: 0.5128866, y: 0.59753084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87133540b1a27564ca0a6784329c6951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1525
+        width: 413
+        height: 422
+      alignment: 9
+      pivot: {x: 0.52300245, y: 0.5592417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58938cbcae5af54b85d3523e80047a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1525
+        width: 419
+        height: 422
+      alignment: 9
+      pivot: {x: 0.50358, y: 0.57345974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ea31aaeaf4fe049b115a33ed34b4c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle27
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1524
+        width: 423
+        height: 423
+      alignment: 9
+      pivot: {x: 0.4964539, y: 0.5555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94020bbdd2c061141b344d5b24db2c6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle28
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1533
+        width: 414
+        height: 414
+      alignment: 9
+      pivot: {x: 0.49516907, y: 0.5531401}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14b999b0fcd5c242a23ffcc22a8a643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_idle29
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1101
+        width: 417
+        height: 421
+      alignment: 9
+      pivot: {x: 0.48920864, y: 0.55819476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea7d9d938249e044b7314d8a6d8db6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f1d4e4c5e7cc50340b4d4ee4c816d45a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
