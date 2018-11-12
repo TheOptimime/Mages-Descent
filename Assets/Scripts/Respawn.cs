@@ -4,22 +4,30 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour {
 
-	[SerializeField]
-	public GameObject spawnpoint;
-	// Use this for initialization
+	
+	public Transform spawnpoint;
+    RespawnManager rm;
+	
+
 	void Start () {
-		
+        rm = FindObjectOfType<RespawnManager>();
+
+        rm.activeSpawnPoint = spawnpoint;
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
 		
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 
-        if (other.gameObject.GetComponent<EnemyAI>() || other.gameObject.GetComponent<Fighter>())
-		other.gameObject.transform.position = spawnpoint.transform.position;
+        if (other.gameObject.GetComponent<Fighter>())
+        {
+            other.gameObject.GetComponent<Fighter>().cc.FreezeVelocity();
+            other.gameObject.transform.position = rm.activeSpawnPoint.position;
+        }
+		
 	
 	}
 }

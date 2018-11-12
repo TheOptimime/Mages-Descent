@@ -60,39 +60,54 @@ public partial class Fighter {
 
     public void SetAttackQueue(Attack attack)
     {
-        castTime = 0;
-        if (attack.instantCast)
+        if(attack != null)
         {
-            UseAttack(attack);
-            return;
-        }
+            castTime = 0;
 
-        attackIsInQueue = true;
-        attackInQueue = attack;
-        castTime = 0;
-        if (recentlyAttacked)
+            if (attack.instantCast)
+            {
+                UseAttack(attack);
+                return;
+            }
+
+            attackIsInQueue = true;
+            attackInQueue = attack;
+            castTime = 0;
+            if (recentlyAttacked)
+            {
+                attackInQueue = null;
+            }
+        }
+        else
         {
             attackInQueue = null;
+            attackIsInQueue = false;
         }
+        
     }
 
     public void RelayButtonInput()
     {
         print("holding attack: " + attackInQueue);
-
-        if (attackInQueue != null && !recentlyAttacked)
+        if (attackIsInQueue)
         {
-            castTime += Time.deltaTime;
-
-            if (castTime > attackInQueue.chargeTime)
+            if (attackInQueue != null && !recentlyAttacked)
             {
+                castTime += Time.deltaTime;
 
+                if (castTime > attackInQueue.chargeTime)
+                {
+
+                }
             }
         }
         else
         {
-
+            attackIsInQueue = false;
+            attackInQueue = null;
         }
+
+        
 
     }
 
@@ -103,19 +118,22 @@ public partial class Fighter {
 
     public void OnAttackButtonRelease()
     {
-        print("releasing attack: " + attackInQueue);
-
-        if (attackInQueue != null && !recentlyAttacked)
+        //print("releasing attack: " + attackInQueue);
+        if (attackIsInQueue)
         {
-            if (castTime >= attackInQueue.chargeTime)
+            if (attackInQueue != null && !recentlyAttacked)
             {
-                UseAttack(attackInQueue);
+                if (castTime >= attackInQueue.chargeTime)
+                {
+                    UseAttack(attackInQueue);
+                }
+            }
+            else
+            {
+                print("Error on releasing attack");
             }
         }
-        else
-        {
-
-        }
+        
 
     }
 }

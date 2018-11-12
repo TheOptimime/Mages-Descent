@@ -14,7 +14,7 @@ public class SpellDatabase : MonoBehaviour {
     List<int> fourCircleDownRight, fourCircleUpRight, fourCircleDownLeft, fourCircleUpLeft;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         InitializeJoyStickCommands();
 
         tripleFire = new Attack("Triple Fire", "Fire 3 shots", 10, 50, Attack.Element.Fire, Attack.ElementEffect.Burn, Attack.AttackType.MultipleBlast, 3,0.2f, 0, 2, 1, 0, "fireball", quarterCircleDownRight);

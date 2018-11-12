@@ -33,6 +33,7 @@ public class InputHandler : MonoBehaviour {
     private void Start()
     {
         player = GetComponent<Fighter>();
+        print(player.gameObject.name);
         joystickRecord = new List<int>();
         InitializeJoyStickCommands();
     }
@@ -69,7 +70,7 @@ public class InputHandler : MonoBehaviour {
                 joystickRecord.Add(joystickPosition);
                 timeBeforeLastInput = Time.time;
                 timeForNextInput = timeBeforeLastInput + 0.3f;
-                print("joystick input detected: " + joystickPosition);
+                //print("joystick input detected: " + joystickPosition);
             }
             else if (Time.time > timeForNextInput)
             {
@@ -79,7 +80,7 @@ public class InputHandler : MonoBehaviour {
             }
             else if (buttonPressed)
             {
-                print("Button Pressed, Input Cleared");
+                //print("Button Pressed, Input Cleared");
                 joystickRecord.Clear();
                 timeBeforeLastInput = 0;
             }
@@ -88,7 +89,7 @@ public class InputHandler : MonoBehaviour {
                 joystickRecord.Add(joystickPosition);
                 timeBeforeLastInput = Time.time;
                 timeForNextInput = timeBeforeLastInput + 0.3f;
-                print("joystick input detected");
+                //print("joystick input detected");
             }
 
         //if (buttonPressed)
@@ -152,7 +153,7 @@ public class InputHandler : MonoBehaviour {
         }
         else if(prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Pressed)
         {
-            print("A Button Held");
+            //print("A Button Held");
             
             player.RelayJumpButtonInput();
         }
@@ -178,18 +179,31 @@ public class InputHandler : MonoBehaviour {
 
                 // Makes a temporary copy of this joystick command
                 List<int> tempJoystickCommand = new List<int>();
-                
 
-                if (!player.isFacingRight)
+                /*
+                print(i);
+                print(player.moveset.spellBookLoadout.Count);
+                print(player.moveset.spellBookLoadout[0].Count);
+                print(player.moveset.spellBookLoadout[0][0].attacks.Count);
+                print(player.moveset.spellBookLoadout[0][0].attacks[0]);
+                print(player.moveset.spellBookLoadout[0][0].attacks[1]);
+                print(player.moveset.spellBookLoadout[0][0].attacks[0].name);
+                print(player.moveset.spellBookLoadout[0][0].attacks[0].joystickCommand);
+                */
+
+                if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != null)
                 {
-                    FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand, out tempJoystickCommand);
-                }
-                else
-                {
-                    tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand;
+                    if (!player.isFacingRight)
+                    {
+                        FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand, out tempJoystickCommand);
+                    }
+                    else
+                    {
+                        tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand;
+                    }
                 }
 
-                if(tempJoystickCommand != null)
+                if (tempJoystickCommand != new List<int>())
                 {
                     if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
                     {
@@ -230,15 +244,21 @@ public class InputHandler : MonoBehaviour {
         else if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Pressed)
         {
             buttonID = 0;
-            print("B Button Held");
-
-            player.RelayButtonInput();
+            //print("B Button Held");
+            if (player.attackIsInQueue)
+            {
+                player.RelayButtonInput();
+            }
         }
         else if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Released)
         {
             buttonID = 0;
             //print("B Button Released");
-            player.OnAttackButtonRelease();
+            if (player.attackIsInQueue)
+            {
+                player.OnAttackButtonRelease();
+            }
+            
         }
         #endregion
 
@@ -259,13 +279,16 @@ public class InputHandler : MonoBehaviour {
                 List<int> tempJoystickCommand = new List<int>();
 
 
-                if (!player.isFacingRight)
+                if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != null)
                 {
-                    FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand, out tempJoystickCommand);
-                }
-                else
-                {
-                    tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand;
+                    if (!player.isFacingRight)
+                    {
+                        FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand, out tempJoystickCommand);
+                    }
+                    else
+                    {
+                        tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand;
+                    }
                 }
 
                 if (tempJoystickCommand != null)
@@ -309,15 +332,24 @@ public class InputHandler : MonoBehaviour {
         else if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Pressed)
         {
             buttonID = 1;
-            print("X Button Held");
+            //print("X Button Held");
 
-            player.RelayButtonInput();
+            if (player.attackIsInQueue)
+            {
+                player.RelayButtonInput();
+            }
+            
         }
         else if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Released)
         {
             buttonID = 1;
             //print("X Button Released");
-            player.OnAttackButtonRelease();
+
+            if (player.attackIsInQueue)
+            {
+                player.OnAttackButtonRelease();
+            }
+            
         }
         #endregion
 
@@ -338,15 +370,21 @@ public class InputHandler : MonoBehaviour {
                 // Makes a temporary copy of this joystick command
                 List<int> tempJoystickCommand = new List<int>();
 
+                
+                if(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i] != null)
+                {
+                    print(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
 
-                if (!player.isFacingRight)
-                {
-                    FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand, out tempJoystickCommand);
+                    if (!player.isFacingRight)
+                    {
+                        FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand, out tempJoystickCommand);
+                    }
+                    else
+                    {
+                        tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand;
+                    }
                 }
-                else
-                {
-                    tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand;
-                }
+                
 
                 if (tempJoystickCommand != null)
                 {
@@ -389,15 +427,24 @@ public class InputHandler : MonoBehaviour {
         else if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Pressed)
         {
             buttonID = 2;
-            print("Y Button Held");
+            //print("Y Button Held");
 
-            player.RelayButtonInput();
+            if (player.attackIsInQueue)
+            {
+                player.RelayButtonInput();
+            }
+            
         }
         else if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Released)
         {
             buttonID = 2;
             //print("Y Button Released");
-            player.OnAttackButtonRelease();
+
+            if (player.attackIsInQueue)
+            {
+                player.OnAttackButtonRelease();
+            }
+            
         }
         #endregion
 

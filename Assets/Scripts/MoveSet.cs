@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveSet : MonoBehaviour {
 
-    SpellDatabase attackIndex;
+    public SpellDatabase attackIndex;
    public  List<List<Item.Spellbook>> spellBookLoadout;
 
     public List<Item.Spellbook> spellBookSet_A, spellBookSet_B, spellBookSet_C;
@@ -13,11 +13,15 @@ public class MoveSet : MonoBehaviour {
     public Attack[] Attacks;
 
     public int spellLoadOutSelected;
-    
-	
-	void Start () {
 
+    private void Awake()
+    {
         attackIndex = FindObjectOfType<SpellDatabase>();
+    }
+
+    void Start () {
+
+        
 
         // B = 0, X = 1, Y = 2
 
@@ -31,8 +35,10 @@ public class MoveSet : MonoBehaviour {
 
         spellBookLoadout = new List<List<Item.Spellbook>>();
 
-
+        print(attackIndex);
+        print(attackIndex.yeetFire);
         spellBook_B_Button.attacks.Add(attackIndex.yeetFire);
+        print(spellBook_B_Button.attacks[0]);
         spellBook_B_Button.attacks.Add(attackIndex.tripleFire);
 
         spellBook_X_Button.attacks.Add(attackIndex.dabIce);
@@ -52,6 +58,13 @@ public class MoveSet : MonoBehaviour {
 	
 	
 	void Update () {
+
+        print(attackIndex);
+        
+        print(attackIndex.AttackList[0]);
+        print(attackIndex.yeetFire);
+        print(spellBook_B_Button.attacks[0]);
+
 
         if(spellLoadOutSelected > 2)
         {

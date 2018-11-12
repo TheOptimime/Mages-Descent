@@ -4,8 +4,9 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Fighter))]
 public class CharacterController2D : MonoBehaviour
 {
-	[SerializeField] private float m_JumpForce = 400f, m_DoubleJumpForce = 400;							// Amount of force added when the player jumps.
-	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
+	[SerializeField] private float m_JumpForce = 400f, m_HighJumpForce = 900,m_DoubleJumpForce = 400;                         // Amount of force added when the player jumps.
+    [SerializeField] private Vector2 m_LongJumpForce = new Vector2(20,200), m_BackJumpForce = new Vector2(-20, 30), m_SlideForce = new Vector2(200,0);
+    [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
@@ -32,6 +33,16 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_wasCrouching = false;
 
     Fighter fighter;
+
+    public enum JumpType
+    {
+        Normal,
+        High,
+        Long,
+        Back
+    }
+
+
 
 	private void Awake()
 	{
@@ -149,6 +160,111 @@ public class CharacterController2D : MonoBehaviour
         }
 	}
 
+    public void Move(float move, bool crouch, bool jump, JumpType _jumpType)
+    {
+        
+        /*
+		// If crouching, check to see if the character can stand up
+		//if (!crouch)
+		{
+			// If the character has a ceiling preventing them from standing up, keep them crouching
+			if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
+			{
+				//crouch = true;
+			}
+		}
+        */
+
+        //only control the player if grounded or airControl is turned on
+        if (m_Grounded || m_AirControl)
+        {
+
+
+            // If crouching
+            if (crouch)
+            {
+                if (!m_wasCrouching)
+                {
+                    m_wasCrouching = true;
+                    OnCrouchEvent.Invoke(true);
+                }
+
+                // Reduce the speed by the crouchSpeed multiplier
+                move *= m_CrouchSpeed;
+
+                // Disable one of the colliders when crouching
+                if (m_CrouchDisableCollider != null)
+                    m_CrouchDisableCollider.enabled = false;
+            }
+            else
+            {
+                // Enable the collider when not crouching
+                if (m_CrouchDisableCollider != null)
+                    m_CrouchDisableCollider.enabled = true;
+
+                if (m_wasCrouching)
+                {
+                    m_wasCrouching = false;
+                    OnCrouchEvent.Invoke(false);
+                }
+            }
+
+            // Move the character by finding the target velocity
+            Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
+            // And then smoothing it out and applying it to the character
+            m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+
+            // If the input is moving the player right and the player is facing left...
+            if (move > 0 && !m_FacingRight)
+            {
+                // ... flip the player.
+                Flip();
+            }
+            // Otherwise if the input is moving the player left and the player is facing right...
+            else if (move < 0 && m_FacingRight)
+            {
+                // ... flip the player.
+                Flip();
+            }
+        }
+        // If the player should jump...
+        if (m_Grounded && _jumpType == JumpType.Normal)
+        {
+            // Add a vertical force to the player.
+            m_Grounded = false;
+            m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+        }
+        else if (m_Grounded && _jumpType == JumpType.High)
+        {
+            m_Grounded = false;
+            m_Rigidbody2D.AddForce(new Vector2(0f, m_HighJumpForce));
+            fighter.doubleJumpUsed = true;
+            // might just change this to use a different air speed
+        }
+        else if (m_Grounded && _jumpType == JumpType.Long)
+        {
+            m_Grounded = false;
+            m_Rigidbody2D.AddForce(m_LongJumpForce);
+            fighter.doubleJumpUsed = true;
+        }
+        else if (m_Grounded && _jumpType == JumpType.Back)
+        {
+            m_Grounded = false;
+            m_Rigidbody2D.AddForce(m_BackJumpForce);
+            fighter.doubleJumpUsed = true;
+        }
+        else if (!m_Grounded && fighter.canDoubleJump && !fighter.doubleJumpUsed && jump)
+        {
+            fighter.doubleJumpUsed = true;
+            m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
+            m_Rigidbody2D.AddForce(new Vector2(0f, m_DoubleJumpForce));
+        }
+    }
+
+    public void FreezeVelocity()
+    {
+        m_Rigidbody2D.velocity = Vector2.zero;
+    }
 
 	private void Flip()
 	{

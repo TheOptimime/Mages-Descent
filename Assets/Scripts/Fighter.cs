@@ -72,6 +72,8 @@ public partial class Fighter : MonoBehaviour {
     void Update()
     {
 
+        print(moveset.spellBookLoadout.Count);
+
         if (!lockMovement)
         {
             Move();
