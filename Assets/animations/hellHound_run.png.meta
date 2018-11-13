@@ -1,0 +1,592 @@
+fileFormatVersion: 2
+guid: d2a8bf584f01273409a115b31f27b62e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: hellhound_Running00
+    21300002: hellhound_Running01
+    21300004: hellhound_Running02
+    21300006: hellhound_Running03
+    21300008: hellhound_Running04
+    21300010: hellhound_Running05
+    21300012: hellhound_Running06
+    21300014: hellhound_Running07
+    21300016: hellhound_Running08
+    21300018: hellhound_Running09
+    21300020: hellhound_Running10
+    21300022: hellhound_Running11
+    21300024: hellhound_Running12
+    21300026: hellhound_Running13
+    21300028: hellhound_Running14
+    21300030: hellhound_Running15
+    21300032: hellhound_Running16
+    21300034: hellhound_Running17
+    21300036: hellhound_Running18
+    21300038: hellhound_Running19
+    21300040: hellhound_Running20
+    21300042: hellhound_Running21
+    21300044: hellhound_Running22
+    21300046: hellhound_Running23
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hellhound_Running00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3628
+        width: 471
+        height: 467
+      alignment: 9
+      pivot: {x: 0.5329087, y: 0.48394004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab1e8a849da4274c82a516c11c6508a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running01
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 3629
+        width: 477
+        height: 466
+      alignment: 9
+      pivot: {x: 0.5283019, y: 0.49785408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deec27926a08628419a83d1411ba0951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running02
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 3645
+        width: 482
+        height: 450
+      alignment: 9
+      pivot: {x: 0.52904564, y: 0.49555555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53a6a1b69f74a3418a7cc9c709c2b5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running03
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 3640
+        width: 481
+        height: 455
+      alignment: 9
+      pivot: {x: 0.5301455, y: 0.50769234}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4ca88b9ad0cf341856cd0277a9efd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3172
+        width: 478
+        height: 454
+      alignment: 9
+      pivot: {x: 0.5251046, y: 0.5110132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5971f3163bcb040a4f10baf1715ddf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running05
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3175
+        width: 477
+        height: 451
+      alignment: 9
+      pivot: {x: 0.5262055, y: 0.5077605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467ec31828c7a9347b7cee7e1522b3b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running06
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3186
+        width: 481
+        height: 440
+      alignment: 9
+      pivot: {x: 0.53222454, y: 0.5386364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3afe286812df0547931822d22f7ab2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running07
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 3184
+        width: 480
+        height: 442
+      alignment: 9
+      pivot: {x: 0.52916664, y: 0.51809955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6e441fad105104d86fb26dd27df69b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2730
+        width: 483
+        height: 440
+      alignment: 9
+      pivot: {x: 0.5217391, y: 0.5386364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81892df92793b7458ba33d362f59740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running09
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 2742
+        width: 476
+        height: 428
+      alignment: 9
+      pivot: {x: 0.5273109, y: 0.52803737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b652393f3263bb54180f44c141b54fc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running10
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 2732
+        width: 474
+        height: 438
+      alignment: 9
+      pivot: {x: 0.5316456, y: 0.5251142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8511f4c22d4d4f44971ba39d91d17c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2730
+        width: 469
+        height: 440
+      alignment: 9
+      pivot: {x: 0.5351812, y: 0.5113636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739a0669b7c198d4282a4c6a42010df0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2274
+        width: 473
+        height: 454
+      alignment: 9
+      pivot: {x: 0.5306554, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d11b55eefb6a148aece6af76b82b3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running13
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 2268
+        width: 475
+        height: 460
+      alignment: 9
+      pivot: {x: 0.52842104, y: 0.49347827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5425b7d3a9a34c94ea93b729e2a2a8d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running14
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 2277
+        width: 468
+        height: 451
+      alignment: 9
+      pivot: {x: 0.54273504, y: 0.50554323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac98881df42af2941adf4da9da5178ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running15
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 2290
+        width: 466
+        height: 438
+      alignment: 9
+      pivot: {x: 0.5386266, y: 0.5022831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4376aed7ec45f41829fb6fd5b3c824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1840
+        width: 464
+        height: 426
+      alignment: 9
+      pivot: {x: 0.54525864, y: 0.5140845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb1a2e6c7f51444e985ea74990a94ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running17
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1828
+        width: 459
+        height: 438
+      alignment: 9
+      pivot: {x: 0.55119824, y: 0.53424656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fc4425715e4074ca35581d3b9e9205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running18
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1834
+        width: 457
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5557987, y: 0.5324074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d7f1c01bdf8734caa90cce9637a8a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running19
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1839
+        width: 461
+        height: 427
+      alignment: 9
+      pivot: {x: 0.55097616, y: 0.49414518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65150ccce4caef45b6ac19519f1e840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1395
+        width: 462
+        height: 431
+      alignment: 9
+      pivot: {x: 0.54761904, y: 0.47331786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d977e03a9dc6ce43aa9ad4219d3386a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running21
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1390
+        width: 460
+        height: 436
+      alignment: 9
+      pivot: {x: 0.54565215, y: 0.4793578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f866b64077f654fb230611a6891d2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running22
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1379
+        width: 467
+        height: 447
+      alignment: 9
+      pivot: {x: 0.5417559, y: 0.4787472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c933bed6011328438e15881cbfe0461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hellhound_Running23
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1357
+        width: 460
+        height: 469
+      alignment: 9
+      pivot: {x: 0.54565215, y: 0.46695095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ededab786a3f8e44386a328d6432c4ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f536d2d6f7cc46c479aeef2efca5771a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
