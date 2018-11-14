@@ -1,18 +1,21 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
+- Assets/animations/death.tpsheet
 - Assets/animations/harkyn_run.tpsheet
 - Assets/animations/hellHound_run.tpsheet
 - Assets/animations/hellhoundIdle.tpsheet
 - Assets/animations/idle.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
+- Assets/animations/death.png
 - Assets/animations/harkyn_run.png
 - Assets/animations/hellHound_run.png
 - Assets/animations/hellhoundIdle.png
 - Assets/animations/idle.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
 - 
 - 
 - 

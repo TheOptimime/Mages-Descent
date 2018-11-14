@@ -5,79 +5,48 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
 
-    public bool scrolling, parallax;
+	public Transform[] backgrounds;
+	private float[] parallaxScale;
+	public float smoothing = 1f;
 
-    public float backgroundSize;
-    public float parallaxSpeed;
+	private Transform cam;
+	private Vector3 previousCamPos;
 
-    private Transform cameraTransform;
-    private Transform[] layers;
-    private float viewZone = 10;
-    private int leftIndex;
-    private int rightIndex;
-    private float lastCameraX;
-
-
-    // Use this for initialization
-    void Start()
-    {
-
-        cameraTransform = Camera.main.transform;
-        lastCameraX = cameraTransform.position.x;
-        layers = new Transform[transform.childCount];
-
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            layers[i] = transform.GetChild(i);
-            leftIndex = 0;
-            rightIndex = layers.Length - 1;
-        }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        float deltaX = cameraTransform.position.x - lastCameraX;
-        transform.position += Vector3.right * (deltaX + parallaxSpeed);
-        lastCameraX = cameraTransform.position.x;
-
-        if (cameraTransform.position.x < layers[leftIndex].transform.position.x + viewZone)
-        {
-            ScrollLeft();
-
-        }
-        if (cameraTransform.position.x < layers[rightIndex].transform.position.x - viewZone)
-        {
-            ScrollRight();
-
-        }
+	void Awake() {
+	
+		cam = Camera.main.transform;
+	
+	}
 
 
-    }
+	void Start() {
+		previousCamPos = cam.position;
 
-    public void ScrollLeft() {
-        int lastRight = rightIndex;
-        layers[rightIndex].position = Vector3.right * (layers[leftIndex].position.x - backgroundSize);
-        leftIndex = rightIndex;
-        rightIndex--;
-        if (rightIndex < 0) {
-            rightIndex = layers.Length - 1;
-        }
-    }
+		parallaxScale = new float[backgrounds.Length];
 
-    public void ScrollRight() {
+		for (int i = 0; i < backgrounds.Length; i++) {
+			parallaxScale [i] = backgrounds [i].position.z * -1;
 
-        int lastLeft = leftIndex;
-        layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize);
-        rightIndex = leftIndex;
-        leftIndex--;
-        if (leftIndex == layers.Length) {
-            leftIndex = 0;
-        }
+		}
+	
+	
+	}
 
-            
+	void Update() {
 
-    }
+		for (int i = 0; i < backgrounds.Length; i++) {
+			float parallax = (previousCamPos.x - cam.position.x) * parallaxScale [i];
+
+			float backgroundTargetPosX = backgrounds [i].position.x + parallax;
+
+			Vector3 backgroundTargetPos = new Vector3 (backgroundTargetPosX, backgrounds [i].position.y, backgrounds [i].position.z);
+
+			backgrounds [i].position = Vector3.Lerp (backgrounds [i].position, backgroundTargetPos, smoothing * Time.deltaTime);
+
+		}
+
+
+		previousCamPos = cam.position;
+	
+	}
 }
