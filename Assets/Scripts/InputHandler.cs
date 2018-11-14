@@ -40,32 +40,34 @@ public class InputHandler : MonoBehaviour {
 
     void Update () {
         //int directionalInput;
-        if(playerIndexSet != true)
+        if (playerIndexSet != true)
         {
             FindController();
         }
 
-        CheckForInputOverrides();
+        if (!player.recentlyAttacked)
+        {
+            CheckForInputOverrides();
 
-        HandleShoulderButtons();
-        HandleButtons();
-        HandleKeyboardAttacks();
-        
+            HandleShoulderButtons();
+            HandleButtons();
+            HandleKeyboardAttacks();
 
-        if (keyboardInputInUse)
-        {
-            HandleKeyboardDirection(out joystickPosition);
-        }
-        else if (dPadInputInUse)
-        {
-            HandleDPad(out joystickPosition);
-        }
-        else
-        {
-            HandleJoystick(out joystickPosition);
-        }
-        
-            if (joystickRecord.Count == 0 && timeBeforeLastInput == 0 && joystickPosition != 5 )
+
+            if (keyboardInputInUse)
+            {
+                HandleKeyboardDirection(out joystickPosition);
+            }
+            else if (dPadInputInUse)
+            {
+                HandleDPad(out joystickPosition);
+            }
+            else
+            {
+                HandleJoystick(out joystickPosition);
+            }
+
+            if (joystickRecord.Count == 0 && timeBeforeLastInput == 0 && joystickPosition != 5)
             {
                 joystickRecord.Add(joystickPosition);
                 timeBeforeLastInput = Time.time;
@@ -84,7 +86,7 @@ public class InputHandler : MonoBehaviour {
                 joystickRecord.Clear();
                 timeBeforeLastInput = 0;
             }
-            else if(Time.time < timeForNextInput && joystickRecord.Count != 0 && joystickPosition != joystickRecord[joystickRecord.Count -1])
+            else if (Time.time < timeForNextInput && joystickRecord.Count != 0 && joystickPosition != joystickRecord[joystickRecord.Count - 1])
             {
                 joystickRecord.Add(joystickPosition);
                 timeBeforeLastInput = Time.time;
@@ -92,18 +94,23 @@ public class InputHandler : MonoBehaviour {
                 //print("joystick input detected");
             }
 
-        //if (buttonPressed)
-        {
-//            print("state: " + state.ThumbSticks.Left.X);
+            //if (buttonPressed)
+            {
+                //            print("state: " + state.ThumbSticks.Left.X);
+            }
+
+            prevState = state;
+            state = GamePad.GetState(playerIndex);
+
+            FlushInputOverrides();
+            buttonPressed = false;
+
         }
 
-        prevState = state;
-        state = GamePad.GetState(playerIndex);
 
-        FlushInputOverrides();
-        buttonPressed = false;
 
-        
+
+
     }
 
     private void FixedUpdate()

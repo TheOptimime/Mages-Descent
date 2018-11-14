@@ -19,7 +19,7 @@ public class Health : MonoBehaviour {
         if (regen)
         {
             time++;
-            if(time % 500 == 0)
+            if(time % 50 == 0)
             {
                 currentHealth++;
             }

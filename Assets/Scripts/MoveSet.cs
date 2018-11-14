@@ -20,11 +20,7 @@ public class MoveSet : MonoBehaviour {
     }
 
     void Start () {
-
         
-
-        // B = 0, X = 1, Y = 2
-
         spellBook_B_Button = new Item.Spellbook();
         spellBook_X_Button = new Item.Spellbook();
         spellBook_Y_Button = new Item.Spellbook();
@@ -35,10 +31,7 @@ public class MoveSet : MonoBehaviour {
 
         spellBookLoadout = new List<List<Item.Spellbook>>();
 
-        print(attackIndex);
-        print(attackIndex.yeetFire);
         spellBook_B_Button.attacks.Add(attackIndex.yeetFire);
-        print(spellBook_B_Button.attacks[0]);
         spellBook_B_Button.attacks.Add(attackIndex.tripleFire);
 
         spellBook_X_Button.attacks.Add(attackIndex.dabIce);
@@ -58,13 +51,6 @@ public class MoveSet : MonoBehaviour {
 	
 	
 	void Update () {
-
-        print(attackIndex);
-        
-        print(attackIndex.AttackList[0]);
-        print(attackIndex.yeetFire);
-        print(spellBook_B_Button.attacks[0]);
-
 
         if(spellLoadOutSelected > 2)
         {

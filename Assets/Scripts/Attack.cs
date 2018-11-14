@@ -7,6 +7,7 @@ public class Attack {
     public string name, description, spritePath;
     public int damage, multiFireCount;
     public float attackLength, animationLength, xDisplacement, multiFireRate, speed, lifetime, chargeTime = 0, delay;
+    public float hitStun;
     public bool hasSpecialChargeFunction, instantCast;
     public List<int> joystickCommand;
 
