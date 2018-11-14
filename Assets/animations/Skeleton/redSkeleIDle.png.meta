@@ -1,0 +1,823 @@
+fileFormatVersion: 2
+guid: 33f0292696825a343a593eeed9bf16a1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skeleton_Red-Idle2_0
+    21300002: skeleton_Red-Idle2_1
+    21300004: skeleton_Red-Idle2_2
+    21300006: skeleton_Red-Idle2_3
+    21300008: skeleton_Red-Idle2_4
+    21300010: skeleton_Red-Idle2_5
+    21300012: skeleton_Red-Idle2_6
+    21300014: skeleton_Red-Idle2_7
+    21300016: skeleton_Red-Idle2_8
+    21300018: skeleton_Red-Idle2_9
+    21300020: skeleton_Red-Idle2_10
+    21300022: skeleton_Red-Idle2_11
+    21300024: skeleton_Red-Idle2_12
+    21300026: skeleton_Red-Idle2_13
+    21300028: skeleton_Red-Idle2_14
+    21300030: skeleton_Red-Idle2_15
+    21300032: skeleton_Red-Idle2_16
+    21300034: skeleton_Red-Idle2_17
+    21300036: skeleton_Red-Idle2_18
+    21300038: skeleton_Red-Idle2_19
+    21300040: skeleton_Red-Idle2_20
+    21300042: skeleton_Red-Idle2_21
+    21300044: skeleton_Red-Idle2_22
+    21300046: skeleton_Red-Idle2_23
+    21300048: skeleton_Red-Idle2_24
+    21300050: skeleton_Red-Idle2_25
+    21300052: skeleton_Red-Idle2_26
+    21300054: skeleton_Red-Idle2_27
+    21300056: skeleton_Red-Idle2_28
+    21300058: skeleton_Red-Idle2_29
+    21300060: skeleton_Red-Idle2_30
+    21300062: skeleton_Red-Idle2_31
+    21300064: skeleton_Red-Idle2_32
+    21300066: skeleton_Red-Idle2_33
+    21300068: skeleton_Red-Idle2_34
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3508
+        width: 275
+        height: 587
+      alignment: 9
+      pivot: {x: 0.36545455, y: 0.5229983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2caf6aecee29c9348a2a591e0f0f33c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_1
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 3506
+        width: 338
+        height: 589
+      alignment: 9
+      pivot: {x: 0.37426037, y: 0.5212224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6511c27532a88ef4cb0f5314665d8764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_2
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3518
+        width: 413
+        height: 577
+      alignment: 9
+      pivot: {x: 0.35956416, y: 0.5320624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7be7affd59f6549909a00a3d495606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_3
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 3518
+        width: 424
+        height: 577
+      alignment: 9
+      pivot: {x: 0.37617925, y: 0.5320624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b6e26d4a300cd42a3e00ae7a244029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_4
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 3518
+        width: 427
+        height: 577
+      alignment: 9
+      pivot: {x: 0.38056207, y: 0.5320624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59e0af343f0c4d48a31f3970a560ee4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2927
+        width: 447
+        height: 577
+      alignment: 9
+      pivot: {x: 0.4082774, y: 0.5320624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c15752e8830eb8448130ba74fddfa55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2915
+        width: 412
+        height: 589
+      alignment: 9
+      pivot: {x: 0.4842233, y: 0.5212224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865e3c28e5a468642932894a39608d8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_7
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2917
+        width: 375
+        height: 587
+      alignment: 9
+      pivot: {x: 0.5746667, y: 0.5229983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10156bdbb8b88c41af03e3cd000b43f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_8
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 2926
+        width: 351
+        height: 578
+      alignment: 9
+      pivot: {x: 0.65099716, y: 0.52768165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757898e24d92d6c4d86ae97028b72d3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_9
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 2946
+        width: 346
+        height: 558
+      alignment: 9
+      pivot: {x: 0.6632948, y: 0.5483871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d36344c00f7ea40a8e3bf1321b1cd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2389
+        width: 353
+        height: 524
+      alignment: 9
+      pivot: {x: 0.6671388, y: 0.57824427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8535d968292ead146aab004e15f9e11b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 2424
+        width: 374
+        height: 489
+      alignment: 9
+      pivot: {x: 0.68315506, y: 0.6196319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466bd2e1049bcd7449d49905e62d8604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_12
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 2420
+        width: 374
+        height: 493
+      alignment: 9
+      pivot: {x: 0.68582886, y: 0.6146045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c4657955671f4478ad9ca3f212db33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_13
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 2424
+        width: 374
+        height: 489
+      alignment: 9
+      pivot: {x: 0.68315506, y: 0.6196319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a464d6c5132454099b52df2855a76f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_14
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 2420
+        width: 376
+        height: 493
+      alignment: 9
+      pivot: {x: 0.6821808, y: 0.6146045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65537cf15bfb4fe4c88220dbc68feef1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1894
+        width: 374
+        height: 493
+      alignment: 9
+      pivot: {x: 0.68582886, y: 0.6146045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675d2450e7d035d47bdb7e247b9d8289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_16
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1898
+        width: 374
+        height: 489
+      alignment: 9
+      pivot: {x: 0.68315506, y: 0.6196319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6565553a4cdb17d47ab60786a461f5e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_17
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1898
+        width: 373
+        height: 489
+      alignment: 9
+      pivot: {x: 0.6849866, y: 0.6196319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce240579280422842981011aed87abd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_18
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1894
+        width: 376
+        height: 493
+      alignment: 9
+      pivot: {x: 0.6821808, y: 0.6146045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e469fc45407bd964e822366b9bf22bbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_19
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1894
+        width: 374
+        height: 493
+      alignment: 9
+      pivot: {x: 0.68582886, y: 0.6146045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85f14ddd82909843897db5972d75b10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1399
+        width: 375
+        height: 493
+      alignment: 9
+      pivot: {x: 0.684, y: 0.6146045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96af8806361daec45b389a37b0d2274b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_21
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1391
+        width: 368
+        height: 501
+      alignment: 9
+      pivot: {x: 0.6807065, y: 0.6047904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b81a1b00e147bb479207beb5bcd0314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_22
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1342
+        width: 319
+        height: 550
+      alignment: 9
+      pivot: {x: 0.6285266, y: 0.55636364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e30582c2fe2dd94ab4ab0bd1a6a0c9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_23
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1341
+        width: 309
+        height: 551
+      alignment: 9
+      pivot: {x: 0.6229774, y: 0.55172414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66288bf9f034b945b802d53f751f0f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_24
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1359
+        width: 345
+        height: 533
+      alignment: 9
+      pivot: {x: 0.6652174, y: 0.57223266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf7e772620a2484e8ce87b0d99518a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 793
+        width: 323
+        height: 546
+      alignment: 9
+      pivot: {x: 0.64241487, y: 0.56227106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17df3dc0daded814985f49be8dfd311c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_26
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 775
+        width: 297
+        height: 564
+      alignment: 9
+      pivot: {x: 0.6111111, y: 0.54432625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d90b92b6fe611546afdc5765b6e8dc6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_27
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 769
+        width: 283
+        height: 570
+      alignment: 9
+      pivot: {x: 0.6024735, y: 0.5385965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53f939dd58e71445868dbabe7aa52e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_28
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 781
+        width: 309
+        height: 558
+      alignment: 9
+      pivot: {x: 0.62944984, y: 0.5501792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad969f2389b72b5488882ab0a4be44e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_29
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 769
+        width: 275
+        height: 570
+      alignment: 9
+      pivot: {x: 0.59090906, y: 0.5385965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe1684e0dda1c243aa0dbfc76e3c393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_30
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 754
+        width: 267
+        height: 585
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52478635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df0f41e4320b3344b7ad8d6bffc67fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_31
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 182
+        width: 314
+        height: 570
+      alignment: 9
+      pivot: {x: 0.52388537, y: 0.5385965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9531daed6406114aabce1a0d64f965d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_32
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 187
+        width: 358
+        height: 565
+      alignment: 9
+      pivot: {x: 0.49581006, y: 0.54336286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ce9d563ec55654dab16a68ac1cda14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_33
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 169
+        width: 295
+        height: 583
+      alignment: 9
+      pivot: {x: 0.40169492, y: 0.5265866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4860bc78cd41f8247b8c56c3a768b564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_Red-Idle2_34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3508
+        width: 275
+        height: 587
+      alignment: 9
+      pivot: {x: 0.36545455, y: 0.5229983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635218091f4af384bbb91f1c97578665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4812e225e23195a4991183f8204a9bc5
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

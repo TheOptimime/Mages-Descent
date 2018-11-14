@@ -4,6 +4,10 @@ using UnityEngine;
 
 public partial class Fighter {
 
+     
+
+
+
     public void UseAttack(Attack attack)
     {
         castTime = 0;
@@ -53,6 +57,7 @@ public partial class Fighter {
         for (int i = 0; i < projectile.multiFireCount; i++)
         {
             CastProjectile(projectile);
+          
             yield return new WaitForSeconds(projectile.multiFireRate);
         }
 

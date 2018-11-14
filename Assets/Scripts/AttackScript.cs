@@ -26,9 +26,13 @@ public class AttackScript : MonoBehaviour {
     public float time, timer;
 
     int castingPlayer;
+    
+
+
 
     void Start()
     {
+        
         print("attack start");
         transform.position = origin;
         rb = gameObject.AddComponent<Rigidbody2D>();
@@ -45,6 +49,7 @@ public class AttackScript : MonoBehaviour {
         sprites = Resources.LoadAll<Sprite>("fireball.png");
         sr.sprite = Resources.Load<Sprite>("fireball.png");
         print("attack init complete");
+       
     }
     
     void Update()
@@ -65,6 +70,10 @@ public class AttackScript : MonoBehaviour {
             for(int i = 0; i < sprites.Length; i++)
             {
                 sr.sprite = sprites[i];
+
+                
+                
+
             }
             
             
