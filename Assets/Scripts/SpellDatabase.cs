@@ -13,12 +13,12 @@ public class SpellDatabase : MonoBehaviour {
     List<int> fullCircleRightUp, fullCircleRightDown, fullCircleLeftUp, fullCircleLeftDown;
     List<int> fourCircleDownRight, fourCircleUpRight, fourCircleDownLeft, fourCircleUpLeft;
 
-	// Use this for initialization
+	
 	void Awake () {
         InitializeJoyStickCommands();
 
         tripleFire = new Attack("Triple Fire", "Fire 3 shots", 10, 50, Attack.Element.Fire, Attack.ElementEffect.Burn, Attack.AttackType.MultipleBlast, 3,0.2f, 0, 2, 1, 0, "fireball", quarterCircleDownRight);
-        darkFire = new Attack("Dark Fire", "Fire a dark blast", 10, 150, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, "fireball");
+        darkFire = new Attack("Dark Fire", "Fire a dark blast", 1, 150, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, "fireball");
         //dabThunder = new Attack("Dab Thunder", "Unleash Fearsome Bolts", 80, Attack.Element.Thunder, Attack.ElementEffect.Stun, Attack.AttackType.Special)
 
         yeetFire = new Attack("Yeet Fire", "Yeet a Fireball", 10, 20, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 2, 3, 4, 4, 0, 0, "fireball",halfCircleUnderRightLeft);
@@ -31,9 +31,10 @@ public class SpellDatabase : MonoBehaviour {
 
 
         AttackList.Add(tripleFire);
-        //AttackList[0].chargeTime = 5;
+        AttackList[0].hitStun = 1.2f;
 
         AttackList.Add(darkFire);
+        AttackList[1].lifetime = 0.3f;
         AttackList.Add(yeetFire);
         AttackList.Add(dabIce);
     }

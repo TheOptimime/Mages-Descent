@@ -8,9 +8,9 @@ public class AttackScript : MonoBehaviour {
     //public Vector2 speed;
 
     public Attack attack;
-
+    public string user;
     Rigidbody2D rb;
-    public float delay;
+    public float delay, defaultLifeSpan;
 
     //public Sprite[] projectileSprites;
     public Sprite testSprite;
@@ -23,7 +23,7 @@ public class AttackScript : MonoBehaviour {
     public int direction;
     public bool flipped;
 
-    public float time, timer;
+    public float time;
 
     int castingPlayer;
     
@@ -43,9 +43,9 @@ public class AttackScript : MonoBehaviour {
         sr = gameObject.AddComponent<SpriteRenderer>();
         sr.sprite = testSprite;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        sr.transform.localScale += new Vector3(3,3,3); 
-
-
+        sr.transform.localScale += new Vector3(3,3,3);
+        gameObject.tag = "Attack";
+        sr.sortingOrder = 8;
         sprites = Resources.LoadAll<Sprite>("fireball.png");
         sr.sprite = Resources.Load<Sprite>("fireball.png");
         print("attack init complete");
@@ -54,7 +54,7 @@ public class AttackScript : MonoBehaviour {
     
     void Update()
     {
-        timer += Time.deltaTime;
+        time += Time.deltaTime;
         
             sr.flipX = flipped;
         
@@ -90,11 +90,21 @@ public class AttackScript : MonoBehaviour {
 
         //print(gameObject.name);
 
-        if (time > attack.lifetime)
+        if (time > attack.lifetime || time > defaultLifeSpan)
         {
             // destroy this object
+            if(attack.lifetime == 0 && time > defaultLifeSpan)
+            {
+                Destroy(gameObject);
+            }
+            else if (time > attack.lifetime)
+            {
+                Destroy(gameObject);
+            }
 
         }
+
+        
     }
 
     private void FixedUpdate()
@@ -122,9 +132,29 @@ public class AttackScript : MonoBehaviour {
     {
         // Most likely going to make a tag for interactable ojbects
 
-        if (other.transform.tag == "Enemy")
+        if (other.transform.tag == "Enemy" && other.gameObject.name != user || other.transform.tag == "Player" && other.gameObject.name != user)
         {
             other.gameObject.GetComponent<Health>().Damage(attack.damage);
+            
+
+            if(other.transform.tag == "Player")
+            {
+                Fighter player = other.gameObject.GetComponent<Fighter>();
+                player.recentlyAttacked = true;
+                player.recoveryTimer = attack.hitStun;
+            }
+            else if(other.transform.tag == "Enemy")
+            {
+                EnemyAI enemy = other.gameObject.GetComponent<EnemyAI>();
+                enemy.hit = true;
+                enemy.hitTimer = attack.hitStun;
+            }
+
+            Destroy(gameObject);
+
+        }
+        else if(other.transform.tag == "Ground" || other.transform.tag == "Wall")
+        {
             Destroy(gameObject);
         }
     }

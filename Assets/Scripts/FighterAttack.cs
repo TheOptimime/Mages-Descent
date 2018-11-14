@@ -42,13 +42,14 @@ public partial class Fighter {
 
     public void CastProjectile(Attack projectile)
     {
-        print("cast projectile");
-        GameObject projectileObject = new GameObject("projectile");
+        //print("Cast projectile");
+        GameObject projectileObject = new GameObject("Projectile");
         AttackScript spell = projectileObject.AddComponent<AttackScript>();
         spell.flipped = !cc.m_FacingRight;
         spell.attack = projectile;
         spell.origin = spellCastPoint.position;
         spell.direction = cc.m_FacingRight? 1 : -1;
+        spell.user = gameObject.name;
     }
 
     IEnumerator MultiCast(Attack projectile)

@@ -4,14 +4,14 @@ using UnityEngine;
 
 [RequireComponent(typeof(MoveSet))]
 [RequireComponent(typeof(InputHandler))]
-[RequireComponent(typeof(CharacterController2D))]
+[RequireComponent(typeof(PlayerController2D))]
 [RequireComponent(typeof(Health))]
 [RequireComponent(typeof(Inventory))]
 public partial class Fighter : MonoBehaviour {
 
     #region Variables
     public float speed;
-    public CharacterController2D cc;
+    public PlayerController2D cc;
     SpellDatabase spellList;
 
     public bool attackIsInQueue;
@@ -25,6 +25,9 @@ public partial class Fighter : MonoBehaviour {
     Vector3 movePos;
 
     public float horizontalMove = 0f, verticalMove = 0f;
+
+
+    public float recoveryTimer, recoveryTime;
 
     public float runSpeed = 40f;
 
@@ -40,12 +43,14 @@ public partial class Fighter : MonoBehaviour {
 
     public GameObject fireBullet;
 
+    GameManager gm;
+
     public SpriteRenderer sr;
 
     Animator anim;
 
     //Transform firePos;
-
+    Health health;
     //CharacterController2D cc;
 
     public float fallMultiplier = 2.5f;
@@ -55,31 +60,63 @@ public partial class Fighter : MonoBehaviour {
 
     public float castTime = 0;
     public float finishedCast = 1;
+
+    RespawnManager rm;
     #endregion
 
     void Start()
     {
         //fightercc = GetComponent<Charactercc2D>();
-        cc = GetComponent<CharacterController2D>();
+        cc = GetComponent<PlayerController2D>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         moveset = GetComponent<MoveSet>();
         spellList = FindObjectOfType<SpellDatabase>();
         input = GetComponent<InputHandler>();
         anim = GetComponent<Animator>();
+        gm = FindObjectOfType<GameManager>();
+        rm = FindObjectOfType<RespawnManager>();
+        health = GetComponent<Health>();
     }
 
     void Update()
     {
+        
+        if (recentlyAttacked && lockMovement != true)
+        {
+            print("recovery time set: " + recoveryTimer);
+            recoveryTime = 0;
+            lockMovement = true;
+        }
+        else if (recentlyAttacked)
+        {
+            print("recovering");
+            recoveryTime += Time.deltaTime;
 
-        print(moveset.spellBookLoadout.Count);
+            if(recoveryTime > recoveryTimer)
+            {
+                print("recovered");
+                lockMovement = recentlyAttacked = false;
+            }
+        }
+        
 
         if (!lockMovement)
         {
             Move();
         }
+        else
+        {
+            input.joystickPosition = 5;
+            input.joystickRecord.Clear();
+        }
         
         isFacingRight = cc.m_FacingRight;
+
+        if(health.currentHealth <= 0)
+        {
+            Respawn();
+        }
     }
 
     private void Move()
@@ -132,6 +169,7 @@ public partial class Fighter : MonoBehaviour {
         }
 
         //move character
+        if(!lockMovement)
         cc.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
 
@@ -151,5 +189,11 @@ public partial class Fighter : MonoBehaviour {
     {
         input.vibrateLeftMotor = leftMotor;
         input.vibrateRightMotor = rightMotor;
+    }
+
+    void Respawn()
+    {
+        transform.position = rm.activeSpawnPoint.position;
+        health.currentHealth = health.maxHealth;
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Fighter))]
-public class CharacterController2D : MonoBehaviour
+public class PlayerController2D : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 400f, m_HighJumpForce = 900,m_DoubleJumpForce = 400;                         // Amount of force added when the player jumps.
     [SerializeField] private Vector2 m_LongJumpForce = new Vector2(20,200), m_BackJumpForce = new Vector2(-20, 30), m_SlideForce = new Vector2(200,0);
