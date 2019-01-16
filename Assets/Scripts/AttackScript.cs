@@ -136,26 +136,16 @@ public class AttackScript : MonoBehaviour {
         {
             other.gameObject.GetComponent<Health>().Damage(attack.damage);
             
+                KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
+                knockbackScript.SetHitstun(attack.hitStun);
+                knockbackScript.SetKnockback(attack.knockback);
 
-            if(other.transform.tag == "Player")
-            {
-                Fighter player = other.gameObject.GetComponent<Fighter>();
-                player.recentlyAttacked = true;
-                player.recoveryTimer = attack.hitStun;
-            }
-            else if(other.transform.tag == "Enemy")
-            {
-                EnemyAI enemy = other.gameObject.GetComponent<EnemyAI>();
-                enemy.hit = true;
-                enemy.hitTimer = attack.hitStun;
-            }
-
-            Destroy(gameObject);
+            Destroy(gameObject, attack.destroyTime);
 
         }
         else if(other.transform.tag == "Ground" || other.transform.tag == "Wall")
         {
-            Destroy(gameObject);
+            Destroy(gameObject, attack.destroyTime);
         }
     }
 

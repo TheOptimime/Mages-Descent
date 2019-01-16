@@ -6,7 +6,7 @@ public class SpellDatabase : MonoBehaviour {
 
     public List<Attack> AttackList;
 
-    public Attack tripleFire, darkFire, dabThunder, yeetFire, dabIce, deLigma;
+    public Attack tripleFire, darkFire;
 
     List<int> quarterCircleDownRight, quarterCircleDownLeft, quarterCircleRightDown, quarterCircleLeftDown, quarterCircleUpRight, quarterCircleRightUp, quarterCircleUpLeft, quarterCircleLeftUp;
     List<int> halfCircleUnderLeftRight, halfCircleUnderRightLeft, halfCircleOverLeftRight, halfCircleRightLeft, halfCircleDownUpRight, halfCircleDownUpLeft, halfCircleUpDownRight, halfCircleUpDownLeft;
@@ -17,14 +17,10 @@ public class SpellDatabase : MonoBehaviour {
 	void Awake () {
         InitializeJoyStickCommands();
 
-        tripleFire = new Attack("Triple Fire", "Fire 3 shots", 10, 50, Attack.Element.Fire, Attack.ElementEffect.Burn, Attack.AttackType.MultipleBlast, 3,0.2f, 0, 2, 1, 0, "fireball", quarterCircleDownRight);
-        darkFire = new Attack("Dark Fire", "Fire a dark blast", 1, 150, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 4, 3, 4, 4, 0, "fireball");
-        //dabThunder = new Attack("Dab Thunder", "Unleash Fearsome Bolts", 80, Attack.Element.Thunder, Attack.ElementEffect.Stun, Attack.AttackType.Special)
+        tripleFire = new Attack("TripleFire", "Blast 3 fireballs", quarterCircleDownRight, 5, new Vector2(2, 0), 0.3f, 2f, Attack.Element.Fire, Attack.ElementEffect.Burst, 0.8f, 1.6f, 1.3f, "fireball", 3, 0.8f, -0.3f);
+        darkFire = new Attack("Dark Fire", "Dark Fire", null, 1, new Vector2(0, 0), 0.4f, 2.3f, Attack.Element.Fire, Attack.ElementEffect.None, Attack.AttackType.Blast, 0.5f, 0.4f, 0.34f, "fireball");
 
-        yeetFire = new Attack("Yeet Fire", "Yeet a Fireball", 10, 20, Attack.Element.Fire, Attack.ElementEffect.Burst, Attack.AttackType.Blast, 2, 3, 4, 4, 0, 0, "fireball",halfCircleUnderRightLeft);
-
-        dabIce = new Attack("Dab Ice", "Ice Swag something something", 40, 5, Attack.Element.Ice, Attack.ElementEffect.Freeze, Attack.AttackType.Blast, 1, 3, 4, 4, 0, 0, "fireball", quarterCircleUpRight);
-
+        
         //deLigma = new Attack("DeLigma", "Whats DeLigma?", 10, 5, Attack.Element.Blood, Attack.ElementEffect.Burst, Attack.AttackType.MultipleBlast, _ )
 
         AttackList = new List<Attack>();
@@ -35,8 +31,6 @@ public class SpellDatabase : MonoBehaviour {
 
         AttackList.Add(darkFire);
         AttackList[1].lifetime = 0.3f;
-        AttackList.Add(yeetFire);
-        AttackList.Add(dabIce);
     }
 	
 

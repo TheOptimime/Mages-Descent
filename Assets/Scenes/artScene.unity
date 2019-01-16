@@ -145,8 +145,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8d738e9af92942b84ea1065e3134f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  startingPoint: {x: 0, y: 0}
+  spellCastPoint: {fileID: 0}
+  spellIndex: {fileID: 0}
+  rb2d: {fileID: 0}
+  edgeDetected: 0
+  wallDetected: 0
+  ignoreEdgeDetection: 0
+  direction: 1
+  edgeDetectionFront: {fileID: 0}
+  edgeDetectionBack: {fileID: 0}
+  timer: 0
+  idleTimer: 0
+  idleTime: 0
+  hitTime: 0
+  restTime: 0
+  restTimer: 0
+  speed: 0
+  EdgeDetectIgnore:
+    serializedVersion: 2
+    m_Bits: 0
+  rm: {fileID: 0}
+  anim: {fileID: 0}
+  walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
+  attackRange: 0
+  hitTimer: 0
+  hit: 0
 --- !u!114 &265945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +312,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!1 &12515521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 12515522}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &12515522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 12515521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.56, y: -2.93, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 317830389}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28871453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,6 +1589,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &317830388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 317830389}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &317830389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 317830388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 12515522}
+  - {fileID: 795923608}
+  m_Father: {fileID: 1476199921}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331654573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,8 +2147,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8d738e9af92942b84ea1065e3134f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  startingPoint: {x: 0, y: 0}
+  spellCastPoint: {fileID: 0}
+  spellIndex: {fileID: 0}
+  rb2d: {fileID: 0}
+  edgeDetected: 0
+  wallDetected: 0
+  ignoreEdgeDetection: 0
+  direction: 1
+  edgeDetectionFront: {fileID: 0}
+  edgeDetectionBack: {fileID: 0}
+  timer: 0
+  idleTimer: 0
+  idleTime: 0
+  hitTime: 0
+  restTime: 0
+  restTimer: 0
+  speed: 0
+  EdgeDetectIgnore:
+    serializedVersion: 2
+    m_Bits: 0
+  rm: {fileID: 0}
+  anim: {fileID: 0}
+  walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
+  attackRange: 0
+  hitTimer: 0
+  hit: 0
 --- !u!114 &492699567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3570,6 +3682,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &795923607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795923608}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &795923608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795923607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.42, y: -2.93, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 317830389}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &802154527
 GameObject:
   m_ObjectHideFlags: 0
@@ -5034,6 +5174,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1065499229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114446664425104552, guid: 21417800e6e0c154dadf918262e47c10,
+    type: 2}
+  m_PrefabInternal: {fileID: 1493263933}
+  m_Script: {fileID: 11500000, guid: 9cdf708688770614d9a0d359e3839938, type: 3}
 --- !u!1 &1086975217
 GameObject:
   m_ObjectHideFlags: 0
@@ -6716,7 +6862,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1476199919
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6729,7 +6875,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.16636479, y: -0.14779842}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6740,7 +6886,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.38, y: 6.21}
+  m_Size: {x: 2.317058, y: 5.783025}
   m_EdgeRadius: 0
 --- !u!212 &1476199920
 SpriteRenderer:
@@ -6797,7 +6943,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.63, y: 16.46, z: -6.57}
   m_LocalScale: {x: 0.46914, y: 0.47500426, z: 0.46914}
-  m_Children: []
+  m_Children:
+  - {fileID: 317830389}
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6812,8 +6959,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8d738e9af92942b84ea1065e3134f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 1476199923}
+  startingPoint: {x: 0, y: 0}
+  spellCastPoint: {fileID: 0}
+  spellIndex: {fileID: 0}
+  rb2d: {fileID: 0}
+  edgeDetected: 0
+  wallDetected: 0
+  ignoreEdgeDetection: 0
+  direction: 1
+  edgeDetectionFront: {fileID: 12515522}
+  edgeDetectionBack: {fileID: 795923608}
+  timer: 0
+  idleTimer: 0
+  idleTime: 0
+  hitTime: 0
+  restTime: 0
+  restTimer: 0
+  speed: 4
+  EdgeDetectIgnore:
+    serializedVersion: 2
+    m_Bits: 0
+  rm: {fileID: 0}
+  anim: {fileID: 0}
+  walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
+  attackRange: 0
+  hitTimer: 0
+  hit: 0
 --- !u!114 &1476199923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6962,6 +7136,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 114072285916721112, guid: 21417800e6e0c154dadf918262e47c10,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1065499229}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21417800e6e0c154dadf918262e47c10, type: 2}
   m_IsPrefabAsset: 0
@@ -7377,8 +7556,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8d738e9af92942b84ea1065e3134f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  startingPoint: {x: 0, y: 0}
+  spellCastPoint: {fileID: 0}
+  spellIndex: {fileID: 0}
+  rb2d: {fileID: 0}
+  edgeDetected: 0
+  wallDetected: 0
+  ignoreEdgeDetection: 0
+  direction: 1
+  edgeDetectionFront: {fileID: 0}
+  edgeDetectionBack: {fileID: 0}
+  timer: 0
+  idleTimer: 0
+  idleTime: 0
+  hitTime: 0
+  restTime: 0
+  restTimer: 0
+  speed: 0
+  EdgeDetectIgnore:
+    serializedVersion: 2
+    m_Bits: 0
+  rm: {fileID: 0}
+  anim: {fileID: 0}
+  walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
+  attackRange: 0
+  hitTimer: 0
+  hit: 0
 --- !u!114 &1595415363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8821,8 +9027,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8d738e9af92942b84ea1065e3134f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  startingPoint: {x: 0, y: 0}
+  spellCastPoint: {fileID: 0}
+  spellIndex: {fileID: 0}
+  rb2d: {fileID: 0}
+  edgeDetected: 0
+  wallDetected: 0
+  ignoreEdgeDetection: 0
+  direction: 1
+  edgeDetectionFront: {fileID: 0}
+  edgeDetectionBack: {fileID: 0}
+  timer: 0
+  idleTimer: 0
+  idleTime: 0
+  hitTime: 0
+  restTime: 0
+  restTimer: 0
+  speed: 0
+  EdgeDetectIgnore:
+    serializedVersion: 2
+    m_Bits: 0
+  rm: {fileID: 0}
+  anim: {fileID: 0}
+  walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
+  attackRange: 0
+  hitTimer: 0
+  hit: 0
 --- !u!114 &1835230576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9661,8 +9894,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf8d738e9af92942b84ea1065e3134f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  startingPoint: {x: 0, y: 0}
+  spellCastPoint: {fileID: 0}
+  spellIndex: {fileID: 0}
+  rb2d: {fileID: 0}
+  edgeDetected: 0
+  wallDetected: 0
+  ignoreEdgeDetection: 0
+  direction: 1
+  edgeDetectionFront: {fileID: 0}
+  edgeDetectionBack: {fileID: 0}
+  timer: 0
+  idleTimer: 0
+  idleTime: 0
+  hitTime: 0
+  restTime: 0
+  restTimer: 0
+  speed: 0
+  EdgeDetectIgnore:
+    serializedVersion: 2
+    m_Bits: 0
+  rm: {fileID: 0}
+  anim: {fileID: 0}
+  walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
+  attackRange: 0
+  hitTimer: 0
+  hit: 0
 --- !u!114 &1978930707
 MonoBehaviour:
   m_ObjectHideFlags: 0

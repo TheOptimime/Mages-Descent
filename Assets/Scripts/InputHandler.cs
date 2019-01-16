@@ -511,12 +511,13 @@ public class InputHandler : MonoBehaviour {
         if (prevState.Triggers.Right <= 0.2f && state.Triggers.Right >= 0.3f)
         {
             print("R2 Button Pressed");
+            joystickRecord.Clear();
             player.isDashing = true;
         }
         else if (prevState.Triggers.Right >= 0.3f && state.Triggers.Right >= 0.3f)
         {
             print("R2 Button Held");
-            
+            joystickRecord.Clear();
         }
         else if (prevState.Triggers.Right >= 0.3f && state.Triggers.Right <= 0.2f)
         {

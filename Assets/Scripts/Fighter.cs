@@ -26,18 +26,21 @@ public partial class Fighter : MonoBehaviour {
 
     public float horizontalMove = 0f, verticalMove = 0f;
 
+    float comboMeter, burstMeter;
 
     public float recoveryTimer, recoveryTime;
 
     public float runSpeed = 40f;
 
-    public MoveSet moveset;    
+    public MoveSet moveset;
 
-    public bool jump = false;
+    public int jumpCount;
+
+    public bool jump = false, specialJump = false;
     public bool isDashing, recentlyAttacked;
     public bool isFacingRight;
     public bool canDoubleJump, doubleJumpUsed;
-    public bool lockMovement;
+    public bool lockMovement, canRecover;
 
     public float forwardLeapSpeed, backStepSpeed, backwardLeapSpeed;
 
@@ -77,6 +80,8 @@ public partial class Fighter : MonoBehaviour {
         gm = FindObjectOfType<GameManager>();
         rm = FindObjectOfType<RespawnManager>();
         health = GetComponent<Health>();
+
+        cc.m_doubleJumpEnabled = canDoubleJump;
     }
 
     void Update()
@@ -117,6 +122,15 @@ public partial class Fighter : MonoBehaviour {
         {
             Respawn();
         }
+
+
+        if (cc.m_Grounded)
+        {
+            cc.m_doubleJumpUsed = doubleJumpUsed = false;
+            jumpCount = 0;
+            specialJump = false;
+        }
+        
     }
 
     private void Move()
@@ -169,9 +183,38 @@ public partial class Fighter : MonoBehaviour {
         }
 
         //move character
-        if(!lockMovement)
-        cc.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+        if (!lockMovement && !specialJump)
+        {
+            cc.Move(horizontalMove * Time.fixedDeltaTime, false, jump && jumpCount < 2);
+
+            if (jumpCount > 0 && jump)
+            {
+                doubleJumpUsed = true;
+            }
+
+            if (cc.m_doubleJumpEnabled)
+            {
+                if (jumpCount < 1)
+                {
+                    
+                    jumpCount++;
+                }
+            }
+
+            if(jumpCount > 1)
+            {
+                cc.m_doubleJumpUsed = doubleJumpUsed = true;
+            }
+            
+            
+        }
+        else if(lockMovement && canRecover && jump)
+        {
+
+        }
+
         jump = false;
+        
 
     }
 
@@ -182,7 +225,28 @@ public partial class Fighter : MonoBehaviour {
 
     public void Leap()
     {
+        specialJump = true;
+        cc.Move(forwardLeapSpeed * Time.fixedDeltaTime, false, jump, PlayerController2D.JumpType.Long);
+        canDoubleJump = false;
+    }
 
+    public void BackLeap()
+    {
+        specialJump = true;
+        cc.Move(backwardLeapSpeed * Time.fixedDeltaTime, false, jump, PlayerController2D.JumpType.Back);
+        canDoubleJump = false;
+    }
+
+    public void BackStep()
+    {
+        specialJump = true;
+        cc.Move(backStepSpeed * Time.fixedDeltaTime, false, jump, PlayerController2D.JumpType.Back);
+        canDoubleJump = false;
+    }
+
+    void SetVibration(float vibration)
+    {
+        input.vibrateLeftMotor = input.vibrateRightMotor = vibration;
     }
 
     void SetVibration(float leftMotor, float rightMotor)
