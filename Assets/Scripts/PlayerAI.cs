@@ -15,7 +15,6 @@ public class PlayerAI : AI {
     public bool isDashing, recentlyAttacked;
     public bool isFacingRight;
     public bool canDoubleJump, doubleJumpUsed;
-    public bool lockMovement;
 
     public float recoveryTimer, recoveryTime;
 
@@ -34,6 +33,8 @@ public class PlayerAI : AI {
     bool isMoving;
 
     public float horizontalMove = 0f, verticalMove = 0f;
+
+    AudioSource audioSource;
 
     public enum PlayerAIStates
     {
@@ -201,7 +202,7 @@ public class PlayerAI : AI {
 
         //move character
         if (!lockMovement)
-            cc.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+            cc.Move(horizontalMove * Time.fixedDeltaTime, jump);
         jump = false;
 
     }

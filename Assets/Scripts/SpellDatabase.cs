@@ -17,8 +17,8 @@ public class SpellDatabase : MonoBehaviour {
 	void Awake () {
         InitializeJoyStickCommands();
 
-        tripleFire = new Attack("TripleFire", "Blast 3 fireballs", quarterCircleDownRight, 5, new Vector2(2, 0), 0.3f, 2f, Attack.Element.Fire, Attack.ElementEffect.Burst, 0.8f, 1.6f, 1.3f, "fireball", 3, 0.8f, -0.3f);
-        darkFire = new Attack("Dark Fire", "Dark Fire", null, 1, new Vector2(0, 0), 0.4f, 2.3f, Attack.Element.Fire, Attack.ElementEffect.None, Attack.AttackType.Blast, 0.5f, 0.4f, 0.34f, "fireball");
+        tripleFire = new Attack("TripleFire", "Blast 3 fireballs", null, 5, new Vector2(2, 0), 5f, 40f, Attack.Element.Fire, Attack.ElementEffect.Burst, 0.8f, 1.6f, 1.3f, "fireball", 3, 0.8f, -0.3f);
+        darkFire = new Attack("Dark Fire", "Dark Fire", null, 1, new Vector2(0.2f, 0), 0.4f, 2.3f, Attack.Element.Fire, Attack.ElementEffect.None, Attack.AttackType.Blast, 3.5f, 0.4f, 0.34f, "fireball");
 
         
         //deLigma = new Attack("DeLigma", "Whats DeLigma?", 10, 5, Attack.Element.Blood, Attack.ElementEffect.Burst, Attack.AttackType.MultipleBlast, _ )
@@ -27,10 +27,10 @@ public class SpellDatabase : MonoBehaviour {
 
 
         AttackList.Add(tripleFire);
-        AttackList[0].hitStun = 1.2f;
+        //AttackList[0].hitStun = 1.2f;
 
         AttackList.Add(darkFire);
-        AttackList[1].lifetime = 0.3f;
+        //AttackList[1].lifetime = 0.3f;
     }
 	
 

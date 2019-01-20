@@ -27,6 +27,9 @@ public class AI : MonoBehaviour {
     public RespawnManager rm;
     public Animator anim;
 
+    IEnumerator hitstunCoroutine;
+    public bool lockMovement;
+
     public virtual void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         health = GetComponent<Health>();
@@ -77,4 +80,22 @@ public class AI : MonoBehaviour {
         
     }
 
+
+    public void SetHitstunTimer(float time)
+    {
+        if (hitstunCoroutine != null)
+        {
+            StopCoroutine(hitstunCoroutine);
+        }
+        hitstunCoroutine = HitstunTimer(time);
+        StartCoroutine(hitstunCoroutine);
+    }
+
+    IEnumerator HitstunTimer(float time)
+    {
+        lockMovement = true;
+        yield return new WaitForSeconds(time);
+        lockMovement = false;
+        hitstunCoroutine = null;
+    }
 }

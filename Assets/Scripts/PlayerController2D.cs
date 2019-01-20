@@ -8,11 +8,12 @@ public class PlayerController2D : MonoBehaviour
     [SerializeField] private Vector2 m_LongJumpForce = new Vector2(20,200), m_BackJumpForce = new Vector2(-20, 30), m_SlideForce = new Vector2(200,0);
     [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
-	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
+	[SerializeField] public bool m_AirControl = false;							// Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
 	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
+    bool slowTurn;
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
     [HideInInspector]
@@ -87,7 +88,7 @@ public class PlayerController2D : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool crouch, bool jump)
+	public void Move(float move, bool jump)
 	{
       
 
@@ -96,32 +97,7 @@ public class PlayerController2D : MonoBehaviour
 		{
             
 			// If crouching
-			if (crouch)
-			{
-				if (!m_wasCrouching)
-				{
-					m_wasCrouching = true;
-					OnCrouchEvent.Invoke(true);
-				}
-
-				// Reduce the speed by the crouchSpeed multiplier
-				move *= m_CrouchSpeed;
-
-				// Disable one of the colliders when crouching
-				if (m_CrouchDisableCollider != null)
-					m_CrouchDisableCollider.enabled = false;
-			} else
-			{
-				// Enable the collider when not crouching
-				if (m_CrouchDisableCollider != null)
-					m_CrouchDisableCollider.enabled = true;
-
-				if (m_wasCrouching)
-				{
-					m_wasCrouching = false;
-					OnCrouchEvent.Invoke(false);
-				}
-			}
+			
 
 			// Move the character by finding the target velocity
 			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
@@ -156,7 +132,7 @@ public class PlayerController2D : MonoBehaviour
         }
 	}
 
-    public void Move(float move, bool crouch, bool jump, JumpType _jumpType)
+    public void Move(float move, bool jump, JumpType _jumpType)
     {
 
         //only control the player if grounded or airControl is turned on
@@ -188,6 +164,12 @@ public class PlayerController2D : MonoBehaviour
             m_Grounded = false;
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
         }
+        else if (!m_Grounded && m_doubleJumpEnabled && !m_doubleJumpUsed && jump)
+        {
+            m_doubleJumpUsed = true;
+            m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
+            m_Rigidbody2D.AddForce(new Vector2(0f, m_DoubleJumpForce));
+        }
         else if (m_Grounded && _jumpType == JumpType.High)
         {
             m_Grounded = false;
@@ -207,12 +189,7 @@ public class PlayerController2D : MonoBehaviour
             m_Rigidbody2D.AddForce(m_BackJumpForce);
             m_doubleJumpUsed = true;
         }
-        else if (!m_Grounded && m_doubleJumpEnabled && !m_doubleJumpUsed && jump)
-        {
-            m_doubleJumpUsed = true;
-            m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
-            m_Rigidbody2D.AddForce(new Vector2(0f, m_DoubleJumpForce));
-        }
+        
     }
 
     public void FreezeVelocity()

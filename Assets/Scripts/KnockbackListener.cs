@@ -10,39 +10,43 @@ public class KnockbackListener : MonoBehaviour {
     public enum KnockbackRecipient
     {
         Player,
-        Enemy,
-        PlayerAI
+        AI
     }
 
     public KnockbackRecipient knockbackRecipient;
 
-    Fighter fighter;
-    EnemyAI enemyAI;
-    PlayerAI playerAI;
+    Fighter _fighter;
+    AI _ai;
 
 	void Start () {
 
         if(knockbackRecipient == KnockbackRecipient.Player)
         {
-            fighter = GetComponent<Fighter>();
+            _fighter = GetComponent<Fighter>();
         }
-        else if(knockbackRecipient == KnockbackRecipient.PlayerAI)
+        else if(knockbackRecipient == KnockbackRecipient.AI)
         {
-            playerAI = GetComponent<PlayerAI>();
+            _ai = GetComponent<AI>();
         }
-        else if(knockbackRecipient == KnockbackRecipient.Enemy)
-        {
-            enemyAI = GetComponent<EnemyAI>();
-        }
-	}
-	
-	void Update () {
-		
 	}
 
     public void SetHitstun(float hitstun)
     {
+        switch (knockbackRecipient)
+        {
+            case KnockbackRecipient.Player:
+                {
+                    _fighter.SetHitstunTimer(hitstun);
+                }
+                break;
 
+            case KnockbackRecipient.AI:
+                {
+                    _ai.SetHitstunTimer(hitstun);
+                }
+
+                break;
+        }
     }
 
     public void SetKnockback(Vector2 knockback)
@@ -50,12 +54,16 @@ public class KnockbackListener : MonoBehaviour {
         switch (knockbackRecipient)
         {
             case KnockbackRecipient.Player:
+                {
+                    _fighter.rb.velocity += knockback;
+                }
                 break;
 
-            case KnockbackRecipient.PlayerAI:
-                break;
-
-            case KnockbackRecipient.Enemy:
+            case KnockbackRecipient.AI:
+                {
+                    _ai.rb2d.velocity += knockback;
+                }
+                
                 break;
         }
     }

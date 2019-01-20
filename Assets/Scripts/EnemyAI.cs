@@ -11,7 +11,7 @@ public class EnemyAI : AI {
     
     SpriteRenderer spr;
     
-    EnemyController2D ec;
+    public EnemyController2D ec;
 
     public float walkToPlayerSpeed;
 

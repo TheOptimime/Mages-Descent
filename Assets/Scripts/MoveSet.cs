@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveSet : MonoBehaviour {
 
     public SpellDatabase attackIndex;
-   public  List<List<Item.Spellbook>> spellBookLoadout;
+    public  List<List<Item.Spellbook>> spellBookLoadout;
 
     public List<Item.Spellbook> spellBookSet_A, spellBookSet_B, spellBookSet_C;
     public Item.Spellbook spellBook_B_Button, spellBook_X_Button, spellBook_Y_Button;

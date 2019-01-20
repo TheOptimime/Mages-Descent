@@ -23,6 +23,13 @@ public class Attack {
         Special             // Ultimate Attacks
     }
 
+    public enum FollowUpType
+    {
+        None,
+        Auto,
+        Command
+    }
+
     public enum Element
     {
         Fire,
@@ -42,10 +49,17 @@ public class Attack {
         Slow
     }
 
+    public enum ChargeType
+    {
+        Instant,
+        Charge
+    }
 
     public AttackType attackType;
     public Element element;
     public ElementEffect elementEffect;
+    public ChargeType chargeType;
+    public FollowUpType followUpType;
 
 
     // Multi hitting Attacks
@@ -160,6 +174,8 @@ public class Attack {
         lifetime = _lifetime;
         joystickCommand = joystickInput;
         knockback = _knockback;
+        delay = _delay;
+        attackType = _attackType;
     }
 
     /// <summary>
@@ -195,11 +211,14 @@ public class Attack {
         lifetime = _lifetime;
         joystickCommand = joystickInput;
         knockback = _knockback;
+        xDisplacement = _xDisplacement;
+        delay = _delay;
+        attackType = _attackType;
     }
 
     //Attacks with followups
     /// <summary>
-    /// Attack with follow up
+    /// Attack with follow up and XDisplacement
     /// </summary>
     /// <param name="_name"></param>
     /// <param name="_description"></param>
@@ -233,10 +252,13 @@ public class Attack {
         lifetime = _lifetime;
         joystickCommand = joystickInput;
         knockback = _knockback;
+        xDisplacement = _xDisplacement;
+        delay = _delay;
+        attackType = _attackType;
     }
 
     /// <summary>
-    /// Attack with followup and XDisplacement
+    /// Attack with followup
     /// </summary>
     /// <param name="Name"></param>
     /// <param name="Description"></param>
@@ -269,5 +291,7 @@ public class Attack {
         lifetime = _lifetime;
         joystickCommand = joystickInput;
         knockback = _knockback;
+        delay = _delay;
+        attackType = _attackType;
     }
 }
