@@ -10,7 +10,7 @@ public class MoveSet : MonoBehaviour {
     public List<Item.Spellbook> spellBookSet_A, spellBookSet_B, spellBookSet_C;
     public Item.Spellbook spellBook_B_Button, spellBook_X_Button, spellBook_Y_Button;
 
-    public Attack[] Attacks;
+    //public Attack[] Attacks;
 
     public int spellLoadOutSelected;
 

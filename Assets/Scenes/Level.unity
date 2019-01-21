@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 75848286}
   - component: {fileID: 75848285}
   - component: {fileID: 75848284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: largeplatform (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,6 +441,8 @@ MonoBehaviour:
     m_Bits: 0
   rm: {fileID: 0}
   anim: {fileID: 0}
+  lockMovement: 0
+  ec: {fileID: 0}
   walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
@@ -1281,6 +1283,8 @@ MonoBehaviour:
     m_Bits: 0
   rm: {fileID: 0}
   anim: {fileID: 0}
+  lockMovement: 0
+  ec: {fileID: 0}
   walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
@@ -1690,7 +1694,7 @@ GameObject:
   - component: {fileID: 587712390}
   - component: {fileID: 587712389}
   - component: {fileID: 587712391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: largeplatform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3043,6 +3047,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed4c2bae68ad8f4e8283690b82072d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackList: []
+  tripleFire: {fileID: 0}
+  darkFire: {fileID: 0}
 --- !u!4 &939943944
 Transform:
   m_ObjectHideFlags: 0
@@ -4507,7 +4514,7 @@ GameObject:
   - component: {fileID: 1538757149}
   - component: {fileID: 1538757148}
   - component: {fileID: 1538757147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: largeplatform (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4608,7 +4615,7 @@ GameObject:
   - component: {fileID: 1542966193}
   - component: {fileID: 1542966192}
   - component: {fileID: 1542966191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: largeplatform (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4974,6 +4981,8 @@ MonoBehaviour:
     m_Bits: 0
   rm: {fileID: 0}
   anim: {fileID: 0}
+  lockMovement: 0
+  ec: {fileID: 0}
   walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0
@@ -5175,6 +5184,7 @@ MonoBehaviour:
     m_Bits: 0
   rm: {fileID: 0}
   anim: {fileID: 0}
+  lockMovement: 0
   cc: {fileID: 0}
   jump: 0
   isDashing: 0
@@ -5182,7 +5192,6 @@ MonoBehaviour:
   isFacingRight: 0
   canDoubleJump: 1
   doubleJumpUsed: 0
-  lockMovement: 0
   recoveryTimer: 0
   recoveryTime: 0
   castTime: 0
@@ -5226,7 +5235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recoveryTime: 0
   stunLength: 0
-  knockbackRecipient: 0
+  knockbackRecipient: 1
 --- !u!4 &1686266509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4503024633710282, guid: 827a7d09456c9284092ef158244674da,
@@ -5738,6 +5747,16 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 50009044929826746, guid: 827a7d09456c9284092ef158244674da,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50009044929826746, guid: 827a7d09456c9284092ef158244674da,
+        type: 2}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114803433128588286, guid: 827a7d09456c9284092ef158244674da, type: 2}
     - {fileID: 114194103146630888, guid: 827a7d09456c9284092ef158244674da, type: 2}
@@ -5938,6 +5957,7 @@ MonoBehaviour:
   canDoubleJump: 1
   doubleJumpUsed: 0
   lockMovement: 0
+  lockInput: 0
   canRecover: 0
   isLeaping: 0
   isBackLeaping: 0
@@ -5952,6 +5972,7 @@ MonoBehaviour:
   sr: {fileID: 0}
   fallMultiplier: 1.2
   lowJumpMultiplier: 2
+  rb: {fileID: 0}
   castTime: 0
   finishedCast: 1
 --- !u!114 &1926738555
@@ -5987,9 +6008,11 @@ MonoBehaviour:
   dPadInputInUse: 0
   deadzone: 0.398
   joystickPosition: 0
+  lastJoystickPosition: 0
   joystickRecord: 
   Checkpoints: {x: 0, y: 0}
   joystick: {x: 0, y: 0}
+  inputCorrection: 1
   vibrateLeftMotor: 0
   vibrateRightMotor: 0
 --- !u!114 &1926738557
@@ -6004,7 +6027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8252569e2215a44939c0014e528793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 3600
+  m_JumpForce: 2800
   m_HighJumpForce: 120
   m_DoubleJumpForce: 2400
   m_LongJumpForce: {x: 70, y: 800}
@@ -6015,7 +6038,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 768
   m_GroundCheck: {fileID: 989354917}
   m_CeilingCheck: {fileID: 1669059648}
   m_CrouchDisableCollider: {fileID: 0}
@@ -6023,6 +6046,7 @@ MonoBehaviour:
   m_FacingRight: 1
   m_doubleJumpUsed: 0
   m_doubleJumpEnabled: 0
+  m_Velocity: {x: 0, y: 0, z: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -6378,6 +6402,8 @@ MonoBehaviour:
     m_Bits: 0
   rm: {fileID: 0}
   anim: {fileID: 0}
+  lockMovement: 0
+  ec: {fileID: 0}
   walkToPlayerSpeed: 0
   enemyState: 0
   respawnEnabled: 0

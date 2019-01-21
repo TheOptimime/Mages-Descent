@@ -24,7 +24,7 @@ public class PlayerController2D : MonoBehaviour
 	public bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public bool m_doubleJumpUsed, m_doubleJumpEnabled;
 
-    private Vector3 m_Velocity = Vector3.zero;
+    public Vector3 m_Velocity = Vector3.zero;
 
 	[Header("Events")]
 	[Space]

@@ -53,6 +53,13 @@ public partial class Fighter {
         spell.origin = spellCastPoint.position;
         spell.direction = cc.m_FacingRight? 1 : -1;
         spell.user = gameObject.name;
+
+        print("xDisp: " + projectile.xDisplacement);
+        if(projectile.xDisplacement != 0)
+        {
+            rb.AddForce(new Vector2(rb.velocity.x + projectile.xDisplacement * spell.direction * 200, rb.velocity.y), ForceMode2D.Impulse);
+            print("force applied");
+        }
     }
 
     public void CastBeam(Attack beam)
@@ -109,7 +116,6 @@ public partial class Fighter {
 
     public void RelayButtonInput()
     {
-        print("holding attack: " + attackInQueue.name);
         if (attackIsInQueue)
         {
             if (attackInQueue != null && !recentlyAttacked)

@@ -27,6 +27,7 @@ public class InputHandler : MonoBehaviour {
     bool buttonPressed;
 
     public bool inputCorrection;
+    int inputValue, prevInputValue;
 
     [Range(0,1)]
     public float vibrateLeftMotor, vibrateRightMotor;
@@ -96,10 +97,9 @@ public class InputHandler : MonoBehaviour {
                 //print("joystick input detected");
             }
 
-            //if (buttonPressed)
-            {
-                //            print("state: " + state.ThumbSticks.Left.X);
-            }
+
+            ChangeInput();
+            SoftTurn();
 
             prevState = state;
             state = GamePad.GetState(playerIndex);
@@ -108,11 +108,13 @@ public class InputHandler : MonoBehaviour {
             buttonPressed = false;
 
         }
-
-
-
-
-
+        else
+        {
+            timeBeforeLastInput = 0;
+            joystickRecord.Clear();
+            buttonPressed = false;
+        }
+        
     }
 
     private void FixedUpdate()
@@ -1006,16 +1008,46 @@ public class InputHandler : MonoBehaviour {
 
     void SoftTurn()
     {
-        if(lastJoystickPosition == 6 || lastJoystickPosition == 4 || lastJoystickPosition == 2)
+        if(joystickRecord.Count > 0)
         {
-            
-        }
-        else if(lastJoystickPosition == 8)
-        {
-            if (joystickPosition < 8 && joystickPosition != 5)
+            if (joystickRecord[0] == 8 || joystickRecord[0] == 2)
             {
-                // lock player direction and start a timer
+                // lock direction for a bit
             }
         }
+        else if(joystickRecord.Count > 2)
+        {
+            if(joystickRecord[2] == 8 || joystickRecord[2] == 2)
+            {
+
+            }
+        }
+        
+        
+        
+    }
+
+    void ChangeInput()
+    {
+        if(joystickRecord.Count < 2)
+        {
+            return;
+        }
+
+        inputValue = joystickRecord[joystickRecord.Count - 1] - joystickRecord[joystickRecord.Count - 2];
+
+
+        if(Mathf.Abs(prevInputValue) == Mathf.Abs(inputValue))
+        {
+            if(Mathf.Sign(prevInputValue) != Mathf.Sign(inputValue))
+            {
+                // Input Change Detected
+                int tempJoystickPosition = joystickRecord[joystickRecord.Count - 1];
+                joystickRecord.Clear();
+                joystickRecord.Add(tempJoystickPosition);
+            }
+        }
+
+        prevInputValue = inputValue;
     }
 }

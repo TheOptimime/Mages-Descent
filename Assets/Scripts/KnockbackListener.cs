@@ -55,13 +55,13 @@ public class KnockbackListener : MonoBehaviour {
         {
             case KnockbackRecipient.Player:
                 {
-                    _fighter.rb.velocity += knockback;
+                    _fighter.rb.AddForce(knockback, ForceMode2D.Impulse);
                 }
                 break;
 
             case KnockbackRecipient.AI:
                 {
-                    _ai.rb2d.velocity += knockback;
+                    _ai.rb2d.AddForce(knockback, ForceMode2D.Impulse);
                 }
                 
                 break;

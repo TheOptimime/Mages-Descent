@@ -163,7 +163,7 @@ public partial class Fighter : MonoBehaviour {
         }
 
 
-        if (cc.m_Grounded)
+        if (cc.m_Grounded && IsGrounded())
         {
             cc.m_doubleJumpUsed = doubleJumpUsed = false;
             jumpCount = 0;
@@ -234,7 +234,12 @@ public partial class Fighter : MonoBehaviour {
         }
         else if (rb.velocity.y > 0)
         {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1);
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 0.8f);
+        }
+
+        if(jump && jumpCount < 2 && rb.velocity.y < 0 && !recentlyAttacked)
+        {
+            rb.velocity = Vector2.zero;
         }
 
         //move character
@@ -245,6 +250,7 @@ public partial class Fighter : MonoBehaviour {
             if (jumpCount > 0 && jump)
             {
                 doubleJumpUsed = true;
+                jumpCount++;
             }
 
             if (cc.m_doubleJumpEnabled)
@@ -293,6 +299,7 @@ public partial class Fighter : MonoBehaviour {
     public void Leap()
     {
         cc.m_AirControl = false;
+        jumpCount += 2;
         specialJump = true;
         cc.Move(forwardLeapSpeed, jump, PlayerController2D.JumpType.Long);
         canDoubleJump = false;
@@ -301,6 +308,7 @@ public partial class Fighter : MonoBehaviour {
     public void BackLeap()
     {
         cc.m_AirControl = false;
+        jumpCount += 2;
         specialJump = true;
         cc.Move(backwardLeapSpeed, jump, PlayerController2D.JumpType.Back);
         canDoubleJump = false;
@@ -309,6 +317,7 @@ public partial class Fighter : MonoBehaviour {
     public void BackStep()
     {
         cc.m_AirControl = false;
+        jumpCount += 2;
         specialJump = true;
         cc.Move(backStepSpeed, jump, PlayerController2D.JumpType.Back);
         canDoubleJump = false;

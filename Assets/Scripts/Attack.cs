@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack {
+[CreateAssetMenu]
+public class Attack : ScriptableObject{
 
     public string name, description, spritePath;
     public int damage, multiFireCount;
@@ -64,7 +65,7 @@ public class Attack {
 
     // Multi hitting Attacks
     /// <summary>
-    /// Multi hitting Projectile Attack
+    /// Multi hitting Projectile Attack with xDisplacement
     /// </summary>
     /// <param name="_name"></param>
     /// <param name="_description"></param>
@@ -100,6 +101,7 @@ public class Attack {
         multiFireRate = _attackRate;
         joystickCommand = joystickInput;
         knockback = _knockback;
+        xDisplacement = _xDisplacement;
     }
 
     /// <summary>
