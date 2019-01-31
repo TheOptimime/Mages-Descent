@@ -5,12 +5,12 @@ using UnityEngine;
 public class MoveSet : MonoBehaviour {
 
     public SpellDatabase attackIndex;
-   public  List<List<Item.Spellbook>> spellBookLoadout;
+    public  List<List<Item.Spellbook>> spellBookLoadout;
 
     public List<Item.Spellbook> spellBookSet_A, spellBookSet_B, spellBookSet_C;
     public Item.Spellbook spellBook_B_Button, spellBook_X_Button, spellBook_Y_Button;
 
-    public Attack[] Attacks;
+    //public Attack[] Attacks;
 
     public int spellLoadOutSelected;
 
@@ -30,11 +30,9 @@ public class MoveSet : MonoBehaviour {
         spellBookSet_C = new List<Item.Spellbook>();
 
         spellBookLoadout = new List<List<Item.Spellbook>>();
-
-        spellBook_B_Button.attacks.Add(attackIndex.yeetFire);
+        
         spellBook_B_Button.attacks.Add(attackIndex.tripleFire);
-
-        spellBook_X_Button.attacks.Add(attackIndex.dabIce);
+        
 
         spellBook_Y_Button.attacks.Add(attackIndex.darkFire);
 

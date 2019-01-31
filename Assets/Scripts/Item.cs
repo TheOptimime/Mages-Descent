@@ -23,16 +23,16 @@ public class Item {
 
         SpellDatabase spellDatabase;
 
-        public Spellbook(Attack.Element element)
+        public Spellbook(Attack.Element _element)
         {
             attacks = new List<Attack>();
-
+            element = _element;
         }
 
         public Spellbook()
         {
             attacks = new List<Attack>();
-
+            Debug.Log("spellbook has no element");
         }
 
         void AddAttack(Attack attack)

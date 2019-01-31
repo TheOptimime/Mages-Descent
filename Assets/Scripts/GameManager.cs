@@ -10,8 +10,28 @@ public class GameManager : MonoBehaviour {
 
     float gameTimer;
 
+    GameObject[] players;
+    RespawnManager rm;
+
 	// Use this for initialization
 	void Start () {
+        players = GameObject.FindGameObjectsWithTag("Player");
+        rm = GetComponent<RespawnManager>();
+
+        foreach(GameObject player in players)
+        {
+            Fighter _player = player.GetComponent<Fighter>();
+            if (_player != null)
+            {
+                // set references to respawn manager and stuff
+            }
+            else
+            {
+                // Player is AI
+                PlayerAI _ai = player.GetComponent<PlayerAI>();
+            }
+        }
+
         //QualitySettings.vSyncCount = 1;
         Application.targetFrameRate = 60;
         //Time.timeScale = 60;

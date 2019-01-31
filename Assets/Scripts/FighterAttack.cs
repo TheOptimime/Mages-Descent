@@ -4,15 +4,17 @@ using UnityEngine;
 
 public partial class Fighter {
 
-     
 
+    MeleeHitbox hitbox_High, hitbox_Middle, hitbox_Low;
 
 
     public void UseAttack(Attack attack)
     {
+        print("use attack function");
         castTime = 0;
         if (!recentlyAttacked && attack != null)
         {
+            print("first wall");
             if (attack.attackType == Attack.AttackType.Special)
             {
                 // stop time for attack length
@@ -32,7 +34,8 @@ public partial class Fighter {
             }
             else if (attack.attackType == Attack.AttackType.Beam)
             {
-
+                print("casting attack");
+                CastProjectile(attack);
             }
         }
 
@@ -42,13 +45,35 @@ public partial class Fighter {
 
     public void CastProjectile(Attack projectile)
     {
-        //print("Cast projectile");
+        print("Cast projectile + " + projectile.name);
         GameObject projectileObject = new GameObject("Projectile");
         AttackScript spell = projectileObject.AddComponent<AttackScript>();
         spell.flipped = !cc.m_FacingRight;
         spell.attack = projectile;
         spell.origin = spellCastPoint.position;
         spell.direction = cc.m_FacingRight? 1 : -1;
+        spell.user = gameObject.name;
+
+        movementFreezeLength = new DoubleTime(projectile.animationCancelLength, projectile.animationLength);
+
+        print("xDisp: " + projectile.xDisplacement);
+
+        if(projectile.xDisplacement != 0)
+        {
+            rb.AddForce(new Vector2(rb.velocity.x + projectile.xDisplacement * spell.direction, rb.velocity.y), ForceMode2D.Impulse);
+            print("force applied");
+        }
+    }
+
+    public void CastBeam(Attack beam)
+    {
+        //print("Cast projectile");
+        GameObject projectileObject = new GameObject("Beam");
+        AttackScript spell = projectileObject.AddComponent<AttackScript>();
+        spell.flipped = !cc.m_FacingRight;
+        spell.attack = beam;
+        spell.origin = spellCastPoint.position;
+        spell.direction = cc.m_FacingRight ? 1 : -1;
         spell.user = gameObject.name;
     }
 
@@ -94,7 +119,6 @@ public partial class Fighter {
 
     public void RelayButtonInput()
     {
-        print("holding attack: " + attackInQueue);
         if (attackIsInQueue)
         {
             if (attackInQueue != null && !recentlyAttacked)
@@ -103,7 +127,7 @@ public partial class Fighter {
 
                 if (castTime > attackInQueue.chargeTime)
                 {
-
+                    attackInQueue.attackCharge = Mathf.Round(castTime);
                 }
             }
         }
@@ -131,6 +155,7 @@ public partial class Fighter {
             {
                 if (castTime >= attackInQueue.chargeTime)
                 {
+                    print("attack cast + " +attackInQueue.name);
                     UseAttack(attackInQueue);
                 }
             }

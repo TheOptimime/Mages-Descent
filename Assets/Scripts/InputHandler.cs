@@ -10,7 +10,7 @@ public class InputHandler : MonoBehaviour {
     public GamePadState state;
     GamePadState prevState;
     public Fighter player;
-    SpellDatabase spellDatabase;
+    public SpellDatabase spellDatabase;
 
     List<List<int>> ComboInputNormal, ComboInputReverse;
 
@@ -19,12 +19,17 @@ public class InputHandler : MonoBehaviour {
     [Range(0.2f, 0.8f)]
     public float deadzone = 0.3f;
 
-    public int joystickPosition;
+    public int RightTrigger_HoldLength;
+
+    public int joystickPosition, lastJoystickPosition;
 
     public List<int> joystickRecord;
     
     public Vector2 Checkpoints, joystick;
     bool buttonPressed;
+
+    public bool inputCorrection;
+    int inputValue, prevInputValue;
 
     [Range(0,1)]
     public float vibrateLeftMotor, vibrateRightMotor;
@@ -32,8 +37,6 @@ public class InputHandler : MonoBehaviour {
 
     private void Start()
     {
-        player = GetComponent<Fighter>();
-        print(player.gameObject.name);
         joystickRecord = new List<int>();
         InitializeJoyStickCommands();
     }
@@ -44,6 +47,8 @@ public class InputHandler : MonoBehaviour {
         {
             FindController();
         }
+
+        lastJoystickPosition = joystickPosition;
 
         if (!player.recentlyAttacked)
         {
@@ -94,10 +99,9 @@ public class InputHandler : MonoBehaviour {
                 //print("joystick input detected");
             }
 
-            //if (buttonPressed)
-            {
-                //            print("state: " + state.ThumbSticks.Left.X);
-            }
+
+            ChangeInput();
+            SoftTurn();
 
             prevState = state;
             state = GamePad.GetState(playerIndex);
@@ -106,11 +110,13 @@ public class InputHandler : MonoBehaviour {
             buttonPressed = false;
 
         }
-
-
-
-
-
+        else
+        {
+            timeBeforeLastInput = 0;
+            joystickRecord.Clear();
+            buttonPressed = false;
+        }
+        
     }
 
     private void FixedUpdate()
@@ -132,19 +138,43 @@ public class InputHandler : MonoBehaviour {
 //            print("A Button Pressed");
             frozenJoystickRecord = joystickRecord;
 
-            //print(quarterCircleDownRight);
-            /*
-            for(int i = 0; i < ComboInputNormal[0].Count; i++)
+            
+
+            int[] jumpCommands = new int[] {0, 5, 0};
+            print("command length: " + jumpCommands.Length);
+
+            for(int i = 0; i < jumpCommands.Length; i++)
             {
+
+                List<int> tempCommand = new List<int>();
+
+                if (!player.isFacingRight && i < 2)
+                {
+                    // Player is facing left and inputs are set to right
+                    print("set flip 1");
+                    FlipInput(ComboInputNormal[jumpCommands[i]], out tempCommand);
+                }
+                else if (player.isFacingRight && i >= 2)
+                {
+                    // Player is facing x and inputs are set to left
+                    print("set flip 2");
+                    FlipInput(ComboInputReverse[jumpCommands[i]], out tempCommand);
+                }
+                else
+                {
+                    print("set basic");
+                    tempCommand = ComboInputNormal[jumpCommands[i]];
+                }
+
                 int matchCount = 0;
                 
 
-                if(ComboInputNormal[0].Count == frozenJoystickRecord.Count)
+                if(tempCommand.Count == frozenJoystickRecord.Count)
                 {
-                    for(int joystickNumber = 0; joystickNumber < ComboInputNormal[0].Count; joystickNumber++)
+                    for(int joystickNumber = 0; joystickNumber < tempCommand.Count; joystickNumber++)
                     {
                         
-                        if(ComboInputNormal[0][joystickNumber] == frozenJoystickRecord[joystickNumber])
+                        if(tempCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
                         {
                             matchCount++;
                             print("matchfound: " + matchCount);
@@ -152,9 +182,43 @@ public class InputHandler : MonoBehaviour {
 
                     }
                 }
-                
+
+
+
+                if (matchCount == tempCommand.Count)
+                {
+                    player.specialJump = true;
+
+                    if (jumpCommands[i] == jumpCommands[0])
+                    {
+                        // Quarter Circle Forward
+                        print("oops");
+                        print(tempCommand.Count);
+                        print(tempCommand[0] + ", " + tempCommand[1] + ", " + tempCommand[2]);
+                        player.isLeaping = true;
+                    }
+                    else if (jumpCommands[i] == jumpCommands[1])
+                    {
+                        // Half Circle Back
+                        player.isBackLeaping = true;
+                    }
+                    else if (jumpCommands[i] == jumpCommands[2])
+                    {
+                        // Quarter Circle Back
+                        player.isBackStepping = true;
+                    }
+
+                    
+                    player.jump = true;
+
+                    break;
+                }
+                else if (inputCorrection)
+                {
+                    
+                }
             }
-            */
+            
             player.jump = true;
 
         }
@@ -187,16 +251,6 @@ public class InputHandler : MonoBehaviour {
                 // Makes a temporary copy of this joystick command
                 List<int> tempJoystickCommand = new List<int>();
 
-                /*
-                print(i);
-                print(player.moveset.spellBookLoadout.Count);
-                print(player.moveset.spellBookLoadout[0].Count);
-                print(player.moveset.spellBookLoadout[0][0].attacks.Count);
-                print(player.moveset.spellBookLoadout[0][0].attacks[0]);
-                print(player.moveset.spellBookLoadout[0][0].attacks[1]);
-                print(player.moveset.spellBookLoadout[0][0].attacks[0].name);
-                print(player.moveset.spellBookLoadout[0][0].attacks[0].joystickCommand);
-                */
 
                 if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != null)
                 {
@@ -233,6 +287,22 @@ public class InputHandler : MonoBehaviour {
                     {
                         player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
                         break;
+                    }
+                    else if (inputCorrection)
+                    {
+                        if(tempJoystickCommand.Count != 4)
+                        {
+                            if (matchCount == tempJoystickCommand.Count - 1 || matchCount == tempJoystickCommand.Count + 1)
+                            {
+                                // Checks to see if the command input is either 1 over or under
+                            }
+                        }
+                        else if (tempJoystickCommand.Count == 4)
+                        {
+                            // Check distance between 2 sticks points
+                            // if over at least 70, change
+                        }
+                        
                     }
                     
                 }
@@ -380,7 +450,7 @@ public class InputHandler : MonoBehaviour {
                 
                 if(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i] != null)
                 {
-                    print(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                    print(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].name);
 
                     if (!player.isFacingRight)
                     {
@@ -511,17 +581,42 @@ public class InputHandler : MonoBehaviour {
         if (prevState.Triggers.Right <= 0.2f && state.Triggers.Right >= 0.3f)
         {
             print("R2 Button Pressed");
-            player.isDashing = true;
+            joystickRecord.Clear();
+            
         }
         else if (prevState.Triggers.Right >= 0.3f && state.Triggers.Right >= 0.3f)
         {
             print("R2 Button Held");
-            
+            RightTrigger_HoldLength++;
+            if(RightTrigger_HoldLength > 5)
+            {
+                player.isDashing = true;
+
+            }
+            joystickRecord.Clear();
         }
         else if (prevState.Triggers.Right >= 0.3f && state.Triggers.Right <= 0.2f)
         {
             print("R2 Button Released");
+            if(RightTrigger_HoldLength < 5)
+            {
+                // Teleport
+                if(joystickPosition != 5)
+                {
+                    if (joystickPosition == 6 && player.isFacingRight || joystickPosition == 4 && !player.isFacingRight)
+                    {
+                        player.specialJump = player.isLeaping = true;
+                    }
+                    else
+                    {
+                        player.specialJump = player.isBackStepping = true;
+                    }
+                }
+                
+                
+            }
             player.isDashing = false;
+            RightTrigger_HoldLength = 0;
         }
         #endregion
     }
@@ -916,11 +1011,69 @@ public class InputHandler : MonoBehaviour {
 
         for(int i = 0; i < ComboInputNormal.Count; i++)
         {
-            if (InputCompare(defaultInput, ComboInputNormal[i]))
+            if (!player.isFacingRight)
             {
-                reversedInput = ComboInputReverse[i];
+                if (InputCompare(defaultInput, ComboInputNormal[i]))
+                {
+                    reversedInput = ComboInputReverse[i];
+                }
+            }
+            else
+            {
+                if (InputCompare(defaultInput, ComboInputReverse[i]))
+                {
+                    reversedInput = ComboInputNormal[i];
+                }
+            }
+
+            
+            
+        }
+        
+    }
+
+    void SoftTurn()
+    {
+        if(joystickRecord.Count > 0)
+        {
+            if (joystickRecord[0] == 8 || joystickRecord[0] == 2)
+            {
+                // lock direction for a bit
+            }
+        }
+        else if(joystickRecord.Count > 2)
+        {
+            if(joystickRecord[2] == 8 || joystickRecord[2] == 2)
+            {
+
             }
         }
         
+        
+        
+    }
+
+    void ChangeInput()
+    {
+        if(joystickRecord.Count < 2)
+        {
+            return;
+        }
+
+        inputValue = joystickRecord[joystickRecord.Count - 1] - joystickRecord[joystickRecord.Count - 2];
+
+
+        if(Mathf.Abs(prevInputValue) == Mathf.Abs(inputValue))
+        {
+            if(Mathf.Sign(prevInputValue) != Mathf.Sign(inputValue))
+            {
+                // Input Change Detected
+                int tempJoystickPosition = joystickRecord[joystickRecord.Count - 1];
+                joystickRecord.Clear();
+                joystickRecord.Add(tempJoystickPosition);
+            }
+        }
+
+        prevInputValue = inputValue;
     }
 }

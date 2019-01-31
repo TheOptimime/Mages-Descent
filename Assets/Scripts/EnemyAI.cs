@@ -1,24 +1,19 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Health))]
 [RequireComponent(typeof(EnemyController2D))]
-public class EnemyAI : MonoBehaviour {
+public class EnemyAI : AI {
 
-    Health health;
+    
     //float internalTimer;
 
     Fighter player;
-
-    Vector2 startingPoint;
-    public Transform spellCastPoint;
-
+    
     SpriteRenderer spr;
+    
+    public EnemyController2D ec;
 
-    Rigidbody2D rb2d;
-    EnemyController2D ec;
-
-    SpellDatabase spellIndex;
+    public float walkToPlayerSpeed;
 
     public enum EnemyState
     {
@@ -34,7 +29,7 @@ public class EnemyAI : MonoBehaviour {
 
     public bool respawnEnabled;
 
-    float timer, idleTimer, idleTime, hitTime, restTime, restTimer;
+    public bool stunned;
 
 
     public float attackRange, hitTimer;
@@ -46,26 +41,17 @@ public class EnemyAI : MonoBehaviour {
     bool hasRangedAttack;
 
 
-    public float walkSpeed, walkToPlayerSpeed;
 
-    public bool edgeDetected, ignoreEdgeDetection;
-    public int direction = 1;
+    public override void Start() {
+        base.Start();
 
-    public Transform edgeDetectionFront, edgeDetectionBack;
-
-    void Start() {
         ec = GetComponent<EnemyController2D>();
-        rb2d = GetComponent<Rigidbody2D>();
-        health = GetComponent<Health>();
-        //health.maxHealth = 30;
-        
-        startingPoint = transform.position;
         player = FindObjectOfType<Fighter>();
-        spellIndex = FindObjectOfType<SpellDatabase>();
+        health = GetComponent<Health>();
         spr = GetComponent<SpriteRenderer>();
         enemyState = new EnemyState();
 
-        if (walkSpeed == 0 && walkToPlayerSpeed == 0)
+        if (speed == 0 && walkToPlayerSpeed == 0)
         {
             Debug.LogWarning("Speeds are not properly set");
         }
@@ -136,7 +122,7 @@ public class EnemyAI : MonoBehaviour {
                 if (!edgeDetected || ignoreEdgeDetection)
                 {
 //                    print("should be walking" + direction * walkSpeed * Time.deltaTime);
-                    ec.Move(direction * walkSpeed * Time.deltaTime, false, false);
+                    ec.Move(direction * speed * Time.deltaTime, false, false);
                     ignoreEdgeDetection = false;
                 }
                 else
@@ -313,33 +299,7 @@ public class EnemyAI : MonoBehaviour {
         //Gizmos.DrawCube(transform.position, new Vector2(attackRange, attackRange));
     }
 
-    void UpdateEdgeDetection()
-    {
-
-        RaycastHit2D floorHitInfo = Physics2D.Raycast(edgeDetectionFront.position, Vector2.down, 0.1f);
-        RaycastHit2D wallHitInfo = Physics2D.Raycast(edgeDetectionFront.position, Vector2.right * direction, 0.01f);
-
-        //print("floor: " + floorHitInfo.collider.gameObject.name);
-        //print("wall: " + wallHitInfo.collider.gameObject.name);
-
-        if (floorHitInfo.collider == null)
-        {
-            // edge found
-            edgeDetected = true;
-            print("edge detected");
-        }
-        else if (wallHitInfo.collider != null && wallHitInfo.collider.tag != "Player")
-        {
-            // test for wall
-            edgeDetected = true;
-            print("wall detected");
-        }
-        else
-        {
-            edgeDetected = false;
-        }
-    }
-
+   
     
 
     public void UseAttack(Attack attack)

@@ -10,7 +10,7 @@ public class AttackScript : MonoBehaviour {
     public Attack attack;
     public string user;
     Rigidbody2D rb;
-    public float delay, defaultLifeSpan;
+    public float delay;
 
     //public Sprite[] projectileSprites;
     public Sprite testSprite;
@@ -32,22 +32,30 @@ public class AttackScript : MonoBehaviour {
 
     void Start()
     {
-        
-        print("attack start");
         transform.position = origin;
+        gameObject.tag = "Attack";
+
         rb = gameObject.AddComponent<Rigidbody2D>();
         col = gameObject.AddComponent<CircleCollider2D>();
-        col.isTrigger = true;
-        testSprite = Resources.Load<Sprite>(attack.spritePath);
-        print(testSprite);
         sr = gameObject.AddComponent<SpriteRenderer>();
+        
         sr.sprite = testSprite;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         sr.transform.localScale += new Vector3(3,3,3);
-        gameObject.tag = "Attack";
+        
+        
+        // Load Sprites 
+
+        // sprites = Resources.LoadAll<Sprite>("fireball.png");
+        // testSprite = Resources.Load<Sprite>(attack.spritePath);
+
+        sr.sprite = Resources.Load<Sprite>(attack.spritePath);
         sr.sortingOrder = 8;
-        sprites = Resources.LoadAll<Sprite>("fireball.png");
-        sr.sprite = Resources.Load<Sprite>("fireball.png");
+
+        rb.gravityScale = 0;
+
+        col.isTrigger = true;
+
         print("attack init complete");
        
     }
@@ -70,10 +78,6 @@ public class AttackScript : MonoBehaviour {
             for(int i = 0; i < sprites.Length; i++)
             {
                 sr.sprite = sprites[i];
-
-                
-                
-
             }
             
             
@@ -90,10 +94,10 @@ public class AttackScript : MonoBehaviour {
 
         //print(gameObject.name);
 
-        if (time > attack.lifetime || time > defaultLifeSpan)
+        if (time > attack.lifetime)
         {
             // destroy this object
-            if(attack.lifetime == 0 && time > defaultLifeSpan)
+            if(attack.lifetime == 0)
             {
                 Destroy(gameObject);
             }
@@ -111,20 +115,10 @@ public class AttackScript : MonoBehaviour {
     {
         if (attack != null)
         {
-            print("attack is not null");
-            //print("yeet");
-            if(attack.name == "Yeet Fire")
+            if(attack.attackType == Attack.AttackType.Blast || attack.attackType == Attack.AttackType.MultipleBlast)
             {
-                rb.velocity = new Vector2(attack.speed * direction, 0) * Mathf.Sin(Time.fixedDeltaTime * 20) * 0.5f;
+                rb.velocity = new Vector2(attack.speed * direction, 0);
             }
-            else
-            {
-                print("Should be moving: " + direction);
-                rb.velocity = new Vector2(attack.speed * direction * Time.deltaTime * 20, 0);
-                
-            }
-            
-            
         }
     }
 
@@ -134,35 +128,154 @@ public class AttackScript : MonoBehaviour {
 
         if (other.transform.tag == "Enemy" && other.gameObject.name != user || other.transform.tag == "Player" && other.gameObject.name != user)
         {
+            
             other.gameObject.GetComponent<Health>().Damage(attack.damage);
             
+                KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
+                knockbackScript.SetHitstun(attack.hitStun);
+                Vector2 finalKnockback = attack.knockback;
+                finalKnockback.x *= direction;
+                knockbackScript.SetKnockback(finalKnockback);
 
-            if(other.transform.tag == "Player")
+            // Get direction of the impact relative to the player/ai and flip accordingly 
+            if(transform.position.x < other.transform.position.x)
             {
-                Fighter player = other.gameObject.GetComponent<Fighter>();
-                player.recentlyAttacked = true;
-                player.recoveryTimer = attack.hitStun;
+                if(other.transform.tag == "Player")
+                {
+                    Fighter _player = other.gameObject.GetComponent<Fighter>();
+
+                    if(_player == null)
+                    {
+                        PlayerAI _ai = other.gameObject.GetComponent<PlayerAI>();
+                        if (!_ai.cc.m_FacingRight) _ai.cc.Flip();
+                    }
+                    else
+                    {
+                        if (!_player.cc.m_FacingRight) _player.cc.Flip();
+                    }
+                }
+                else if(other.transform.tag == "Enemy")
+                {
+                    EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
+                    if (!_enemy.ec.m_FacingRight) _enemy.ec.Flip();
+                }
             }
-            else if(other.transform.tag == "Enemy")
+            else if(transform.position.x > other.transform.position.x)
             {
-                EnemyAI enemy = other.gameObject.GetComponent<EnemyAI>();
-                enemy.hit = true;
-                enemy.hitTimer = attack.hitStun;
+                if (other.transform.tag == "Player")
+                {
+                    Fighter _player = other.gameObject.GetComponent<Fighter>();
+
+                    if (_player == null)
+                    {
+                        PlayerAI _ai = other.gameObject.GetComponent<PlayerAI>();
+                        if (_ai.cc.m_FacingRight) _ai.cc.Flip();
+                    }
+                    else
+                    {
+                        if (_player.cc.m_FacingRight) _player.cc.Flip();
+                    }
+                }
+                else if (other.transform.tag == "Enemy")
+                {
+                    EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
+                    if (_enemy.ec.m_FacingRight) _enemy.ec.Flip();
+                }
             }
 
-            Destroy(gameObject);
+            if (attack.attackType == Attack.AttackType.Blast)
+            {
+                if (attack.followUpAttack != null)
+                {
+                    // check if attack is burst/aoe
+                    if(attack.elementEffect == Attack.ElementEffect.Burst)
+                    {
+                        StartNextAttack(attack.followUpAttack);
+                    }
+                }
+            }
+
+            Destroy(gameObject, attack.destroyTime);
 
         }
         else if(other.transform.tag == "Ground" || other.transform.tag == "Wall")
         {
-            Destroy(gameObject);
+            if(attack.attackType == Attack.AttackType.Blast)
+            {
+                if(attack.followUpAttack != null)
+                {
+                    if(attack.elementEffect == Attack.ElementEffect.Burst)
+                    {
+                        StartNextAttack(attack.followUpAttack);
+                    }
+                    else if(attack.followUpType == Attack.FollowUpType.Auto)
+                    {
+                        // Automatically Starts Next Attack
+                    }
+                    else if(attack.followUpType == Attack.FollowUpType.Command)
+                    {
+                        // Sends a flag back to the caster to add the follow up attack in the attack queue
+                    }
+                }
+            }
+            Destroy(gameObject, attack.destroyTime);
         }
     }
 
-    
-
-    public void SetProjectile(Attack _attack)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        attack = _attack;
+        if (other.transform.tag == "Enemy" && other.gameObject.name != user || other.transform.tag == "Player" && other.gameObject.name != user)
+        {
+            // deal damage at a rate [if(time % rate)]
+            other.gameObject.GetComponent<Health>().Damage(attack.damage);
+
+            KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
+            knockbackScript.SetHitstun(attack.hitStun);
+            Vector2 finalKnockback = attack.knockback;
+            finalKnockback.x *= direction;
+            knockbackScript.SetKnockback(finalKnockback);
+
+            // Get direction of the impact relative to the player/ai
+
+
+            if (attack.attackType == Attack.AttackType.Beam)
+            {
+                if (attack.followUpAttack != null)
+                {
+                    // check if attack is burst/aoe
+                    
+                }
+            }
+
+            Destroy(gameObject, attack.destroyTime);
+
+        }
+        else if (other.transform.tag == "Ground" || other.transform.tag == "Wall")
+        {
+            if (attack.attackType == Attack.AttackType.Blast)
+            {
+                if (attack.followUpAttack != null)
+                {
+                    if (attack.elementEffect == Attack.ElementEffect.Burst)
+                    {
+                        StartNextAttack(attack.followUpAttack);
+                    }
+                    else if (attack.followUpType == Attack.FollowUpType.Auto)
+                    {
+                        // Automatically Starts Next Attack
+                    }
+                    else if (attack.followUpType == Attack.FollowUpType.Command)
+                    {
+                        // Sends a flag back to the caster to add the follow up attack in the attack queue
+                    }
+                }
+            }
+            Destroy(gameObject, attack.destroyTime);
+        }
+    }
+
+    void StartNextAttack(Attack _attack)
+    {
+
     }
 }
