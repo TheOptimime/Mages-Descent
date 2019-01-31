@@ -54,10 +54,13 @@ public partial class Fighter {
         spell.direction = cc.m_FacingRight? 1 : -1;
         spell.user = gameObject.name;
 
+        movementFreezeLength = new DoubleTime(projectile.animationCancelLength, projectile.animationLength);
+
         print("xDisp: " + projectile.xDisplacement);
+
         if(projectile.xDisplacement != 0)
         {
-            rb.AddForce(new Vector2(rb.velocity.x + projectile.xDisplacement * spell.direction * 200, rb.velocity.y), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(rb.velocity.x + projectile.xDisplacement * spell.direction, rb.velocity.y), ForceMode2D.Impulse);
             print("force applied");
         }
     }
@@ -124,7 +127,7 @@ public partial class Fighter {
 
                 if (castTime > attackInQueue.chargeTime)
                 {
-
+                    attackInQueue.attackCharge = Mathf.Round(castTime);
                 }
             }
         }

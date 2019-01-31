@@ -136,7 +136,52 @@ public class AttackScript : MonoBehaviour {
                 Vector2 finalKnockback = attack.knockback;
                 finalKnockback.x *= direction;
                 knockbackScript.SetKnockback(finalKnockback);
-            
+
+            // Get direction of the impact relative to the player/ai and flip accordingly 
+            if(transform.position.x < other.transform.position.x)
+            {
+                if(other.transform.tag == "Player")
+                {
+                    Fighter _player = other.gameObject.GetComponent<Fighter>();
+
+                    if(_player == null)
+                    {
+                        PlayerAI _ai = other.gameObject.GetComponent<PlayerAI>();
+                        if (!_ai.cc.m_FacingRight) _ai.cc.Flip();
+                    }
+                    else
+                    {
+                        if (!_player.cc.m_FacingRight) _player.cc.Flip();
+                    }
+                }
+                else if(other.transform.tag == "Enemy")
+                {
+                    EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
+                    if (!_enemy.ec.m_FacingRight) _enemy.ec.Flip();
+                }
+            }
+            else if(transform.position.x > other.transform.position.x)
+            {
+                if (other.transform.tag == "Player")
+                {
+                    Fighter _player = other.gameObject.GetComponent<Fighter>();
+
+                    if (_player == null)
+                    {
+                        PlayerAI _ai = other.gameObject.GetComponent<PlayerAI>();
+                        if (_ai.cc.m_FacingRight) _ai.cc.Flip();
+                    }
+                    else
+                    {
+                        if (_player.cc.m_FacingRight) _player.cc.Flip();
+                    }
+                }
+                else if (other.transform.tag == "Enemy")
+                {
+                    EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
+                    if (_enemy.ec.m_FacingRight) _enemy.ec.Flip();
+                }
+            }
 
             if (attack.attackType == Attack.AttackType.Blast)
             {
@@ -168,6 +213,58 @@ public class AttackScript : MonoBehaviour {
                         // Automatically Starts Next Attack
                     }
                     else if(attack.followUpType == Attack.FollowUpType.Command)
+                    {
+                        // Sends a flag back to the caster to add the follow up attack in the attack queue
+                    }
+                }
+            }
+            Destroy(gameObject, attack.destroyTime);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.transform.tag == "Enemy" && other.gameObject.name != user || other.transform.tag == "Player" && other.gameObject.name != user)
+        {
+            // deal damage at a rate [if(time % rate)]
+            other.gameObject.GetComponent<Health>().Damage(attack.damage);
+
+            KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
+            knockbackScript.SetHitstun(attack.hitStun);
+            Vector2 finalKnockback = attack.knockback;
+            finalKnockback.x *= direction;
+            knockbackScript.SetKnockback(finalKnockback);
+
+            // Get direction of the impact relative to the player/ai
+
+
+            if (attack.attackType == Attack.AttackType.Beam)
+            {
+                if (attack.followUpAttack != null)
+                {
+                    // check if attack is burst/aoe
+                    
+                }
+            }
+
+            Destroy(gameObject, attack.destroyTime);
+
+        }
+        else if (other.transform.tag == "Ground" || other.transform.tag == "Wall")
+        {
+            if (attack.attackType == Attack.AttackType.Blast)
+            {
+                if (attack.followUpAttack != null)
+                {
+                    if (attack.elementEffect == Attack.ElementEffect.Burst)
+                    {
+                        StartNextAttack(attack.followUpAttack);
+                    }
+                    else if (attack.followUpType == Attack.FollowUpType.Auto)
+                    {
+                        // Automatically Starts Next Attack
+                    }
+                    else if (attack.followUpType == Attack.FollowUpType.Command)
                     {
                         // Sends a flag back to the caster to add the follow up attack in the attack queue
                     }

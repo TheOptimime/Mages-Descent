@@ -8,7 +8,7 @@ public class Attack : ScriptableObject{
     public string name, description, spritePath;
     public int damage, multiFireCount;
     public float attackLength, animationLength, animationCancelLength, xDisplacement, multiFireRate, speed, lifetime, chargeTime = 0, delay;
-    public float hitStun, destroyTime;
+    public float hitStun, destroyTime, attackCharge;
     public bool hasSpecialChargeFunction, instantCast, burstOnDestroy;
     public Vector2 knockback;
     public List<int> joystickCommand;

@@ -5701,7 +5701,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476899451918516, guid: 827a7d09456c9284092ef158244674da, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4668294362580370, guid: 827a7d09456c9284092ef158244674da, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5942,6 +5942,7 @@ MonoBehaviour:
   attackIsInQueue: 0
   attackInProgress: 0
   spellCastPoint: {fileID: 2089258925}
+  recoveryVelocity: {x: 0, y: 0}
   horizontalMove: 0
   verticalMove: 0
   recoveryTimer: 0

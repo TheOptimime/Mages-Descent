@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 [RequireComponent(typeof(MoveSet))]
 [RequireComponent(typeof(InputHandler))]
 [RequireComponent(typeof(PlayerController2D))]
@@ -23,8 +24,10 @@ public partial class Fighter : MonoBehaviour {
     public Transform spellCastPoint;
 
     InputHandler input;
+    DoubleTime movementFreezeLength;
+    public Vector2 recoveryVelocity;
 
-    Vector3 movePos;
+    Vector2 movePos;
 
     public float horizontalMove = 0f, verticalMove = 0f;
 
@@ -109,6 +112,15 @@ public partial class Fighter : MonoBehaviour {
 
     void Update()
     {
+
+        if(movementFreezeLength.cancelTime > 0)
+        {
+            lockMovement = true;
+        }
+        else if(movementFreezeLength.cancelTime < 0)
+        {
+            lockMovement = false;
+        }
         
         if (recentlyAttacked && lockMovement != true)
         {
@@ -180,7 +192,12 @@ public partial class Fighter : MonoBehaviour {
             }
         }
 
-        print("Leaping: " + isLeaping + " BackStep: " + isBackStepping + "BackLeaping: " + isBackLeaping);
+        movementFreezeLength.Decrement();
+        print(movementFreezeLength.cancelTime);
+
+        SetVibration((castTime / 100));
+
+        //print("Leaping: " + isLeaping + " BackStep: " + isBackStepping + "BackLeaping: " + isBackLeaping);
     }
 
     private void Move()
@@ -220,9 +237,23 @@ public partial class Fighter : MonoBehaviour {
 
     void RecoveryJump()
     {
-        lockMovement = false;
-        recentlyAttacked = false;
-        jump = false;
+        Vector2 finalVelocity = recoveryVelocity;
+
+        if (input.joystickPosition == 6)
+        {
+            finalVelocity.x *= Mathf.Abs(finalVelocity.x);
+        }
+        else if(input.joystickPosition == 4)
+        {
+            finalVelocity.x *= -Mathf.Abs(finalVelocity.x);
+        }
+        else
+        {
+            finalVelocity.x *= cc.m_FacingRight ? 1 : -1;
+        }
+        
+        
+        rb.AddForce(finalVelocity);
     }
 
     private void FixedUpdate()
@@ -301,7 +332,8 @@ public partial class Fighter : MonoBehaviour {
         cc.m_AirControl = false;
         jumpCount += 2;
         specialJump = true;
-        cc.Move(forwardLeapSpeed, jump, PlayerController2D.JumpType.Long);
+        int direction = cc.m_FacingRight ? 1 : -1;
+        cc.Move(forwardLeapSpeed * direction, jump, PlayerController2D.JumpType.Long);
         canDoubleJump = false;
     }
 

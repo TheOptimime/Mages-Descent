@@ -19,6 +19,8 @@ public class InputHandler : MonoBehaviour {
     [Range(0.2f, 0.8f)]
     public float deadzone = 0.3f;
 
+    public int RightTrigger_HoldLength;
+
     public int joystickPosition, lastJoystickPosition;
 
     public List<int> joystickRecord;
@@ -580,17 +582,41 @@ public class InputHandler : MonoBehaviour {
         {
             print("R2 Button Pressed");
             joystickRecord.Clear();
-            player.isDashing = true;
+            
         }
         else if (prevState.Triggers.Right >= 0.3f && state.Triggers.Right >= 0.3f)
         {
             print("R2 Button Held");
+            RightTrigger_HoldLength++;
+            if(RightTrigger_HoldLength > 5)
+            {
+                player.isDashing = true;
+
+            }
             joystickRecord.Clear();
         }
         else if (prevState.Triggers.Right >= 0.3f && state.Triggers.Right <= 0.2f)
         {
             print("R2 Button Released");
+            if(RightTrigger_HoldLength < 5)
+            {
+                // Teleport
+                if(joystickPosition != 5)
+                {
+                    if (joystickPosition == 6 && player.isFacingRight || joystickPosition == 4 && !player.isFacingRight)
+                    {
+                        player.specialJump = player.isLeaping = true;
+                    }
+                    else
+                    {
+                        player.specialJump = player.isBackStepping = true;
+                    }
+                }
+                
+                
+            }
             player.isDashing = false;
+            RightTrigger_HoldLength = 0;
         }
         #endregion
     }

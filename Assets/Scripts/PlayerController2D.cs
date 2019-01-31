@@ -197,7 +197,7 @@ public class PlayerController2D : MonoBehaviour
         m_Rigidbody2D.velocity = Vector2.zero;
     }
 
-	private void Flip()
+	public void Flip()
 	{
 		// Switch the way the player is labelled as facing.
 		m_FacingRight = !m_FacingRight;
