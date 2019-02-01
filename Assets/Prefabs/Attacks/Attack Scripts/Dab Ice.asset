@@ -4,29 +4,31 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0aba337f66310624c922f65cd40c0a20, type: 3}
-  m_Name: Triple Fire
+  m_Name: Dab Ice
   m_EditorClassIdentifier: 
-  name: Triple Fire
-  description: Fire 3 blasts
+  name: Dab Ice
   spritePath: '"fireball"'
-  damage: 5
-  multiFireCount: 3
-  attackLength: 0.8
+  description: Yeet yeet dab
+  damage: 8
+  multiFireCount: 2
+  attackLength: 1.2
   animationLength: 0
   animationCancelLength: 0
-  xDisplacement: -0.2
-  multiFireRate: 0.5
-  speed: 2
-  lifetime: 2
-  chargeTime: 0
-  delay: 0
-  hitStun: 0
   destroyTime: 0
+  xDisplacement: -0.2
+  multiFireRate: 0.4
+  speed: 4
+  lifetime: 0.4
+  delay: 0.2
+  chargeTime: 0
+  hitStun: 0.4
+  attackCharge: 0
   hasSpecialChargeFunction: 0
   instantCast: 1
   burstOnDestroy: 0
@@ -34,7 +36,7 @@ MonoBehaviour:
   joystickCommand: 
   followUpAttack: {fileID: 0}
   attackType: 2
-  element: 0
-  elementEffect: 2
+  element: 1
+  elementEffect: 3
   chargeType: 0
   followUpType: 0

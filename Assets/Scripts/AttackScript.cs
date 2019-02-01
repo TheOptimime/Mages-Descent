@@ -8,26 +8,26 @@ public class AttackScript : MonoBehaviour {
     //public Vector2 speed;
 
     public Attack attack;
-    public string user;
-    Rigidbody2D rb;
-    public float delay;
+    [HideInInspector] public string user;
 
-    //public Sprite[] projectileSprites;
-    public Sprite testSprite;
-    CircleCollider2D col;
+    Rigidbody2D rb;
+
+    [HideInInspector] public float delay;
+
+    Collider2D col;
 
     SpriteRenderer sr;
     Sprite[] sprites;
 
-    public Vector2 origin;
-    public int direction;
-    public bool flipped;
+    [HideInInspector] public Vector2 origin;
+    [HideInInspector] public int direction;
+    [HideInInspector] public bool flipped;
 
-    public float time;
+    [HideInInspector] public float time;
 
     int castingPlayer;
-    
 
+    public GameObject followUpAttack;
 
 
     void Start()
@@ -39,11 +39,12 @@ public class AttackScript : MonoBehaviour {
         col = gameObject.AddComponent<CircleCollider2D>();
         sr = gameObject.AddComponent<SpriteRenderer>();
         
-        sr.sprite = testSprite;
+        //sr.sprite = testSprite;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         sr.transform.localScale += new Vector3(3,3,3);
         
         
+
         // Load Sprites 
 
         // sprites = Resources.LoadAll<Sprite>("fireball.png");
@@ -57,7 +58,9 @@ public class AttackScript : MonoBehaviour {
         col.isTrigger = true;
 
         print("attack init complete");
-       
+
+
+        
     }
     
     void Update()
@@ -70,39 +73,23 @@ public class AttackScript : MonoBehaviour {
         
         if(sr.sprite == null)
         {
-            sr.sprite = testSprite;
+            //sr.sprite = testSprite;
         }
 
-        if(attack.name == "Triple Fire")
-        {
-            for(int i = 0; i < sprites.Length; i++)
-            {
-                sr.sprite = sprites[i];
-            }
-            
-            
-        }
-        else if(attack.name == "Dark Fire")
-        {
-            sr.color = new Color(0.28f, 0f, 0.28f);
-        }
-        else if (attack.name == "Dab Ice")
-        {
-            sr.color = new Color(0.16f, 0.2f, 0.56f);
-        }
-
-
+        
         //print(gameObject.name);
 
         if (time > attack.lifetime)
         {
             // destroy this object
-            if(attack.lifetime == 0)
+            if(attack.lifetime <= 0)
             {
+                StartNextAttack(followUpAttack);
                 Destroy(gameObject);
             }
             else if (time > attack.lifetime)
             {
+                StartNextAttack(followUpAttack);
                 Destroy(gameObject);
             }
 
@@ -190,7 +177,7 @@ public class AttackScript : MonoBehaviour {
                     // check if attack is burst/aoe
                     if(attack.elementEffect == Attack.ElementEffect.Burst)
                     {
-                        StartNextAttack(attack.followUpAttack);
+                        StartNextAttack(followUpAttack);
                     }
                 }
             }
@@ -206,11 +193,12 @@ public class AttackScript : MonoBehaviour {
                 {
                     if(attack.elementEffect == Attack.ElementEffect.Burst)
                     {
-                        StartNextAttack(attack.followUpAttack);
+                        StartNextAttack(followUpAttack);
                     }
                     else if(attack.followUpType == Attack.FollowUpType.Auto)
                     {
                         // Automatically Starts Next Attack
+                        StartNextAttack(followUpAttack);
                     }
                     else if(attack.followUpType == Attack.FollowUpType.Command)
                     {
@@ -258,7 +246,7 @@ public class AttackScript : MonoBehaviour {
                 {
                     if (attack.elementEffect == Attack.ElementEffect.Burst)
                     {
-                        StartNextAttack(attack.followUpAttack);
+                        StartNextAttack(followUpAttack);
                     }
                     else if (attack.followUpType == Attack.FollowUpType.Auto)
                     {
@@ -274,8 +262,28 @@ public class AttackScript : MonoBehaviour {
         }
     }
 
-    void StartNextAttack(Attack _attack)
+    void StartNextAttack(GameObject _attack)
     {
 
+        if (attack.followUpAttack != null)
+        {
+            // So the followUpAttack is just the base prefab
+            AttackScript _as;
+
+            if (followUpAttack == null)
+            {
+                followUpAttack = new GameObject();
+            }
+
+            if (_as = followUpAttack.GetComponent<AttackScript>())
+            {
+                _as.attack = attack.followUpAttack;
+            }
+            else
+            {
+                _as = followUpAttack.AddComponent<AttackScript>();
+                _as.attack = attack.followUpAttack;
+            }
+        }
     }
 }

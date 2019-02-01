@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aba337f66310624c922f65cd40c0a20, type: 3}
+  m_Name: Triple Fire
+  m_EditorClassIdentifier: 
+  name: Triple Fire
+  spritePath: '"fireball"'
+  description: Fire 3 blasts
+  damage: 5
+  multiFireCount: 3
+  attackLength: 0.8
+  animationLength: 0
+  animationCancelLength: 0
+  destroyTime: 0
+  xDisplacement: -0.2
+  multiFireRate: 0.5
+  speed: 2
+  lifetime: 2
+  delay: 0
+  chargeTime: 0
+  hitStun: 0
+  attackCharge: 0
+  hasSpecialChargeFunction: 0
+  instantCast: 1
+  burstOnDestroy: 0
+  knockback: {x: 0, y: 0}
+  joystickCommand: 
+  followUpAttack: {fileID: 11400000}
+  attackType: 2
+  element: 0
+  elementEffect: 2
+  chargeType: 0
+  followUpType: 1

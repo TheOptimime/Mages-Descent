@@ -5,13 +5,26 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Attack : ScriptableObject{
 
-    public string name, description, spritePath;
+    public new string name;
+    public string spritePath;
+
+    [TextArea] public string description; 
+
     public int damage, multiFireCount;
-    public float attackLength, animationLength, animationCancelLength, xDisplacement, multiFireRate, speed, lifetime, chargeTime = 0, delay;
-    public float hitStun, destroyTime, attackCharge;
+
+    public float attackLength;
+    [HideInInspector] public float animationLength, animationCancelLength, destroyTime;
+    public float xDisplacement, multiFireRate, speed, lifetime, delay;
+    public float chargeTime = 0;
+
+
+    public float hitStun, attackCharge;
     public bool hasSpecialChargeFunction, instantCast, burstOnDestroy;
+
     public Vector2 knockback;
+
     public List<int> joystickCommand;
+
     public Attack followUpAttack;
 
     public enum AttackType
