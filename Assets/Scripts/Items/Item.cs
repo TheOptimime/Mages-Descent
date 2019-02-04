@@ -42,16 +42,16 @@ public class Item {
             {
                 int matchCount = 0;
 
-                if(attacks[i].joystickCommand.Count == attack.joystickCommand.Count)
+                if(attacks[i]._joystickCommand.Count == attack._joystickCommand.Count)
                 {
-                    for (int joystickNumber = 0; joystickNumber < attacks[i].joystickCommand.Count; joystickNumber++)
+                    for (int joystickNumber = 0; joystickNumber < attacks[i]._joystickCommand.Count; joystickNumber++)
                     {
-                        if (attacks[i].joystickCommand[joystickNumber] == attack.joystickCommand[joystickNumber])
+                        if (attacks[i]._joystickCommand[joystickNumber] == attack._joystickCommand[joystickNumber])
                         {
                             matchCount++;
                         }
                     }
-                    if(matchCount == attacks[i].joystickCommand.Count)
+                    if(matchCount == attacks[i]._joystickCommand.Count)
                     {
                         attacks.Add(attack);
                         continue;

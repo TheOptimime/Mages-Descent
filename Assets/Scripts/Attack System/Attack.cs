@@ -23,9 +23,11 @@ public class Attack : ScriptableObject{
 
     public Vector2 knockback;
 
-    public List<int> joystickCommand;
+    public List<int> _joystickCommand;
 
     public Attack followUpAttack;
+
+    public Animation spriteAnimation;
 
     public enum AttackType
     {
@@ -69,12 +71,93 @@ public class Attack : ScriptableObject{
         Charge
     }
 
+    public enum JoystickCommands
+    {
+        None,
+        QuarterCircleDownRight,
+        QuarterCircleRightDown,
+        QuarterCircleRightUp,
+        QuarterCircleUpRight,
+        HalfCircleUnderRightLeft,
+        HalfCircleOverLeftRight,
+        HalfCircleDownUpRight,
+        HalfCircleUpDownRight,
+        FullCircleRightUp,
+        FullCircleRightDown,
+        FourCircleUpRight,
+        FourCircleDownRight
+    }
+
     public AttackType attackType;
     public Element element;
     public ElementEffect elementEffect;
     public ChargeType chargeType;
     public FollowUpType followUpType;
+    public JoystickCommands joystickCommand;
 
+    public Attack()
+    {
+        Debug.Log("this actually works");
+
+        switch ((int) joystickCommand)
+        {
+            case 0:
+                _joystickCommand = new List<int>();
+                break;
+
+            case 1:
+                _joystickCommand = new List<int>() { 8, 9, 6 };
+                break;
+
+            case 2:
+                _joystickCommand = new List<int>() { 6, 9, 8 };
+                break;
+
+            case 3:
+                _joystickCommand = new List<int>() { 6, 3, 2 };
+                break;
+
+            case 4:
+                _joystickCommand = new List<int>() { 2, 3, 6 };
+                break;
+
+            case 5:
+                _joystickCommand = new List<int>() { 6, 9, 8, 7, 4 };
+                break;
+
+            case 6:
+                _joystickCommand = new List<int>() { 4, 1, 2, 3, 6 };
+                break;
+
+            case 7:
+                _joystickCommand = new List<int>() { 8, 9, 6, 3, 2 };
+                break;
+
+            case 8:
+                _joystickCommand = new List<int>() { 2, 3, 6, 9, 8 };
+                break;
+
+            case 9:
+                _joystickCommand = new List<int>() { 6, 3, 2, 1, 4, 7, 8, 9, 6 };
+                break;
+
+            case 10:
+                _joystickCommand = new List<int>() { 6, 9, 8, 7, 4, 1, 2, 3, 6 };
+                break;
+
+            case 11:
+                _joystickCommand = new List<int>() { 2, 3, 6, 9 };
+                break;
+
+            case 12:
+                _joystickCommand = new List<int>() { 8, 9, 6, 3 };
+                break;
+
+            
+        }
+    }
+
+    /*
 
     // Multi hitting Attacks
     /// <summary>
@@ -309,4 +392,6 @@ public class Attack : ScriptableObject{
         delay = _delay;
         attackType = _attackType;
     }
+
+    */
 }

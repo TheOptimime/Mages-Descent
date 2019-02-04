@@ -36,30 +36,31 @@ public class AttackScript : MonoBehaviour {
         gameObject.tag = "Attack";
 
         rb = gameObject.AddComponent<Rigidbody2D>();
-        col = gameObject.AddComponent<CircleCollider2D>();
         sr = gameObject.AddComponent<SpriteRenderer>();
         
         //sr.sprite = testSprite;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         sr.transform.localScale += new Vector3(3,3,3);
         
-        
-
-        // Load Sprites 
-
-        // sprites = Resources.LoadAll<Sprite>("fireball.png");
-        // testSprite = Resources.Load<Sprite>(attack.spritePath);
 
         sr.sprite = Resources.Load<Sprite>(attack.spritePath);
         sr.sortingOrder = 8;
 
         rb.gravityScale = 0;
 
-        col.isTrigger = true;
+        if(col != null)
+        {
+            col.isTrigger = true;
+        }
+        else
+        {
+
+        }
+        
 
         print("attack init complete");
 
-
+        
         
     }
     

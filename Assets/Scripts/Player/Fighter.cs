@@ -193,7 +193,7 @@ public partial class Fighter : MonoBehaviour {
         }
 
         movementFreezeLength.Decrement();
-        print(movementFreezeLength.cancelTime);
+        //print(movementFreezeLength.cancelTime);
 
         SetVibration((castTime / 100));
 
