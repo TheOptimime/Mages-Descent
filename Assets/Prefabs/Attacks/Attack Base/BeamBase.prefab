@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8465239412310887036}
   - component: {fileID: 8465239412310887037}
-  - component: {fileID: 8465239412310887039}
+  - component: {fileID: 7428039104334410966}
   m_Layer: 0
-  m_Name: ProjectileBase
+  m_Name: BeamBase
   m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   flipped: 0
   time: 0
   followUpAttack: {fileID: 0}
---- !u!58 &8465239412310887039
-CircleCollider2D:
+--- !u!61 &7428039104334410966
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -66,5 +66,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 0.01, y: 1}
+  m_EdgeRadius: 0

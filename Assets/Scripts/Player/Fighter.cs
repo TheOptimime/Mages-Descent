@@ -14,14 +14,18 @@ public partial class Fighter : MonoBehaviour {
 
     #region Variables
     public float speed;
-    public PlayerController2D cc;
+    [HideInInspector] public PlayerController2D cc;
+    public float dabometer;
     SpellDatabase spellList;
 
-    public bool attackIsInQueue, attackInProgress;
+    public int PlayerID;
 
+    public bool attackIsInQueue, attackInProgress, attackIsSpecialHeld;
+
+    AttackScript specialHold;
     Attack attackInQueue;
 
-    public Transform spellCastPoint;
+    public Transform spellCastPoint, meteorSpellCastPoint, backSpellCastPoint;
 
     InputHandler input;
     DoubleTime movementFreezeLength;
@@ -37,7 +41,7 @@ public partial class Fighter : MonoBehaviour {
 
     public float runSpeed = 40f;
 
-    public MoveSet moveset;
+    [HideInInspector] public MoveSet moveset;
 
     public int jumpCount;
 
@@ -56,7 +60,7 @@ public partial class Fighter : MonoBehaviour {
 
     GameManager gm;
 
-    public SpriteRenderer sr;
+    [HideInInspector] public SpriteRenderer sr;
 
     Animator anim;
 
@@ -65,13 +69,13 @@ public partial class Fighter : MonoBehaviour {
     IEnumerator hitstunCoroutine;
 
     //Transform firePos;
-    Health health;
+    [HideInInspector] public Health health;
     //CharacterController2D cc;
 
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
 
-    public Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb;
 
     public float castTime = 0;
     public float finishedCast = 1;
@@ -112,6 +116,11 @@ public partial class Fighter : MonoBehaviour {
 
     void Update()
     {
+
+        if(dabometer >= 100)
+        {
+
+        }
 
         if(movementFreezeLength.cancelTime > 0)
         {
@@ -253,7 +262,7 @@ public partial class Fighter : MonoBehaviour {
         }
         
         
-        rb.AddForce(finalVelocity);
+        rb.velocity = (finalVelocity);
     }
 
     private void FixedUpdate()

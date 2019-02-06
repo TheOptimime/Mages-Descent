@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
-    public int maxHealth, currentHealth;
+    public float maxHealth, currentHealth;
     public bool regen;
 
     public float timer, time;

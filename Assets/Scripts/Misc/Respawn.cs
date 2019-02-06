@@ -24,10 +24,12 @@ public class Respawn : MonoBehaviour {
 
         if (other.gameObject.GetComponent<Fighter>())
         {
-            other.gameObject.GetComponent<Fighter>().cc.FreezeVelocity();
-            other.gameObject.transform.position = rm.activeSpawnPoint.position;
+            if(rm.activeSpawnPoint != null)
+            {
+                other.gameObject.GetComponent<Fighter>().cc.FreezeVelocity();
+                other.gameObject.transform.position = rm.activeSpawnPoint.position;
+            }
+            
         }
-		
-	
 	}
 }

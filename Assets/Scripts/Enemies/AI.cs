@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Health))]
+[RequireComponent(typeof(AilmentHandler))]
 public class AI : MonoBehaviour {
 
     public Health health;
@@ -26,6 +27,7 @@ public class AI : MonoBehaviour {
 
     public RespawnManager rm;
     public Animator anim;
+    public AilmentHandler ailmentHandler;
 
     IEnumerator hitstunCoroutine;
     public bool lockMovement;
@@ -37,6 +39,7 @@ public class AI : MonoBehaviour {
         startingPoint = transform.position;
         anim = GetComponent<Animator>();
         rm = FindObjectOfType<RespawnManager>();
+        ailmentHandler = GetComponent<AilmentHandler>();
     }
 	
 	// Update is called once per frame

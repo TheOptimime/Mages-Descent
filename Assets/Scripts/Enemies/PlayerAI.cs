@@ -11,6 +11,8 @@ public class PlayerAI : AI {
     bool debugOnly = true;
     public PlayerController2D cc;
 
+    public int PlayerID;
+
     public bool jump = false;
     public bool isDashing, recentlyAttacked;
     public bool isFacingRight;

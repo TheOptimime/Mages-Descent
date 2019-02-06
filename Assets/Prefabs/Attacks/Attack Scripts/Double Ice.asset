@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0aba337f66310624c922f65cd40c0a20, type: 3}
-  m_Name: Dab Ice
+  m_Name: Double Ice
   m_EditorClassIdentifier: 
-  name: Dab Ice
-  spritePath: '"fireball"'
-  description: Yeet yeet dab
-  damage: 8
-  multiFireCount: 2
-  attackLength: 1.2
+  name: Ice Ice Baby
+  spritePath: 
+  description: Dun dun dun du du du dun
+  damage: 7
+  multiFireCount: 0
+  attackLength: 0
   animationLength: 0
   animationCancelLength: 0
   destroyTime: 0
-  xDisplacement: -0.2
-  multiFireRate: 0.4
+  xDisplacement: 0
+  multiFireRate: 0
   speed: 6
-  lifetime: 0.4
-  delay: 0.2
+  lifetime: 4
+  delay: 0
   chargeTime: 0
-  hitStun: 0.4
+  hitStun: 0
   attackCharge: 0
   hasSpecialChargeFunction: 0
   instantCast: 1
@@ -35,15 +35,15 @@ MonoBehaviour:
   spellPoints: 0
   knockback: {x: 0, y: 0}
   _joystickCommand: 
-  followUpAttack: {fileID: 0}
+  followUpAttack: {fileID: 11400000, guid: d1489923ee699cd4c9cc96d14db037ef, type: 2}
   simultaneousAttack: {fileID: 0}
   spriteAnimation: {fileID: 195896568903275498, guid: 7c3620e50be69e543a5ae61dd388da64,
     type: 3}
   attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
     type: 3}
-  attackPath: 1
+  attackPath: 3
   keyPoints: []
-  attackType: 2
+  attackType: 1
   element: 2
   elementEffect: 3
   chargeType: 0

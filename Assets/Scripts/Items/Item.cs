@@ -7,7 +7,7 @@ public class Item {
 
     public string name, description;
 
-    public enum itemType
+    public enum ItemType
     {
         SpellBook,
         
@@ -19,7 +19,7 @@ public class Item {
         public Attack.Element element;
         public List<Attack> attacks;
 
-        int level, exp, SP;
+        int level, exp, expForNextLevel, SP;
 
         SpellDatabase spellDatabase;
 
@@ -37,6 +37,18 @@ public class Item {
 
         void AddAttack(Attack attack)
         {
+            if(attack == null)
+            {
+                return;
+            }
+
+            if(attack.element != element)
+            {
+                Debug.Log("Spell does not match element");
+                return;
+            }
+            
+
             // check to see if another joystick command clashes
             for(int i = 0; i < attacks.Count; i++)
             {
@@ -53,13 +65,38 @@ public class Item {
                     }
                     if(matchCount == attacks[i]._joystickCommand.Count)
                     {
-                        attacks.Add(attack);
-                        continue;
+                        return;
                     }
                 }
                 
             }
+
+            if(SP - attack.spellPoints < 0)
+            {
+                return;
+            }
+
+            SP -= attack.spellPoints;
+            attacks.Add(attack);
             
+        }
+
+        void RemoveAttack(Attack attack)
+        {
+            if (attacks.Remove(attack)) {
+                SP += attack.spellPoints;
+            }
+        }
+        
+
+        void LevelUp()
+        {
+            exp = expForNextLevel - exp;
+            expForNextLevel += Mathf.RoundToInt(expForNextLevel * Random.Range(1.4f, 2.4f));
+            if(exp < 0)
+            {
+                Debug.LogWarning("Something is Wrong With Levelling");
+            }
         }
     }
 }
