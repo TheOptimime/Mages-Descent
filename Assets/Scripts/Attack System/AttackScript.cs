@@ -24,6 +24,8 @@ public class AttackScript : MonoBehaviour {
     SpriteRenderer sr;
     Sprite[] sprites;
 
+    float frequency = 20, magnitude = 0.5f;
+
     [HideInInspector] public Vector2 origin;
     [HideInInspector] public int direction;
     [HideInInspector] public bool flipped;
@@ -46,25 +48,10 @@ public class AttackScript : MonoBehaviour {
         gameObject.tag = "Attack";
 
         rb = gameObject.AddComponent<Rigidbody2D>();
-        sr = gameObject.AddComponent<SpriteRenderer>();
-        
-        //sr.sprite = testSprite;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        //sr.transform.localScale += new Vector3(3,3,3);
-        
-
-        //sr.sprite = Resources.Load<Sprite>(attack.spritePath);
-        //sr.sortingOrder = 8;
-
         rb.gravityScale = 0;
-
         
-        if(col != null)
-        {
-            col.isTrigger = true;
-        }
-
-        if(boxCol = GetComponent<BoxCollider2D>())
+        if(boxCol = GetComponentInChildren<BoxCollider2D>())
         {
             print("Box Collider Present");
         }
@@ -77,29 +64,49 @@ public class AttackScript : MonoBehaviour {
                 // facing left
                 sprite.transform.localScale = MathC.MultiplyVector(sprite.transform.localScale, MathC.NegaVectorX);
             }
-            
-            if(attack.attackPath == Attack.AttackPath.Meteor)
+
+            if (attack.attackBase != null)
             {
-                sprite.transform.Rotate(new Vector3(0, 45, 0));
+                // Checks for a 2D Collider in the attack base prefab
+                if (sprite.GetComponent<Collider2D>())
+                {
+                    // Adds the attack collision script and links the attack script to it
+                    AttackCollision _ac = sprite.AddComponent<AttackCollision>();
+                    _ac._as = this;
+                }
+            }
+
+            if (attack.attackPath == Attack.AttackPath.Meteor)
+            {
+                sprite.transform.Rotate(new Vector3(0, 0, -45));
             }
             else if(attack.attackPath == Attack.AttackPath.CrashDown)
             {
-                sprite.transform.Rotate(new Vector3(0, 90, 0));
+                sprite.transform.Rotate(new Vector3(0, 0, -90));
             }
         }
         
-
-        print("attack init complete");
-
         
-        
+
+        if (col != null)
+        {
+            col.isTrigger = true;
+        }
+
+        if(attack.attackType == Attack.AttackType.Beam)
+        {
+            if (boxCol != null)
+            {
+                boxCol.isTrigger = true;
+            }
+        }
     }
     
     void Update()
     {
         time += Time.deltaTime;
 
-        if(time > delay && startDelayPassed == false || activatedByPlayer && startDelayPassed == false)
+        if(time > delay && startDelayPassed == false  && attack.hasSpecialChargeFunction != true || activatedByPlayer && startDelayPassed == false)
         {
             startDelayPassed = true;
             time = 0;
@@ -151,246 +158,42 @@ public class AttackScript : MonoBehaviour {
                     }
                     else if (attack.attackPath == Attack.AttackPath.Meteor)
                     {
-                        rb.velocity = new Vector2(attack.speed * direction, attack.speed * -direction);
+                        rb.velocity = new Vector2(attack.speed * direction, -attack.speed);
                     }
                     else if (attack.attackPath == Attack.AttackPath.CrashDown)
                     {
-                        rb.velocity = new Vector2(0, attack.speed);
+                        rb.velocity = new Vector2(0, -attack.speed);
                     }
                     else if (attack.attackPath == Attack.AttackPath.SineWave)
                     {
-                        rb.velocity = new Vector2(attack.speed * direction, attack.speed * Mathf.Sin(Time.deltaTime));
+                        rb.velocity = new Vector2(attack.speed * direction, Mathf.Sin(Time.time * frequency) * magnitude);
                     }
                     else if(attack.attackPath == Attack.AttackPath.Curved)
                     {
-                        rb.velocity = new Vector2(-0.7f * (7.6f + rb.velocity.y + 4.3f) * attack.speed, 0.7f * ((rb.velocity.x * rb.velocity.x) + 7.6f * rb.velocity.x + 4.3f) * -1 * attack.speed);
+                        rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * attack.speed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * attack.speed)/10 * Time.fixedDeltaTime);
                     }
                     else if(attack.attackPath == Attack.AttackPath.Homing)
                     {
                         if(usingFighter != null)
                         {
-                            rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, Vector2.Distance(transform.position, usingFighter.transform.position))) * attack.speed;
+                            rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, attack.speed * Time.fixedDeltaTime));
+                            print(rb.velocity);
+
+                            // rb.velocity = new Vector2(transform.position.x - usingFighter.position.x, transform.position.y - usingFighter.position.y);
                         }
-                        
+
                     }
                 }
 
 
             }
         }
-        
+
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // Most likely going to make a tag for interactable ojbects
-        if (startDelayPassed || activatedByPlayer)
-        {
-            if (other.transform.tag == "Enemy" && other.gameObject.name != user || other.transform.tag == "Player" && other.gameObject.name != user)
-            {
+    
 
-                other.gameObject.GetComponent<Health>().Damage(attack.damage);
-
-                KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
-                knockbackScript.SetHitstun(attack.hitStun);
-                Vector2 finalKnockback = attack.knockback;
-                finalKnockback.x *= direction;
-                knockbackScript.SetKnockback(finalKnockback);
-
-                if (other.transform.tag == "Enemy")
-                {
-                    EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
-
-                    _enemy.murderMeter += Mathf.Round(attack.damage / 4);
-
-                    if (_enemy.murderMeter >= _enemy.murderMeterLimit)
-                    {
-                        if (attack.element == Attack.Element.Fire)
-                        {
-                            _enemy.ailmentHandler.ailment = AilmentHandler.Ailments.Burned;
-                        }
-                        else if (attack.element == Attack.Element.Ice)
-                        {
-                            _enemy.ailmentHandler.ailment = AilmentHandler.Ailments.Frozen;
-                        }
-                        else if (attack.element == Attack.Element.Blood)
-                        {
-                            _enemy.ailmentHandler.ailment = AilmentHandler.Ailments.Bleeding;
-                            GameObject.Find(user).GetComponent<Fighter>().health.currentHealth += Mathf.Round(_enemy.murderMeterLimit / 2);
-                        }
-                        else if (attack.element == Attack.Element.Thunder)
-                        {
-                            _enemy.ailmentHandler.ailment = AilmentHandler.Ailments.Stunned;
-                        }
-                        else if (attack.element == Attack.Element.Arcane)
-                        {
-                            // Shut up, poisoned is a placeholder
-                            _enemy.ailmentHandler.ailment = AilmentHandler.Ailments.Poisoned;
-                        }
-
-                        _enemy.murderMeter = 0;
-                    }
-                }
-
-                // Get direction of the impact relative to the player/ai and flip accordingly 
-                if (transform.position.x < other.transform.position.x)
-                {
-                    if (other.transform.tag == "Player")
-                    {
-                        Fighter _player = other.gameObject.GetComponent<Fighter>();
-
-                        if(usingFighter != _player)
-                        {
-                            if (_player == null)
-                            {
-                                PlayerAI _ai = other.gameObject.GetComponent<PlayerAI>();
-                                if (!_ai.cc.m_FacingRight) _ai.cc.Flip();
-                            }
-                            else
-                            {
-                                if (!_player.cc.m_FacingRight) _player.cc.Flip();
-                            }
-                        }
-                        
-                    }
-                    else if (other.transform.tag == "Enemy")
-                    {
-                        EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
-                        if (!_enemy.ec.m_FacingRight) _enemy.ec.Flip();
-                    }
-                }
-                else if (transform.position.x > other.transform.position.x)
-                {
-                    if (other.transform.tag == "Player")
-                    {
-                        Fighter _player = other.gameObject.GetComponent<Fighter>();
-
-                        if(usingFighter != _player)
-                        {
-                            if (_player == null)
-                            {
-                                PlayerAI _ai = other.gameObject.GetComponent<PlayerAI>();
-                                if (_ai.cc.m_FacingRight) _ai.cc.Flip();
-                            }
-                            else
-                            {
-                                if (_player.cc.m_FacingRight) _player.cc.Flip();
-                            }
-                        }
-                        else if (other.transform.tag == "Enemy")
-                        {
-                            EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
-                            if (_enemy.ec.m_FacingRight) _enemy.ec.Flip();
-
-                        }
-                        else if(usingFighter == _player && attack.attackPath == Attack.AttackPath.Homing)
-                        {
-                            Destroy(this.gameObject);
-                        }
-                    }
-
-                        
-                }
-
-                if (attack.attackType == Attack.AttackType.Blast)
-                {
-                    if (attack.followUpAttack != null)
-                    {
-                        // check if attack is burst/aoe
-                        if (attack.elementEffect == Attack.ElementEffect.Burst)
-                        {
-                            StartNextAttack(followUpAttack);
-                        }
-                    }
-                }
-
-                Destroy(gameObject, attack.destroyTime);
-
-            }
-            else if (other.transform.tag == "Ground" || other.transform.tag == "Wall")
-            {
-                if (attack.attackType == Attack.AttackType.Blast)
-                {
-                    if (attack.followUpAttack != null)
-                    {
-                        if (attack.elementEffect == Attack.ElementEffect.Burst)
-                        {
-                            StartNextAttack(followUpAttack);
-                        }
-                        else if (attack.followUpType == Attack.FollowUpType.Auto)
-                        {
-                            // Automatically Starts Next Attack
-                            StartNextAttack(followUpAttack);
-                        }
-                        else if (attack.followUpType == Attack.FollowUpType.Command)
-                        {
-                            // Sends a flag back to the caster to add the follow up attack in the attack queue
-                        }
-                    }
-                }
-                Destroy(gameObject, attack.destroyTime);
-            }
-        }
-        
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (startDelayPassed || activatedByPlayer)
-        {
-            if (other.transform.tag == "Enemy" && other.gameObject.name != user || other.transform.tag == "Player" && other.gameObject.name != user)
-            {
-                // deal damage at a rate [if(time % rate)]
-                other.gameObject.GetComponent<Health>().Damage(attack.damage);
-
-                KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
-                knockbackScript.SetHitstun(attack.hitStun);
-                Vector2 finalKnockback = attack.knockback;
-                finalKnockback.x *= direction;
-                knockbackScript.SetKnockback(finalKnockback);
-
-                // Get direction of the impact relative to the player/ai
-
-
-                if (attack.attackType == Attack.AttackType.Beam)
-                {
-                    if (attack.followUpAttack != null)
-                    {
-                        // check if attack is burst/aoe
-
-                    }
-                }
-
-                Destroy(gameObject, attack.destroyTime);
-
-            }
-            else if (other.transform.tag == "Ground" || other.transform.tag == "Wall")
-            {
-                if (attack.attackType == Attack.AttackType.Blast)
-                {
-                    if (attack.followUpAttack != null)
-                    {
-                        if (attack.elementEffect == Attack.ElementEffect.Burst)
-                        {
-                            StartNextAttack(followUpAttack);
-                        }
-                        else if (attack.followUpType == Attack.FollowUpType.Auto)
-                        {
-                            // Automatically Starts Next Attack
-                        }
-                        else if (attack.followUpType == Attack.FollowUpType.Command)
-                        {
-                            // Sends a flag back to the caster to add the follow up attack in the attack queue
-                        }
-                    }
-                }
-                Destroy(gameObject, attack.destroyTime);
-            }
-        }
-        
-    }
-
-    void StartNextAttack(GameObject _attack)
+    public void StartNextAttack(GameObject _attack)
     {
 
         if (attack.followUpAttack != null)
@@ -400,18 +203,31 @@ public class AttackScript : MonoBehaviour {
 
             if (followUpAttack == null)
             {
-                followUpAttack = new GameObject();
+                followUpAttack = new GameObject("Follow-Up Attack");
             }
+            
 
             if (_as = followUpAttack.GetComponent<AttackScript>())
             {
+                _as.origin = transform.position;
                 _as.attack = attack.followUpAttack;
+
+                _as.flipped = flipped;
+                _as.direction = direction;
+                _as.usingFighter = usingFighter;
             }
             else
             {
                 _as = followUpAttack.AddComponent<AttackScript>();
+                _as.origin = transform.position;
                 _as.attack = attack.followUpAttack;
+
+                _as.flipped = flipped;
+                _as.direction = direction;
+                _as.usingFighter = usingFighter;
             }
+
+            
         }
     }
 }

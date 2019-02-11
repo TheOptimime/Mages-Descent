@@ -6,7 +6,6 @@ using UnityEngine;
 public class Attack : ScriptableObject{
 
     public new string name;
-    public string spritePath;
 
     [TextArea] public string description; 
 
@@ -19,13 +18,13 @@ public class Attack : ScriptableObject{
 
 
     public float hitStun, attackCharge;
-    public bool hasSpecialChargeFunction, instantCast, burstOnDestroy;
+    public bool hasSpecialChargeFunction, burstOnDestroy;
 
     public int spellPoints;
 
     public Vector2 knockback;
 
-    public List<int> _joystickCommand;
+    [HideInInspector] public List<int> _joystickCommand;
 
     public Attack followUpAttack, simultaneousAttack;
 

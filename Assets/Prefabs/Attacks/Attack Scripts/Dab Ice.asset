@@ -13,24 +13,22 @@ MonoBehaviour:
   m_Name: Dab Ice
   m_EditorClassIdentifier: 
   name: Dab Ice
-  spritePath: '"fireball"'
   description: Yeet yeet dab
   damage: 8
   multiFireCount: 2
-  attackLength: 1.2
+  attackLength: 5
   animationLength: 0
   animationCancelLength: 0
   destroyTime: 0
   xDisplacement: -0.2
   multiFireRate: 0.4
   speed: 6
-  lifetime: 0.4
+  lifetime: 2
   delay: 0.2
   chargeTime: 0
   hitStun: 0.4
   attackCharge: 0
   hasSpecialChargeFunction: 0
-  instantCast: 1
   burstOnDestroy: 0
   spellPoints: 0
   knockback: {x: 0, y: 0}
@@ -48,4 +46,4 @@ MonoBehaviour:
   elementEffect: 3
   chargeType: 0
   followUpType: 0
-  joystickCommand: 0
+  joystickCommand: 1

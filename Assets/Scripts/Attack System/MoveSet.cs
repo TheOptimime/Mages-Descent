@@ -38,9 +38,9 @@ public class MoveSet : MonoBehaviour {
         // Adds The Spellbooks to the Spellbook set
         for (int i = 0; i <= 2; i++)
         {
-            spellBookSet_A.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 5)));
-            spellBookSet_B.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 5)));
-            spellBookSet_C.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 5)));
+            spellBookSet_A.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 6)));
+            spellBookSet_B.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 6)));
+            spellBookSet_C.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 6)));
             
 
             foreach(Attack a in attackIndex.AttackList)

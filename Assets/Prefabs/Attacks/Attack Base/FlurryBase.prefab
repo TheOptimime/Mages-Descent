@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8465239412310887036}
   - component: {fileID: 8465239412310887037}
+  - component: {fileID: 8465239412310887039}
   m_Layer: 0
-  m_Name: ProjectileBase
+  m_Name: FlurryBase
   m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,3 +56,19 @@ MonoBehaviour:
   StartNextAttackOnDestroy: 0
   followUpAttack: {fileID: 0}
   usingFighter: {fileID: 0}
+--- !u!58 &8465239412310887039
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8465239412310887034}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1

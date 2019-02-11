@@ -18,8 +18,8 @@ public partial class Fighter : MonoBehaviour {
     public float dabometer;
     SpellDatabase spellList;
 
-    public int PlayerID;
-
+    [HideInInspector] public int PlayerID;
+    [HideInInspector] public int comboCount;
     public bool attackIsInQueue, attackInProgress, attackIsSpecialHeld;
 
     AttackScript specialHold;
@@ -34,8 +34,6 @@ public partial class Fighter : MonoBehaviour {
     Vector2 movePos;
 
     public float horizontalMove = 0f, verticalMove = 0f;
-
-    float comboMeter, burstMeter;
 
     public float recoveryTimer, recoveryTime;
 
@@ -379,6 +377,11 @@ public partial class Fighter : MonoBehaviour {
     {
         transform.position = rm.activeSpawnPoint.position;
         health.currentHealth = health.maxHealth;
+    }
+
+    public void IncrementComboChain()
+    {
+        
     }
 
     public void SetHitstunTimer(float time)

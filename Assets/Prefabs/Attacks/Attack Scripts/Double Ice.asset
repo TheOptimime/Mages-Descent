@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Double Ice
   m_EditorClassIdentifier: 
   name: Ice Ice Baby
-  spritePath: 
   description: Dun dun dun du du du dun
   damage: 7
   multiFireCount: 0
@@ -30,7 +29,6 @@ MonoBehaviour:
   hitStun: 0
   attackCharge: 0
   hasSpecialChargeFunction: 0
-  instantCast: 1
   burstOnDestroy: 0
   spellPoints: 0
   knockback: {x: 0, y: 0}
@@ -47,5 +45,5 @@ MonoBehaviour:
   element: 2
   elementEffect: 3
   chargeType: 0
-  followUpType: 0
+  followUpType: 1
   joystickCommand: 0

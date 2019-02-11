@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Lightning Crash
   m_EditorClassIdentifier: 
   name: Lightning Crash
-  spritePath: 
   description: 
   damage: 15
   multiFireCount: 0
@@ -30,7 +29,6 @@ MonoBehaviour:
   hitStun: 2.6
   attackCharge: 0
   hasSpecialChargeFunction: 0
-  instantCast: 0
   burstOnDestroy: 0
   spellPoints: 0
   knockback: {x: 20, y: 4}

@@ -7,6 +7,7 @@ TagManager:
   - FireBall
   - Enemy
   - Attack
+  - Ground
   layers:
   - Default
   - TransparentFX

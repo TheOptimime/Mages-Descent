@@ -52,7 +52,12 @@ public partial class Fighter {
         print("Cast projectile + " + attack.name);
         GameObject attackObject = new GameObject("Projectile");
         AttackScript spell = attackObject.AddComponent<AttackScript>();
-        spell.flipped = !cc.m_FacingRight;
+
+        if(attack.attackPath != Attack.AttackPath.CrashDown)
+        {
+            spell.flipped = !cc.m_FacingRight;
+        }
+        
         spell.attack = attack;
         spell.usingFighter = this;
 
@@ -74,7 +79,7 @@ public partial class Fighter {
         {
             spell.origin = meteorSpellCastPoint.position;
         }
-        else if(attack.attackPath == Attack.AttackPath.None)
+        else if(attack.attackPath == Attack.AttackPath.Homing)
         {
             spell.origin = backSpellCastPoint.position;
         }
@@ -111,7 +116,8 @@ public partial class Fighter {
 
     public void StartMeleeAttack(Attack attack)
     {
-
+        hitbox_Middle = new MeleeHitbox(attack);
+        hitbox_Middle.Activate();
     }
 
     public void SetAttackQueue(Attack attack)
@@ -123,7 +129,7 @@ public partial class Fighter {
             attackInQueue = attack;
             attackIsInQueue = true;
 
-            if (attack.instantCast)
+            if (attack.chargeType == Attack.ChargeType.Instant)
             {
                 UseAttack(attack);
                 return;
@@ -208,6 +214,8 @@ public partial class Fighter {
         if (attackIsSpecialHeld)
         {
             specialHold.activatedByPlayer = true;
+            attackIsSpecialHeld = false;
+            specialHold = null;
         }
     }
 }
