@@ -8,7 +8,7 @@ tpsheetFileNames:
 - Assets/animations/idle.tpsheet
 - Assets/animations/Skeleton/redSkeleIDle.tpsheet
 - Assets/animations/Skeleton/skeleIdle.tpsheet
-- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/animations/spells/beam.tpsheet
 textureFileNames:
 - Assets/animations/death.png
 - Assets/animations/harkyn_run.png
@@ -17,7 +17,7 @@ textureFileNames:
 - Assets/animations/idle.png
 - Assets/animations/Skeleton/redSkeleIDle.png
 - Assets/animations/Skeleton/skeleIdle.png
-- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/animations/spells/beam.png
 normalmapFileNames:
 - 
 - 
@@ -26,5 +26,5 @@ normalmapFileNames:
 - 
 - 
 - 
-- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 enableDebugOutput: 0

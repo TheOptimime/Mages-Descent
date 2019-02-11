@@ -1,0 +1,1034 @@
+fileFormatVersion: 2
+guid: c6a9cd5c9e86ab542bcc5e6d7e570157
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: beam
+    21300002: firebeam_final_100 copy
+    21300004: firebeam_final_101 copy
+    21300006: firebeam_final_102 copy
+    21300008: firebeam_final_103 copy
+    21300010: firebeam_final_104 copy
+    21300012: firebeam_final_105 copy
+    21300014: firebeam_final_106 copy
+    21300016: firebeam_final_107 copy
+    21300018: firebeam_final_108 copy
+    21300020: firebeam_final_109 copy
+    21300022: firebeam_final_110 copy
+    21300024: firebeam_final_111 copy
+    21300026: firebeam_final_112 copy
+    21300028: firebeam_final_113 copy
+    21300030: firebeam_final_114 copy
+    21300032: firebeam_final_115 copy
+    21300034: firebeam_final_116 copy
+    21300036: firebeam_final_117 copy
+    21300038: firebeam_final_118 copy
+    21300040: firebeam_final_119 copy
+    21300042: firebeam_final_120 copy
+    21300044: firebeam_final_121 copy
+    21300046: firebeam_final_122 copy
+    21300048: firebeam_final_123 copy
+    21300050: firebeam_final_124 copy
+    21300052: firebeam_final_125 copy
+    21300054: firebeam_final_126 copy
+    21300056: firebeam_final_127 copy
+    21300058: firebeam_final_128 copy
+    21300060: firebeam_final_129 copy
+    21300062: firebeam_final_130 copy
+    21300064: firebeam_final_131 copy
+    21300066: firebeam_final_132 copy
+    21300068: firebeam_final_133 copy
+    21300070: firebeam_final_134 copy
+    21300072: firebeam_final_135 copy
+    21300074: firebeam_final_136 copy
+    21300076: firebeam_final_137 copy
+    21300078: firebeam_final_138 copy
+    21300080: firebeam_final_139 copy
+    21300082: firebeam_final_140 copy
+    21300084: firebeam_final_141 copy
+    21300086: firebeam_final_142 copy
+    21300088: firebeam_final_143 copy
+    21300090: firebeam_final_144 copy
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: firebeam_final_100 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 859
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d52e7eeb173ec649bc1a151c58622fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_101 copy
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 859
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57193e5457a753b4cb30db05295c918b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_102 copy
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 859
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0a506094a4670429ffb805c0a7ca4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_103 copy
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 859
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf400473df8af634f816c531134959a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_104 copy
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 859
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f38e3d942db104b959cdb52a8edca7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_105 copy
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 859
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7ccb18b30fcaf44ad33f223a6dbd33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_106 copy
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 859
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1820f46a46f62409164b7c1d8a9e5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_107 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7348550d39e964848a1e4818cf61284a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_108 copy
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca4a9776b5c68e4b968164ec4aa27a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_109 copy
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ad80e0398f11845b85502140a595ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_110 copy
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73033563b10e4fe4bb1887955b9bf205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_111 copy
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22c78de3adff1043a00fc188796e1ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_112 copy
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcd760090ce5154cb467c368e9cd7b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_113 copy
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc1a5add53d7ce4cb5b77d5da80beb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_114 copy
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf16218120a9f78419bede01796bc73c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_115 copy
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 693
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6887a42d5abed6d4b9212ef057c07667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_116 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 527
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628bf9a71c870a64cbe5a62f8b990a98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_117 copy
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 527
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7853a3f4c618ace4fb63c643920390c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_118 copy
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 527
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00e474192537c048973940131edb3a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_119 copy
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 527
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f12005e29ba7a041b18778e7d8bd36a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_120 copy
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 527
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011a3f62935f7b54d822a19a14551e05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_121 copy
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 527
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0645992c5e25047a69d7547d581233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_122 copy
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 527
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad447d9468d8a04380f7684156addbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_123 copy
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 527
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a12f7c5a987f541bea8b6ff9e1c832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_124 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 361
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a152ee06e1671094c8c686a20ea0e4f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_125 copy
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 361
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fce1496d31dc984db1baa81cc62bdfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_126 copy
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 361
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25f93f293d080748963bf5e61fd0cc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_127 copy
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 361
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559faf1cdbff3664c9362210e2a723ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_128 copy
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 361
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015b8c357a1285b42927a2ccc441648d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_129 copy
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 361
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b503e0b83556c454b8c9a3afdfb38cd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_130 copy
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 361
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c37767936bd4f34eb8cd6ba50f3b735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_131 copy
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 361
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05690966ee795564b80c3c16d098f6b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_132 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1291fdb35c76b4482963764153e0c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_133 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63240d328d5bc0e43befd6b2e34f3719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_134 copy
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693a7f52211998a4ab4cc564df3a163c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_135 copy
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bc09c388d6bdb43bb068bb69097bff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_136 copy
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f891c2c10a130304b98a2e8e33514e93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_137 copy
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d49d93561d79641aa8eb5cdf9a6e02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_138 copy
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca737cda02e3aa4783d0c7b7803a508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_139 copy
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db25bb45ecbda244ad1092aa3005011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_140 copy
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 195
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295199ea38f4ce24ea6f264dfabe4268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_141 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 29
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1456aa4eead910f459e17a6f3eca573f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_142 copy
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 29
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce369479ca977044b63bb9c30003b04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_143 copy
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 29
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f898ae34eaad6094b9f69f15386a7c21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebeam_final_144 copy
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 29
+        width: 512
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343328251b9f5414c971aeff64baff82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a3a1d785cf2368942a44dc2dd6e5c091
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
