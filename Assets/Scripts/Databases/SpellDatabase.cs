@@ -6,16 +6,17 @@ public class SpellDatabase : MonoBehaviour {
 
     public List<Attack> AttackList;
 
-    public Attack tripleFire, darkFire;
+    //public Attack tripleFire, darkFire;
 
+        /*
     List<int> quarterCircleDownRight, quarterCircleDownLeft, quarterCircleRightDown, quarterCircleLeftDown, quarterCircleUpRight, quarterCircleRightUp, quarterCircleUpLeft, quarterCircleLeftUp;
     List<int> halfCircleUnderLeftRight, halfCircleUnderRightLeft, halfCircleOverLeftRight, halfCircleRightLeft, halfCircleDownUpRight, halfCircleDownUpLeft, halfCircleUpDownRight, halfCircleUpDownLeft;
     List<int> fullCircleRightUp, fullCircleRightDown, fullCircleLeftUp, fullCircleLeftDown;
     List<int> fourCircleDownRight, fourCircleUpRight, fourCircleDownLeft, fourCircleUpLeft;
-
+    */
 	
 	void Awake () {
-        InitializeJoyStickCommands();
+        //InitializeJoyStickCommands();
 
         //tripleFire = new Attack("TripleFire", "Blast 3 fireballs", null, 5, new Vector2(0.2f, 80), 5f, 40f, Attack.Element.Fire, Attack.ElementEffect.Burst, 0.8f, 1.6f, 1.3f, "fireball", 3, 0.8f, -3000.3f);
         //darkFire = new Attack("Dark Fire", "Dark Fire", null, 1, new Vector2(0.2f, 0), 0.4f, 2.3f, Attack.Element.Fire, Attack.ElementEffect.None, Attack.AttackType.Blast, 3.5f, 0.4f, 0.34f, "fireball");
@@ -23,8 +24,9 @@ public class SpellDatabase : MonoBehaviour {
         
         //deLigma = new Attack("DeLigma", "Whats DeLigma?", 10, 5, Attack.Element.Blood, Attack.ElementEffect.Burst, Attack.AttackType.MultipleBlast, _ )
 
-        AttackList = new List<Attack>();
+        //AttackList = new List<Attack>();
 
+        //print(AttackList.Count);
 
         //AttackList.Add(tripleFire);
         //AttackList[0].hitStun = 1.2f;
@@ -33,7 +35,7 @@ public class SpellDatabase : MonoBehaviour {
         //AttackList[1].lifetime = 0.3f;
     }
 	
-
+    /*
     void InitializeJoyStickCommands()
     {
         #region Right Side
@@ -73,4 +75,5 @@ public class SpellDatabase : MonoBehaviour {
         #endregion
   
     }
+    */
 }

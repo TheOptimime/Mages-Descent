@@ -14,6 +14,7 @@ public class EnemyAI : AI {
     public EnemyController2D ec;
 
     public float walkToPlayerSpeed;
+    public float murderMeter, murderMeterLimit;
 
     public enum EnemyState
     {
@@ -26,6 +27,7 @@ public class EnemyAI : AI {
     }
 
     public EnemyState enemyState;
+
 
     public bool respawnEnabled;
 
@@ -50,6 +52,8 @@ public class EnemyAI : AI {
         health = GetComponent<Health>();
         spr = GetComponent<SpriteRenderer>();
         enemyState = new EnemyState();
+
+        murderMeterLimit = Mathf.Round(health.maxHealth / Random.Range(2,6));
 
         if (speed == 0 && walkToPlayerSpeed == 0)
         {
@@ -153,7 +157,7 @@ public class EnemyAI : AI {
                         // player is right
                         if (ec.m_FacingRight)
                         {
-                            UseAttack(spellIndex.tripleFire);
+                            //UseAttack(spellIndex.tripleFire);
                             enemyState = EnemyState.Resting;
                         }
                     }
@@ -162,7 +166,7 @@ public class EnemyAI : AI {
                         // player is left
                         if (!ec.m_FacingRight)
                         {
-                            UseAttack(spellIndex.tripleFire);
+                            //UseAttack(spellIndex.tripleFire);
                             enemyState = EnemyState.Resting;
                         }
                     }

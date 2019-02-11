@@ -18,15 +18,19 @@ public partial class Fighter {
             if (attack.attackType == Attack.AttackType.Special)
             {
                 // stop time for attack length
+                if(dabometer >= 100)
+                {
+                    StartAttack(attack);
+                }
             }
             else if (attack.attackType == Attack.AttackType.Blast)
             {
                 print("casting attack");
-                CastProjectile(attack);
+                StartAttack(attack);
             }
             else if (attack.attackType == Attack.AttackType.MultipleBlast)
             {
-                StartCoroutine(MultiCast(attack));
+                StartAttack(attack);
             }
             else if (attack.attackType == Attack.AttackType.Melee)
             {
@@ -35,7 +39,7 @@ public partial class Fighter {
             else if (attack.attackType == Attack.AttackType.Beam)
             {
                 print("casting attack");
-                CastProjectile(attack);
+                StartAttack(attack);
             }
         }
 
@@ -43,49 +47,70 @@ public partial class Fighter {
         attackInQueue = null;
     }
 
-    public void CastProjectile(Attack projectile)
+    public void StartAttack(Attack attack)
     {
-        print("Cast projectile + " + projectile.name);
-        GameObject projectileObject = new GameObject("Projectile");
-        AttackScript spell = projectileObject.AddComponent<AttackScript>();
+        print("Cast projectile + " + attack.name);
+        GameObject attackObject = new GameObject("Projectile");
+        AttackScript spell = attackObject.AddComponent<AttackScript>();
         spell.flipped = !cc.m_FacingRight;
-        spell.attack = projectile;
-        spell.origin = spellCastPoint.position;
-        spell.direction = cc.m_FacingRight? 1 : -1;
+        spell.attack = attack;
+        spell.usingFighter = this;
+
+        if(attack.chargeType == Attack.ChargeType.Instant)
+        {
+            if (attack.hasSpecialChargeFunction)
+            {
+                if (attack.attackPath == Attack.AttackPath.Homing)
+                {
+                    attackIsSpecialHeld = true;
+                    specialHold = spell;
+                }
+            }
+        }
+        
+        
+
+        if(attack.attackPath == Attack.AttackPath.Meteor || attack.attackPath == Attack.AttackPath.CrashDown)
+        {
+            spell.origin = meteorSpellCastPoint.position;
+        }
+        else if(attack.attackPath == Attack.AttackPath.None)
+        {
+            spell.origin = backSpellCastPoint.position;
+        }
+        else
+        {
+            spell.origin = spellCastPoint.position;
+        }
+        
+        spell.direction = cc.m_FacingRight ? 1 : -1;
         spell.user = gameObject.name;
 
-        movementFreezeLength = new DoubleTime(projectile.animationCancelLength, projectile.animationLength);
-
-        print("xDisp: " + projectile.xDisplacement);
-
-        if(projectile.xDisplacement != 0)
+        if(attack.simultaneousAttack != null)
         {
-            rb.AddForce(new Vector2(rb.velocity.x + projectile.xDisplacement * spell.direction, rb.velocity.y), ForceMode2D.Impulse);
+            if(attack.attackType == Attack.AttackType.Melee)
+            {
+                StartMeleeAttack(attack.simultaneousAttack);
+            }
+            else
+            {
+                StartAttack(attack.simultaneousAttack);
+            }
+        }
+        movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
+
+        print("xDisp: " + attack.xDisplacement);
+
+        if (attack.xDisplacement != 0)
+        {
+            //rb.AddForce(new Vector2(rb.velocity.x + attack.xDisplacement * spell.direction, rb.velocity.y), ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x + attack.xDisplacement * spell.direction, rb.velocity.y);
             print("force applied");
         }
     }
 
-    public void CastBeam(Attack beam)
+    public void StartMeleeAttack(Attack attack)
     {
-        //print("Cast projectile");
-        GameObject projectileObject = new GameObject("Beam");
-        AttackScript spell = projectileObject.AddComponent<AttackScript>();
-        spell.flipped = !cc.m_FacingRight;
-        spell.attack = beam;
-        spell.origin = spellCastPoint.position;
-        spell.direction = cc.m_FacingRight ? 1 : -1;
-        spell.user = gameObject.name;
-    }
-
-    IEnumerator MultiCast(Attack projectile)
-    {
-
-        for (int i = 0; i < projectile.multiFireCount; i++)
-        {
-            CastProjectile(projectile);
-          
-            yield return new WaitForSeconds(projectile.multiFireRate);
-        }
 
     }
 
@@ -95,15 +120,16 @@ public partial class Fighter {
         {
             castTime = 0;
 
+            attackInQueue = attack;
+            attackIsInQueue = true;
+
             if (attack.instantCast)
             {
                 UseAttack(attack);
                 return;
             }
 
-            attackIsInQueue = true;
-            attackInQueue = attack;
-            castTime = 0;
+            
             if (recentlyAttacked)
             {
                 attackInQueue = null;
@@ -115,6 +141,15 @@ public partial class Fighter {
             attackIsInQueue = false;
         }
         
+    }
+
+    IEnumerator MultiCast(Attack attack)
+    {
+        for(int i = 0; i < attack.multiFireCount; i++)
+        {
+            movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
+            yield return new WaitForSeconds(attack.multiFireRate);
+        }
     }
 
     public void RelayButtonInput()
@@ -146,6 +181,11 @@ public partial class Fighter {
 
     }
 
+    public void IncreaseSpellbookExp(Attack.Element element, int value)
+    {
+        // Find all elements that match and raise exp 
+    }
+
     public void OnAttackButtonRelease()
     {
         //print("releasing attack: " + attackInQueue);
@@ -164,7 +204,10 @@ public partial class Fighter {
                 print("Error on releasing attack");
             }
         }
-        
 
+        if (attackIsSpecialHeld)
+        {
+            specialHold.activatedByPlayer = true;
+        }
     }
 }

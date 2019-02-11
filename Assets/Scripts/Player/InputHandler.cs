@@ -135,90 +135,6 @@ public class InputHandler : MonoBehaviour {
         #region A Button
         if(prevState.Buttons.A == ButtonState.Released && state.Buttons.A == ButtonState.Pressed)
         {
-//            print("A Button Pressed");
-            frozenJoystickRecord = joystickRecord;
-
-            
-
-            int[] jumpCommands = new int[] {0, 5, 0};
-            print("command length: " + jumpCommands.Length);
-
-            for(int i = 0; i < jumpCommands.Length; i++)
-            {
-
-                List<int> tempCommand = new List<int>();
-
-                if (!player.isFacingRight && i < 2)
-                {
-                    // Player is facing left and inputs are set to right
-                    print("set flip 1");
-                    FlipInput(ComboInputNormal[jumpCommands[i]], out tempCommand);
-                }
-                else if (player.isFacingRight && i >= 2)
-                {
-                    // Player is facing x and inputs are set to left
-                    print("set flip 2");
-                    FlipInput(ComboInputReverse[jumpCommands[i]], out tempCommand);
-                }
-                else
-                {
-                    print("set basic");
-                    tempCommand = ComboInputNormal[jumpCommands[i]];
-                }
-
-                int matchCount = 0;
-                
-
-                if(tempCommand.Count == frozenJoystickRecord.Count)
-                {
-                    for(int joystickNumber = 0; joystickNumber < tempCommand.Count; joystickNumber++)
-                    {
-                        
-                        if(tempCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
-                        {
-                            matchCount++;
-                            print("matchfound: " + matchCount);
-                        }
-
-                    }
-                }
-
-
-
-                if (matchCount == tempCommand.Count)
-                {
-                    player.specialJump = true;
-
-                    if (jumpCommands[i] == jumpCommands[0])
-                    {
-                        // Quarter Circle Forward
-                        print("oops");
-                        print(tempCommand.Count);
-                        print(tempCommand[0] + ", " + tempCommand[1] + ", " + tempCommand[2]);
-                        player.isLeaping = true;
-                    }
-                    else if (jumpCommands[i] == jumpCommands[1])
-                    {
-                        // Half Circle Back
-                        player.isBackLeaping = true;
-                    }
-                    else if (jumpCommands[i] == jumpCommands[2])
-                    {
-                        // Quarter Circle Back
-                        player.isBackStepping = true;
-                    }
-
-                    
-                    player.jump = true;
-
-                    break;
-                }
-                else if (inputCorrection)
-                {
-                    
-                }
-            }
-            
             player.jump = true;
 
         }
@@ -438,7 +354,7 @@ public class InputHandler : MonoBehaviour {
             // Creates a record of the joystick inputs on button press
             frozenJoystickRecord = joystickRecord;
             buttonPressed = true;
-
+            
             // Checking if the inputs entered matched any of the spells
             for (int i = 0; i < player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count; i++)
             {
@@ -484,14 +400,16 @@ public class InputHandler : MonoBehaviour {
                     // Compares
                     if (matchCount == tempJoystickCommand.Count)
                     {
+                        print("ooh");
                         player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
                         break;
                     }
 
                 }
-                else if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                else if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
                 {
                     // this is the generic attack
+                    print("eh");
                     player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
                     break;
                 }
@@ -529,7 +447,7 @@ public class InputHandler : MonoBehaviour {
         if (prevState.Buttons.LeftShoulder == ButtonState.Released && state.Buttons.LeftShoulder == ButtonState.Pressed)
         {
             //print("L Button Pressed")
-            player.moveset.spellLoadOutSelected++;
+            player.moveset.spellLoadOutSelected--;
         }
         else if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Pressed)
         {
@@ -545,7 +463,7 @@ public class InputHandler : MonoBehaviour {
         if (prevState.Buttons.RightShoulder == ButtonState.Released && state.Buttons.RightShoulder == ButtonState.Pressed)
         {
             //print("R Button Pressed");
-            player.moveset.spellLoadOutSelected--;
+            player.moveset.spellLoadOutSelected++;
         }
         else if (prevState.Buttons.RightShoulder == ButtonState.Pressed && state.Buttons.RightShoulder == ButtonState.Pressed)
         {
@@ -587,8 +505,8 @@ public class InputHandler : MonoBehaviour {
         else if (prevState.Triggers.Right >= 0.3f && state.Triggers.Right >= 0.3f)
         {
             print("R2 Button Held");
-            RightTrigger_HoldLength++;
-            if(RightTrigger_HoldLength > 5)
+
+            if(++RightTrigger_HoldLength > 8)
             {
                 player.isDashing = true;
 
@@ -607,13 +525,14 @@ public class InputHandler : MonoBehaviour {
                     {
                         player.specialJump = player.isLeaping = true;
                     }
-                    else
-                    {
-                        player.specialJump = player.isBackStepping = true;
-                    }
+                    
                 }
-                
-                
+                else
+                {
+                    player.specialJump = player.isBackStepping = true;
+                }
+
+
             }
             player.isDashing = false;
             RightTrigger_HoldLength = 0;

@@ -21,13 +21,27 @@ public class Attack : ScriptableObject{
     public float hitStun, attackCharge;
     public bool hasSpecialChargeFunction, instantCast, burstOnDestroy;
 
+    public int spellPoints;
+
     public Vector2 knockback;
 
     public List<int> _joystickCommand;
 
-    public Attack followUpAttack;
+    public Attack followUpAttack, simultaneousAttack;
 
-    public Animation spriteAnimation;
+    public GameObject spriteAnimation, attackBase;
+
+    public enum AttackPath
+    {
+        None,
+        Straight,
+        CrashDown,
+        Meteor,
+        SineWave,
+        Curved,
+        Homing,
+        Custom
+    }
 
     public enum AttackType
     {
@@ -48,6 +62,7 @@ public class Attack : ScriptableObject{
 
     public enum Element
     {
+        None,
         Fire,
         Ice,
         Blood,
@@ -88,6 +103,8 @@ public class Attack : ScriptableObject{
         FourCircleDownRight
     }
 
+    public AttackPath attackPath;
+    public Vector3[] keyPoints;
     public AttackType attackType;
     public Element element;
     public ElementEffect elementEffect;
@@ -97,8 +114,6 @@ public class Attack : ScriptableObject{
 
     public Attack()
     {
-        Debug.Log("this actually works");
-
         switch ((int) joystickCommand)
         {
             case 0:
