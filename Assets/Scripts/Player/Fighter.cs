@@ -65,6 +65,7 @@ public partial class Fighter : MonoBehaviour {
     AudioSource audioSource;
 
     IEnumerator hitstunCoroutine;
+    IEnumerator multicastCoroutine;
 
     //Transform firePos;
     [HideInInspector] public Health health;

@@ -44,6 +44,7 @@ public class AttackScript : MonoBehaviour {
 
     void Start()
     {
+        origin.x += attack.xPositionalDisplacement;
         transform.position = origin;
         gameObject.tag = "Attack";
 
@@ -176,10 +177,10 @@ public class AttackScript : MonoBehaviour {
                     {
                         if(usingFighter != null)
                         {
-                            rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, attack.speed * Time.fixedDeltaTime));
-                            print(rb.velocity);
+                            //rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, attack.speed * Time.fixedDeltaTime));
+                            //print(rb.velocity);
 
-                            // rb.velocity = new Vector2(transform.position.x - usingFighter.position.x, transform.position.y - usingFighter.position.y);
+                            rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * attack.speed;
                         }
 
                     }

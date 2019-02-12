@@ -23,7 +23,7 @@ MonoBehaviour:
   xDisplacement: 0
   multiFireRate: 0
   speed: 4
-  lifetime: 6
+  lifetime: 16
   delay: 10
   chargeTime: 0
   hitStun: 12
@@ -39,6 +39,7 @@ MonoBehaviour:
     type: 3}
   attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
     type: 3}
+  extraScripts: []
   attackPath: 6
   keyPoints: []
   attackType: 1

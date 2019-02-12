@@ -11,8 +11,27 @@ public class AttackCollision : MonoBehaviour
         // Most likely going to make a tag for interactable ojbects
         if (_as.startDelayPassed || _as.activatedByPlayer)
         {
+            if (_as.attack.attackPath == Attack.AttackPath.Homing && _as.attack.hasSpecialChargeFunction)
+            {
+                Fighter temp;
+
+                if (temp = other.gameObject.GetComponent<Fighter>())
+                {
+                    if (temp != null)
+                    {
+                        if (temp == _as.usingFighter)
+                        {
+                            Destroy(gameObject);
+                        }
+                    }
+                }
+            }
+
             if (other.transform.tag == "Enemy" && other.gameObject.name != _as.user || other.transform.tag == "Player" && other.gameObject.name != _as.user)
             {
+                
+                
+                
 
                 other.gameObject.GetComponent<Health>().Damage(_as.attack.damage);
 

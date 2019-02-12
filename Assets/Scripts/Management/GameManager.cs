@@ -4,6 +4,7 @@ using UnityEngine;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(SpellDatabase))]
+[RequireComponent(typeof(RespawnManager))]
 public class GameManager : MonoBehaviour {
 
     int frameCount, totalFrameCount;

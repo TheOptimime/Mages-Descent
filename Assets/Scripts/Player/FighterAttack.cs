@@ -30,7 +30,8 @@ public partial class Fighter {
             }
             else if (attack.attackType == Attack.AttackType.MultipleBlast)
             {
-                StartAttack(attack);
+                multicastCoroutine = MultiCast(attack);
+                StartCoroutine(multicastCoroutine);
             }
             else if (attack.attackType == Attack.AttackType.Melee)
             {
@@ -153,9 +154,23 @@ public partial class Fighter {
     {
         for(int i = 0; i < attack.multiFireCount; i++)
         {
-            movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
-            yield return new WaitForSeconds(attack.multiFireRate);
+            if (!recentlyAttacked)
+            {
+                movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
+                if (attack.attackPath == Attack.AttackPath.Meteor)
+                {
+                    attack.xPositionalDisplacement = Random.Range(0, 10);
+                }
+                StartAttack(attack);
+
+                yield return new WaitForSeconds(attack.multiFireRate);
+            }
+            else
+            {
+                StopCoroutine(multicastCoroutine);
+            }
         }
+        StopCoroutine(multicastCoroutine);
     }
 
     public void RelayButtonInput()
