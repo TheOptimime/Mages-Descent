@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: 21789592c224c6f40b76d8807d222eeb
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: darkknight_idle
+    21300002: dark_knight_Left-IdleBetter
+    21300004: dark_knight_Left-IdleBetter2 copy
+    21300006: dark_knight_Left-IdleBetter3 copy
+    21300008: dark_knight_Left-IdleBetter4 copy
+    21300010: dark_knight_Left-IdleBetter5 copy
+    21300012: dark_knight_Left-IdleBetter6 copy
+    21300014: dark_knight_Left-IdleBetter7 copy
+    21300016: dark_knight_Left-IdleBetter8 copy
+    21300018: dark_knight_Left-IdleBetter9 copy
+    21300020: dark_knight_Left-IdleBetter10 copy
+    21300022: dark_knight_Left-IdleBetter11 copy
+    21300024: dark_knight_Left-IdleBetter12 copy
+    21300026: dark_knight_Left-IdleBetter13 copy
+    21300028: dark_knight_Left-IdleBetter14 copy
+    21300030: dark_knight_Left-IdleBetter15 copy
+    21300032: dark_knight_Left-IdleBetter16 copy
+    21300034: dark_knight_Left-IdleBetter17 copy
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1558
+        width: 450
+        height: 489
+      alignment: 9
+      pivot: {x: 0.52, y: 0.49488753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1463cd87330b7f84ab557fa2a7d98488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter2 copy
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1560
+        width: 457
+        height: 487
+      alignment: 9
+      pivot: {x: 0.5229759, y: 0.49691993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08b11fea3567384f98dabc26a67e8b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter3 copy
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1558
+        width: 459
+        height: 489
+      alignment: 9
+      pivot: {x: 0.53594774, y: 0.49488753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1376e2a9bda0c0048bf78df2794b5e54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter4 copy
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 1554
+        width: 468
+        height: 493
+      alignment: 9
+      pivot: {x: 0.52991456, y: 0.5010142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a5fc0af0c145946963ac043522d797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter5 copy
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1555
+        width: 481
+        height: 492
+      alignment: 9
+      pivot: {x: 0.5155925, y: 0.5020325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1082f0f584eb704e83e0af5d22690b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter6 copy
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 1554
+        width: 494
+        height: 493
+      alignment: 9
+      pivot: {x: 0.5020243, y: 0.5010142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d73356f2a83e348991c82059ad4d28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter7 copy
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 1555
+        width: 496
+        height: 492
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5020325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17dd34e94de49b45ba0d648de7dd04c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter8 copy
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 1553
+        width: 496
+        height: 494
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508ccb2dcb43b9e43b7ae6a8fb22a38d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter9 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1058
+        width: 496
+        height: 493
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5010142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd89dbbcca0dd54d8e5e25cc23389a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter10 copy
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1060
+        width: 491
+        height: 491
+      alignment: 9
+      pivot: {x: 0.50509167, y: 0.503055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15a42fba85eff44bb7e4a691a8bad54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter11 copy
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1057
+        width: 491
+        height: 494
+      alignment: 9
+      pivot: {x: 0.50509167, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf04f01c9c4d8045abdf69e19eb2fe3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter12 copy
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1059
+        width: 480
+        height: 492
+      alignment: 9
+      pivot: {x: 0.51666665, y: 0.5020325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6c5087c10925e489670d0c45da67f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter13 copy
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1058
+        width: 471
+        height: 493
+      alignment: 9
+      pivot: {x: 0.52653927, y: 0.5010142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224df238b91ea1b4aa3da3676543b07f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter14 copy
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1058
+        width: 462
+        height: 493
+      alignment: 9
+      pivot: {x: 0.5367965, y: 0.5010142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b1cf956f4948a418fe43123ea34ad9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter15 copy
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 1058
+        width: 461
+        height: 493
+      alignment: 9
+      pivot: {x: 0.53796095, y: 0.5010142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69dbc5c2547aee640859c44bb41165f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter16 copy
+      rect:
+        serializedVersion: 2
+        x: 3367
+        y: 1067
+        width: 456
+        height: 484
+      alignment: 9
+      pivot: {x: 0.53070176, y: 0.4979339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336f132cc6dd95846be1c837d6c0aaf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-IdleBetter17 copy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 573
+        width: 451
+        height: 482
+      alignment: 9
+      pivot: {x: 0.518847, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721ff8b240e3490459655e0368bf3861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bd223ebf849ece948bf2fed7d8d19116
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
