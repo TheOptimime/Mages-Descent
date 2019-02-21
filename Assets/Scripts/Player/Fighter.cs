@@ -162,6 +162,7 @@ public partial class Fighter : MonoBehaviour {
 
                 if (jump)
                 {
+					
                     RecoveryJump();
                 }
                 lockMovement = recentlyAttacked = false;
@@ -271,7 +272,7 @@ public partial class Fighter : MonoBehaviour {
             finalVelocity.x *= cc.m_FacingRight ? 1 : -1;
         }
         
-        
+
         rb.velocity = (finalVelocity);
     }
 
@@ -279,6 +280,7 @@ public partial class Fighter : MonoBehaviour {
     {
         if (rb.velocity.y < 0)
         {
+			
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1);
 
         }
@@ -429,4 +431,9 @@ public partial class Fighter : MonoBehaviour {
         lockInput = lockMovement = false;
         hitstunCoroutine = null;
     }
+
+	public void isLanding() {
+		anim.SetBool ("isJumping", false);	
+	
+	}
 }

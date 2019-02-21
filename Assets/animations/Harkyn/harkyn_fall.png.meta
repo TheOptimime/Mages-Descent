@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 7aa057a6b1e96d942b2a9ab1323dd527
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: harkyn_fall
+    21300002: Harkyn_falling00
+    21300004: Harkyn_falling01
+    21300006: Harkyn_falling02
+    21300008: Harkyn_falling03
+    21300010: Harkyn_falling04
+    21300012: Harkyn_falling05
+    21300014: Harkyn_falling06
+    21300016: Harkyn_falling07
+    21300018: Harkyn_falling08
+    21300020: Harkyn_falling09
+    21300022: Harkyn_falling10
+    21300024: Harkyn_falling11
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_falling00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1346
+        width: 563
+        height: 701
+      alignment: 9
+      pivot: {x: 0.5026643, y: 0.49500713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59daf92dea98904d87e8684c74530d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling01
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1352
+        width: 527
+        height: 695
+      alignment: 9
+      pivot: {x: 0.5218216, y: 0.49496403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d042bcceb8b4e43448618e45355bdc38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling02
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1340
+        width: 536
+        height: 707
+      alignment: 9
+      pivot: {x: 0.5317164, y: 0.4950495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba298b81a3f40441b04e5c933405831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling03
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1336
+        width: 538
+        height: 711
+      alignment: 9
+      pivot: {x: 0.5297398, y: 0.5007032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afbfcd74104b204d98a0892142a91f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling04
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1341
+        width: 552
+        height: 706
+      alignment: 9
+      pivot: {x: 0.4981884, y: 0.49433428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6629d63cf585f84eb0ed4bc67b6d8d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling05
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 1355
+        width: 564
+        height: 692
+      alignment: 9
+      pivot: {x: 0.48758864, y: 0.5014451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52314a2ba48e7144b85f496b42bc7cc6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling06
+      rect:
+        serializedVersion: 2
+        x: 3293
+        y: 1357
+        width: 541
+        height: 690
+      alignment: 9
+      pivot: {x: 0.49537894, y: 0.49130434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2915cce9cf8c0a4449ca857a3f8a772f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling07
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 633
+        width: 551
+        height: 701
+      alignment: 9
+      pivot: {x: 0.49727768, y: 0.49643368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05495b64146ce814eaa764a595ccc8d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling08
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 627
+        width: 553
+        height: 707
+      alignment: 9
+      pivot: {x: 0.4954792, y: 0.4992928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281a5fa57f2074b45bab5de6bb469a59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling09
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 649
+        width: 564
+        height: 685
+      alignment: 9
+      pivot: {x: 0.5053192, y: 0.48759124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60e8be2170c9dc4fa16ec9462dd9a61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling10
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 643
+        width: 532
+        height: 691
+      alignment: 9
+      pivot: {x: 0.518797, y: 0.48914617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12f9222f75315e429be4390a72f8a84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_falling11
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 635
+        width: 534
+        height: 699
+      alignment: 9
+      pivot: {x: 0.52059925, y: 0.49642345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acbc78b7bd028f47b5ebfc6cb9644c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a4422ee772653b04d899a04cf2a68597
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

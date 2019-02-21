@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 12bb2e7ad1dac3849b78d53826f0b0d0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: harkyn_jump
+    21300002: Harkyn_Jumping00
+    21300004: Harkyn_Jumping01
+    21300006: Harkyn_Jumping02
+    21300008: Harkyn_Jumping03
+    21300010: Harkyn_Jumping04
+    21300012: Harkyn_Jumping05
+    21300014: Harkyn_Jumping06
+    21300016: Harkyn_Jumping07
+    21300018: Harkyn_Jumping08
+    21300020: Harkyn_Jumping09
+    21300022: Harkyn_Jumping10
+    21300024: Harkyn_Jumping11
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Jumping00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1360
+        width: 530
+        height: 687
+      alignment: 9
+      pivot: {x: 0.53396225, y: 0.7496361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f342a8875754d45bd77fbba6a5cf11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping01
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1397
+        width: 534
+        height: 650
+      alignment: 9
+      pivot: {x: 0.5411985, y: 0.83384615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517b791683946194c9193b409ec1d35b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping02
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1444
+        width: 532
+        height: 603
+      alignment: 9
+      pivot: {x: 0.5432331, y: 0.8988391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18b7c2f3298758459952cb4e3f7661e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping03
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1477
+        width: 577
+        height: 570
+      alignment: 9
+      pivot: {x: 0.50086653, y: 0.9403509}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27639766c884bc94297aae689beca1fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping04
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1447
+        width: 575
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4973913, y: 0.8233333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f5f047d948c154f8b05a876362dd22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping05
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 1436
+        width: 560
+        height: 611
+      alignment: 9
+      pivot: {x: 0.48392856, y: 0.7201309}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f212ef2bda19a44a072b1d42ee3719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping06
+      rect:
+        serializedVersion: 2
+        x: 3321
+        y: 1334
+        width: 564
+        height: 713
+      alignment: 9
+      pivot: {x: 0.48758864, y: 0.5553997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc00fc14b8d2224f8eb25a3c741128d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping07
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 591
+        width: 566
+        height: 741
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42510122}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bcb4e03a35bdf4080f18b93133846d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping08
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 629
+        width: 532
+        height: 703
+      alignment: 9
+      pivot: {x: 0.5300752, y: 0.24039829}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5bea12a5c86bc40b1474ee3b49dadb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping09
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 625
+        width: 530
+        height: 707
+      alignment: 9
+      pivot: {x: 0.53396225, y: 0.24045262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd6d53ef7e4b6247805b192bd44a99a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping10
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 625
+        width: 530
+        height: 707
+      alignment: 9
+      pivot: {x: 0.53396225, y: 0.24045262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e27431990fb10641b9a3eb79bfaf03b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Jumping11
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 625
+        width: 530
+        height: 707
+      alignment: 9
+      pivot: {x: 0.53396225, y: 0.24045262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05dca53d272139e4ca48dd75b441fae4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 48ccedafa87e0fe4c93b0821eedb65c4
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
