@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: 8f77e973c025f7c49ad7637714347551
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: flame_blue00
+    21300002: flame_blue01
+    21300004: flame_blue02
+    21300006: flame_blue03
+    21300008: flame_blue04
+    21300010: flame_blue05
+    21300012: flame_blue06
+    21300014: flame_blue07
+    21300016: flame_blue08
+    21300018: flame_blue09
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flame_blue00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 351
+        width: 111
+        height: 160
+      alignment: 9
+      pivot: {x: 0.47297296, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21ac7f0d7cae404ab7d850610559375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue01
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 361
+        width: 113
+        height: 150
+      alignment: 9
+      pivot: {x: 0.48230088, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9acfcae65aaf8a445916047575bf545f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue02
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 360
+        width: 116
+        height: 151
+      alignment: 9
+      pivot: {x: 0.49568966, y: 0.5298013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6ddc69db4ce67479a9f7449891cf78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue03
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 361
+        width: 117
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1bfe7361cfc9d44b9db4c0ae61d7d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 194
+        width: 114
+        height: 155
+      alignment: 9
+      pivot: {x: 0.4868421, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7c992a9c28dc344ab0d7c4f4b5c082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue05
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 199
+        width: 107
+        height: 150
+      alignment: 9
+      pivot: {x: 0.45327103, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf174b0259664824d86da7d4d2830a80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue06
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 200
+        width: 110
+        height: 149
+      alignment: 9
+      pivot: {x: 0.46818182, y: 0.53691274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce03a592b912474f8f69cd306cac208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue07
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 200
+        width: 108
+        height: 149
+      alignment: 9
+      pivot: {x: 0.45833334, y: 0.53691274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1acb54f454497e48b10247d64c50660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 37
+        width: 117
+        height: 155
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad818a7843a5234fb686bd062914d73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame_blue09
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 42
+        width: 114
+        height: 150
+      alignment: 9
+      pivot: {x: 0.4868421, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770c86abe54d54346b58b7ab26cdd459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4e9bb71cd595ad24497968b1ef7b4a06
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

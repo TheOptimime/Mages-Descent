@@ -3,6 +3,8 @@ importPivots: 1
 tpsheetFileNames:
 - Assets/animations/dark knight/darkknight_idle.tpsheet
 - Assets/animations/death.tpsheet
+- Assets/animations/fire Animations/blue_fire.tpsheet
+- Assets/animations/fire Animations/red_flames.tpsheet
 - Assets/animations/harkyn_run.tpsheet
 - Assets/animations/hellHound_run.tpsheet
 - Assets/animations/hellhoundIdle.tpsheet
@@ -13,6 +15,8 @@ tpsheetFileNames:
 textureFileNames:
 - Assets/animations/dark knight/darkknight_idle.png
 - Assets/animations/death.png
+- Assets/animations/fire Animations/blue_fire.png
+- Assets/animations/fire Animations/red_flames.png
 - Assets/animations/harkyn_run.png
 - Assets/animations/hellHound_run.png
 - Assets/animations/hellhoundIdle.png
@@ -21,6 +25,8 @@ textureFileNames:
 - Assets/animations/Skeleton/skeleIdle.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
 - 
 - 
 - 
