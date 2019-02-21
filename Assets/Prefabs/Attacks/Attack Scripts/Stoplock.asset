@@ -25,7 +25,9 @@ MonoBehaviour:
   speed: 4
   lifetime: 16
   delay: 10
+  maxAttackDistance: 0
   chargeTime: 0
+  xPositionalDisplacement: 0
   hitStun: 12
   attackCharge: 0
   hasSpecialChargeFunction: 1
@@ -39,8 +41,7 @@ MonoBehaviour:
     type: 3}
   attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
     type: 3}
-  extraScripts: []
-  attackPath: 6
+  attackPath: 7
   keyPoints: []
   attackType: 1
   element: 5

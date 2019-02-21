@@ -14,6 +14,7 @@ public class Attack : ScriptableObject{
     public float attackLength;
     [HideInInspector] public float animationLength, animationCancelLength, destroyTime;
     public float xDisplacement, multiFireRate, speed, lifetime, delay;
+    public float maxAttackDistance;
     public float chargeTime = 0;
 
     [HideInInspector] public float xPositionalDisplacement;
@@ -41,6 +42,7 @@ public class Attack : ScriptableObject{
         Meteor,
         SineWave,
         Curved,
+        Boomerang,
         Homing,
         Custom
     }
@@ -172,6 +174,8 @@ public class Attack : ScriptableObject{
 
             
         }
+
+        Debug.Log(_joystickCommand);
     }
 
     

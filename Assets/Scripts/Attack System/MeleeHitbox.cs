@@ -176,7 +176,7 @@ public class MeleeHitbox : MonoBehaviour {
 
             
 
-            player.IncrementComboChain();
+            player.IncrementComboChain(properties);
             player.dabometer += Mathf.Abs(((properties.damage) / 2) * player.comboCount);
 
             DeActivate();

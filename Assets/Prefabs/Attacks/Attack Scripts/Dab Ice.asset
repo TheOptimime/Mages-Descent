@@ -15,17 +15,19 @@ MonoBehaviour:
   name: Dab Ice
   description: Yeet yeet dab
   damage: 8
-  multiFireCount: 2
+  multiFireCount: 1
   attackLength: 5
   animationLength: 0
   animationCancelLength: 0
   destroyTime: 0
   xDisplacement: -0.2
-  multiFireRate: 0.4
+  multiFireRate: 0
   speed: 6
   lifetime: 2
   delay: 0.2
+  maxAttackDistance: 0
   chargeTime: 0
+  xPositionalDisplacement: 0
   hitStun: 0.4
   attackCharge: 0
   hasSpecialChargeFunction: 0

@@ -148,8 +148,8 @@ public class AttackCollision : MonoBehaviour
                     }
                 }
 
-                _as.usingFighter.IncrementComboChain();
-                _as.usingFighter.dabometer += Mathf.Abs(((_as.attack.damage + _as.attack.lifetime - _as.time)/2) * _as.usingFighter.comboCount);
+                _as.usingFighter.IncrementComboChain(_as.attack);
+                _as.usingFighter.dabometer += Mathf.Abs(((_as.attack.damage + _as.attack.lifetime - _as.time)/2) + _as.usingFighter.comboCount);
 
                 Destroy(gameObject, _as.attack.destroyTime);
 

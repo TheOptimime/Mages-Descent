@@ -5831,7 +5831,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1476899451918516, guid: 827a7d09456c9284092ef158244674da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1476899451918516, guid: 827a7d09456c9284092ef158244674da, type: 3}
       propertyPath: m_Name
@@ -6096,10 +6096,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 1.4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3.5
+  m_GravityScale: -0.75
   m_Material: {fileID: 6200000, guid: 71699b78aa444cc4aa84ba3bfdd5448e, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -6118,11 +6118,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9442842b872a9b4a8434af35775ff80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.6
+  speed: 0.8
   cc: {fileID: 0}
   dabometer: 0
   PlayerID: 0
   comboCount: 0
+  comboTimer: 0
+  comboTime: 0
+  defaultComboTime: 4
   attackIsInQueue: 0
   attackInProgress: 0
   attackIsSpecialHeld: 0
@@ -6204,7 +6207,7 @@ MonoBehaviour:
   joystickRecord: 
   Checkpoints: {x: 0, y: 0}
   joystick: {x: 0, y: 0}
-  inputCorrection: 1
+  inputCorrection: 0
   vibrateLeftMotor: 0
   vibrateRightMotor: 0
 --- !u!114 &1926738557
@@ -6220,11 +6223,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8252569e2215a44939c0014e528793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 2800
+  m_JumpForce: 42
   m_HighJumpForce: 120
-  m_DoubleJumpForce: 2400
-  m_LongJumpForce: {x: 70, y: 800}
-  m_BackJumpForce: {x: -60, y: 300}
+  m_DoubleJumpForce: 38
+  m_LongJumpForce: {x: 70, y: 8}
+  m_BackJumpForce: {x: -60, y: 3}
   m_SlideForce: {x: 200, y: 0}
   m_CrouchSpeed: 0
   m_MovementSmoothing: 0
@@ -6236,6 +6239,7 @@ MonoBehaviour:
   m_CeilingCheck: {fileID: 1669059648}
   m_CrouchDisableCollider: {fileID: 0}
   m_Grounded: 0
+  m_lockDirection: 0
   m_FacingRight: 1
   m_doubleJumpUsed: 0
   m_doubleJumpEnabled: 0
@@ -7142,19 +7146,25 @@ PrefabInstance:
     - target: {fileID: 6221270546130274753, guid: cf3973b7033944c46bf596b25b715b27,
         type: 3}
       propertyPath: AttackList.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6221270546130274753, guid: cf3973b7033944c46bf596b25b715b27,
         type: 3}
       propertyPath: AttackList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 3c57a6693e8ba1c4cbde32669ec27235,
+      objectReference: {fileID: 11400000, guid: d1489923ee699cd4c9cc96d14db037ef,
         type: 2}
     - target: {fileID: 6221270546130274753, guid: cf3973b7033944c46bf596b25b715b27,
         type: 3}
       propertyPath: AttackList.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: afeef1305ebe7e74d97b6b2b765b52a1,
+        type: 2}
+    - target: {fileID: 6221270546130274753, guid: cf3973b7033944c46bf596b25b715b27,
+        type: 3}
+      propertyPath: AttackList.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: c38abf35b4591e44a8e19c4a63763064,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf3973b7033944c46bf596b25b715b27, type: 3}

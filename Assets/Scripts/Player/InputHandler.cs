@@ -400,7 +400,6 @@ public class InputHandler : MonoBehaviour {
                     // Compares
                     if (matchCount == tempJoystickCommand.Count)
                     {
-                        print("ooh");
                         player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
                         break;
                     }
@@ -409,7 +408,6 @@ public class InputHandler : MonoBehaviour {
                 else if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
                 {
                     // this is the generic attack
-                    print("eh");
                     player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
                     break;
                 }

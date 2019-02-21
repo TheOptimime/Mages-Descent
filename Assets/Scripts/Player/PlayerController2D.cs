@@ -16,8 +16,7 @@ public class PlayerController2D : MonoBehaviour
     bool slowTurn;
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
-    [HideInInspector]
-	public bool m_Grounded;            // Whether or not the player is grounded.
+    [HideInInspector] public bool m_Grounded, m_lockDirection;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
 
@@ -105,30 +104,25 @@ public class PlayerController2D : MonoBehaviour
 			m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
 			// If the input is moving the player right and the player is facing left...
-			if (move > 0 && !m_FacingRight)
+			if (move > 0 && !m_FacingRight && !m_lockDirection || move < 0 && m_FacingRight && !m_lockDirection)
 			{
 				// ... flip the player.
 				Flip();
 			}
-			// Otherwise if the input is moving the player left and the player is facing right...
-			else if (move < 0 && m_FacingRight)
-			{
-				// ... flip the player.
-				Flip();
-			}
+			
 		}
 		// If the player should jump...
 		if (m_Grounded && jump)
 		{
 			// Add a vertical force to the player.
 			m_Grounded = false;
-			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			m_Rigidbody2D.velocity = (new Vector2(0f, m_JumpForce));
 		}
         else if(!m_Grounded && m_doubleJumpEnabled && !m_doubleJumpUsed && jump)
         {
                 m_doubleJumpUsed = true;
                 m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_DoubleJumpForce));
+                m_Rigidbody2D.velocity = (new Vector2(0f, m_DoubleJumpForce));
         }
 	}
 
@@ -162,31 +156,31 @@ public class PlayerController2D : MonoBehaviour
         {
             // Add a vertical force to the player.
             m_Grounded = false;
-            m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            m_Rigidbody2D.velocity = (new Vector2(0f, m_JumpForce));
         }
         else if (!m_Grounded && m_doubleJumpEnabled && !m_doubleJumpUsed && jump)
         {
             m_doubleJumpUsed = true;
             m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
-            m_Rigidbody2D.AddForce(new Vector2(0f, m_DoubleJumpForce));
+            m_Rigidbody2D.velocity = (new Vector2(0f, m_DoubleJumpForce));
         }
         else if (m_Grounded && _jumpType == JumpType.High)
         {
             m_Grounded = false;
-            m_Rigidbody2D.AddForce(new Vector2(0f, m_HighJumpForce));
+            m_Rigidbody2D.velocity = (new Vector2(0f, m_HighJumpForce));
             m_doubleJumpUsed = true;
             // might just change this to use a different air speed
         }
         else if (m_Grounded && _jumpType == JumpType.Long)
         {
             m_Grounded = false;
-            m_Rigidbody2D.AddForce(m_LongJumpForce);
+            m_Rigidbody2D.velocity = (m_LongJumpForce);
             m_doubleJumpUsed = true;
         }
         else if (m_Grounded && _jumpType == JumpType.Back)
         {
             m_Grounded = false;
-            m_Rigidbody2D.AddForce(m_BackJumpForce);
+            m_Rigidbody2D.velocity = (m_BackJumpForce);
             m_doubleJumpUsed = true;
         }
         

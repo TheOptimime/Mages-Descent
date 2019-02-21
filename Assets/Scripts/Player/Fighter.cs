@@ -19,7 +19,8 @@ public partial class Fighter : MonoBehaviour {
     SpellDatabase spellList;
 
     [HideInInspector] public int PlayerID;
-    [HideInInspector] public int comboCount;
+    public int comboCount;
+    public float comboTimer, comboTime, defaultComboTime = 4;
     public bool attackIsInQueue, attackInProgress, attackIsSpecialHeld;
 
     AttackScript specialHold;
@@ -111,6 +112,8 @@ public partial class Fighter : MonoBehaviour {
         rm = FindObjectOfType<RespawnManager>();
 
         cc.m_doubleJumpEnabled = canDoubleJump;
+
+        comboTimer = defaultComboTime;
     }
 
     void Update()
@@ -118,6 +121,7 @@ public partial class Fighter : MonoBehaviour {
 
         if(dabometer >= 100)
         {
+            dabometer = 100;
 
         }
 
@@ -204,8 +208,15 @@ public partial class Fighter : MonoBehaviour {
         //print(movementFreezeLength.cancelTime);
 
         SetVibration((castTime / 100));
-
+        cc.m_lockDirection = lockMovement;
         //print("Leaping: " + isLeaping + " BackStep: " + isBackStepping + "BackLeaping: " + isBackLeaping);
+
+        comboTime += Time.deltaTime;
+
+        if (comboTime > comboTimer)
+        {
+            comboCount = 0;
+        }
     }
 
     private void Move()
@@ -380,9 +391,25 @@ public partial class Fighter : MonoBehaviour {
         health.currentHealth = health.maxHealth;
     }
 
-    public void IncrementComboChain()
+    public void IncrementComboChain(Attack atk)
     {
-        
+        print("Yeet");
+
+        if(comboTime < comboTimer)
+        {
+            print("combo Inc");
+            comboCount++;
+            comboTimer -= comboCount/64;
+            comboTime = 0;
+        }
+        else if(comboTime > comboTimer)
+        {
+            print("combo Inc");
+            comboCount = 0;
+            comboTimer = defaultComboTime;
+        }
+
+        comboTime = 0;        
     }
 
     public void SetHitstunTimer(float time)
