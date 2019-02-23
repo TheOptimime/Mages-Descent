@@ -186,7 +186,7 @@ public class AttackCollision : MonoBehaviour
                             // Automatically Starts Next Attack
                             _as.StartNextAttack(_as.followUpAttack);
                         }
-                        Destroy(this.gameObject);
+                        //Destroy(this.gameObject);
                     }
                 }
                 if(other.transform.tag == "Wall")

@@ -53,7 +53,7 @@ public partial class Fighter {
         GameObject attackObject = new GameObject("Projectile");
         AttackScript spell = attackObject.AddComponent<AttackScript>();
 
-        if(attack.attackPath != Attack.AttackPath.CrashDown )
+        if(attack.attackPath != Attack.AttackPath.CrashDown || attack.attackPath != Attack.AttackPath.Meteor)
         {
             spell.flipped = !cc.m_FacingRight;
         }

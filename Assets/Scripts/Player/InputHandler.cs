@@ -168,15 +168,15 @@ public class InputHandler : MonoBehaviour {
                 List<int> tempJoystickCommand = new List<int>();
 
 
-                if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand != null)
+                if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] != null)
                 {
                     if (!player.isFacingRight)
                     {
-                        FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand, out tempJoystickCommand);
+                        FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
                     }
                     else
                     {
-                        tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand;
+                        tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
                     }
                 }
 
@@ -222,7 +222,7 @@ public class InputHandler : MonoBehaviour {
                     }
                     
                 }
-                else if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
                 {
                     // this is the generic attack
                     player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
@@ -272,15 +272,15 @@ public class InputHandler : MonoBehaviour {
                 List<int> tempJoystickCommand = new List<int>();
 
 
-                if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand != null)
+                if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] != null)
                 {
                     if (!player.isFacingRight)
                     {
-                        FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand, out tempJoystickCommand);
+                        FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
                     }
                     else
                     {
-                        tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand;
+                        tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
                     }
                 }
 
@@ -310,7 +310,7 @@ public class InputHandler : MonoBehaviour {
                     }
 
                 }
-                else if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
                 {
                     // this is the generic attack
                     player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
@@ -370,11 +370,11 @@ public class InputHandler : MonoBehaviour {
 
                     if (!player.isFacingRight)
                     {
-                        FlipInput(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand, out tempJoystickCommand);
+                        FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
                     }
                     else
                     {
-                        tempJoystickCommand = player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand;
+                        tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
                     }
                 }
                 
@@ -405,7 +405,7 @@ public class InputHandler : MonoBehaviour {
                     }
 
                 }
-                else if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]._joystickCommand == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
                 {
                     // this is the generic attack
                     player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
@@ -885,6 +885,7 @@ public class InputHandler : MonoBehaviour {
     {
         ComboInputNormal = new List<List<int>>
         {
+            new List<int>(),
             new List<int>() { 8, 9, 6 },
             new List<int>() { 6, 9, 8 },
             new List<int>() { 6, 3, 2 },
@@ -904,6 +905,7 @@ public class InputHandler : MonoBehaviour {
 
         ComboInputReverse = new List<List<int>>
         {
+            new List<int>(),
             new List<int>() { 8, 7, 4 },
             new List<int>() { 4, 7, 8 },
             new List<int>() { 4, 1, 2 },

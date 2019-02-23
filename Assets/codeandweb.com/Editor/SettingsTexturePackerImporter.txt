@@ -1,6 +1,7 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
+- Assets/animations/dark knight/darkknight_idle.tpsheet
 - Assets/animations/dark knight/darkknightidle.tpsheet
 - Assets/animations/death.tpsheet
 - Assets/animations/fire Animations/blue_fire.tpsheet
@@ -14,8 +15,10 @@ tpsheetFileNames:
 - Assets/animations/red_green_portal.tpsheet
 - Assets/animations/Skeleton/redSkeleIDle.tpsheet
 - Assets/animations/Skeleton/skeleIdle.tpsheet
+- Assets/animations/spells/beam.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
+- Assets/animations/dark knight/darkknight_idle.png
 - Assets/animations/dark knight/darkknightidle.png
 - Assets/animations/death.png
 - Assets/animations/fire Animations/blue_fire.png
@@ -29,8 +32,11 @@ textureFileNames:
 - Assets/animations/red_green_portal.png
 - Assets/animations/Skeleton/redSkeleIDle.png
 - Assets/animations/Skeleton/skeleIdle.png
+- Assets/animations/spells/beam.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
 - 
 - 
 - 
