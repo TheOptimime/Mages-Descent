@@ -11,6 +11,7 @@ tpsheetFileNames:
 - Assets/animations/hellHound_run.tpsheet
 - Assets/animations/hellhoundIdle.tpsheet
 - Assets/animations/idle.tpsheet
+- Assets/animations/red_green_portal.tpsheet
 - Assets/animations/Skeleton/redSkeleIDle.tpsheet
 - Assets/animations/Skeleton/skeleIdle.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
@@ -25,10 +26,12 @@ textureFileNames:
 - Assets/animations/hellHound_run.png
 - Assets/animations/hellhoundIdle.png
 - Assets/animations/idle.png
+- Assets/animations/red_green_portal.png
 - Assets/animations/Skeleton/redSkeleIDle.png
 - Assets/animations/Skeleton/skeleIdle.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
 - 
 - 
 - 

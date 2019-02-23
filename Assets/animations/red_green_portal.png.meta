@@ -1,0 +1,1601 @@
+fileFormatVersion: 2
+guid: 8ece25915ce2d99448cd39be3888e65d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: red_green_portal
+    21300002: portal_green_red_slow00
+    21300004: portal_green_red_slow01
+    21300006: portal_green_red_slow02
+    21300008: portal_green_red_slow03
+    21300010: portal_green_red_slow04
+    21300012: portal_green_red_slow05
+    21300014: portal_green_red_slow06
+    21300016: portal_green_red_slow07
+    21300018: portal_green_red_slow08
+    21300020: portal_green_red_slow09
+    21300022: portal_green_red_slow10
+    21300024: portal_green_red_slow11
+    21300026: portal_green_red_slow12
+    21300028: portal_green_red_slow13
+    21300030: portal_green_red_slow14
+    21300032: portal_green_red_slow15
+    21300034: portal_green_red_slow16
+    21300036: portal_green_red_slow17
+    21300038: portal_green_red_slow18
+    21300040: portal_green_red_slow19
+    21300042: portal_green_red_slow20
+    21300044: portal_green_red_slow21
+    21300046: portal_green_red_slow22
+    21300048: portal_green_red_slow23
+    21300050: portal_green_red_slow24
+    21300052: portal_green_red_slow25
+    21300054: portal_green_red_slow26
+    21300056: portal_green_red_slow27
+    21300058: portal_green_red_slow28
+    21300060: portal_green_red_slow29
+    21300062: portal_green_red_slow30
+    21300064: portal_green_red_slow31
+    21300066: portal_green_red_slow32
+    21300068: portal_green_red_slow33
+    21300070: portal_green_red_slow34
+    21300072: portal_green_red_slow35
+    21300074: portal_green_red_slow36
+    21300076: portal_green_red_slow37
+    21300078: portal_green_red_slow38
+    21300080: portal_green_red_slow39
+    21300082: portal_green_red_slow40
+    21300084: portal_green_red_slow41
+    21300086: portal_green_red_slow42
+    21300088: portal_green_red_slow43
+    21300090: portal_green_red_slow44
+    21300092: portal_green_red_slow45
+    21300094: portal_green_red_slow46
+    21300096: portal_green_red_slow47
+    21300098: portal_green_red_slow48
+    21300100: portal_green_red_slow49
+    21300102: portal_green_red_slow50
+    21300104: portal_green_red_slow51
+    21300106: portal_green_red_slow52
+    21300108: portal_green_red_slow53
+    21300110: portal_green_red_slow54
+    21300112: portal_green_red_slow55
+    21300114: portal_green_red_slow56
+    21300116: portal_green_red_slow57
+    21300118: portal_green_red_slow58
+    21300120: portal_green_red_slow59
+    21300122: portal_green_red_slow60
+    21300124: portal_green_red_slow61
+    21300126: portal_green_red_slow62
+    21300128: portal_green_red_slow63
+    21300130: portal_green_red_slow64
+    21300132: portal_green_red_slow65
+    21300134: portal_green_red_slow66
+    21300136: portal_green_red_slow67
+    21300138: portal_green_red_slow68
+    21300140: portal_green_red_slow69
+    21300142: portal_green_red_slow70
+    21300144: portal_green_red_slow71
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: portal_green_red_slow00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3949
+        width: 896
+        height: 146
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5068493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d2629b4cb30d4468bd17a9ac8b80d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow01
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 3954
+        width: 896
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5106383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62371f1333b0f924d94d56adcabd439e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow02
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 3952
+        width: 893
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5005599, y: 0.5104895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1109424d547abf41b0ebe20faa91b4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow03
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 3955
+        width: 886
+        height: 140
+      alignment: 9
+      pivot: {x: 0.50225735, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5a8280de3b203479b65c9f3b23a922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3810
+        width: 894
+        height: 137
+      alignment: 9
+      pivot: {x: 0.49888143, y: 0.50364965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80491b64a73b557489c66e68b96ea8f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow05
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 3808
+        width: 894
+        height: 139
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4820144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8208933a67efc6045a76e7caa5ed79d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow06
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 3806
+        width: 889
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5016873, y: 0.5035461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f531cf8a50fbf4447bb84f3b7d561bc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow07
+      rect:
+        serializedVersion: 2
+        x: 2684
+        y: 3807
+        width: 893
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5005599, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd30eac3b6134944b447093c479f2ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3664
+        width: 896
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50714284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6546d756d858a8a47b8c492a8ba338ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow09
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 3659
+        width: 896
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49655172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b959cf3efdffea47ba30b53b782837b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow10
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 3666
+        width: 895
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5005587, y: 0.49275362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741a30e7076d8344bb4fa3e91986b501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow11
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 3663
+        width: 895
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5005587, y: 0.5035461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a528595f8dd85b479c936d127b15d0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3519
+        width: 892
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5011211, y: 0.48550725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e26caefdb744594d9e17ff674ebd9fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow13
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 3521
+        width: 888
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f60d53d50272e34d89d9c565737343e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow14
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 3520
+        width: 894
+        height: 137
+      alignment: 9
+      pivot: {x: 0.49888143, y: 0.49635038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ad9850771845245b66d2b99002e3d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow15
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 3515
+        width: 896
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49295774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d893201c2d35884e895aa67cadeafeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3372
+        width: 889
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5005624, y: 0.4893617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cec1b13df5b882469f20f15ff1809c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow17
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 3368
+        width: 896
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49655172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7bf33057809f8419360335b1afad72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow18
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 3372
+        width: 896
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5106383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a677039dee0e945a343b1d6f33595a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow19
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 3370
+        width: 895
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5005587, y: 0.5034965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a91011e92738846bf2744ecd8e139a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3224
+        width: 891
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5005612, y: 0.5070422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b737662a0371b6b4aabbf0f0c3dd62be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow21
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 3228
+        width: 890
+        height: 138
+      alignment: 9
+      pivot: {x: 0.50337076, y: 0.5072464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451fd4b6e9b61a34e82766a489dd155b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow22
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 3224
+        width: 894
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5140845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a873a50953c5334a81429c0145055be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow23
+      rect:
+        serializedVersion: 2
+        x: 2682
+        y: 3226
+        width: 894
+        height: 140
+      alignment: 9
+      pivot: {x: 0.50111854, y: 0.51428574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d157f443b71338244984d67ed77c16f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3081
+        width: 892
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4964539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96733c51ba752f748a558171fea6e089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow25
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 3085
+        width: 895
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5005587, y: 0.50364965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af865d9c12540154987a27fcc6ac222e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow26
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3082
+        width: 896
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49285713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9165b209d74b54088587ed5ed99a2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow27
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 3081
+        width: 896
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5035461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436648ab89738204cb1d63e0a9cb13d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2936
+        width: 896
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5034965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f097f1f29d19c74a937d6eb9d456cad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow29
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 2939
+        width: 893
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5016797, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9c216a5a6c511448fb06770e9cfa5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow30
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 2942
+        width: 890
+        height: 137
+      alignment: 9
+      pivot: {x: 0.50337076, y: 0.50364965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c7d770a06b4ee4daf4d0d33f807813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow31
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 2937
+        width: 890
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1f2b4c96ae5994c972d693547ac023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2796
+        width: 894
+        height: 138
+      alignment: 9
+      pivot: {x: 0.49888143, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578ee92bee7ac34438d56d5255dcb238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow33
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 2793
+        width: 890
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5035461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944e4951e7d9e81479127bf1c31b2540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow34
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 2795
+        width: 892
+        height: 139
+      alignment: 9
+      pivot: {x: 0.49887893, y: 0.48920864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7567241fd48ef14b9588c088c3a9c7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow35
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 2792
+        width: 896
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5070422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f67a5783290a045b043431e71df91c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow36
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2645
+        width: 896
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49655172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5115277fbbdff414b8fe2fd78b392fbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow37
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 2649
+        width: 894
+        height: 141
+      alignment: 9
+      pivot: {x: 0.50111854, y: 0.5106383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8b28e5a19c94c41bcd40f6d63a4392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow38
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 2651
+        width: 894
+        height: 139
+      alignment: 9
+      pivot: {x: 0.49888143, y: 0.51079136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431ac5f0e5c357a459e60828821d02ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow39
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 2649
+        width: 885
+        height: 141
+      alignment: 9
+      pivot: {x: 0.500565, y: 0.5035461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58342596324cb547b044a462c0ad21b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2503
+        width: 894
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ed10615ac69c04f97d7aaa9f049bfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow41
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 2502
+        width: 894
+        height: 141
+      alignment: 9
+      pivot: {x: 0.49888143, y: 0.4964539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3ca3983d190fc459b2262bf47c2d50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow42
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 2502
+        width: 895
+        height: 141
+      alignment: 9
+      pivot: {x: 0.49944136, y: 0.5035461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bad494a761c7874c90bb602f2bc4fea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow43
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 2504
+        width: 895
+        height: 139
+      alignment: 9
+      pivot: {x: 0.5005587, y: 0.4964029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7eb78fdc9a1a284cad8cdaeb4a404d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2358
+        width: 896
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77bb3989b05359d49950235547b13c11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow45
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 2356
+        width: 896
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd0f73056a2a484b8b32a770d85de4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow46
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 2360
+        width: 894
+        height: 140
+      alignment: 9
+      pivot: {x: 0.50111854, y: 0.50714284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c555eefd863c143956e2f8c6b3b217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow47
+      rect:
+        serializedVersion: 2
+        x: 2693
+        y: 2361
+        width: 891
+        height: 139
+      alignment: 9
+      pivot: {x: 0.5028058, y: 0.50359714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5675ce10a2873449838faf18ef0c617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2213
+        width: 892
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5035461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d666febae5e1cb04d9c2dc1a865ad49c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow49
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 2214
+        width: 888
+        height: 140
+      alignment: 9
+      pivot: {x: 0.4966216, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908acfc864e4fa94eb09832dea925bff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow50
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 2212
+        width: 894
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928b7237866de9243885d61bde92dd3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow51
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 2213
+        width: 888
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5011261, y: 0.5106383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e8e710002196e4d8b9e4bd5f28c898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow52
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2071
+        width: 893
+        height: 139
+      alignment: 9
+      pivot: {x: 0.49832028, y: 0.48920864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a93cf80ecb2dc844a3ccdf4e1cda763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow53
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2068
+        width: 896
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49295774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf41cd57073fad42b604785cc0b914c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow54
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 2066
+        width: 896
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac89b5496c1358345add7a0c28b87c88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow55
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 2067
+        width: 893
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5016797, y: 0.5104895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ddc281e3ca49240896a609b258d8df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1922
+        width: 892
+        height: 142
+      alignment: 9
+      pivot: {x: 0.50224215, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5817050e9276696459b8c96e779a82e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow57
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1924
+        width: 891
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5028058, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75150d737bf18c6419569f5b8512e4cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow58
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1923
+        width: 895
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5005587, y: 0.5177305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee561927db6f2a45bb29091abb61e10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow59
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 1923
+        width: 890
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5022472, y: 0.5106383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506514c360b0c8248b2b65d69d78bfeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1778
+        width: 895
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5005587, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7027193536ede1040acdebc6f1bfdaae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow61
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1780
+        width: 896
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51428574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eae094c99f353c448fc265c9c2f53b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow62
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 1775
+        width: 896
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5103448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c139499baf30349b40729404fc1de8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow63
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 1776
+        width: 896
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5069444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd3a831d0e83e744849e3dc14fc2a13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow64
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1632
+        width: 896
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5035461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e403fc73c21c8843b43070a7d5c091d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow65
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1633
+        width: 894
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c4a1d2e18cc104a989af254c7916c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow66
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 1635
+        width: 889
+        height: 138
+      alignment: 9
+      pivot: {x: 0.49943757, y: 0.5072464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ef970302cc6b841ae9ce7a1e43c47f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow67
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 1631
+        width: 894
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5070422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17c1871fb0ed5946b1958b9c7d4f021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow68
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1486
+        width: 892
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5011211, y: 0.4965035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d0bbe23940d104482c862fe6b9e897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow69
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1488
+        width: 891
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5028058, y: 0.5177305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85fb9902e63d2dd469f5cbc9a79f1527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow70
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1486
+        width: 895
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5005587, y: 0.5034965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2813e0ef6d251294d8adf3ef4978cdd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal_green_red_slow71
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 1483
+        width: 896
+        height: 146
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5068493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48f8bad7ed16e64891d194f2b472871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0ca342341253bd04caf790bf2c840de0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
