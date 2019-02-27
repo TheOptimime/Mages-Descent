@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aba337f66310624c922f65cd40c0a20, type: 3}
+  m_Name: Dire Beam
+  m_EditorClassIdentifier: 
+  name: Dire Beam
+  description: Fires a beam... duh
+  damage: 2
+  multiFireCount: 0
+  attackLength: 5
+  animationLength: 0
+  animationCancelLength: 0
+  destroyTime: 0
+  xDisplacement: 0
+  multiFireRate: 20
+  speed: 7
+  lifetime: 6
+  delay: 0
+  maxAttackDistance: 9
+  chargeTime: 0
+  xPositionalDisplacement: 0
+  hitStun: 5
+  attackCharge: 0
+  hasSpecialChargeFunction: 0
+  burstOnDestroy: 0
+  spellPoints: 0
+  knockback: {x: 0, y: 0}
+  _joystickCommand: 
+  followUpAttack: {fileID: 0}
+  simultaneousAttack: {fileID: 0}
+  spriteAnimation: {fileID: 6787913549235450095, guid: ef7c405f88444b34aa93d59d936d698e,
+    type: 3}
+  attackBase: {fileID: 8465239412310887034, guid: dde65ab684eec924793138336a50e475,
+    type: 3}
+  attackPath: 1
+  keyPoints: []
+  attackType: 3
+  element: 3
+  elementEffect: 0
+  chargeType: 0
+  followUpType: 0
+  joystickCommand: 0

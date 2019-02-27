@@ -2026,6 +2026,17 @@ PrefabInstance:
       propertyPath: activeSpawnPoint
       value: 
       objectReference: {fileID: 679588642}
+    - target: {fileID: 6221270546130274753, guid: cf3973b7033944c46bf596b25b715b27,
+        type: 3}
+      propertyPath: AttackList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221270546130274753, guid: cf3973b7033944c46bf596b25b715b27,
+        type: 3}
+      propertyPath: AttackList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 60de5cf9c4e69064a9c2448ee80fcbb5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf3973b7033944c46bf596b25b715b27, type: 3}
 --- !u!1 &87681241

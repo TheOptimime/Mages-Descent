@@ -40,7 +40,7 @@ public class AttackScript : MonoBehaviour {
     public GameObject followUpAttack;
 
     public Fighter usingFighter;
-
+    
 
     void Start()
     {
@@ -51,6 +51,8 @@ public class AttackScript : MonoBehaviour {
         rb = gameObject.AddComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         rb.gravityScale = 0;
+
+        sr = attack.spriteAnimation.GetComponent<SpriteRenderer>();
         
         if(boxCol = GetComponentInChildren<BoxCollider2D>())
         {
@@ -96,10 +98,21 @@ public class AttackScript : MonoBehaviour {
 
         if(attack.attackType == Attack.AttackType.Beam)
         {
+            if(boxCol == null)
+            {
+                boxCol = attack.spriteAnimation.GetComponent<BoxCollider2D>();
+            }
+
             if (boxCol != null)
             {
                 boxCol.isTrigger = true;
+                sr.tileMode = SpriteTileMode.Continuous;
             }
+            else
+            {
+                Debug.LogError("No Box Collider Present on Beam");
+            }
+            
         }
     }
     
@@ -139,7 +152,7 @@ public class AttackScript : MonoBehaviour {
             if (attack.attackType == Attack.AttackType.Beam)
             {
                 boxColliderSize += Time.deltaTime / 4;
-                boxCol.size = new Vector2(boxColliderSize, boxCol.size.y);
+                sr.size =  boxCol.size = new Vector2(boxColliderSize, boxCol.size.y);
             }
         }
             
@@ -155,6 +168,40 @@ public class AttackScript : MonoBehaviour {
                 {
                     if (attack.attackPath == Attack.AttackPath.Straight)
                     {
+                        //rb.velocity = new Vector2(attack.speed * direction, 0);
+                    }
+                    else if (attack.attackPath == Attack.AttackPath.Meteor)
+                    {
+                        //rb.velocity = new Vector2(attack.speed * direction, -attack.speed);
+                    }
+                    else if (attack.attackPath == Attack.AttackPath.CrashDown)
+                    {
+                        //rb.velocity = new Vector2(0, -attack.speed);
+                    }
+                    else if (attack.attackPath == Attack.AttackPath.SineWave)
+                    {
+                        //rb.velocity = new Vector2(attack.speed * direction, Mathf.Sin(Time.time * frequency) * magnitude);
+                    }
+                    else if(attack.attackPath == Attack.AttackPath.Curved)
+                    {
+                        //rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * attack.speed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * attack.speed)/10 * Time.fixedDeltaTime);
+                    }
+                    else if(attack.attackPath == Attack.AttackPath.Homing)
+                    {
+                        if(usingFighter != null)
+                        {
+                            //rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, attack.speed * Time.fixedDeltaTime));
+                            //print(rb.velocity);
+
+                            //rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * attack.speed;
+                        }
+
+                    }
+                }
+                else if(attack.attackType == Attack.AttackType.Beam)
+                {
+                    if (attack.attackPath == Attack.AttackPath.Straight)
+                    {
                         rb.velocity = new Vector2(attack.speed * direction, 0);
                     }
                     else if (attack.attackPath == Attack.AttackPath.Meteor)
@@ -167,26 +214,14 @@ public class AttackScript : MonoBehaviour {
                     }
                     else if (attack.attackPath == Attack.AttackPath.SineWave)
                     {
-                        rb.velocity = new Vector2(attack.speed * direction, Mathf.Sin(Time.time * frequency) * magnitude);
+                        // stop
                     }
-                    else if(attack.attackPath == Attack.AttackPath.Curved)
+                    else if (attack.attackPath == Attack.AttackPath.Curved)
                     {
-                        rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * attack.speed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * attack.speed)/10 * Time.fixedDeltaTime);
-                    }
-                    else if(attack.attackPath == Attack.AttackPath.Homing)
-                    {
-                        if(usingFighter != null)
-                        {
-                            //rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, attack.speed * Time.fixedDeltaTime));
-                            //print(rb.velocity);
-
-                            rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * attack.speed;
-                        }
-
+                        // get some help
                     }
                 }
-
-
+                
             }
         }
 
