@@ -18,7 +18,7 @@ MonoBehaviour:
 '
   damage: 20
   multiFireCount: 24
-  attackLength: 0
+  attackLength: 0.2
   animationLength: 0
   animationCancelLength: 0
   destroyTime: 0
@@ -27,14 +27,15 @@ MonoBehaviour:
   speed: 14
   lifetime: 8
   delay: 0
+  maxAttackDistance: 0
   chargeTime: 0
-  xPositionalDisplacement: 0
+  xPositionalDisplacement: 6
   hitStun: 8
   attackCharge: 0
   hasSpecialChargeFunction: 0
   burstOnDestroy: 0
   spellPoints: 0
-  knockback: {x: 8, y: 8}
+  knockback: {x: 20, y: 20}
   _joystickCommand: 
   followUpAttack: {fileID: 0}
   simultaneousAttack: {fileID: 0}

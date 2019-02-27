@@ -32,7 +32,7 @@ public class Item {
         public Spellbook()
         {
             attacks = new List<Attack>();
-            Debug.Log("spellbook has no element");
+            //Debug.Log("spellbook has no element");
         }
 
         void AddAttack(Attack attack)

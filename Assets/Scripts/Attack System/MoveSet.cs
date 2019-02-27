@@ -63,9 +63,9 @@ public class MoveSet : MonoBehaviour {
 
             }
 
-            print(spellBookSet_A[i].element + " " + spellBookSet_A[i].attacks.Count);
-            print(spellBookSet_B[i].element + " " + spellBookSet_B[i].attacks.Count);
-            print(spellBookSet_C[i].element + " " + spellBookSet_C[i].attacks.Count);
+            //print(spellBookSet_A[i].element + " " + spellBookSet_A[i].attacks.Count);
+            //print(spellBookSet_B[i].element + " " + spellBookSet_B[i].attacks.Count);
+            //print(spellBookSet_C[i].element + " " + spellBookSet_C[i].attacks.Count);
         }
 
         

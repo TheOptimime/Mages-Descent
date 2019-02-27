@@ -25,7 +25,9 @@ MonoBehaviour:
   speed: 2
   lifetime: 2
   delay: 0
+  maxAttackDistance: 0
   chargeTime: 0
+  xPositionalDisplacement: 0
   hitStun: 0
   attackCharge: 0
   hasSpecialChargeFunction: 0
@@ -39,8 +41,6 @@ MonoBehaviour:
     type: 3}
   attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
     type: 3}
-  extraScripts:
-  - {fileID: 0}
   attackPath: 1
   keyPoints: []
   attackType: 2
@@ -48,4 +48,4 @@ MonoBehaviour:
   elementEffect: 2
   chargeType: 0
   followUpType: 1
-  joystickCommand: 0
+  joystickCommand: 1

@@ -102,7 +102,7 @@ public partial class Fighter {
                 StartAttack(attack.simultaneousAttack);
             }
         }
-        movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
+        movementFreezeLength = new DoubleTime(attack.attackLength, attack.attackLength);
 
         print("xDisp: " + attack.xDisplacement + comboCount);
 
