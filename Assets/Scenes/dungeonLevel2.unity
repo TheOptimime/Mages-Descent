@@ -2035,7 +2035,7 @@ PrefabInstance:
         type: 3}
       propertyPath: AttackList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 60de5cf9c4e69064a9c2448ee80fcbb5,
+      objectReference: {fileID: 11400000, guid: 3c57a6693e8ba1c4cbde32669ec27235,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf3973b7033944c46bf596b25b715b27, type: 3}
@@ -27093,6 +27093,9 @@ GameObject:
   - component: {fileID: 1838630668}
   - component: {fileID: 1838630671}
   - component: {fileID: 1838630672}
+  - component: {fileID: 1838630676}
+  - component: {fileID: 1838630674}
+  - component: {fileID: 1838630673}
   m_Layer: 0
   m_Name: dark_knight_Left-IdleBetter
   m_TagString: Enemy
@@ -27218,6 +27221,51 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1838630673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838630667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b651a798ffd51d468369170b2a91ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recoveryTime: 0
+  stunLength: 0
+  knockbackRecipient: 1
+--- !u!114 &1838630674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838630667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a078b0e33e4c2e449a3c8df77c343f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ailment: 0
+--- !u!114 &1838630676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838630667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdf708688770614d9a0d359e3839938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  currentHealth: 0
+  regen: 0
+  timer: 0
+  time: 0
 --- !u!1 &1838781945
 GameObject:
   m_ObjectHideFlags: 0
