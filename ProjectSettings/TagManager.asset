@@ -45,3 +45,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: spells
+    uniqueID: 1361720163
+    locked: 0

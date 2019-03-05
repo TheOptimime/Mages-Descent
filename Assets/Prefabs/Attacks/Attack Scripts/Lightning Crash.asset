@@ -23,9 +23,11 @@ MonoBehaviour:
   xDisplacement: 0
   multiFireRate: 0
   speed: 10
-  lifetime: 5
+  lifetime: 2
   delay: 2.6
+  maxAttackDistance: 0
   chargeTime: 0
+  xPositionalDisplacement: 0
   hitStun: 2.6
   attackCharge: 0
   hasSpecialChargeFunction: 0
@@ -33,10 +35,9 @@ MonoBehaviour:
   spellPoints: 0
   knockback: {x: 20, y: 4}
   _joystickCommand: 
-  followUpAttack: {fileID: 0}
+  followUpAttack: {fileID: 11400000, guid: c536ee1f3080c694dbe6560c14f76be8, type: 2}
   simultaneousAttack: {fileID: 0}
-  spriteAnimation: {fileID: 8149705568481161924, guid: 2274c2ff197e5ae4f8fe84aa45923720,
-    type: 3}
+  spriteAnimation: {fileID: 163948, guid: 153ff601b9ac43240921bf65f009e220, type: 3}
   attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
     type: 3}
   attackPath: 2
@@ -45,5 +46,5 @@ MonoBehaviour:
   element: 4
   elementEffect: 4
   chargeType: 0
-  followUpType: 0
+  followUpType: 1
   joystickCommand: 0

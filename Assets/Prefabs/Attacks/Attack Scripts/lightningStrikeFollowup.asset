@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aba337f66310624c922f65cd40c0a20, type: 3}
+  m_Name: lightningStrikeFollowup
+  m_EditorClassIdentifier: 
+  name: lightning follow up
+  description: 
+  damage: 0
+  multiFireCount: 0
+  attackLength: 0
+  animationLength: 0
+  animationCancelLength: 0
+  destroyTime: 0
+  xDisplacement: 0
+  multiFireRate: 0
+  speed: 0
+  lifetime: 2
+  delay: 0
+  maxAttackDistance: 0
+  chargeTime: 0
+  xPositionalDisplacement: 0
+  hitStun: 0
+  attackCharge: 0
+  hasSpecialChargeFunction: 0
+  burstOnDestroy: 0
+  spellPoints: 0
+  knockback: {x: 0, y: 0}
+  _joystickCommand: 
+  followUpAttack: {fileID: 0}
+  simultaneousAttack: {fileID: 0}
+  spriteAnimation: {fileID: 124998, guid: 16f393fea92971c4f9d155ff0adab5a5, type: 3}
+  attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
+    type: 3}
+  attackPath: 0
+  keyPoints: []
+  attackType: 1
+  element: 4
+  elementEffect: 0
+  chargeType: 0
+  followUpType: 0
+  joystickCommand: 0

@@ -165,7 +165,7 @@ public partial class Fighter {
                 movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
                 if (attack.attackPath == Attack.AttackPath.Meteor)
                 {
-                    attack.xPositionalDisplacement = Random.Range(0, 10);
+                    attack.xPositionalDisplacement = Random.Range(0, 5);
                 }
                 StartAttack(attack);
 
