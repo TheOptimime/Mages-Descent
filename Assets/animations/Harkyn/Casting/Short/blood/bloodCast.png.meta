@@ -1,0 +1,1097 @@
+fileFormatVersion: 2
+guid: d5dcb0ef3e2e4f54cad4a5c98e8fde22
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bloodCast
+    21300002: Harkyn_Blood_Short_0000
+    21300004: Harkyn_Blood_Short_0001
+    21300006: Harkyn_Blood_Short_0002
+    21300008: Harkyn_Blood_Short_0003
+    21300010: Harkyn_Blood_Short_0004
+    21300012: Harkyn_Blood_Short_0005
+    21300014: Harkyn_Blood_Short_0006
+    21300016: Harkyn_Blood_Short_0007
+    21300018: Harkyn_Blood_Short_0008
+    21300020: Harkyn_Blood_Short_0009
+    21300022: Harkyn_Blood_Short_0010
+    21300024: Harkyn_Blood_Short_0011
+    21300026: Harkyn_Blood_Short_0012
+    21300028: Harkyn_Blood_Short_0013
+    21300030: Harkyn_Blood_Short_0014
+    21300032: Harkyn_Blood_Short_0015
+    21300034: Harkyn_Blood_Short_0016
+    21300036: Harkyn_Blood_Short_0017
+    21300038: Harkyn_Blood_Short_0018
+    21300040: Harkyn_Blood_Short_0019
+    21300042: Harkyn_Blood_Short_0020
+    21300044: Harkyn_Blood_Short_0021
+    21300046: Harkyn_Blood_Short_0022
+    21300048: Harkyn_Blood_Short_0023
+    21300050: Harkyn_Blood_Short_0024
+    21300052: Harkyn_Blood_Short_0025
+    21300054: Harkyn_Blood_Short_0026
+    21300056: Harkyn_Blood_Short_0027
+    21300058: Harkyn_Blood_Short_0028
+    21300060: Harkyn_Blood_Short_0029
+    21300062: Harkyn_Blood_Short_0030
+    21300064: Harkyn_Blood_Short_0031
+    21300066: Harkyn_Blood_Short_0032
+    21300068: Harkyn_Blood_Short_0033
+    21300070: Harkyn_Blood_Short_0034
+    21300072: Harkyn_Blood_Short_0035
+    21300074: Harkyn_Blood_Short_0036
+    21300076: Harkyn_Blood_Short_0037
+    21300078: Harkyn_Blood_Short_0038
+    21300080: Harkyn_Blood_Short_0039
+    21300082: Harkyn_Blood_Short_0040
+    21300084: Harkyn_Blood_Short_0041
+    21300086: Harkyn_Blood_Short_0042
+    21300088: Harkyn_Blood_Short_0043
+    21300090: Harkyn_Blood_Short_0044
+    21300092: Harkyn_Blood_Short_0045
+    21300094: Harkyn_Blood_Short_0046
+    21300096: Harkyn_Blood_Short_0047
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3399
+        width: 530
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54339623, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bbe1e5bd3fc4d43b6e97dcc5b7cefb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0001
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3399
+        width: 530
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54339623, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9147e7d944db74aa074a52fb1bd584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0002
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 3411
+        width: 533
+        height: 684
+      alignment: 9
+      pivot: {x: 0.5459662, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43b9eaecfeb5f44caa564eed0fe6938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0003
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3428
+        width: 534
+        height: 667
+      alignment: 9
+      pivot: {x: 0.57865167, y: 0.529985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb364b582f1f5924682a3bda30c872c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0004
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 3419
+        width: 539
+        height: 676
+      alignment: 9
+      pivot: {x: 0.580705, y: 0.49482247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b843025ab5b98b40a5ecadbc98c330b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0005
+      rect:
+        serializedVersion: 2
+        x: 2677
+        y: 3432
+        width: 569
+        height: 663
+      alignment: 9
+      pivot: {x: 0.56239015, y: 0.5015083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb479c01f2ded18468f6579cfe4cffd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0006
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 3415
+        width: 538
+        height: 680
+      alignment: 9
+      pivot: {x: 0.58364314, y: 0.5036765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60ff76f74add5a4ebc92d9b04acdb2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0007
+      rect:
+        serializedVersion: 2
+        x: 3788
+        y: 3418
+        width: 699
+        height: 677
+      alignment: 9
+      pivot: {x: 0.67525035, y: 0.4970458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580c4e8b5aa392a4fbe153cf5b652706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0008
+      rect:
+        serializedVersion: 2
+        x: 4489
+        y: 3421
+        width: 708
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6751412, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bea8d98e629f0f4e996294394841b51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0009
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 3424
+        width: 709
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6770099, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d788e8d31e98246bfd41daf8d65e78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0010
+      rect:
+        serializedVersion: 2
+        x: 5910
+        y: 3427
+        width: 704
+        height: 668
+      alignment: 9
+      pivot: {x: 0.6818182, y: 0.5127246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad6c5488d48e9f4bb3a1309a0644b05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0011
+      rect:
+        serializedVersion: 2
+        x: 6616
+        y: 3435
+        width: 704
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6818182, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3340cd4c3afcccc4783dfbef4ed58c3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0012
+      rect:
+        serializedVersion: 2
+        x: 7322
+        y: 3435
+        width: 704
+        height: 660
+      alignment: 9
+      pivot: {x: 0.68039775, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0f96ca1b74f9e43a82f83ffba61fea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2732
+        width: 727
+        height: 665
+      alignment: 9
+      pivot: {x: 0.65887207, y: 0.5150376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16b72ea91eba0847b168d19fa9ab6b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0014
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 2742
+        width: 726
+        height: 655
+      alignment: 9
+      pivot: {x: 0.661157, y: 0.51221377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a03b2403ff55549bcb012408e8fead
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0015
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 2740
+        width: 731
+        height: 657
+      alignment: 9
+      pivot: {x: 0.65663475, y: 0.5106545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c493acfbf894c9d4086c00ac60d6cce8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0016
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 2744
+        width: 738
+        height: 653
+      alignment: 9
+      pivot: {x: 0.6504065, y: 0.51378256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac34d09e7e67dd43b8c26c89b24551e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0017
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 2739
+        width: 734
+        height: 658
+      alignment: 9
+      pivot: {x: 0.6539509, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57c6adbd2f73034188a27ea7f06b7e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0018
+      rect:
+        serializedVersion: 2
+        x: 3667
+        y: 2733
+        width: 722
+        height: 664
+      alignment: 9
+      pivot: {x: 0.66481996, y: 0.51581323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7401f62e12775fb4b86133f38637fabd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0019
+      rect:
+        serializedVersion: 2
+        x: 4391
+        y: 2729
+        width: 714
+        height: 668
+      alignment: 9
+      pivot: {x: 0.6722689, y: 0.51422155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5576d44ec263c8c49a9ac11b7ce544e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0020
+      rect:
+        serializedVersion: 2
+        x: 5107
+        y: 2734
+        width: 717
+        height: 663
+      alignment: 9
+      pivot: {x: 0.66945606, y: 0.5060332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a734020c688434db9a419e60b755ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0021
+      rect:
+        serializedVersion: 2
+        x: 5826
+        y: 2723
+        width: 740
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6486486, y: 0.50816023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c7a622642655a4caab5dc51abae894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0022
+      rect:
+        serializedVersion: 2
+        x: 6568
+        y: 2723
+        width: 722
+        height: 674
+      alignment: 9
+      pivot: {x: 0.66481996, y: 0.4962908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519f5aef3851f0540a0e17611ebcdbc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0023
+      rect:
+        serializedVersion: 2
+        x: 7292
+        y: 2722
+        width: 709
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6770099, y: 0.49555555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7d7f46618d39a45a54f58bc3f7a3e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2041
+        width: 710
+        height: 679
+      alignment: 9
+      pivot: {x: 0.67464787, y: 0.50441825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d484e02c02da71f48b625b79186a5b9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0025
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 2046
+        width: 710
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6760563, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944fc15a37e77534db83f97c100cf5e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0026
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2049
+        width: 706
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6798867, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ebf8d2484c4514f884e158d4f4c391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0027
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 2048
+        width: 714
+        height: 672
+      alignment: 9
+      pivot: {x: 0.6722689, y: 0.50967264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888cf6aadc2a1c3439abab65e5df4b12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0028
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 2060
+        width: 707
+        height: 660
+      alignment: 9
+      pivot: {x: 0.67892504, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922ba1d2945b5ba419a59dec208574cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0029
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 2060
+        width: 710
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6760563, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270674ec0560e064ab721b116c7d4247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0030
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 2062
+        width: 718
+        height: 658
+      alignment: 9
+      pivot: {x: 0.66713095, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cd1fde3aa0dfe458dcb2db55a0ec38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0031
+      rect:
+        serializedVersion: 2
+        x: 4990
+        y: 2056
+        width: 725
+        height: 664
+      alignment: 9
+      pivot: {x: 0.66206896, y: 0.5052711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971ed5564f7cd694ea28df8d1142b398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0032
+      rect:
+        serializedVersion: 2
+        x: 5717
+        y: 2061
+        width: 730
+        height: 659
+      alignment: 9
+      pivot: {x: 0.65753424, y: 0.5091047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3e869fe7f2e2f46b75b255a98f55d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0033
+      rect:
+        serializedVersion: 2
+        x: 6449
+        y: 2060
+        width: 735
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6530612, y: 0.5189394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd11326a37771348b9eb15fa2f0a0be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0034
+      rect:
+        serializedVersion: 2
+        x: 7186
+        y: 2062
+        width: 739
+        height: 658
+      alignment: 9
+      pivot: {x: 0.6481732, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7f70fbf10130d49ac44d24708ea9d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0035
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1381
+        width: 703
+        height: 658
+      alignment: 9
+      pivot: {x: 0.658606, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789a2735596870c49b4966083e9457fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0036
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1368
+        width: 700
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6614286, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d380ab5c1809dd4cbce5913a8c528aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0037
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1368
+        width: 711
+        height: 671
+      alignment: 9
+      pivot: {x: 0.673699, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea652c19e00aeb7478e96b2575a8c90a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0038
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1373
+        width: 696
+        height: 666
+      alignment: 9
+      pivot: {x: 0.6637931, y: 0.5037538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6f9cf67e645e6468ff91d9f04a09c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0039
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 1361
+        width: 691
+        height: 678
+      alignment: 9
+      pivot: {x: 0.67293775, y: 0.49483776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860750ff84176454daea741cd8ab6203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0040
+      rect:
+        serializedVersion: 2
+        x: 3512
+        y: 1361
+        width: 721
+        height: 678
+      alignment: 9
+      pivot: {x: 0.66435504, y: 0.50516224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99226fda5af1902498bcfe07107e45f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0041
+      rect:
+        serializedVersion: 2
+        x: 4235
+        y: 1364
+        width: 691
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6700434, y: 0.49703702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e436cfcb68e962444bc26184ee907293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0042
+      rect:
+        serializedVersion: 2
+        x: 4928
+        y: 1358
+        width: 704
+        height: 681
+      alignment: 9
+      pivot: {x: 0.65767044, y: 0.50293684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a352a25b3fc4b154f831b0198a64b86b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0043
+      rect:
+        serializedVersion: 2
+        x: 5634
+        y: 1372
+        width: 702
+        height: 667
+      alignment: 9
+      pivot: {x: 0.6837607, y: 0.50149924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabf882b00fb4fb4ebcf3235142d5317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0044
+      rect:
+        serializedVersion: 2
+        x: 6338
+        y: 1355
+        width: 744
+        height: 684
+      alignment: 9
+      pivot: {x: 0.6451613, y: 0.500731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a651234898dcd7e438d25c6e3f0c004d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0045
+      rect:
+        serializedVersion: 2
+        x: 7084
+        y: 1357
+        width: 744
+        height: 682
+      alignment: 9
+      pivot: {x: 0.6451613, y: 0.5021994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6668c46caa49e14da4bbbf760d3ca53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0046
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 654
+        width: 705
+        height: 699
+      alignment: 9
+      pivot: {x: 0.6496454, y: 0.49284694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157d34fc2586aa040bcbf25cd482459a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Blood_Short_0047
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 657
+        width: 681
+        height: 696
+      alignment: 9
+      pivot: {x: 0.6431718, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b7965098b48e849b3a438f4ff3ce09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7889d4537e687a6409c9f2b7f25dc002
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

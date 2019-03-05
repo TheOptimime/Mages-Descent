@@ -1,0 +1,1097 @@
+fileFormatVersion: 2
+guid: 486891202cffe6c4d96343e58744bf43
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fireCast
+    21300002: Harkyn_Fire_Short_0000
+    21300004: Harkyn_Fire_Short_0001
+    21300006: Harkyn_Fire_Short_0002
+    21300008: Harkyn_Fire_Short_0003
+    21300010: Harkyn_Fire_Short_0004
+    21300012: Harkyn_Fire_Short_0005
+    21300014: Harkyn_Fire_Short_0006
+    21300016: Harkyn_Fire_Short_0007
+    21300018: Harkyn_Fire_Short_0008
+    21300020: Harkyn_Fire_Short_0009
+    21300022: Harkyn_Fire_Short_0010
+    21300024: Harkyn_Fire_Short_0011
+    21300026: Harkyn_Fire_Short_0012
+    21300028: Harkyn_Fire_Short_0013
+    21300030: Harkyn_Fire_Short_0014
+    21300032: Harkyn_Fire_Short_0015
+    21300034: Harkyn_Fire_Short_0016
+    21300036: Harkyn_Fire_Short_0017
+    21300038: Harkyn_Fire_Short_0018
+    21300040: Harkyn_Fire_Short_0019
+    21300042: Harkyn_Fire_Short_0020
+    21300044: Harkyn_Fire_Short_0021
+    21300046: Harkyn_Fire_Short_0022
+    21300048: Harkyn_Fire_Short_0023
+    21300050: Harkyn_Fire_Short_0024
+    21300052: Harkyn_Fire_Short_0025
+    21300054: Harkyn_Fire_Short_0026
+    21300056: Harkyn_Fire_Short_0027
+    21300058: Harkyn_Fire_Short_0028
+    21300060: Harkyn_Fire_Short_0029
+    21300062: Harkyn_Fire_Short_0030
+    21300064: Harkyn_Fire_Short_0031
+    21300066: Harkyn_Fire_Short_0032
+    21300068: Harkyn_Fire_Short_0033
+    21300070: Harkyn_Fire_Short_0034
+    21300072: Harkyn_Fire_Short_0035
+    21300074: Harkyn_Fire_Short_0036
+    21300076: Harkyn_Fire_Short_0037
+    21300078: Harkyn_Fire_Short_0038
+    21300080: Harkyn_Fire_Short_0039
+    21300082: Harkyn_Fire_Short_0040
+    21300084: Harkyn_Fire_Short_0041
+    21300086: Harkyn_Fire_Short_0042
+    21300088: Harkyn_Fire_Short_0043
+    21300090: Harkyn_Fire_Short_0044
+    21300092: Harkyn_Fire_Short_0045
+    21300094: Harkyn_Fire_Short_0046
+    21300096: Harkyn_Fire_Short_0047
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3399
+        width: 534
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54681647, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992aea43b27c632488fdfbe307740c1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0001
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 3399
+        width: 534
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54681647, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a78cdea5fda804989a1f6d308888b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0002
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 3411
+        width: 541
+        height: 684
+      alignment: 9
+      pivot: {x: 0.5526802, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11eac6a9e3b5eec4c9242621b3ac82ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0003
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 3428
+        width: 535
+        height: 667
+      alignment: 9
+      pivot: {x: 0.5775701, y: 0.529985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10df284f73a0f947b47ec5407166748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0004
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 3419
+        width: 537
+        height: 676
+      alignment: 9
+      pivot: {x: 0.5791434, y: 0.49482247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7fe25018014cbf42818eb533bfcc741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0005
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 3431
+        width: 568
+        height: 664
+      alignment: 9
+      pivot: {x: 0.5580986, y: 0.502259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b250429d9265d3045a6d4db9a4fea236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0006
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 3415
+        width: 536
+        height: 680
+      alignment: 9
+      pivot: {x: 0.58208954, y: 0.5036765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99297e43b564c2f4b8c5a6f8694860de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0007
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 3418
+        width: 690
+        height: 677
+      alignment: 9
+      pivot: {x: 0.6710145, y: 0.4970458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb5b6242ec00574ba5ca8abc4ea2de2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0008
+      rect:
+        serializedVersion: 2
+        x: 4492
+        y: 3421
+        width: 709
+        height: 674
+      alignment: 9
+      pivot: {x: 0.67559946, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635a11840f32995409b69c304c71de6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0009
+      rect:
+        serializedVersion: 2
+        x: 5203
+        y: 3424
+        width: 695
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6705036, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fce376d5f9065d43ad6ece9f68aa542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0010
+      rect:
+        serializedVersion: 2
+        x: 5900
+        y: 3427
+        width: 688
+        height: 668
+      alignment: 9
+      pivot: {x: 0.6744186, y: 0.5127246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a707308d8b18d894db4e2f59a063ec15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0011
+      rect:
+        serializedVersion: 2
+        x: 6590
+        y: 3435
+        width: 688
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6744186, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa26e46913e1ae24d8a24e39c56004f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0012
+      rect:
+        serializedVersion: 2
+        x: 7280
+        y: 3435
+        width: 689
+        height: 660
+      alignment: 9
+      pivot: {x: 0.67343974, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6cd31ffca24ea49b2aadd50f5648ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2732
+        width: 714
+        height: 665
+      alignment: 9
+      pivot: {x: 0.6526611, y: 0.5150376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042701ca061d4c04ebe20f5a210dd7d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0014
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 2742
+        width: 712
+        height: 655
+      alignment: 9
+      pivot: {x: 0.6544944, y: 0.51221377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647e4a20ef6727d46864b1d06a4aefe1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0015
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 2740
+        width: 718
+        height: 657
+      alignment: 9
+      pivot: {x: 0.6490251, y: 0.5106545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875738c503e964c47aee033302905fd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0016
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 2744
+        width: 724
+        height: 653
+      alignment: 9
+      pivot: {x: 0.6436464, y: 0.51378256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ac7b2a4db774446b7fd94d71f9ceff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0017
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 2739
+        width: 720
+        height: 658
+      alignment: 9
+      pivot: {x: 0.6472222, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb39ad1958691424fb1a4aed4a75045e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0018
+      rect:
+        serializedVersion: 2
+        x: 3599
+        y: 2732
+        width: 706
+        height: 665
+      alignment: 9
+      pivot: {x: 0.6572238, y: 0.51654136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4190dc86d99784f86e6968c7f9e0ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0019
+      rect:
+        serializedVersion: 2
+        x: 4307
+        y: 2729
+        width: 698
+        height: 668
+      alignment: 9
+      pivot: {x: 0.6647564, y: 0.51422155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c76d3f474149043b3ff1b8cbeefdd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0020
+      rect:
+        serializedVersion: 2
+        x: 5007
+        y: 2726
+        width: 701
+        height: 671
+      alignment: 9
+      pivot: {x: 0.66191155, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdefe8f2d8505148bea58512f45d284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0021
+      rect:
+        serializedVersion: 2
+        x: 5710
+        y: 2723
+        width: 722
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6426593, y: 0.50816023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8560cb8670239f94d947f219ee001682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0022
+      rect:
+        serializedVersion: 2
+        x: 6434
+        y: 2723
+        width: 706
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6572238, y: 0.4962908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bc8877188607449b5d74374ca98343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0023
+      rect:
+        serializedVersion: 2
+        x: 7142
+        y: 2722
+        width: 693
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6695527, y: 0.49555555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5800d83e9b700e8418580c0c168ce179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2041
+        width: 695
+        height: 679
+      alignment: 9
+      pivot: {x: 0.6676259, y: 0.50441825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe74215e5eb6db4ba781d671a84038a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0025
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2046
+        width: 694
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6685879, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1874a1000089374a8b39cea1badeffe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0026
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 2049
+        width: 690
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6724638, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6109b6f8d5d3754b870b933c623f14f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0027
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 2048
+        width: 698
+        height: 672
+      alignment: 9
+      pivot: {x: 0.6647564, y: 0.50967264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b08b0027a21f994589eaab646ed8de6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0028
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 2060
+        width: 691
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6714906, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e592aa26c2a5544b43356dd90e0c2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0029
+      rect:
+        serializedVersion: 2
+        x: 3479
+        y: 2060
+        width: 694
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6685879, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398752374dbeed045ad72553cd294a82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0030
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 2055
+        width: 704
+        height: 665
+      alignment: 9
+      pivot: {x: 0.65909094, y: 0.5150376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5125cced390ea40a71dc3e277bc159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0031
+      rect:
+        serializedVersion: 2
+        x: 4881
+        y: 2056
+        width: 709
+        height: 664
+      alignment: 9
+      pivot: {x: 0.6544429, y: 0.5052711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf95f2f5d053e946a9360cda5ea6873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0032
+      rect:
+        serializedVersion: 2
+        x: 5592
+        y: 2061
+        width: 714
+        height: 659
+      alignment: 9
+      pivot: {x: 0.64985996, y: 0.5091047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c094806425c479a4c96b0e195738cabf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0033
+      rect:
+        serializedVersion: 2
+        x: 6308
+        y: 2060
+        width: 719
+        height: 660
+      alignment: 9
+      pivot: {x: 0.64534074, y: 0.5189394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef05fd74a28d6a459aa58df958c14ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0034
+      rect:
+        serializedVersion: 2
+        x: 7029
+        y: 2054
+        width: 725
+        height: 666
+      alignment: 9
+      pivot: {x: 0.6413793, y: 0.5157658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f1a92ea3fb9994a9225f02f7fc5866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0035
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1381
+        width: 704
+        height: 658
+      alignment: 9
+      pivot: {x: 0.65909094, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215e0c8851c703b479a8e00f0db0208b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0036
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1368
+        width: 703
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6628734, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a841d47b4c5a3f249a4972a97416f25d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0037
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1368
+        width: 696
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e1ac8e9f820054d98b26d855bb44ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0038
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 1373
+        width: 698
+        height: 666
+      alignment: 9
+      pivot: {x: 0.6647564, y: 0.5037538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33557e39c8a1cd7408d43274415b82fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0039
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1361
+        width: 690
+        height: 678
+      alignment: 9
+      pivot: {x: 0.6724638, y: 0.49483776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6916c7b10a7394a84e55a122c301a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0040
+      rect:
+        serializedVersion: 2
+        x: 3502
+        y: 1361
+        width: 706
+        height: 678
+      alignment: 9
+      pivot: {x: 0.6572238, y: 0.50516224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765ec632b38ed7f43a295a8f798e2877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0041
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 1364
+        width: 691
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6700434, y: 0.49703702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2365acd24fdd82409ade03261d24137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0042
+      rect:
+        serializedVersion: 2
+        x: 4903
+        y: 1365
+        width: 708
+        height: 674
+      alignment: 9
+      pivot: {x: 0.65960455, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe5d480f866b1d4ebb68e5a5541586e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0043
+      rect:
+        serializedVersion: 2
+        x: 5613
+        y: 1372
+        width: 689
+        height: 667
+      alignment: 9
+      pivot: {x: 0.6777939, y: 0.50149924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c21935d69fda4047bf03919b067a434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0044
+      rect:
+        serializedVersion: 2
+        x: 6304
+        y: 1355
+        width: 731
+        height: 684
+      alignment: 9
+      pivot: {x: 0.63885087, y: 0.500731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30381ad698a0c74291d6a2a5b1fb487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0045
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 1357
+        width: 726
+        height: 682
+      alignment: 9
+      pivot: {x: 0.6363636, y: 0.5021994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edab555ca7bb7a4a8380c2be9a3e704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0046
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 655
+        width: 702
+        height: 698
+      alignment: 9
+      pivot: {x: 0.6481481, y: 0.49212036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271343bb22b3a134ab9be727398e5b6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Fire_Short_0047
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 656
+        width: 673
+        height: 697
+      alignment: 9
+      pivot: {x: 0.63893014, y: 0.4856528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a89ed08d10e6d44bb23930ab0961a5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9bc39859a7f999b4cb4212f2e0267af2
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
