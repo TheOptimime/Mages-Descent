@@ -1,0 +1,1097 @@
+fileFormatVersion: 2
+guid: 09f705bf20dba4d4b9b4aa1b09a40554
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: iceCast
+    21300002: Harkyn_Ice_Short_0000
+    21300004: Harkyn_Ice_Short_0001
+    21300006: Harkyn_Ice_Short_0002
+    21300008: Harkyn_Ice_Short_0003
+    21300010: Harkyn_Ice_Short_0004
+    21300012: Harkyn_Ice_Short_0005
+    21300014: Harkyn_Ice_Short_0006
+    21300016: Harkyn_Ice_Short_0007
+    21300018: Harkyn_Ice_Short_0008
+    21300020: Harkyn_Ice_Short_0009
+    21300022: Harkyn_Ice_Short_0010
+    21300024: Harkyn_Ice_Short_0011
+    21300026: Harkyn_Ice_Short_0012
+    21300028: Harkyn_Ice_Short_0013
+    21300030: Harkyn_Ice_Short_0014
+    21300032: Harkyn_Ice_Short_0015
+    21300034: Harkyn_Ice_Short_0016
+    21300036: Harkyn_Ice_Short_0017
+    21300038: Harkyn_Ice_Short_0018
+    21300040: Harkyn_Ice_Short_0019
+    21300042: Harkyn_Ice_Short_0020
+    21300044: Harkyn_Ice_Short_0021
+    21300046: Harkyn_Ice_Short_0022
+    21300048: Harkyn_Ice_Short_0023
+    21300050: Harkyn_Ice_Short_0024
+    21300052: Harkyn_Ice_Short_0025
+    21300054: Harkyn_Ice_Short_0026
+    21300056: Harkyn_Ice_Short_0027
+    21300058: Harkyn_Ice_Short_0028
+    21300060: Harkyn_Ice_Short_0029
+    21300062: Harkyn_Ice_Short_0030
+    21300064: Harkyn_Ice_Short_0031
+    21300066: Harkyn_Ice_Short_0032
+    21300068: Harkyn_Ice_Short_0033
+    21300070: Harkyn_Ice_Short_0034
+    21300072: Harkyn_Ice_Short_0035
+    21300074: Harkyn_Ice_Short_0036
+    21300076: Harkyn_Ice_Short_0037
+    21300078: Harkyn_Ice_Short_0038
+    21300080: Harkyn_Ice_Short_0039
+    21300082: Harkyn_Ice_Short_0040
+    21300084: Harkyn_Ice_Short_0041
+    21300086: Harkyn_Ice_Short_0042
+    21300088: Harkyn_Ice_Short_0043
+    21300090: Harkyn_Ice_Short_0044
+    21300092: Harkyn_Ice_Short_0045
+    21300094: Harkyn_Ice_Short_0046
+    21300096: Harkyn_Ice_Short_0047
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3399
+        width: 530
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54339623, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234d77222e728304c90db8d4868ac084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0001
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3399
+        width: 530
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54339623, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216c05f941f704847ba8760482dc9e1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0002
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 3411
+        width: 540
+        height: 684
+      alignment: 9
+      pivot: {x: 0.55185187, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da3a2aa7d9206f4998d008e3d7d7dfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0003
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 3428
+        width: 539
+        height: 667
+      alignment: 9
+      pivot: {x: 0.5825603, y: 0.529985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6eceb3c5e0ed02419c6e86b2951ba9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0004
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 3419
+        width: 537
+        height: 676
+      alignment: 9
+      pivot: {x: 0.5791434, y: 0.49482247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 743e215c1d2624a469daaae7ebf5ac36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0005
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 3432
+        width: 565
+        height: 663
+      alignment: 9
+      pivot: {x: 0.559292, y: 0.5015083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365bee7bff39a1a438fe31784291f4b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0006
+      rect:
+        serializedVersion: 2
+        x: 3254
+        y: 3415
+        width: 539
+        height: 680
+      alignment: 9
+      pivot: {x: 0.58441556, y: 0.5036765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8b3f1a4d524fd4d89a76bda41e5dd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0007
+      rect:
+        serializedVersion: 2
+        x: 3795
+        y: 3412
+        width: 686
+        height: 683
+      alignment: 9
+      pivot: {x: 0.66909623, y: 0.5014641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0157b20a04941a4eb3ec6fcbc95110b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0008
+      rect:
+        serializedVersion: 2
+        x: 4483
+        y: 3421
+        width: 708
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6751412, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f282201954692794bbdf3a044cc65812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0009
+      rect:
+        serializedVersion: 2
+        x: 5193
+        y: 3424
+        width: 698
+        height: 671
+      alignment: 9
+      pivot: {x: 0.67191976, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fb0eb390f56904d8c60d48f5b6b76b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0010
+      rect:
+        serializedVersion: 2
+        x: 5893
+        y: 3427
+        width: 693
+        height: 668
+      alignment: 9
+      pivot: {x: 0.67676765, y: 0.5127246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66aad1dd6835edc47ace9c66e5421b93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0011
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 3435
+        width: 693
+        height: 660
+      alignment: 9
+      pivot: {x: 0.67676765, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feebd0511b84df245a3beeb3e61f667e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0012
+      rect:
+        serializedVersion: 2
+        x: 7283
+        y: 3435
+        width: 694
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6757925, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f829b491b29254da614da84a2b1d85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2732
+        width: 717
+        height: 665
+      alignment: 9
+      pivot: {x: 0.65411437, y: 0.5150376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a7543798d1f534e937c1302a8500b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0014
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2742
+        width: 715
+        height: 655
+      alignment: 9
+      pivot: {x: 0.65594405, y: 0.51221377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cacc09aecf70f6b44ae898f0ce7d7a27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0015
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 2740
+        width: 720
+        height: 657
+      alignment: 9
+      pivot: {x: 0.6513889, y: 0.5106545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7041e54682d4a1c489e131c9bd56d8f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0016
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 2737
+        width: 727
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6451169, y: 0.5189394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919fc379b1b019949acb4ef4a0f70e05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0017
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 2739
+        width: 723
+        height: 658
+      alignment: 9
+      pivot: {x: 0.64868605, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3249ebe0c5e1ef48bcbcac2dd88eb00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0018
+      rect:
+        serializedVersion: 2
+        x: 3613
+        y: 2732
+        width: 711
+        height: 665
+      alignment: 9
+      pivot: {x: 0.6596343, y: 0.51654136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77dbbce4335143041aff2c763aa0d77d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0019
+      rect:
+        serializedVersion: 2
+        x: 4326
+        y: 2729
+        width: 703
+        height: 668
+      alignment: 9
+      pivot: {x: 0.66714084, y: 0.51422155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f2a07a74803104ca89f75f5fbdd2f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0020
+      rect:
+        serializedVersion: 2
+        x: 5031
+        y: 2734
+        width: 706
+        height: 663
+      alignment: 9
+      pivot: {x: 0.6643059, y: 0.5060332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6f085c98d39384e9937490916b8acf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0021
+      rect:
+        serializedVersion: 2
+        x: 5739
+        y: 2723
+        width: 727
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6451169, y: 0.50816023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eae631d4b97ec1478e677c54c742276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0022
+      rect:
+        serializedVersion: 2
+        x: 6468
+        y: 2723
+        width: 711
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6596343, y: 0.4962908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508b3d6d0816e894cbea5511a70d64c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0023
+      rect:
+        serializedVersion: 2
+        x: 7181
+        y: 2722
+        width: 697
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6728838, y: 0.49555555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118ded18451392347b2b04b07bf9bdee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2041
+        width: 700
+        height: 679
+      alignment: 9
+      pivot: {x: 0.67, y: 0.50441825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ca1798ad33b4a47b06f0422cf3c64e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0025
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 2046
+        width: 700
+        height: 674
+      alignment: 9
+      pivot: {x: 0.67142856, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f022385afa000d4081e2445875a1a34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0026
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 2049
+        width: 695
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6748201, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b94d83fb60d0c641aa7ca9c5593caa8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0027
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 2048
+        width: 703
+        height: 672
+      alignment: 9
+      pivot: {x: 0.66714084, y: 0.50967264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b66b2936757e14b915e5b5bb22dc06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0028
+      rect:
+        serializedVersion: 2
+        x: 2807
+        y: 2060
+        width: 696
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6738506, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bb1dd9bccf5bc4ea9ea4523488317d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0029
+      rect:
+        serializedVersion: 2
+        x: 3505
+        y: 2060
+        width: 699
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6709585, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a806ec77fa76e40b7d615b7d839c49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0030
+      rect:
+        serializedVersion: 2
+        x: 4206
+        y: 2062
+        width: 708
+        height: 658
+      alignment: 9
+      pivot: {x: 0.66101694, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fef7f2034384446a309d3c617568ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0031
+      rect:
+        serializedVersion: 2
+        x: 4916
+        y: 2056
+        width: 713
+        height: 664
+      alignment: 9
+      pivot: {x: 0.6563815, y: 0.5052711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bec8c2aa16f2ca4c92495ee67a63446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0032
+      rect:
+        serializedVersion: 2
+        x: 5631
+        y: 2053
+        width: 718
+        height: 667
+      alignment: 9
+      pivot: {x: 0.6518106, y: 0.5149925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1609a567bc2efe549967528e47786589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0033
+      rect:
+        serializedVersion: 2
+        x: 6351
+        y: 2067
+        width: 723
+        height: 653
+      alignment: 9
+      pivot: {x: 0.6473029, y: 0.51378256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbd1986b978104439354dcfcf478193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0034
+      rect:
+        serializedVersion: 2
+        x: 7076
+        y: 2054
+        width: 729
+        height: 666
+      alignment: 9
+      pivot: {x: 0.643347, y: 0.5157658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92909bb35424f474c944c43630dc7db4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0035
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1381
+        width: 705
+        height: 658
+      alignment: 9
+      pivot: {x: 0.65957445, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b538df7de767440b7a2008857fbf2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0036
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1368
+        width: 702
+        height: 671
+      alignment: 9
+      pivot: {x: 0.66239315, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711d0dc6204e2d8448045b33f86d09f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0037
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1368
+        width: 697
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6671449, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77bd4397cedbd5f4fa5d7f6f043a9c26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0038
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 1373
+        width: 699
+        height: 666
+      alignment: 9
+      pivot: {x: 0.66523606, y: 0.5037538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8761e928d2108ba48b51eeab9a13af96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0039
+      rect:
+        serializedVersion: 2
+        x: 2812
+        y: 1361
+        width: 693
+        height: 678
+      alignment: 9
+      pivot: {x: 0.67388165, y: 0.49483776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03428c59a19cf7647b117cf6cc9be827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0040
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 1361
+        width: 708
+        height: 678
+      alignment: 9
+      pivot: {x: 0.65677965, y: 0.50516224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb66195bd1f4a841875a3771470a73a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0041
+      rect:
+        serializedVersion: 2
+        x: 4217
+        y: 1364
+        width: 697
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6728838, y: 0.49703702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78501056f6272344d829edfd8273fd83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0042
+      rect:
+        serializedVersion: 2
+        x: 4916
+        y: 1358
+        width: 706
+        height: 681
+      alignment: 9
+      pivot: {x: 0.6586402, y: 0.50293684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74fbd8071484874297e834c07254c10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0043
+      rect:
+        serializedVersion: 2
+        x: 5624
+        y: 1372
+        width: 691
+        height: 667
+      alignment: 9
+      pivot: {x: 0.6787265, y: 0.50149924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827715ca5db563f4ea86ad4d58ac457f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0044
+      rect:
+        serializedVersion: 2
+        x: 6317
+        y: 1355
+        width: 729
+        height: 684
+      alignment: 9
+      pivot: {x: 0.63786006, y: 0.500731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f67a8d3b96a57e4893168ecbdb71ce0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0045
+      rect:
+        serializedVersion: 2
+        x: 7048
+        y: 1357
+        width: 730
+        height: 682
+      alignment: 9
+      pivot: {x: 0.63835615, y: 0.5021994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34bb5edc613e6f4d9ad94ca7c993e67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0046
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 655
+        width: 700
+        height: 698
+      alignment: 9
+      pivot: {x: 0.6471428, y: 0.49212036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6635bd5702e8ed74f85d66af5f6f05aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Ice_Short_0047
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 657
+        width: 670
+        height: 696
+      alignment: 9
+      pivot: {x: 0.6373134, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8424bd5ed6e1aab4daf76fc1e0bc4654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0ca625884cd121648bef788f643359e1
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

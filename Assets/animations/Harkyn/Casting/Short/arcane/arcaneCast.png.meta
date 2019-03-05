@@ -1,0 +1,1097 @@
+fileFormatVersion: 2
+guid: 767f8d80dd2211e4ebfaa77cf179a235
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: arcaneCast
+    21300002: Harkyn_Arcane_Short_0000
+    21300004: Harkyn_Arcane_Short_0001
+    21300006: Harkyn_Arcane_Short_0002
+    21300008: Harkyn_Arcane_Short_0003
+    21300010: Harkyn_Arcane_Short_0004
+    21300012: Harkyn_Arcane_Short_0005
+    21300014: Harkyn_Arcane_Short_0006
+    21300016: Harkyn_Arcane_Short_0007
+    21300018: Harkyn_Arcane_Short_0008
+    21300020: Harkyn_Arcane_Short_0009
+    21300022: Harkyn_Arcane_Short_0010
+    21300024: Harkyn_Arcane_Short_0011
+    21300026: Harkyn_Arcane_Short_0012
+    21300028: Harkyn_Arcane_Short_0013
+    21300030: Harkyn_Arcane_Short_0014
+    21300032: Harkyn_Arcane_Short_0015
+    21300034: Harkyn_Arcane_Short_0016
+    21300036: Harkyn_Arcane_Short_0017
+    21300038: Harkyn_Arcane_Short_0018
+    21300040: Harkyn_Arcane_Short_0019
+    21300042: Harkyn_Arcane_Short_0020
+    21300044: Harkyn_Arcane_Short_0021
+    21300046: Harkyn_Arcane_Short_0022
+    21300048: Harkyn_Arcane_Short_0023
+    21300050: Harkyn_Arcane_Short_0024
+    21300052: Harkyn_Arcane_Short_0025
+    21300054: Harkyn_Arcane_Short_0026
+    21300056: Harkyn_Arcane_Short_0027
+    21300058: Harkyn_Arcane_Short_0028
+    21300060: Harkyn_Arcane_Short_0029
+    21300062: Harkyn_Arcane_Short_0030
+    21300064: Harkyn_Arcane_Short_0031
+    21300066: Harkyn_Arcane_Short_0032
+    21300068: Harkyn_Arcane_Short_0033
+    21300070: Harkyn_Arcane_Short_0034
+    21300072: Harkyn_Arcane_Short_0035
+    21300074: Harkyn_Arcane_Short_0036
+    21300076: Harkyn_Arcane_Short_0037
+    21300078: Harkyn_Arcane_Short_0038
+    21300080: Harkyn_Arcane_Short_0039
+    21300082: Harkyn_Arcane_Short_0040
+    21300084: Harkyn_Arcane_Short_0041
+    21300086: Harkyn_Arcane_Short_0042
+    21300088: Harkyn_Arcane_Short_0043
+    21300090: Harkyn_Arcane_Short_0044
+    21300092: Harkyn_Arcane_Short_0045
+    21300094: Harkyn_Arcane_Short_0046
+    21300096: Harkyn_Arcane_Short_0047
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3399
+        width: 530
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54339623, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51e8769409418748a46a66a297a2666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0001
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3399
+        width: 530
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54339623, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666401dfdac9ed44580c2243f3bb8340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0002
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 3411
+        width: 540
+        height: 684
+      alignment: 9
+      pivot: {x: 0.55185187, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db06792b47983ac4a8a92030be0a42c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0003
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 3428
+        width: 535
+        height: 667
+      alignment: 9
+      pivot: {x: 0.5775701, y: 0.529985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d900d6f6396ad974b82c1af3097aacb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0004
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 3419
+        width: 533
+        height: 676
+      alignment: 9
+      pivot: {x: 0.575985, y: 0.49482247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35794059259258499cdaecb5d358f23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0005
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 3431
+        width: 568
+        height: 664
+      alignment: 9
+      pivot: {x: 0.5616197, y: 0.502259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a6800e2b985894495a7972bc02b084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0006
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 3415
+        width: 563
+        height: 680
+      alignment: 9
+      pivot: {x: 0.6021314, y: 0.5036765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be16ae8818187145a31dd9d28d86503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0007
+      rect:
+        serializedVersion: 2
+        x: 3814
+        y: 3418
+        width: 692
+        height: 677
+      alignment: 9
+      pivot: {x: 0.6719653, y: 0.4970458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef895f0d32a934544b278ff81b1f6e6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0008
+      rect:
+        serializedVersion: 2
+        x: 4508
+        y: 3421
+        width: 706
+        height: 674
+      alignment: 9
+      pivot: {x: 0.674221, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afea7e803bebc5409343e2fe79906a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0009
+      rect:
+        serializedVersion: 2
+        x: 5216
+        y: 3424
+        width: 696
+        height: 671
+      alignment: 9
+      pivot: {x: 0.670977, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f419cd9e6421f0f4e84dcd7d60deb172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0010
+      rect:
+        serializedVersion: 2
+        x: 5914
+        y: 3427
+        width: 692
+        height: 668
+      alignment: 9
+      pivot: {x: 0.6763006, y: 0.5127246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ceac484946e7048ae58d8b990c691f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0011
+      rect:
+        serializedVersion: 2
+        x: 6608
+        y: 3435
+        width: 691
+        height: 660
+      alignment: 9
+      pivot: {x: 0.67583215, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338216e5b83e82a4fa8452edab116632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0012
+      rect:
+        serializedVersion: 2
+        x: 7301
+        y: 3435
+        width: 691
+        height: 660
+      alignment: 9
+      pivot: {x: 0.67438495, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0b50e090c42e842ae4ca4d64a27a82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2732
+        width: 715
+        height: 665
+      alignment: 9
+      pivot: {x: 0.65314686, y: 0.5150376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e86165ba3a79e4da01f86fce50a06a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0014
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 2742
+        width: 714
+        height: 655
+      alignment: 9
+      pivot: {x: 0.6554622, y: 0.51221377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842a3bfded989c64db62d0bda37d28d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0015
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 2740
+        width: 719
+        height: 657
+      alignment: 9
+      pivot: {x: 0.65090406, y: 0.5106545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da537955753d998409f424e2d9540256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0016
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 2744
+        width: 724
+        height: 653
+      alignment: 9
+      pivot: {x: 0.6436464, y: 0.51378256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbf7e0a1e0a667408e8af9473dddee8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0017
+      rect:
+        serializedVersion: 2
+        x: 2881
+        y: 2739
+        width: 720
+        height: 658
+      alignment: 9
+      pivot: {x: 0.6472222, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445f91441bbca30438d05efa52c93524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0018
+      rect:
+        serializedVersion: 2
+        x: 3603
+        y: 2732
+        width: 710
+        height: 665
+      alignment: 9
+      pivot: {x: 0.6577465, y: 0.51654136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2964f5341049d60429fc25586fbf1756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0019
+      rect:
+        serializedVersion: 2
+        x: 4315
+        y: 2729
+        width: 701
+        height: 668
+      alignment: 9
+      pivot: {x: 0.66619116, y: 0.51422155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64ec5c9ffeaf1147943a3bfd8a53099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0020
+      rect:
+        serializedVersion: 2
+        x: 5018
+        y: 2734
+        width: 704
+        height: 663
+      alignment: 9
+      pivot: {x: 0.66335225, y: 0.5060332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07de7d22ca92a394a83b813e6219ec0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0021
+      rect:
+        serializedVersion: 2
+        x: 5724
+        y: 2730
+        width: 723
+        height: 667
+      alignment: 9
+      pivot: {x: 0.6459198, y: 0.5029985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd56c3bab2d8944b806d5390b60b8c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0022
+      rect:
+        serializedVersion: 2
+        x: 6449
+        y: 2723
+        width: 709
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6586742, y: 0.4962908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffd1c61572978640a00c132613f91fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0023
+      rect:
+        serializedVersion: 2
+        x: 7160
+        y: 2722
+        width: 695
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6719425, y: 0.49555555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7278dcb8397a81a488e148fc771b10a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2041
+        width: 698
+        height: 679
+      alignment: 9
+      pivot: {x: 0.66905445, y: 0.50441825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acef9a70a55493941bd2ef23fa50fb03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0025
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 2046
+        width: 697
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6700143, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89bd7309a0b196c438d4ddcb027f0b78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0026
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2049
+        width: 693
+        height: 671
+      alignment: 9
+      pivot: {x: 0.67388165, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9823f42c15da94294788122d9f4633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0027
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 2048
+        width: 701
+        height: 672
+      alignment: 9
+      pivot: {x: 0.66619116, y: 0.50967264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89088b6d4df186458cf5e1fa45fd4b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0028
+      rect:
+        serializedVersion: 2
+        x: 2798
+        y: 2060
+        width: 695
+        height: 660
+      alignment: 9
+      pivot: {x: 0.67338127, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03aa7cbb91994374bb0b22464191abe7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0029
+      rect:
+        serializedVersion: 2
+        x: 3495
+        y: 2060
+        width: 691
+        height: 660
+      alignment: 9
+      pivot: {x: 0.66714907, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81bda43e105cf48409637470284c56a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0030
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 2062
+        width: 700
+        height: 658
+      alignment: 9
+      pivot: {x: 0.6585714, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafbe9503c6b68a4abfd3abc8360377c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0031
+      rect:
+        serializedVersion: 2
+        x: 4890
+        y: 2056
+        width: 711
+        height: 664
+      alignment: 9
+      pivot: {x: 0.6554149, y: 0.5052711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d235e4fc6c377354c9554d2c6e64f970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0032
+      rect:
+        serializedVersion: 2
+        x: 5603
+        y: 2061
+        width: 711
+        height: 659
+      alignment: 9
+      pivot: {x: 0.64838254, y: 0.5091047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f180175cc0964404387e17fbd6bc795a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0033
+      rect:
+        serializedVersion: 2
+        x: 6316
+        y: 2067
+        width: 723
+        height: 653
+      alignment: 9
+      pivot: {x: 0.6473029, y: 0.51378256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992f3f9bf69d02549b979b0b30a705de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0034
+      rect:
+        serializedVersion: 2
+        x: 7041
+        y: 2062
+        width: 722
+        height: 658
+      alignment: 9
+      pivot: {x: 0.6398892, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30635de3da7a3574ba54502e3cfa3065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0035
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1381
+        width: 706
+        height: 658
+      alignment: 9
+      pivot: {x: 0.66005665, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095461e2f45dcf94cb81780786bc1132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0036
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1368
+        width: 703
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6628734, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2eb0abc0a9badf4bb077ba985fc8fe6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0037
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1368
+        width: 698
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6676218, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db4d0ee3c229b846921beef26db8bd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0038
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1373
+        width: 700
+        height: 666
+      alignment: 9
+      pivot: {x: 0.66571426, y: 0.5037538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a72da86d3590748b6a366ede761873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0039
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1361
+        width: 692
+        height: 678
+      alignment: 9
+      pivot: {x: 0.6734104, y: 0.49483776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9947cc34a1de64541afb070de9857d6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0040
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 1368
+        width: 702
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6566951, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3920fed6ffb82c4dba2a6a8ce73b383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0041
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 1364
+        width: 689
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6690856, y: 0.49703702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d160b41f84219478de97331187f73a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0042
+      rect:
+        serializedVersion: 2
+        x: 4905
+        y: 1365
+        width: 707
+        height: 674
+      alignment: 9
+      pivot: {x: 0.65912306, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17340d28622338b4e983f3af061762ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0043
+      rect:
+        serializedVersion: 2
+        x: 5614
+        y: 1372
+        width: 697
+        height: 667
+      alignment: 9
+      pivot: {x: 0.6814921, y: 0.50149924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ab573595e285d40b023070f10cef54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0044
+      rect:
+        serializedVersion: 2
+        x: 6313
+        y: 1355
+        width: 743
+        height: 684
+      alignment: 9
+      pivot: {x: 0.6446837, y: 0.500731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21766f42ad4c665469c7a048f3bd1c9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0045
+      rect:
+        serializedVersion: 2
+        x: 7058
+        y: 1357
+        width: 743
+        height: 682
+      alignment: 9
+      pivot: {x: 0.6446837, y: 0.5021994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed71818c5c8f914ba6a9c8c73269e7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0046
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 654
+        width: 702
+        height: 699
+      alignment: 9
+      pivot: {x: 0.6481481, y: 0.49284694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3eb802aa893a14faa862b16189ed8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Arcane_Short_0047
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 657
+        width: 673
+        height: 696
+      alignment: 9
+      pivot: {x: 0.63893014, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d982a5e316429b45a54838f6b4a3e01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2ec77111481a5b641bf4b16eeb27ecfc
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

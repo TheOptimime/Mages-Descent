@@ -1,0 +1,1097 @@
+fileFormatVersion: 2
+guid: d54022d7cb60d6d4c860736d5e733ce9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: lightningCast
+    21300002: Harkyn_Lighting_Short_0000
+    21300004: Harkyn_Lighting_Short_0001
+    21300006: Harkyn_Lighting_Short_0002
+    21300008: Harkyn_Lighting_Short_0003
+    21300010: Harkyn_Lighting_Short_0004
+    21300012: Harkyn_Lighting_Short_0005
+    21300014: Harkyn_Lighting_Short_0006
+    21300016: Harkyn_Lighting_Short_0007
+    21300018: Harkyn_Lighting_Short_0008
+    21300020: Harkyn_Lighting_Short_0009
+    21300022: Harkyn_Lighting_Short_0010
+    21300024: Harkyn_Lighting_Short_0011
+    21300026: Harkyn_Lighting_Short_0012
+    21300028: Harkyn_Lighting_Short_0013
+    21300030: Harkyn_Lighting_Short_0014
+    21300032: Harkyn_Lighting_Short_0015
+    21300034: Harkyn_Lighting_Short_0016
+    21300036: Harkyn_Lighting_Short_0017
+    21300038: Harkyn_Lighting_Short_0018
+    21300040: Harkyn_Lighting_Short_0019
+    21300042: Harkyn_Lighting_Short_0020
+    21300044: Harkyn_Lighting_Short_0021
+    21300046: Harkyn_Lighting_Short_0022
+    21300048: Harkyn_Lighting_Short_0023
+    21300050: Harkyn_Lighting_Short_0024
+    21300052: Harkyn_Lighting_Short_0025
+    21300054: Harkyn_Lighting_Short_0026
+    21300056: Harkyn_Lighting_Short_0027
+    21300058: Harkyn_Lighting_Short_0028
+    21300060: Harkyn_Lighting_Short_0029
+    21300062: Harkyn_Lighting_Short_0030
+    21300064: Harkyn_Lighting_Short_0031
+    21300066: Harkyn_Lighting_Short_0032
+    21300068: Harkyn_Lighting_Short_0033
+    21300070: Harkyn_Lighting_Short_0034
+    21300072: Harkyn_Lighting_Short_0035
+    21300074: Harkyn_Lighting_Short_0036
+    21300076: Harkyn_Lighting_Short_0037
+    21300078: Harkyn_Lighting_Short_0038
+    21300080: Harkyn_Lighting_Short_0039
+    21300082: Harkyn_Lighting_Short_0040
+    21300084: Harkyn_Lighting_Short_0041
+    21300086: Harkyn_Lighting_Short_0042
+    21300088: Harkyn_Lighting_Short_0043
+    21300090: Harkyn_Lighting_Short_0044
+    21300092: Harkyn_Lighting_Short_0045
+    21300094: Harkyn_Lighting_Short_0046
+    21300096: Harkyn_Lighting_Short_0047
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3399
+        width: 530
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54339623, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e5a1eacbf84dc43abb2eaa87a47134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0001
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3399
+        width: 530
+        height: 696
+      alignment: 9
+      pivot: {x: 0.54339623, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd8e0ee2f1974843b199defd36c6cec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0002
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 3411
+        width: 533
+        height: 684
+      alignment: 9
+      pivot: {x: 0.5459662, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80d5e4778480834caeb4fa2660d73e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0003
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3428
+        width: 534
+        height: 667
+      alignment: 9
+      pivot: {x: 0.57865167, y: 0.529985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee660255583db34fa28e8988b88ff01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0004
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 3419
+        width: 533
+        height: 676
+      alignment: 9
+      pivot: {x: 0.575985, y: 0.49482247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b157f12d91453945a929757d26c81e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0005
+      rect:
+        serializedVersion: 2
+        x: 2671
+        y: 3432
+        width: 566
+        height: 663
+      alignment: 9
+      pivot: {x: 0.5600707, y: 0.5015083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe71274896c27645b2ac658992aad36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0006
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 3415
+        width: 537
+        height: 680
+      alignment: 9
+      pivot: {x: 0.5828678, y: 0.5036765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b467ff4ce9df89b4aa6e694875252728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0007
+      rect:
+        serializedVersion: 2
+        x: 3778
+        y: 3412
+        width: 691
+        height: 683
+      alignment: 9
+      pivot: {x: 0.6714906, y: 0.5014641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec5cb2a9502b7e49a1b6b67175a3330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0008
+      rect:
+        serializedVersion: 2
+        x: 4471
+        y: 3421
+        width: 710
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6760563, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f5e257145ddb340ae3e49ca7247ae9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0009
+      rect:
+        serializedVersion: 2
+        x: 5183
+        y: 3424
+        width: 692
+        height: 671
+      alignment: 9
+      pivot: {x: 0.66907513, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f27b688cef37040969b6811b24d9e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0010
+      rect:
+        serializedVersion: 2
+        x: 5877
+        y: 3427
+        width: 691
+        height: 668
+      alignment: 9
+      pivot: {x: 0.67583215, y: 0.5127246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555c6ef0238a94e42839f6f93ad86b71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0011
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 3435
+        width: 685
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6729927, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0014b4d7b64463446b6e62c837e665ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0012
+      rect:
+        serializedVersion: 2
+        x: 7257
+        y: 3435
+        width: 691
+        height: 660
+      alignment: 9
+      pivot: {x: 0.67438495, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20acfe82713c9774e9a4dc50b5fb2a8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2732
+        width: 712
+        height: 665
+      alignment: 9
+      pivot: {x: 0.6516854, y: 0.5150376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4db1df24b427cb47be815f4dd6526f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0014
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 2742
+        width: 709
+        height: 655
+      alignment: 9
+      pivot: {x: 0.6530324, y: 0.51221377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff5450a1531f3e4b940c872ae6d2bec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0015
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 2740
+        width: 718
+        height: 657
+      alignment: 9
+      pivot: {x: 0.6504178, y: 0.5106545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a25976085e55a043a0fb10505db8609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0016
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 2744
+        width: 725
+        height: 653
+      alignment: 9
+      pivot: {x: 0.6441379, y: 0.51378256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9070ef894f78c4abc54c564d622bec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0017
+      rect:
+        serializedVersion: 2
+        x: 2873
+        y: 2739
+        width: 721
+        height: 658
+      alignment: 9
+      pivot: {x: 0.6477115, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357c851fcdd60a7468884f9ce9e7600d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0018
+      rect:
+        serializedVersion: 2
+        x: 3596
+        y: 2732
+        width: 710
+        height: 665
+      alignment: 9
+      pivot: {x: 0.65915495, y: 0.51654136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d67f219ba86e164293b181c3f7444f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0019
+      rect:
+        serializedVersion: 2
+        x: 4308
+        y: 2737
+        width: 697
+        height: 660
+      alignment: 9
+      pivot: {x: 0.66427547, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36ead3c59c6f1b469bb4c6c0c34c616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0020
+      rect:
+        serializedVersion: 2
+        x: 5007
+        y: 2731
+        width: 698
+        height: 666
+      alignment: 9
+      pivot: {x: 0.66045845, y: 0.5037538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fedc2cc2bd08214aa78e3ca9967181c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0021
+      rect:
+        serializedVersion: 2
+        x: 5707
+        y: 2730
+        width: 717
+        height: 667
+      alignment: 9
+      pivot: {x: 0.6429568, y: 0.5029985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ede96e8a0d958f4abf1e2572651062a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0022
+      rect:
+        serializedVersion: 2
+        x: 6426
+        y: 2723
+        width: 711
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6596343, y: 0.4962908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90517c7febfbea48af5f2be9ce215b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0023
+      rect:
+        serializedVersion: 2
+        x: 7139
+        y: 2722
+        width: 689
+        height: 675
+      alignment: 9
+      pivot: {x: 0.6690856, y: 0.49555555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a9699d3cd900a419a2a32ac2222a35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2041
+        width: 693
+        height: 679
+      alignment: 9
+      pivot: {x: 0.66522366, y: 0.50441825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae454203d9682b4697aa5bbe6ec4eb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0025
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 2046
+        width: 694
+        height: 674
+      alignment: 9
+      pivot: {x: 0.667147, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed393443105748f4881d19de0bf18c65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0026
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 2049
+        width: 695
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6748201, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e484d4b0ba45a4fa4f8a585edc19bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0027
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 2047
+        width: 702
+        height: 673
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.5104012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55d81187ee8e7a43bb0d0367b35d528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0028
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 2060
+        width: 694
+        height: 660
+      alignment: 9
+      pivot: {x: 0.6729107, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d1004455cfdd5419034fdaa510ddc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0029
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 2060
+        width: 691
+        height: 660
+      alignment: 9
+      pivot: {x: 0.66714907, y: 0.5083333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5b095b35ac3b541bfb9dcbf4b2ec2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0030
+      rect:
+        serializedVersion: 2
+        x: 4182
+        y: 2062
+        width: 705
+        height: 658
+      alignment: 9
+      pivot: {x: 0.6609929, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8927622870485b44da81d72bf73ae526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0031
+      rect:
+        serializedVersion: 2
+        x: 4889
+        y: 2056
+        width: 712
+        height: 664
+      alignment: 9
+      pivot: {x: 0.65589887, y: 0.5052711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cbe8e7eacbf73478b547ae86b3936e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0032
+      rect:
+        serializedVersion: 2
+        x: 5603
+        y: 2054
+        width: 711
+        height: 666
+      alignment: 9
+      pivot: {x: 0.64838254, y: 0.5142643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7603bdb14195a43946ef1b2a598422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0033
+      rect:
+        serializedVersion: 2
+        x: 6316
+        y: 2060
+        width: 716
+        height: 660
+      alignment: 9
+      pivot: {x: 0.64385474, y: 0.5189394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303b56d5f47b9344aafe716a32b6e815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0034
+      rect:
+        serializedVersion: 2
+        x: 7034
+        y: 2062
+        width: 721
+        height: 658
+      alignment: 9
+      pivot: {x: 0.63938975, y: 0.5098784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8d8f6f2da2a0d4f9cc3de152f68eb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0035
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1374
+        width: 703
+        height: 665
+      alignment: 9
+      pivot: {x: 0.658606, y: 0.5150376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ced3c0109e7184ba223c79b71c0916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0036
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1368
+        width: 705
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6638298, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616c5e47638235b4ba4a25829711f36d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0037
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 1368
+        width: 699
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56dc2216cf130f458e7c3e843692534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0038
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1373
+        width: 700
+        height: 666
+      alignment: 9
+      pivot: {x: 0.66571426, y: 0.5037538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cafaf67fecb534b9ddabf6657d6c0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0039
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1361
+        width: 693
+        height: 678
+      alignment: 9
+      pivot: {x: 0.67388165, y: 0.49483776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4964a4d5a5ad77b49a5871232955c5bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0040
+      rect:
+        serializedVersion: 2
+        x: 3511
+        y: 1368
+        width: 707
+        height: 671
+      alignment: 9
+      pivot: {x: 0.65912306, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7825ac66bd6c3a9409e875ef6ff3efac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0041
+      rect:
+        serializedVersion: 2
+        x: 4220
+        y: 1364
+        width: 694
+        height: 675
+      alignment: 9
+      pivot: {x: 0.67146975, y: 0.49703702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda637f005a03f0468468583a6b014f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0042
+      rect:
+        serializedVersion: 2
+        x: 4916
+        y: 1365
+        width: 713
+        height: 674
+      alignment: 9
+      pivot: {x: 0.6619916, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f859bcc3a6e955d4bbaf95121a2683dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0043
+      rect:
+        serializedVersion: 2
+        x: 5631
+        y: 1372
+        width: 694
+        height: 667
+      alignment: 9
+      pivot: {x: 0.6801153, y: 0.50149924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2bdb4093876c548a81427af4bf7cd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0044
+      rect:
+        serializedVersion: 2
+        x: 6327
+        y: 1355
+        width: 730
+        height: 684
+      alignment: 9
+      pivot: {x: 0.63835615, y: 0.500731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755e09c57b8f97d4798f474756e87dc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0045
+      rect:
+        serializedVersion: 2
+        x: 7059
+        y: 1357
+        width: 728
+        height: 682
+      alignment: 9
+      pivot: {x: 0.63736266, y: 0.5021994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea207381e4afa843b87cb25c91cf611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0046
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 654
+        width: 704
+        height: 699
+      alignment: 9
+      pivot: {x: 0.64914775, y: 0.49284694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587dd65a030accf4f92c616a8d5af209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Lighting_Short_0047
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 657
+        width: 675
+        height: 696
+      alignment: 9
+      pivot: {x: 0.64, y: 0.4849138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8114575f3b114b1459f81a78cba8e5bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 693cbb564fd15c443b5371623a3487b3
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

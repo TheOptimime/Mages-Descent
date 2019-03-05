@@ -1,0 +1,1328 @@
+fileFormatVersion: 2
+guid: 5e4dd9ad289aeb94593a95c9da616d0e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: death
+    21300002: Harkyn_Death_0000
+    21300004: Harkyn_Death_0001
+    21300006: Harkyn_Death_0002
+    21300008: Harkyn_Death_0003
+    21300010: Harkyn_Death_0004
+    21300012: Harkyn_Death_0005
+    21300014: Harkyn_Death_0006
+    21300016: Harkyn_Death_0007
+    21300018: Harkyn_Death_0008
+    21300020: Harkyn_Death_0009
+    21300022: Harkyn_Death_0010
+    21300024: Harkyn_Death_0011
+    21300026: Harkyn_Death_0012
+    21300028: Harkyn_Death_0013
+    21300030: Harkyn_Death_0014
+    21300032: Harkyn_Death_0015
+    21300034: Harkyn_Death_0016
+    21300036: Harkyn_Death_0017
+    21300038: Harkyn_Death_0018
+    21300040: Harkyn_Death_0019
+    21300042: Harkyn_Death_0020
+    21300044: Harkyn_Death_0021
+    21300046: Harkyn_Death_0022
+    21300048: Harkyn_Death_0023
+    21300050: Harkyn_Death_0024
+    21300052: Harkyn_Death_0025
+    21300054: Harkyn_Death_0026
+    21300056: Harkyn_Death_0027
+    21300058: Harkyn_Death_0028
+    21300060: Harkyn_Death_0029
+    21300062: Harkyn_Death_0030
+    21300064: Harkyn_Death_0031
+    21300066: Harkyn_Death_0032
+    21300068: Harkyn_Death_0033
+    21300070: Harkyn_Death_0034
+    21300072: Harkyn_Death_0035
+    21300074: Harkyn_Death_0036
+    21300076: Harkyn_Death_0037
+    21300078: Harkyn_Death_0038
+    21300080: Harkyn_Death_0039
+    21300082: Harkyn_Death_0040
+    21300084: Harkyn_Death_0041
+    21300086: Harkyn_Death_0042
+    21300088: Harkyn_Death_0043
+    21300090: Harkyn_Death_0044
+    21300092: Harkyn_Death_0045
+    21300094: Harkyn_Death_0046
+    21300096: Harkyn_Death_0047
+    21300098: Harkyn_Death_0048
+    21300100: Harkyn_Death_0049
+    21300102: Harkyn_Death_0050
+    21300104: Harkyn_Death_0051
+    21300106: Harkyn_Death_0052
+    21300108: Harkyn_Death_0053
+    21300110: Harkyn_Death_0054
+    21300112: Harkyn_Death_0055
+    21300114: Harkyn_Death_0056
+    21300116: Harkyn_Death_0057
+    21300118: Harkyn_Death_0058
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Death_0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3408
+        width: 537
+        height: 687
+      alignment: 9
+      pivot: {x: 0.2905028, y: 0.49126637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c525fb6c67eece45beaffc3f747ca0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0001
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3405
+        width: 551
+        height: 690
+      alignment: 9
+      pivot: {x: 0.30852994, y: 0.49057972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa347214c08be246834eb677c80680a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0002
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 3409
+        width: 542
+        height: 686
+      alignment: 9
+      pivot: {x: 0.28597787, y: 0.49344024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27747264a85df9e4b90f880cc4cfeb37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0003
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 3413
+        width: 537
+        height: 682
+      alignment: 9
+      pivot: {x: 0.2849162, y: 0.4963343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38aa2b110bd7d9d45b9021319a7726eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0004
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 3419
+        width: 535
+        height: 676
+      alignment: 9
+      pivot: {x: 0.27850467, y: 0.49926037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863f8d2fc2daf85499409d5c401a0bee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0005
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 3426
+        width: 533
+        height: 669
+      alignment: 9
+      pivot: {x: 0.26454034, y: 0.50597906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0ad9abd775bc741bbbe0ed9faab629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0006
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 3438
+        width: 536
+        height: 657
+      alignment: 9
+      pivot: {x: 0.25932837, y: 0.5152207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd2fff4910a1cf45955029be121e4b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0007
+      rect:
+        serializedVersion: 2
+        x: 3786
+        y: 3435
+        width: 554
+        height: 660
+      alignment: 9
+      pivot: {x: 0.2833935, y: 0.5128788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c758cdffa06763d45a001eed93bdcb0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0008
+      rect:
+        serializedVersion: 2
+        x: 4342
+        y: 3434
+        width: 533
+        height: 661
+      alignment: 9
+      pivot: {x: 0.25140712, y: 0.5121029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203a345172a062145b17cc5387d8ff02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0009
+      rect:
+        serializedVersion: 2
+        x: 4877
+        y: 3436
+        width: 533
+        height: 659
+      alignment: 9
+      pivot: {x: 0.24953096, y: 0.51365703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174895b30992b66459c626d5474280e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0010
+      rect:
+        serializedVersion: 2
+        x: 5412
+        y: 3430
+        width: 534
+        height: 665
+      alignment: 9
+      pivot: {x: 0.26779026, y: 0.50751877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea92a690fcc39f428ff2cfd37e3870a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0011
+      rect:
+        serializedVersion: 2
+        x: 5948
+        y: 3425
+        width: 538
+        height: 670
+      alignment: 9
+      pivot: {x: 0.28996283, y: 0.5052239}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a40610f5f7e41a4d8467fc640369867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0012
+      rect:
+        serializedVersion: 2
+        x: 6488
+        y: 3426
+        width: 540
+        height: 669
+      alignment: 9
+      pivot: {x: 0.32222223, y: 0.50597906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d89df15c53ee549ae5ffe8f6d84584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0013
+      rect:
+        serializedVersion: 2
+        x: 7030
+        y: 3421
+        width: 537
+        height: 674
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.49777448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed2feb3eaecf0a49b49c89fb3502892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0014
+      rect:
+        serializedVersion: 2
+        x: 7569
+        y: 3437
+        width: 548
+        height: 658
+      alignment: 9
+      pivot: {x: 0.3558394, y: 0.51291794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580cc71604b1a0b4a86c27aced92108f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0015
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2742
+        width: 538
+        height: 661
+      alignment: 9
+      pivot: {x: 0.330855, y: 0.51966715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7bf9162c83429499b158c42ad24e14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0016
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2742
+        width: 542
+        height: 661
+      alignment: 9
+      pivot: {x: 0.32656828, y: 0.53025717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ac36a71f2787945a92272b221b1b85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0017
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2743
+        width: 550
+        height: 660
+      alignment: 9
+      pivot: {x: 0.33454546, y: 0.54015154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b712617c30214418e873b84147a4ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0018
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 2740
+        width: 540
+        height: 663
+      alignment: 9
+      pivot: {x: 0.31851852, y: 0.54524887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56e7f5fe6009394094738eea40623f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0019
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 2748
+        width: 538
+        height: 655
+      alignment: 9
+      pivot: {x: 0.31784385, y: 0.5564886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f752a439f3f50b44bfefda4cb7ca3f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0020
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 2740
+        width: 569
+        height: 663
+      alignment: 9
+      pivot: {x: 0.31634447, y: 0.54977375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c85e92f2b2d2b54b991b2c78a560264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0021
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 2761
+        width: 536
+        height: 642
+      alignment: 9
+      pivot: {x: 0.3302239, y: 0.567757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c8f1a5ee76532499b1e9f22203f3f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0022
+      rect:
+        serializedVersion: 2
+        x: 3828
+        y: 2778
+        width: 526
+        height: 625
+      alignment: 9
+      pivot: {x: 0.3269962, y: 0.5832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef368740919cbc845bd86692306fcced
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0023
+      rect:
+        serializedVersion: 2
+        x: 4356
+        y: 2778
+        width: 533
+        height: 625
+      alignment: 9
+      pivot: {x: 0.38086304, y: 0.5832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd00ba5056164ee4caf912705a82249c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0024
+      rect:
+        serializedVersion: 2
+        x: 4891
+        y: 2780
+        width: 535
+        height: 623
+      alignment: 9
+      pivot: {x: 0.42056075, y: 0.5850722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c045e0e24e2e8554e98e6777b9123484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0025
+      rect:
+        serializedVersion: 2
+        x: 5428
+        y: 2781
+        width: 535
+        height: 622
+      alignment: 9
+      pivot: {x: 0.46168223, y: 0.58601284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5a52c5f9362a84a8f9c9c1f8379614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0026
+      rect:
+        serializedVersion: 2
+        x: 5965
+        y: 2790
+        width: 537
+        height: 613
+      alignment: 9
+      pivot: {x: 0.5102421, y: 0.59461665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9a3dd2a6d367e449247785bebfa9ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0027
+      rect:
+        serializedVersion: 2
+        x: 6504
+        y: 2783
+        width: 576
+        height: 620
+      alignment: 9
+      pivot: {x: 0.5364583, y: 0.5766129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c3b940763d0d048868ef669266c366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0028
+      rect:
+        serializedVersion: 2
+        x: 7082
+        y: 2787
+        width: 610
+        height: 616
+      alignment: 9
+      pivot: {x: 0.5606557, y: 0.57873374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04af1eb9d3fadeb4cb9ab10ee815acd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0029
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2146
+        width: 647
+        height: 592
+      alignment: 9
+      pivot: {x: 0.57496136, y: 0.5886824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e2ee35fb8a8f1458b67b9d06756621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0030
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 2155
+        width: 666
+        height: 583
+      alignment: 9
+      pivot: {x: 0.5705706, y: 0.59090906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50215542e831a20479bf002fc047addf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0031
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 2210
+        width: 692
+        height: 528
+      alignment: 9
+      pivot: {x: 0.56647396, y: 0.6410985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b533f2dea93152442835163d28064af9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0032
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 2219
+        width: 650
+        height: 519
+      alignment: 9
+      pivot: {x: 0.55538464, y: 0.7023121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ec10759c12e134cac487d62ea893ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0033
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 2239
+        width: 648
+        height: 499
+      alignment: 9
+      pivot: {x: 0.5462963, y: 0.73046094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7201b7b1df4e9f242b920c26bcf8de76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0034
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 2232
+        width: 680
+        height: 506
+      alignment: 9
+      pivot: {x: 0.56911767, y: 0.65909094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7884468ee34a8334086dada13aff044f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0035
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 2223
+        width: 686
+        height: 515
+      alignment: 9
+      pivot: {x: 0.5728863, y: 0.64368933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18d36c2b180d16448ba66232f77c317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0036
+      rect:
+        serializedVersion: 2
+        x: 4684
+        y: 2220
+        width: 691
+        height: 518
+      alignment: 9
+      pivot: {x: 0.56729376, y: 0.6418919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c595ee8a7d212042a336bba5008ee18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0037
+      rect:
+        serializedVersion: 2
+        x: 5377
+        y: 2220
+        width: 695
+        height: 518
+      alignment: 9
+      pivot: {x: 0.56978416, y: 0.63996136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7439aa92d2b9cba47805a3383fda58c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0038
+      rect:
+        serializedVersion: 2
+        x: 6074
+        y: 2226
+        width: 695
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5640288, y: 0.64746094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb86466fe7b8f146a9258eee0a10246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0039
+      rect:
+        serializedVersion: 2
+        x: 6771
+        y: 2232
+        width: 715
+        height: 506
+      alignment: 9
+      pivot: {x: 0.55804193, y: 0.6551383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa46df36cce15594f9b1817e99d2ca6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0040
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1653
+        width: 719
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5535466, y: 0.6751528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb0d4bf7e44f9d45b8e394b1da7f7e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0041
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1662
+        width: 710
+        height: 482
+      alignment: 9
+      pivot: {x: 0.5521127, y: 0.68775934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b85c494f8974964ca73dcd444e43d2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0042
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 1651
+        width: 703
+        height: 493
+      alignment: 9
+      pivot: {x: 0.55618775, y: 0.67241377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6625046ac390c41859819fe87738a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0043
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1654
+        width: 726
+        height: 490
+      alignment: 9
+      pivot: {x: 0.5495868, y: 0.6744898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078c0ffe424616443b53a2c0361be152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0044
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 1662
+        width: 705
+        height: 482
+      alignment: 9
+      pivot: {x: 0.5531915, y: 0.6856846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5da9fce083fa04a8242a80d8c3f337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0045
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b4652a0240677429ee95ce6e71ef36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0046
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10cc755d74ecb04429ad155d210c54d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0047
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a0579af4f186f4b90e9152d274af80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0048
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0be9ba3d57190549aa0a30bb8c07ba5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0049
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04fff485d3e77840997a0804fb0f1c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0050
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e45b8334b225e74792612fd6a34d4d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0051
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3370059e4680b4445bf6a483c869ca12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0052
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f69eca657212c24dbc6a99358d3b045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0053
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6739e0da16eba4e953cb244224d5a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0054
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3c5f651e23b9e42b89025a22949989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0055
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76fd4037a366c846a2b94e2c60a0b7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0056
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5911a935345dc7c40bbd0c49fe66ac9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0057
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0bb012d80d40f47be0fd1a0eba483b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Death_0058
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 1654
+        width: 708
+        height: 490
+      alignment: 9
+      pivot: {x: 0.55225986, y: 0.6765306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3537f861d3ecf4cb3e10ecced78e04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 27a9632dc9d9b28489d689c160685be0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
