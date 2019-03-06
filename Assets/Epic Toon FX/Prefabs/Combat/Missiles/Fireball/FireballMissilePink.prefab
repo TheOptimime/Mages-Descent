@@ -4639,6 +4639,7 @@ GameObject:
   - component: {fileID: 19966810}
   - component: {fileID: 10831138}
   - component: {fileID: 8270042}
+  - component: {fileID: 4057739528644843071}
   m_Layer: 0
   m_Name: FireballMissilePink
   m_TagString: Untagged
@@ -4654,7 +4655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.69, z: -0.74}
+  m_LocalPosition: {x: -0.316, y: 2.69, z: -0.74}
   m_LocalScale: {x: 2.734646, y: 2.734646, z: 2.734646}
   m_Children:
   - {fileID: 415926}
@@ -9287,7 +9288,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2871
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
@@ -9392,6 +9393,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!58 &4057739528644843071
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.19
 --- !u!1 &155180
 GameObject:
   m_ObjectHideFlags: 0

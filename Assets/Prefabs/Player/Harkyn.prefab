@@ -31,7 +31,7 @@ Transform:
   - {fileID: 1920353880}
   - {fileID: 1421074874}
   m_Father: {fileID: 4503024633710282}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475523734
 GameObject:
@@ -371,12 +371,13 @@ Transform:
   m_GameObject: {fileID: 1476899451918516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -22.9, y: 11.89, z: 0}
-  m_LocalScale: {x: 0.6435461, y: 0.6435461, z: 0.6435461}
+  m_LocalScale: {x: 0.53, y: 0.53, z: 0.53}
   m_Children:
   - {fileID: 475523735}
   - {fileID: 864137713}
   - {fileID: 1795808237}
   - {fileID: 4668294362580370}
+  - {fileID: 1519346405545212724}
   - {fileID: 168084728}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -486,6 +487,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 4705129481318220}
   m_CeilingCheck: {fileID: 4475606767651420}
   m_CrouchDisableCollider: {fileID: 0}
+  m_ceilingHold: 0
   m_Grounded: 0
   m_lockDirection: 0
   m_FacingRight: 1
@@ -497,11 +499,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: PlayerController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  anim: {fileID: 95348660427476116}
 --- !u!114 &114194103146630888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +602,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   castTime: 0
   finishedCast: 1
+  dustParticle: {fileID: 165672, guid: 146d2ff25be0f824fa285b16b2915ff3, type: 3}
+  dustParticleSpawn: {fileID: 4705129481318220}
 --- !u!50 &50009044929826746
 Rigidbody2D:
   serializedVersion: 4
@@ -642,7 +642,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.7826087, y: 4.9130435}
+    oldSize: {x: 4.188406, y: 5.2826085}
     newSize: {x: 5.22, y: 6.77}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -744,4 +744,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 475523735}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6136348911526143500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519346405545212724}
+  m_Layer: 0
+  m_Name: particleSpawm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1519346405545212724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6136348911526143500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.43, z: 0}
+  m_LocalScale: {x: 0.9999835, y: 0.9999835, z: 0.9999835}
+  m_Children: []
+  m_Father: {fileID: 4503024633710282}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
