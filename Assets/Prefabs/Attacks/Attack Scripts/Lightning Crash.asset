@@ -37,7 +37,7 @@ MonoBehaviour:
   _joystickCommand: 
   followUpAttack: {fileID: 11400000, guid: c536ee1f3080c694dbe6560c14f76be8, type: 2}
   simultaneousAttack: {fileID: 0}
-  spriteAnimation: {fileID: 163948, guid: 153ff601b9ac43240921bf65f009e220, type: 3}
+  spriteAnimation: {fileID: 123722, guid: 0e953c794d5f3f74da4bc1bc07249ea6, type: 3}
   attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
     type: 3}
   attackPath: 2

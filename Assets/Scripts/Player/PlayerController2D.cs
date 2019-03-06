@@ -32,6 +32,7 @@ public class PlayerController2D : MonoBehaviour
 	public UnityEvent OnLandEvent;
     
 	private bool m_wasCrouching = false;
+	public Animator anim;
 
 
     
@@ -50,7 +51,7 @@ public class PlayerController2D : MonoBehaviour
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
-        
+
         
 
 		if (OnLandEvent == null)
@@ -63,7 +64,10 @@ public class PlayerController2D : MonoBehaviour
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 
-        
+
+
+
+		
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -151,49 +155,66 @@ public class PlayerController2D : MonoBehaviour
         }
         
 
-        if (!m_ceilingHold)
-        {
-            //only control the player if grounded or airControl is turned on
-            if (m_Grounded || m_AirControl)
-            {
-                // Move the character by finding the target velocity
-                Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
-                // And then smoothing it out and applying it to the character
-                m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+		if (!m_ceilingHold) {
+			//only control the player if grounded or airControl is turned on
+			if (m_Grounded || m_AirControl) {
+				// Move the character by finding the target velocity
+				Vector3 targetVelocity = new Vector2 (move * 10f, m_Rigidbody2D.velocity.y);
+				// And then smoothing it out and applying it to the character
+				m_Rigidbody2D.velocity = Vector3.SmoothDamp (m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
-                // If the input is moving the player right and the player is facing left...
-                if (!m_lockDirection)
-                {
-                    if (move > 0 && !m_FacingRight || move < 0 && m_FacingRight)
-                    {
-                        // ... flip the player.
-                        Flip();
-                    }
-                }
+				// If the input is moving the player right and the player is facing left...
+				if (!m_lockDirection) {
+					if (move > 0 && !m_FacingRight || move < 0 && m_FacingRight) {
+						// ... flip the player.
+						Flip ();
+					}
+				}
                 
 
-            }
-            // If the player should jump...
-            if (m_Grounded && jump)
-            {
-                // Add a vertical force to the player.
-                print("single ready");
-                m_Grounded = false;
-                m_Rigidbody2D.velocity = (new Vector2(0f, m_JumpForce));
-                //m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-            }
-            else if (!m_Grounded && m_doubleJumpEnabled && !m_doubleJumpUsed && jump)
-            {
-                print("double ready");
-                m_doubleJumpUsed = true;
-                m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
-                m_Rigidbody2D.velocity = (new Vector2(0f, m_DoubleJumpForce));
-            }
+			}
+			// If the player should jump...
+			if (m_Grounded && jump) {
+				// Add a vertical force to the player.
+				print ("single ready");
+				m_Grounded = false;
+				m_Rigidbody2D.velocity = (new Vector2 (0f, m_JumpForce));
+
+				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			} else if (!m_Grounded && m_doubleJumpEnabled && !m_doubleJumpUsed && jump) {
+				print ("double ready");
+				m_doubleJumpUsed = true;
+				m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, 0);
+				m_Rigidbody2D.velocity = (new Vector2 (0f, m_DoubleJumpForce));
+
+			}
+
+
+			
+			if (m_Rigidbody2D.velocity.y > 0) {
+				anim.SetInteger ("State", 1);
+				
+			} else 
+				anim.SetInteger ("State", 2);
+
+			if (m_Grounded) {
+			
+				anim.SetInteger ("State", 0);
+			}
+		
+
+		}
+	}
+
             
-        }
+        
 
         
-	}
+
+
+
+
+
 
     public void Move(float move, bool jump, JumpType _jumpType)
     {
@@ -227,6 +248,7 @@ public class PlayerController2D : MonoBehaviour
             // Add a vertical force to the player.
             m_Grounded = false;
             m_Rigidbody2D.velocity = (new Vector2(0f, m_JumpForce));
+
         }
         else if (!m_Grounded && m_doubleJumpEnabled && !m_doubleJumpUsed && jump)
         {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class AttackCollision : MonoBehaviour
 {
     public AttackScript _as;
+	public GameObject pillarParticle; 
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -163,12 +164,16 @@ public class AttackCollision : MonoBehaviour
                         if (other.transform.tag == "Ground")
                         {
                             _as.StartNextAttack(_as.followUpAttack);
+
                         }
                         else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast)
                         {
                             _as.StartNextAttack(_as.followUpAttack);
                         }
                         Destroy(this.gameObject);
+						print ("destroy");
+						Instantiate (pillarParticle, transform.position, Quaternion.identity);
+
                     }
                 }
                 

@@ -84,6 +84,9 @@ public partial class Fighter : MonoBehaviour {
     AilmentHandler ailmentHandler;
 
     RespawnManager rm;
+
+	public GameObject dustParticle; 
+	public Transform dustParticleSpawn;
     #endregion
 
     void Start()
@@ -118,6 +121,7 @@ public partial class Fighter : MonoBehaviour {
 
     void Update()
     {
+		
 
         if(dabometer >= 100)
         {
@@ -259,6 +263,7 @@ public partial class Fighter : MonoBehaviour {
     {
         Vector2 finalVelocity = recoveryVelocity;
 
+
         if (input.joystickPosition == 6)
         {
             finalVelocity.x *= Mathf.Abs(finalVelocity.x);
@@ -280,7 +285,7 @@ public partial class Fighter : MonoBehaviour {
     {
         if (rb.velocity.y < 0)
         {
-			
+	
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1);
 
         }
@@ -303,6 +308,7 @@ public partial class Fighter : MonoBehaviour {
             {
                 doubleJumpUsed = true;
                 jumpCount++;
+
             }
 
             if (cc.m_doubleJumpEnabled)
@@ -435,5 +441,11 @@ public partial class Fighter : MonoBehaviour {
 	public void isLanding() {
 		anim.SetBool ("isJumping", false);	
 	
+	}
+
+	public void particlePlayer() {
+		if (IsGrounded()) {
+			Instantiate (dustParticle, dustParticleSpawn.position, Quaternion.identity);
+		}
 	}
 }

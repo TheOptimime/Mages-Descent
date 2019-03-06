@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: d5880091db83e854ab9bbfc25ec5ca48
+guid: 438acc2ce40ae2f45b3117fd6bfedbfd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - _as: {instanceID: 0}
-  - pillarParticle: {fileID: 183926, guid: 0d42e68c102f6de448d30e26f9da3d18, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
