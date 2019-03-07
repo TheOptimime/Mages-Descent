@@ -15,6 +15,7 @@ public class EnemyAI : AI {
 
     public float walkToPlayerSpeed;
     public float murderMeter, murderMeterLimit;
+	public GameObject deathParticle; 
 
     public enum EnemyState
     {
@@ -44,8 +45,11 @@ public class EnemyAI : AI {
 
 
 
+
     public override void Start() {
         base.Start();
+
+
 
         ec = GetComponent<EnemyController2D>();
         player = FindObjectOfType<Fighter>();
@@ -79,6 +83,12 @@ public class EnemyAI : AI {
 
         UpdateEdgeDetection();
 
+		if (enemyState == EnemyState.Walking) {
+			anim.SetBool ("isWalking", true);
+		} else  {
+			anim.SetBool ("isWalking", false);
+		}
+			
         switch (enemyState)
         {
             case (EnemyState.Idle):
@@ -119,16 +129,16 @@ public class EnemyAI : AI {
 
                 idleTime += Time.deltaTime;
                 break;
-            case (EnemyState.Walking):
-                print("in walking");
+		case (EnemyState.Walking):
+			print ("in walking");
                 
 
-                if (!edgeDetected || ignoreEdgeDetection)
-                {
+			if (!edgeDetected || ignoreEdgeDetection) {
 //                    print("should be walking" + direction * walkSpeed * Time.deltaTime);
-                    ec.Move(direction * speed * Time.deltaTime, false, false);
-                    ignoreEdgeDetection = false;
-                }
+				ec.Move (direction * speed * Time.deltaTime, false, false);
+				ignoreEdgeDetection = false;
+					
+				}
                 else
                 {
                     print("edge detected");
@@ -244,10 +254,16 @@ public class EnemyAI : AI {
 
         if (health.currentHealth <= 0) {
             isDead = true;
+
+
         }
 
         if (isDead) {
-            print("enemy is dead");
+			
+			print("enemy is dead");
+			//Instantiate (deathParticle, transform.position, Quaternion.identity);
+
+
             transform.position = new Vector3(0, 3000, 0);
 
             if (respawnEnabled)
@@ -367,5 +383,6 @@ public class EnemyAI : AI {
             hit = true;
         }
     }
+
 
 }

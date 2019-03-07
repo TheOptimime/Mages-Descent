@@ -1,0 +1,614 @@
+fileFormatVersion: 2
+guid: c0b733224b9926147a7fdcb8a814fde9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: darkknightwalk
+    21300002: dark_knight_Left-Walk
+    21300004: dark_knight_Left-Walk2
+    21300006: dark_knight_Left-Walk3
+    21300008: dark_knight_Left-Walk4
+    21300010: dark_knight_Left-Walk5
+    21300012: dark_knight_Left-Walk6
+    21300014: dark_knight_Left-Walk7
+    21300016: dark_knight_Left-Walk8
+    21300018: dark_knight_Left-Walk9
+    21300020: dark_knight_Left-Walk10
+    21300022: dark_knight_Left-Walk11
+    21300024: dark_knight_Left-Walk12
+    21300026: dark_knight_Left-Walk13
+    21300028: dark_knight_Left-Walk14
+    21300030: dark_knight_Left-Walk15
+    21300032: dark_knight_Left-Walk16
+    21300034: dark_knight_Left-Walk17
+    21300036: dark_knight_Left-Walk18
+    21300038: dark_knight_Left-Walk19
+    21300040: dark_knight_Left-Walk20
+    21300042: dark_knight_Left-Walk21
+    21300044: dark_knight_Left-Walk22
+    21300046: dark_knight_Left-Walk23
+    21300048: dark_knight_Left-Walk24
+    21300050: dark_knight_Left-Walk25
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1576
+        width: 406
+        height: 471
+      alignment: 9
+      pivot: {x: 0.4359606, y: 0.522293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648467dff144fa144b5f1fa1b5e58ff5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk2
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1582
+        width: 411
+        height: 465
+      alignment: 9
+      pivot: {x: 0.47931874, y: 0.52903223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf57b4d502d6224e94b99e722a9fb72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk3
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1569
+        width: 418
+        height: 478
+      alignment: 9
+      pivot: {x: 0.5215311, y: 0.5146443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6fe99226e203045af08d98cdf05a6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk4
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1578
+        width: 422
+        height: 469
+      alignment: 9
+      pivot: {x: 0.56398106, y: 0.5245203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d648c476ca1c59e42990de5591bd9d56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk5
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1593
+        width: 432
+        height: 454
+      alignment: 9
+      pivot: {x: 0.5833333, y: 0.5418502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b2f786931322c43a79c7139d5a1e16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk6
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1582
+        width: 445
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5955056, y: 0.52903223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeef31f8200c70540b4c3df178c6ea77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk7
+      rect:
+        serializedVersion: 2
+        x: 2547
+        y: 1593
+        width: 454
+        height: 454
+      alignment: 9
+      pivot: {x: 0.6035242, y: 0.5418502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b389409a5f66934f851d03672c9f2ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk8
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 1583
+        width: 451
+        height: 464
+      alignment: 9
+      pivot: {x: 0.6208426, y: 0.5301724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6214e3bd44e05ca43a3d2823a635a1b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk9
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1581
+        width: 450
+        height: 466
+      alignment: 9
+      pivot: {x: 0.6244444, y: 0.527897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f067e40868bdd5c4e8a8e1d15a214d41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1117
+        width: 455
+        height: 450
+      alignment: 9
+      pivot: {x: 0.63296705, y: 0.5466667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4e195de67c96a4598a4b1c07df7317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk11
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1110
+        width: 460
+        height: 457
+      alignment: 9
+      pivot: {x: 0.6391304, y: 0.53829324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4855d2cd67ab4b46b9e1c9d87e53f69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk12
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1113
+        width: 466
+        height: 454
+      alignment: 9
+      pivot: {x: 0.64377683, y: 0.5418502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b39c528916e35d439133ff1bc5075b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk13
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1101
+        width: 478
+        height: 466
+      alignment: 9
+      pivot: {x: 0.6359833, y: 0.527897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7346207c975fd845956d43dc4920146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk14
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 1114
+        width: 479
+        height: 453
+      alignment: 9
+      pivot: {x: 0.62839246, y: 0.54304636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe11afb9c76f014c9b557dafc0966f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk15
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 1113
+        width: 464
+        height: 454
+      alignment: 9
+      pivot: {x: 0.6271552, y: 0.5418502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c638b5c0b9e8e44a7b9f6b86d46f90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk16
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 1110
+        width: 452
+        height: 457
+      alignment: 9
+      pivot: {x: 0.6261062, y: 0.53829324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d080db6ee63c3754ab268bd835c5993b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk17
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 1117
+        width: 446
+        height: 450
+      alignment: 9
+      pivot: {x: 0.6210762, y: 0.5466667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a322fa29f850a46b4b529b2af03dc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 633
+        width: 440
+        height: 466
+      alignment: 9
+      pivot: {x: 0.6068182, y: 0.527897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f699609e12644438e174504884b784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk19
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 635
+        width: 426
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5938967, y: 0.5301724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43487f519b1abb458451d37d06e0f9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk20
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 645
+        width: 409
+        height: 454
+      alignment: 9
+      pivot: {x: 0.57212716, y: 0.5418502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5e3747c52a8af41b93c9b6ddd9e675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk21
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 633
+        width: 405
+        height: 466
+      alignment: 9
+      pivot: {x: 0.5234568, y: 0.527897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1022650d60f11fc4b9b77e06f35a755f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk22
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 633
+        width: 402
+        height: 466
+      alignment: 9
+      pivot: {x: 0.47761193, y: 0.527897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a396c91320cb84293c7458a017bf62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk23
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 629
+        width: 402
+        height: 470
+      alignment: 9
+      pivot: {x: 0.46517414, y: 0.52340424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbef861f3c773d40b7770559dd8ec22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk24
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 629
+        width: 402
+        height: 470
+      alignment: 9
+      pivot: {x: 0.45273632, y: 0.52340424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3110ec5f6832bf243942a09ad1470361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Walk25
+      rect:
+        serializedVersion: 2
+        x: 2901
+        y: 628
+        width: 402
+        height: 471
+      alignment: 9
+      pivot: {x: 0.44278607, y: 0.522293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee776c1bf0d1df34f8e4ee7c84e3891e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 80b335ebd27732a49817be8948f04783
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

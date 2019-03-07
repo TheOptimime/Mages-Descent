@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 477522}
   - component: {fileID: 19872744}
   - component: {fileID: 19904100}
+  - component: {fileID: 3088705173588735126}
   m_Layer: 0
   m_Name: EvilDeath
   m_TagString: Untagged
@@ -4645,7 +4646,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -4669,6 +4670,18 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &3088705173588735126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438acc2ce40ae2f45b3117fd6bfedbfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &155924
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Attack
   - Ground
+  - hitbox
   layers:
   - Default
   - TransparentFX
