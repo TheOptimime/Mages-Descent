@@ -498,6 +498,11 @@ public class InputHandler : MonoBehaviour {
         {
             print("R2 Button Pressed");
             joystickRecord.Clear();
+
+            if (!player.cc.m_Grounded)
+            {
+                player.cc.CeilingCling();
+            }
             
         }
         else if (prevState.Triggers.Right >= 0.3f && state.Triggers.Right >= 0.3f)
@@ -517,18 +522,31 @@ public class InputHandler : MonoBehaviour {
             if(RightTrigger_HoldLength < 5)
             {
                 // Teleport
-                if(joystickPosition != 5)
+
+                if (player.cc.m_Grounded)
                 {
-                    if (joystickPosition == 6 && player.isFacingRight || joystickPosition == 4 && !player.isFacingRight)
+                    if (joystickPosition != 5)
                     {
-                        player.specialJump = player.isLeaping = true;
+                        if (joystickPosition == 6 && player.isFacingRight || joystickPosition == 4 && !player.isFacingRight)
+                        {
+                            player.specialJump = player.isLeaping = true;
+                        }
+
                     }
-                    
+                    else
+                    {
+                        player.specialJump = player.isBackStepping = true;
+                    }
                 }
-                else
+                else if (!player.cc.m_Grounded)
                 {
-                    player.specialJump = player.isBackStepping = true;
+                    if (player.cc.m_ceilingHold)
+                    {
+                        player.cc.m_ceilingHold = false;
+                        
+                    }
                 }
+                
 
 
             }
