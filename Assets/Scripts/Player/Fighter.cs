@@ -114,6 +114,8 @@ public partial class Fighter : MonoBehaviour {
         gm = FindObjectOfType<GameManager>();
         rm = FindObjectOfType<RespawnManager>();
 
+        //DontDestroyOnLoad(this.gameObject);
+
         cc.m_doubleJumpEnabled = canDoubleJump;
 
         comboTimer = defaultComboTime;

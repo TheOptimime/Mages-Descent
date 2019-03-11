@@ -135,7 +135,7 @@ public class EnemyAI : AI {
 
 			if (!edgeDetected || ignoreEdgeDetection) {
 //                    print("should be walking" + direction * walkSpeed * Time.deltaTime);
-				ec.Move (direction * speed * Time.deltaTime, false, false);
+				ec.Move (direction * speed, false, false);
 				ignoreEdgeDetection = false;
 					
 				}
