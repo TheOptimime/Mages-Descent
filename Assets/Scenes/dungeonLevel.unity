@@ -863,12 +863,12 @@ PrefabInstance:
     - target: {fileID: 114505939391996978, guid: 827a7d09456c9284092ef158244674da,
         type: 3}
       propertyPath: m_JumpForce
-      value: 34
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 114505939391996978, guid: 827a7d09456c9284092ef158244674da,
         type: 3}
       propertyPath: m_DoubleJumpForce
-      value: 25
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1421074874, guid: 827a7d09456c9284092ef158244674da, type: 3}
       propertyPath: m_LocalPosition.y
@@ -882,6 +882,19 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 4.49
       objectReference: {fileID: 0}
+    - target: {fileID: 4705129481318220, guid: 827a7d09456c9284092ef158244674da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705129481318220, guid: 827a7d09456c9284092ef158244674da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803433128588286, guid: 827a7d09456c9284092ef158244674da,
+        type: 3}
+      propertyPath: dustParticleSpawn
+      value: 
+      objectReference: {fileID: 1151087207}
     - target: {fileID: 1519346405545212724, guid: 827a7d09456c9284092ef158244674da,
         type: 3}
       propertyPath: m_RootOrder
@@ -897,19 +910,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.55
       objectReference: {fileID: 0}
-    - target: {fileID: 4705129481318220, guid: 827a7d09456c9284092ef158244674da, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705129481318220, guid: 827a7d09456c9284092ef158244674da, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 114803433128588286, guid: 827a7d09456c9284092ef158244674da,
+    - target: {fileID: 50009044929826746, guid: 827a7d09456c9284092ef158244674da,
         type: 3}
-      propertyPath: dustParticleSpawn
-      value: 
-      objectReference: {fileID: 1151087207}
+      propertyPath: m_GravityScale
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 50009044929826746, guid: 827a7d09456c9284092ef158244674da,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 827a7d09456c9284092ef158244674da, type: 3}
 --- !u!1 &56367482
