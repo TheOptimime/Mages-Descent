@@ -125,6 +125,21 @@ public class PlayerController2D : MonoBehaviour
 
     }
 
+    public void CeilingCling()
+    {
+        if (!m_Grounded)
+        {
+            Collider2D[] ceilingColliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
+            for (int i = 0; i < ceilingColliders.Length; i++)
+            {
+                if (ceilingColliders[i].gameObject != gameObject)
+                {
+                        m_ceilingHold = true;
+                }
+            }
+        }
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawSphere(m_GroundCheck.position, k_GroundedRadius);
