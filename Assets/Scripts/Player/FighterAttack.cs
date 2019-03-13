@@ -52,6 +52,7 @@ public partial class Fighter {
         print("Cast projectile + " + attack.name);
         GameObject attackObject = new GameObject("Projectile");
         AttackScript spell = attackObject.AddComponent<AttackScript>();
+		anim.SetTrigger ("cast");
 
         if(attack.attackPath != Attack.AttackPath.CrashDown || attack.attackPath != Attack.AttackPath.Meteor)
         {

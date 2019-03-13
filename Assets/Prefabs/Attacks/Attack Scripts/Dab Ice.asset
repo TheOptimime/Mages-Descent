@@ -22,9 +22,9 @@ MonoBehaviour:
   destroyTime: 0
   xDisplacement: -0.2
   multiFireRate: 0
-  speed: 6
+  speed: 20
   lifetime: 2
-  delay: 0.2
+  delay: 1
   maxAttackDistance: 0
   chargeTime: 0
   xPositionalDisplacement: 0
@@ -37,8 +37,7 @@ MonoBehaviour:
   _joystickCommand: 
   followUpAttack: {fileID: 0}
   simultaneousAttack: {fileID: 0}
-  spriteAnimation: {fileID: 5321131061197027947, guid: 22075bd7a0ceb8c478c01be150896200,
-    type: 3}
+  spriteAnimation: {fileID: 123432, guid: 81ba803537470cd478e76c5d33b7e81e, type: 3}
   attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
     type: 3}
   attackPath: 1
