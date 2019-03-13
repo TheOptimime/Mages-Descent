@@ -10,6 +10,7 @@ using UnityEngine;
 [RequireComponent(typeof(Inventory))]
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(AilmentHandler))]
+[RequireComponent(typeof(UI_Health))]
 public partial class Fighter : MonoBehaviour {
 
     #region Variables
@@ -64,8 +65,7 @@ public partial class Fighter : MonoBehaviour {
     Animator anim;
 
     AudioSource audioSource;
-
-    IEnumerator hitstunCoroutine;
+    
     IEnumerator multicastCoroutine;
 
     //Transform firePos;
@@ -124,21 +124,43 @@ public partial class Fighter : MonoBehaviour {
     void Update()
     {
 		
-
         if(dabometer >= 100)
         {
             dabometer = 100;
 
         }
 
-        if(movementFreezeLength.cancelTime > 0)
+        if (recentlyAttacked)
         {
-            lockMovement = true;
+            if (recoveryTimer > 0)
+            {
+                lockInput = lockMovement = true;
+                cc.m_lockDirection = true;
+
+                if (recoveryTime > recoveryTimer)
+                {
+                    //lockInput = lockMovement = false;
+                }
+                recoveryTimer -= Time.deltaTime;
+            }
+            else
+            {
+                recentlyAttacked = false;
+            }
         }
-        else if(movementFreezeLength.cancelTime < 0)
+        else
         {
-            lockMovement = false;
+            if (movementFreezeLength.cancelTime > 0)
+            {
+                lockMovement = true;
+            }
+            else if (movementFreezeLength.cancelTime < 0)
+            {
+                lockMovement = false;
+                recentlyAttacked = false;
+            }
         }
+        
         
         if (recentlyAttacked && lockMovement != true)
         {
@@ -154,7 +176,7 @@ public partial class Fighter : MonoBehaviour {
         else if (recentlyAttacked)
         {
             print("recovering");
-            recoveryTime += Time.deltaTime;
+            recoveryTimer -= Time.deltaTime;
 
             if(recoveryTime > recoveryTimer)
             {
@@ -163,15 +185,18 @@ public partial class Fighter : MonoBehaviour {
                 if (cc.m_Grounded)
                 {
                     // Insert some lag time and stuff
-                    lockMovement = false;
+                    lockMovement = recentlyAttacked = false;
+                }
+                else
+                {
+                    if (jump)
+                    {
+                        RecoveryJump();
+                    }
                 }
 
-                if (jump)
-                {
-					
-                    RecoveryJump();
-                }
-                lockMovement = recentlyAttacked = false;
+                
+                
             }
         }
         
@@ -182,8 +207,8 @@ public partial class Fighter : MonoBehaviour {
         }
         else
         {
-            input.joystickPosition = 5;
-            input.joystickRecord.Clear();
+            //input.joystickPosition = 5;
+            //input.joystickRecord.Clear();
         }
         
         isFacingRight = cc.m_FacingRight;
@@ -228,37 +253,47 @@ public partial class Fighter : MonoBehaviour {
 
     private void Move()
     {
-        if (input.joystickPosition == 4 || input.state.ThumbSticks.Left.X < -input.deadzone)
+        if (!lockMovement)
         {
-            if (!isDashing)
+            if (input.joystickPosition == 4 || input.state.ThumbSticks.Left.X < -input.deadzone)
             {
-                horizontalMove = -(speed);
+                if (!isDashing)
+                {
+                    horizontalMove = -(speed);
+                }
+                else
+                {
+                    horizontalMove = -(runSpeed);
+                }
+            }
+            else if (input.joystickPosition == 6 || input.state.ThumbSticks.Left.X > input.deadzone)
+            {
+                if (!isDashing)
+                {
+                    horizontalMove = speed;
+                }
+                else
+                {
+                    horizontalMove = runSpeed;
+                }
             }
             else
             {
-                horizontalMove = -(runSpeed);
+                horizontalMove = 0;
+                anim.SetFloat("speed", 0);
             }
-        }
-        else if (input.joystickPosition == 6 || input.state.ThumbSticks.Left.X > input.deadzone)
-        {
-            if (!isDashing)
+
+            if (horizontalMove < 0 || horizontalMove > 0)
             {
-                horizontalMove = speed;
-            }
-            else
-            {
-                horizontalMove = runSpeed;
+                anim.SetFloat("speed", 1);
             }
         }
         else
         {
-            horizontalMove = 0;
             anim.SetFloat("speed", 0);
+            horizontalMove = 0;
         }
-
-        if (horizontalMove < 0 || horizontalMove > 0) {
-            anim.SetFloat("speed", 1);
-        }
+        
     }
 
     void RecoveryJump()
@@ -281,6 +316,7 @@ public partial class Fighter : MonoBehaviour {
         
 
         rb.velocity = (finalVelocity);
+        lockMovement = recentlyAttacked = false;
     }
 
     private void FixedUpdate()
@@ -347,6 +383,7 @@ public partial class Fighter : MonoBehaviour {
         }
 
         jump = false;
+        horizontalMove = 0;
         
 
     }
@@ -422,22 +459,10 @@ public partial class Fighter : MonoBehaviour {
         comboTime = 0;        
     }
 
-    public void SetHitstunTimer(float time)
+    public void SetHitstunTimer(DoubleTime recovery)
     {
-        if(hitstunCoroutine != null)
-        {
-            StopCoroutine(hitstunCoroutine);
-        }
-        hitstunCoroutine = HitstunTimer(time);
-        StartCoroutine(hitstunCoroutine);
-    }
-
-    IEnumerator HitstunTimer(float time)
-    {
-        lockInput = lockMovement = true;
-        yield return new WaitForSeconds(time);
-        lockInput = lockMovement = false;
-        hitstunCoroutine = null;
+        recoveryTimer = recovery.defaultTime;
+        recoveryTime = recovery.cancelTime;
     }
 
 	public void isLanding() {

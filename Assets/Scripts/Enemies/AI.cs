@@ -19,8 +19,8 @@ public class AI : MonoBehaviour {
 
     public Transform edgeDetectionFront, edgeDetectionBack;
 
-    public float timer, idleTimer, idleTime, hitTime, restTime, restTimer;
-
+    public float timer, idleTimer, idleTime, hitTime, restTime, restTimer, recoveryTime, recoveryTimer;
+    
     public float speed;
 
     public LayerMask EdgeDetectIgnore;
@@ -31,6 +31,15 @@ public class AI : MonoBehaviour {
 
     IEnumerator hitstunCoroutine;
     public bool lockMovement;
+
+    public enum TurnStyle
+    {
+        TurnByEdge,
+        TurnByTrigger,
+        TurnByDistance
+    }
+
+    public TurnStyle turnStyle;
 
     public virtual void Start () {
         rb2d = GetComponent<Rigidbody2D>();
@@ -44,8 +53,17 @@ public class AI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (recoveryTimer > 0)
+        {
+            lockMovement = true;
+
+            if (recoveryTime > recoveryTimer)
+            {
+                lockMovement = false;
+            }
+            recoveryTimer -= Time.deltaTime;
+        }
+    }
 
     public float DistanceBetween(GameObject GO)
     {
@@ -84,21 +102,11 @@ public class AI : MonoBehaviour {
     }
 
 
-    public void SetHitstunTimer(float time)
+    public void SetHitstunTimer(DoubleTime recovery)
     {
-        if (hitstunCoroutine != null)
-        {
-            StopCoroutine(hitstunCoroutine);
-        }
-        hitstunCoroutine = HitstunTimer(time);
-        StartCoroutine(hitstunCoroutine);
+        recoveryTimer = recovery.defaultTime;
+        recoveryTime = recovery.cancelTime;
     }
 
-    IEnumerator HitstunTimer(float time)
-    {
-        lockMovement = true;
-        yield return new WaitForSeconds(time);
-        lockMovement = false;
-        hitstunCoroutine = null;
-    }
+
 }

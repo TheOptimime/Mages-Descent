@@ -19,8 +19,8 @@ public class Attack : ScriptableObject{
 
     [HideInInspector] public float xPositionalDisplacement;
 
-
-    public float hitStun, attackCharge;
+    public DoubleTime hitStun;
+    public float attackCharge;
     public bool hasSpecialChargeFunction, burstOnDestroy;
 
     public int spellPoints;

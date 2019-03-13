@@ -53,7 +53,11 @@ public partial class Fighter {
         GameObject attackObject = new GameObject("Projectile");
         AttackScript spell = attackObject.AddComponent<AttackScript>();
 
-        if(attack.attackPath != Attack.AttackPath.CrashDown || attack.attackPath != Attack.AttackPath.Meteor)
+        cc.FreezeVelocity();
+        // Cast animation goes here... probably
+        anim.SetFloat("speed", 0);
+
+        if (attack.attackPath != Attack.AttackPath.CrashDown || attack.attackPath != Attack.AttackPath.Meteor)
         {
             spell.flipped = !cc.m_FacingRight;
         }
@@ -116,13 +120,15 @@ public partial class Fighter {
 
     public void StartMeleeAttack(Attack attack)
     {
+        cc.FreezeVelocity();
         hitbox_Middle = new MeleeHitbox(attack);
         hitbox_Middle.Activate();
 
         if (attack.xDisplacement + comboCount != 0)
         {
             //rb.AddForce(new Vector2(rb.velocity.x + attack.xDisplacement * spell.direction, rb.velocity.y), ForceMode2D.Impulse);
-            rb.velocity = new Vector2((rb.velocity.x + attack.xDisplacement + comboCount) * (cc.m_FacingRight? 1 : -1), rb.velocity.y);
+            //rb.velocity = new Vector2((rb.velocity.x + attack.xDisplacement + comboCount) * (cc.m_FacingRight? 1 : -1), rb.velocity.y);
+            rb.velocity = new Vector2((rb.velocity.x + attack.xDisplacement + comboCount) * (cc.m_FacingRight ? 1 : -1), rb.velocity.y);
             print("force applied");
         }
     }

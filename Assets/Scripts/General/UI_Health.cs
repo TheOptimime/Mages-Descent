@@ -7,12 +7,12 @@ public class UI_Health : MonoBehaviour {
 
     public Image healthBar;
     private Health health;
-    public GameObject player;
+    public Fighter player;
 
     // Start is called before the first frame update
     void Start()
     {
-        health = player.GetComponent<Health>();
+        health = GetComponent<Health>();
         healthBar.fillAmount = (health.maxHealth/100);
     }
 

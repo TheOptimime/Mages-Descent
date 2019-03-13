@@ -30,7 +30,7 @@ public class KnockbackListener : MonoBehaviour {
         }
 	}
 
-    public void SetHitstun(float hitstun)
+    public void SetHitstun(DoubleTime hitstun)
     {
         switch (knockbackRecipient)
         {
@@ -55,12 +55,14 @@ public class KnockbackListener : MonoBehaviour {
         {
             case KnockbackRecipient.Player:
                 {
+                    _fighter.rb.velocity = Vector2.zero;
                     _fighter.rb.AddForce(knockback, ForceMode2D.Impulse);
                 }
                 break;
 
             case KnockbackRecipient.AI:
                 {
+                    _ai.rb2d.velocity = Vector2.zero;
                     _ai.rb2d.AddForce(knockback, ForceMode2D.Impulse);
                 }
                 
