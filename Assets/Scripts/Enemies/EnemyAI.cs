@@ -85,11 +85,12 @@ public class EnemyAI : AI {
 
         UpdateEdgeDetection();
 
-		if (enemyState == EnemyState.Walking) {
-			anim.SetBool ("isWalking", true);
-		} else  {
-			anim.SetBool ("isWalking", false);
-		}
+        if (enemyState == EnemyState.Walking)
+        {
+            anim.SetBool("isWalking", true);
+        } else {
+            anim.SetBool("isWalking", false);
+        }
 			
         switch (enemyState)
         {
@@ -312,8 +313,12 @@ public class EnemyAI : AI {
         if (isDead) {
 			
 			print("enemy is dead");
-			//Instantiate (deathParticle, transform.position, Quaternion.identity);
 
+            if (health.enabled == true)
+            {
+                Instantiate(deathParticle, transform.position, Quaternion.identity);
+                health.enabled = false;
+            }
 
             transform.position = new Vector3(0, 3000, 0);
 
@@ -324,6 +329,7 @@ public class EnemyAI : AI {
         }
         if (respawnCalled) {
             Respawn();
+           
         }
 
         if (hit)
@@ -345,6 +351,7 @@ public class EnemyAI : AI {
 
         if (timer > timeLimit && !spr.isVisible) {
             print("respawn");
+            health.enabled = true;
             rb2d.velocity = Vector2.zero;
             health.currentHealth = health.maxHealth;
             isDead = false;

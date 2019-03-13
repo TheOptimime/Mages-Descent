@@ -52,6 +52,7 @@ public partial class Fighter {
         print("Cast projectile + " + attack.name);
         GameObject attackObject = new GameObject("Projectile");
         AttackScript spell = attackObject.AddComponent<AttackScript>();
+		anim.SetTrigger ("cast");
 
         cc.FreezeVelocity();
         // Cast animation goes here... probably

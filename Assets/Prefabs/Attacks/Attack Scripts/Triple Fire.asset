@@ -24,7 +24,7 @@ MonoBehaviour:
   multiFireRate: 0.5
   speed: 2
   lifetime: 2
-  delay: 0
+  delay: 1
   maxAttackDistance: 0
   chargeTime: 0
   xPositionalDisplacement: 0
