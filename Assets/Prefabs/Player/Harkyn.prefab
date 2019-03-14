@@ -256,7 +256,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+  m_Color: {r: 0.7429245, g: 0.98066694, b: 0.990566, a: 1}
   m_Intensity: 1.52
   m_Range: 2.24
   m_SpotAngle: 30
@@ -547,9 +547,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8252569e2215a44939c0014e528793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 50
+  m_JumpForce: 40
   m_HighJumpForce: 120
-  m_DoubleJumpForce: 45
+  m_DoubleJumpForce: 35
   m_LongJumpForce: {x: 70, y: 8}
   m_BackJumpForce: {x: -60, y: 3}
   m_SlideForce: {x: 200, y: 0}
