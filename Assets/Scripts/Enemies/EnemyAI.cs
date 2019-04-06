@@ -33,18 +33,20 @@ public class EnemyAI : AI {
     public bool respawnEnabled;
 
     public bool stunned;
-
+    public GameObject sightRange;
+    public BoxCollider2D sightBox;
 
     public float attackRange, hitTimer;
     bool timerSet, idleTimerSet, hitTimerSet, restTimerSet;
     public bool hit;
     float timeLimit;
 
-    bool isDead, respawnCalled, resting;
-    bool hasRangedAttack;
+    bool isDead, respawnCalled, resting, playerInRange;
+    bool hasRangedAttack, forceTurn;
 
+    public float turnTimer, turnTime, detectTime, detectTimer;
 
-
+    public LayerMask ThisIsPlayer;
 
     public override void Start() {
         base.Start();
@@ -101,6 +103,7 @@ public class EnemyAI : AI {
                     idleTimerSet = true;
                 }
 
+                turnTime = 0;
 
                 if (edgeDetected)
                 {
@@ -108,7 +111,6 @@ public class EnemyAI : AI {
                     if (idleTime > idleTimer)
                     {
                         print("Turn Around");
-                        direction *= -1;
                         edgeDetected = false;
                         idleTimerSet = false;
                         ignoreEdgeDetection = true;
@@ -133,22 +135,59 @@ public class EnemyAI : AI {
 		case (EnemyState.Walking):
 			print ("in walking");
                 
-
-			if (!edgeDetected || ignoreEdgeDetection) {
-//                    print("should be walking" + direction * walkSpeed * Time.deltaTime);
-				ec.Move (direction * speed, false, false);
-				ignoreEdgeDetection = false;
-					
-				}
-                else
+                if(turnStyle == TurnStyle.TurnByEdge)
                 {
-                    print("edge detected");
+                    if (edgeDetected)
+                    {
+                        forceTurn = true;
+                        print("edge detected");
+                    }
+                }
+                if(turnStyle == TurnStyle.TurnByEdge)
+                {
+                    if (edgeDetected)
+                    {
+                        forceTurn = true;
+                        print("edge detected");
+                    }
+                }
+                else if(turnStyle == TurnStyle.TurnByDistance)
+                {
+                    if(turnTime > turnTimer)
+                    {
+                        forceTurn = true;
+                    }
+                    else
+                    {
+                        turnTime += Time.deltaTime;
+                    }
+                }
+                else if(turnStyle == TurnStyle.TurnByTrigger)
+                {
+
+                }
+
+                if (forceTurn)
+                {
+                    direction *= -1;
                     enemyState = EnemyState.Idle;
                 }
+
+                ec.Move(direction * speed, false, false);
+
                 break;
+
             case (EnemyState.Detecting):
                 print("in detecting");
+
+                detectTime += Time.deltaTime;
+                if(detectTime > detectTimer)
+                {
+                    enemyState = EnemyState.Idle;
+                }
+
                 break;
+
             case (EnemyState.Attacking):
                 print("in attacking");
                 float distanceFromPlayer = Mathf.Abs((transform.position - player.transform.position).magnitude);
@@ -246,6 +285,18 @@ public class EnemyAI : AI {
                 }
             }
         }
+
+        if(sightRange != null)
+        {
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(transform.position, sightBox.bounds.size, 0, ThisIsPlayer);
+            if (colliders.Length > 0)
+            {
+                playerInRange = true;
+                direction = (int)Mathf.Sign(transform.position.x - colliders[0].gameObject.transform.position.x);
+                enemyState = EnemyState.Attacking;
+            }
+        }
+        
         
 
         if (enemyState != EnemyState.Resting)
@@ -323,13 +374,14 @@ public class EnemyAI : AI {
         Gizmos.color = new Color(1, 0, 1);
         Gizmos.DrawSphere(edgeDetectionFront.position, 0.1f);
 
+        Gizmos.DrawCube(transform.position, sightBox.bounds.size);
         //Gizmos.DrawCube(transform.position, new Vector2(attackRange, attackRange));
     }
 
    
     
 
-    public void UseAttack(Attack attack)
+    public virtual void UseAttack(Attack attack)
     {
         
 

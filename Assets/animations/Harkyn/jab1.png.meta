@@ -1,0 +1,782 @@
+fileFormatVersion: 2
+guid: 4a6d7a02fdaa01349bae214ceb952a0a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: jab1
+    21300002: Harkyn_Sword_Jab_1_109
+    21300004: Harkyn_Sword_Jab_1_103
+    21300006: Harkyn_Sword_Jab_1_108
+    21300008: Harkyn_Sword_Jab_1_105
+    21300010: Harkyn_Sword_Jab_1_104
+    21300012: Harkyn_Sword_Jab_1_106
+    21300014: Harkyn_Sword_Jab_1_107
+    21300016: Harkyn_Sword_Jab_1_102
+    21300018: Harkyn_Sword_Jab_1_101
+    21300020: Harkyn_Sword_Jab_1_110
+    21300022: Harkyn_Sword_Jab_1_132
+    21300024: Harkyn_Sword_Jab_1_130
+    21300026: Harkyn_Sword_Jab_1_128
+    21300028: Harkyn_Sword_Jab_1_131
+    21300030: Harkyn_Sword_Jab_1_129
+    21300032: Harkyn_Sword_Jab_1_100
+    21300034: Harkyn_Sword_Jab_1_126
+    21300036: Harkyn_Sword_Jab_1_127
+    21300038: Harkyn_Sword_Jab_1_120
+    21300040: Harkyn_Sword_Jab_1_119
+    21300042: Harkyn_Sword_Jab_1_123
+    21300044: Harkyn_Sword_Jab_1_124
+    21300046: Harkyn_Sword_Jab_1_122
+    21300048: Harkyn_Sword_Jab_1_118
+    21300050: Harkyn_Sword_Jab_1_121
+    21300052: Harkyn_Sword_Jab_1_125
+    21300054: Harkyn_Sword_Jab_1_117
+    21300056: Harkyn_Sword_Jab_1_116
+    21300058: Harkyn_Sword_Jab_1_115
+    21300060: Harkyn_Sword_Jab_1_111
+    21300062: Harkyn_Sword_Jab_1_114
+    21300064: Harkyn_Sword_Jab_1_113
+    21300066: Harkyn_Sword_Jab_1_112
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_109
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3411
+        width: 573
+        height: 684
+      alignment: 9
+      pivot: {x: 0.6404887, y: 0.500731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3267982f0bbbfe438247c1edd64a853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_103
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3396
+        width: 598
+        height: 699
+      alignment: 9
+      pivot: {x: 0.60535115, y: 0.48855507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1adb82d7b664f5f4790ead8b914c44a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_108
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 3430
+        width: 610
+        height: 665
+      alignment: 9
+      pivot: {x: 0.60163933, y: 0.51353383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6ce6f5d1afc114ea1e48903c096c53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_105
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 3458
+        width: 615
+        height: 637
+      alignment: 9
+      pivot: {x: 0.52845526, y: 0.53924644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9bd03226b9dbd428450aeccf2d5724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_104
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 3408
+        width: 619
+        height: 687
+      alignment: 9
+      pivot: {x: 0.5864297, y: 0.5014556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a7d7612067d0642a5643d6fb58f9be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_106
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 3449
+        width: 619
+        height: 646
+      alignment: 9
+      pivot: {x: 0.56058156, y: 0.53173375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a4a67e76a3d604781f6c076f16e808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_107
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 3430
+        width: 619
+        height: 665
+      alignment: 9
+      pivot: {x: 0.5831987, y: 0.5195489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febc69b4122c67d45bf80bb9e648fbeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_102
+      rect:
+        serializedVersion: 2
+        x: 4268
+        y: 3401
+        width: 638
+        height: 694
+      alignment: 9
+      pivot: {x: 0.62539184, y: 0.4848703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37482708cac2ba4591fa3649cac1f29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_101
+      rect:
+        serializedVersion: 2
+        x: 4908
+        y: 3406
+        width: 731
+        height: 689
+      alignment: 9
+      pivot: {x: 0.62927496, y: 0.48838896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e20d2b37e4dc5429bf193443049fdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_110
+      rect:
+        serializedVersion: 2
+        x: 5641
+        y: 3395
+        width: 743
+        height: 700
+      alignment: 9
+      pivot: {x: 0.6258412, y: 0.4892857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926e9f7f851c4b642aa010152eefdbe2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_132
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 2708
+        width: 783
+        height: 685
+      alignment: 9
+      pivot: {x: 0.66538954, y: 0.48978102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3248a1f11ab73194cbf344322c6d7927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_130
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 2708
+        width: 783
+        height: 685
+      alignment: 9
+      pivot: {x: 0.66538954, y: 0.48978102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122251bf8c09bad4a9cf2093fa95354e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_128
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2708
+        width: 783
+        height: 685
+      alignment: 9
+      pivot: {x: 0.66538954, y: 0.48978102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42b5e39b7df5a34dbcee7f64ec46d5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_131
+      rect:
+        serializedVersion: 2
+        x: 7171
+        y: 3410
+        width: 783
+        height: 685
+      alignment: 9
+      pivot: {x: 0.66538954, y: 0.48978102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb3d0b49b21c274d9e792ec69965c40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_129
+      rect:
+        serializedVersion: 2
+        x: 6386
+        y: 3410
+        width: 783
+        height: 685
+      alignment: 9
+      pivot: {x: 0.66538954, y: 0.48978102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e447ede533c8d4ea589dbd0efe3ad5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_100
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 2708
+        width: 783
+        height: 685
+      alignment: 9
+      pivot: {x: 0.66538954, y: 0.48978102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88df8c0e6187f94469c0a882b0820569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_126
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 2710
+        width: 816
+        height: 683
+      alignment: 9
+      pivot: {x: 0.70343137, y: 0.5043924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f19c6ee39d15ab4d99723857828f42f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_127
+      rect:
+        serializedVersion: 2
+        x: 3959
+        y: 2704
+        width: 817
+        height: 689
+      alignment: 9
+      pivot: {x: 0.6719706, y: 0.48693758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d95e9b41b2d1746969de16ec3ca13b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_120
+      rect:
+        serializedVersion: 2
+        x: 4778
+        y: 2720
+        width: 826
+        height: 673
+      alignment: 9
+      pivot: {x: 0.73123485, y: 0.5074294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c89808f69881fb448db5f1563810af1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_119
+      rect:
+        serializedVersion: 2
+        x: 5606
+        y: 2729
+        width: 827
+        height: 664
+      alignment: 9
+      pivot: {x: 0.7315599, y: 0.500753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47aaba8697b82c45a16c48a6ad4fec4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_123
+      rect:
+        serializedVersion: 2
+        x: 6435
+        y: 2717
+        width: 832
+        height: 676
+      alignment: 9
+      pivot: {x: 0.72836536, y: 0.51257396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010d5a64e21559c498a92133726523ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_124
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 2024
+        width: 835
+        height: 678
+      alignment: 9
+      pivot: {x: 0.7245509, y: 0.50663716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b56065a474d6446bebb02aefda9d0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_122
+      rect:
+        serializedVersion: 2
+        x: 7269
+        y: 2720
+        width: 835
+        height: 673
+      alignment: 9
+      pivot: {x: 0.73413175, y: 0.5074294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b15ba22058a6a40a2f5f5f0d94346d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_118
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 2026
+        width: 835
+        height: 676
+      alignment: 9
+      pivot: {x: 0.73413175, y: 0.50961536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089a461797a25c94b89a0458d7af5102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_121
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2026
+        width: 835
+        height: 676
+      alignment: 9
+      pivot: {x: 0.73413175, y: 0.50961536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4bb5b16981c5f4e9775f512256b236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_125
+      rect:
+        serializedVersion: 2
+        x: 2512
+        y: 2033
+        width: 837
+        height: 669
+      alignment: 9
+      pivot: {x: 0.72043014, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648d0c19637ea0e47955c46ac1b84100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_117
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 2027
+        width: 852
+        height: 675
+      alignment: 9
+      pivot: {x: 0.71948355, y: 0.5088889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2d4a6789628f54aa9cd3171d401e04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_116
+      rect:
+        serializedVersion: 2
+        x: 4205
+        y: 2028
+        width: 854
+        height: 674
+      alignment: 9
+      pivot: {x: 0.71311474, y: 0.5111276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5067e22a0bafe4dac2449fd639b7e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_115
+      rect:
+        serializedVersion: 2
+        x: 5061
+        y: 2031
+        width: 884
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6934389, y: 0.5089419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c63bc3d2f2a874fa7f14e13cb05fca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_111
+      rect:
+        serializedVersion: 2
+        x: 5947
+        y: 2011
+        width: 925
+        height: 691
+      alignment: 9
+      pivot: {x: 0.68540543, y: 0.49565846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fd16574fa1c6549ad0cfc3a4531d50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_114
+      rect:
+        serializedVersion: 2
+        x: 6874
+        y: 2026
+        width: 932
+        height: 676
+      alignment: 9
+      pivot: {x: 0.6695279, y: 0.5066568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b221cba32709e948925fe991a98ab7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_113
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1325
+        width: 1004
+        height: 684
+      alignment: 9
+      pivot: {x: 0.65537846, y: 0.502193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df5fa97dbb8df241a8772fe073112ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harkyn_Sword_Jab_1_112
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 1322
+        width: 1011
+        height: 687
+      alignment: 9
+      pivot: {x: 0.6834817, y: 0.4970888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64591def2a9c882459447b7536f540f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 427b5cbdb244c4944804267931c71514
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

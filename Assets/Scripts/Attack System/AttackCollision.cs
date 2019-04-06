@@ -75,6 +75,8 @@ public class AttackCollision : MonoBehaviour
 
                         _enemy.murderMeter = 0;
                     }
+
+                    
                 }
 
                 // Get direction of the impact relative to the player/ai and flip accordingly 
@@ -101,7 +103,7 @@ public class AttackCollision : MonoBehaviour
                     else if (other.transform.tag == "Enemy")
                     {
                         EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
-                        if (!_enemy.ec.m_FacingRight) _enemy.ec.Flip();
+                        if (!_enemy.ec.m_FacingRight) _enemy.direction *= -1;
                     }
                 }
                 else if (transform.position.x > other.transform.position.x)
