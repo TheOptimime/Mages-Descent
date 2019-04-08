@@ -54,9 +54,14 @@ public partial class Fighter : MonoBehaviour {
     public bool isLeaping, isBackLeaping, isBackStepping;
 
     public float forwardLeapSpeed, backStepSpeed, backwardLeapSpeed;
+    public float cameraShakeDuration;
+    public float cameraShakeAmount;
 
     public GameObject fireBullet;
     public GameObject lowHitbox, midHitbox, highHitbox;
+    public GameObject cameraFocusPoint;
+
+    Vector2 cameraFocusPointDefaultPosition, playerOffset;
 
     GameManager gm;
 
@@ -65,6 +70,8 @@ public partial class Fighter : MonoBehaviour {
     Animator anim;
 
     AudioSource audioSource;
+
+    public CircleCollider2D vibrationSphere;
     
     IEnumerator multicastCoroutine;
 
@@ -101,7 +108,8 @@ public partial class Fighter : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         ailmentHandler = GetComponent<AilmentHandler>();
         knockbackListener = GetComponent<KnockbackListener>();
-
+        cameraFocusPointDefaultPosition = cameraFocusPoint.transform.position;
+        playerOffset = transform.position;
         spellList = FindObjectOfType<SpellDatabase>();
 
 
@@ -239,7 +247,7 @@ public partial class Fighter : MonoBehaviour {
         movementFreezeLength.Decrement();
         //print(movementFreezeLength.cancelTime);
 
-        SetVibration((castTime / 100));
+        //SetVibration((castTime / 100));
         cc.m_lockDirection = lockMovement;
         //print("Leaping: " + isLeaping + " BackStep: " + isBackStepping + "BackLeaping: " + isBackLeaping);
 
@@ -249,6 +257,8 @@ public partial class Fighter : MonoBehaviour {
         {
             comboCount = 0;
         }
+
+        CameraShake();
     }
 
     private void Move()
@@ -421,15 +431,37 @@ public partial class Fighter : MonoBehaviour {
         canDoubleJump = false;
     }
 
-    void SetVibration(float vibration)
+    public void SetVibration(float vibration)
     {
         input.vibrateLeftMotor = input.vibrateRightMotor = vibration;
     }
 
-    void SetVibration(float leftMotor, float rightMotor)
+    public void SetVibration(float leftMotor, float rightMotor)
     {
         input.vibrateLeftMotor = leftMotor;
         input.vibrateRightMotor = rightMotor;
+
+        print("l: " + leftMotor + " r: " + rightMotor);
+    }
+
+    private void CameraShake()
+    {
+       if (cameraShakeDuration > 0)
+        {
+            cameraFocusPoint.transform.position = new Vector2(transform.position.x, transform.position.y) + Random.insideUnitCircle * cameraShakeAmount;
+            cameraShakeDuration -= Time.deltaTime;
+        }
+        else
+        {
+            cameraFocusPoint.transform.localPosition = Vector3.zero;
+            cameraShakeAmount = 0;
+        }
+    }
+
+    public void ShakeCamera(float duration, float intensity)
+    {
+        cameraShakeDuration = duration;
+        cameraShakeAmount = intensity;
     }
 
     void Respawn()

@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 1927a456e223fa549874031b8f53a1df
   - enabled: 1
-    path: Assets/Scenes/dungeonLevel.unity
+    path: Assets/Scenes/dungeonLevelAlt.unity
     guid: 101aeae7d94b4c04d9201df58f0a2ffc
   - enabled: 0
     path: Assets/Scenes/dungeonLevel2.unity

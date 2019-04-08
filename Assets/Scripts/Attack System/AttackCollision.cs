@@ -30,21 +30,38 @@ public class AttackCollision : MonoBehaviour
 
             if (other.transform.tag == "Enemy" && other.gameObject.name != _as.user || other.transform.tag == "Player" && other.gameObject.name != _as.user)
             {
-                
-                
-                
-
                 other.gameObject.GetComponent<Health>().Damage(_as.attack.damage);
 
                 KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
-                knockbackScript.SetHitstun(_as.attack.hitStun);
                 Vector2 finalKnockback = _as.attack.knockback;
+
+                knockbackScript.SetHitstun(_as.attack.hitStun);
                 finalKnockback.x *= _as.direction;
                 knockbackScript.SetKnockback(finalKnockback);
 
                 if (other.transform.tag == "Enemy")
                 {
                     EnemyAI _enemy = other.gameObject.GetComponent<EnemyAI>();
+                    if (_as.usingFighter.vibrationSphere.bounds.Contains(_enemy.transform.position))
+                    {
+                        float distance = _as.usingFighter.vibrationSphere.transform.position.x - _enemy.transform.position.x;
+
+                        if(distance > 0)
+                        {
+                            _as.usingFighter.ShakeCamera(0.5f, Mathf.Abs(Random.Range(0, _as.attack.damage / 2) - Mathf.Abs(distance/2)));
+                            _as.usingFighter.SetVibration(Mathf.Abs(Random.Range(0, _as.attack.damage / 3) - Mathf.Abs(distance/2)), Mathf.Abs(Random.Range(0, _as.attack.damage / 2) - Mathf.Abs(distance)));
+                        }
+                        else if(distance < 0)
+                        {
+                            _as.usingFighter.ShakeCamera(0.5f, Mathf.Abs(Random.Range(0, _as.attack.damage / 2) - Mathf.Abs(distance/2)));
+                            _as.usingFighter.SetVibration(Mathf.Abs(Random.Range(0, _as.attack.damage / 2) - Mathf.Abs(distance/2)), Mathf.Abs(Random.Range(0, _as.attack.damage / 3) - Mathf.Abs(distance)));
+                        }
+                        else
+                        {
+                            //_as.usingFighter.ShakeCamera(0, 0);
+                            //_as.usingFighter.SetVibration(0, 0);
+                        }
+                    }
 
                     _enemy.murderMeter += Mathf.Round(_as.attack.damage / 4);
 
@@ -166,7 +183,7 @@ public class AttackCollision : MonoBehaviour
                         if (other.transform.tag == "Ground")
                         {
                             _as.StartNextAttack(_as.followUpAttack);
-
+                            
                         }
                         else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast)
                         {
@@ -174,6 +191,8 @@ public class AttackCollision : MonoBehaviour
                         }
                         Destroy(this.gameObject);
 						print ("destroy");
+
+                        if(pillarParticle != null)
 						Instantiate (pillarParticle, transform.position, Quaternion.identity);
 
                     }
@@ -196,7 +215,20 @@ public class AttackCollision : MonoBehaviour
                         //Destroy(this.gameObject);
                     }
                 }
-                if(other.transform.tag == "Wall")
+
+                float distance = _as.usingFighter.vibrationSphere.transform.position.x - transform.position.x;
+
+                if (distance > 0)
+                {
+                    _as.usingFighter.ShakeCamera(0.5f, Mathf.Abs(Random.Range(0, _as.attack.damage / 2) - Mathf.Abs(distance / 2)));
+                    _as.usingFighter.SetVibration((Mathf.Abs(Random.Range(0, _as.attack.damage / 3) - Mathf.Abs(distance / 2)))/100, (Mathf.Abs(Random.Range(0, _as.attack.damage / 2) - Mathf.Abs(distance)))/100);
+                }
+                else if (distance < 0)
+                {
+                    _as.usingFighter.ShakeCamera(0.5f, Mathf.Abs(Random.Range(0, _as.attack.damage / 2) - Mathf.Abs(distance / 2)));
+                    _as.usingFighter.SetVibration((Mathf.Abs(Random.Range(0, _as.attack.damage / 2) - Mathf.Abs(distance / 2)))/100, (Mathf.Abs(Random.Range(0, _as.attack.damage / 3) - Mathf.Abs(distance)))/100);
+                }
+                if (other.transform.tag == "Wall")
                 Destroy(gameObject, _as.attack.destroyTime);
             }
         }
