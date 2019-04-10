@@ -5,9 +5,12 @@ using UnityEngine;
 public class Health : MonoBehaviour {
 
     public float maxHealth, currentHealth;
-    public bool regen;
+    public bool regen, degen;
 
-    public float timer, time;
+    public float regenRate, degenRate;
+    public float timer, time, invulnerabilityTimer;
+
+    bool invulnerable;
 
 	// Use this for initialization
 	void Start () {
@@ -16,14 +19,38 @@ public class Health : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if(regen && degen)
+        {
+            regen = degen = false;
+        }
+
         if (regen)
         {
             time++;
-            if(time % 50 == 0)
+            if(time % regenRate == 0)
             {
                 currentHealth++;
             }
         }
+        else if (degen)
+        {
+            time++;
+            if(time % degenRate == 0)
+            {
+                currentHealth--;
+            }
+        }
+
+        if(invulnerabilityTimer > 0)
+        {
+            invulnerable = true;
+        }
+        else
+        {
+            invulnerable = false;
+        }
+
         if(currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
@@ -33,6 +60,9 @@ public class Health : MonoBehaviour {
 
     public void Damage(int damage)
     {
-        currentHealth -= damage;
+        if (invulnerable)
+        {
+            currentHealth -= damage;
+        }
     }
 }
