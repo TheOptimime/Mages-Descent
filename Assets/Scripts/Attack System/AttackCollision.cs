@@ -216,19 +216,23 @@ public class AttackCollision : MonoBehaviour
                     }
                 }
 
-                float distance = _as.usingFighter.vibrationSphere.transform.position.x - transform.position.x;
+                if (_as.usingFighter.vibrationSphere.bounds.Contains(transform.position))
+                {
+                    float distance = _as.usingFighter.vibrationSphere.transform.position.x - transform.position.x;
 
-                if (distance > 0)
-                {
-                    _as.usingFighter.ShakeCamera(0.5f, Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance / 2)));
-                    _as.usingFighter.SetVibration((Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance / 2)))/100, (Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance)))/100);
+                    if (distance > 0)
+                    {
+                        _as.usingFighter.ShakeCamera(0.5f, Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance / 2)));
+                        _as.usingFighter.SetVibration((Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance / 2))) / 100, (Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance))) / 100);
+                    }
+                    else if (distance < 0)
+                    {
+
+                        _as.usingFighter.ShakeCamera(0.5f, Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance / 2)));
+                        _as.usingFighter.SetVibration((Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance / 2))) / 100, (Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance))) / 100);
+                    }
                 }
-                else if (distance < 0)
-                {
-                    
-                    _as.usingFighter.ShakeCamera(0.5f, Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance / 2)));
-                    _as.usingFighter.SetVibration((Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance / 2)))/100, (Mathf.Abs(Random.Range(0, (_as.attack.damage / 4) - (_as.attack.hitStun.cancelTime / 2)) - Mathf.Abs(distance)))/100);
-                }
+                
                 if (other.transform.tag == "Wall")
                 Destroy(gameObject, _as.attack.destroyTime);
             }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+#region
 [DisallowMultipleComponent]
 [RequireComponent(typeof(MoveSet))]
 [RequireComponent(typeof(InputHandler))]
@@ -11,6 +12,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(AilmentHandler))]
 [RequireComponent(typeof(UI_Health))]
+[RequireComponent(typeof(FighterAnimationScript))]
+#endregion
 public partial class Fighter : MonoBehaviour {
 
     #region Variables
@@ -20,6 +23,7 @@ public partial class Fighter : MonoBehaviour {
     SpellDatabase spellList;
 
     [HideInInspector] public int PlayerID;
+    [HideInInspector] public bool justLanded;
     public int comboCount;
     public float comboTimer, comboTime, defaultComboTime = 4;
     public bool attackIsInQueue, attackInProgress, attackIsSpecialHeld;
@@ -41,9 +45,9 @@ public partial class Fighter : MonoBehaviour {
 
     public float runSpeed = 40f;
 
-    [HideInInspector] public MoveSet moveset;
+    public int maxNumberOfJumps;
 
-    public int jumpCount;
+    [HideInInspector] public MoveSet moveset;
 
     public bool jump = false, specialJump = false;
     public bool isDashing, recentlyAttacked;
@@ -92,9 +96,16 @@ public partial class Fighter : MonoBehaviour {
 
     RespawnManager rm;
 
+    FighterAnimationScript fas;
+
 	public GameObject dustParticle; 
 	public Transform dustParticleSpawn;
     #endregion
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     void Start()
     {
@@ -111,11 +122,13 @@ public partial class Fighter : MonoBehaviour {
         cameraFocusPointDefaultPosition = cameraFocusPoint.transform.position;
         playerOffset = transform.position;
         spellList = FindObjectOfType<SpellDatabase>();
-
+        fas = GetComponent<FighterAnimationScript>();
 
         input.player = this;
         input.spellDatabase = spellList;
-
+        fas.fighter = this;
+        fas.cc = cc;
+        fas.anim = anim;
 
 
                 
@@ -230,7 +243,7 @@ public partial class Fighter : MonoBehaviour {
         if (cc.m_Grounded && IsGrounded())
         {
             cc.m_doubleJumpUsed = doubleJumpUsed = false;
-            jumpCount = 0;
+            //jumpCount = 0;
             specialJump = false;
             isLeaping = isBackLeaping = isBackStepping = false;
             cc.m_AirControl = true;
@@ -290,17 +303,12 @@ public partial class Fighter : MonoBehaviour {
             else
             {
                 horizontalMove = 0;
-                anim.SetFloat("speed", 0);
             }
 
-            if (horizontalMove < 0 || horizontalMove > 0)
-            {
-                anim.SetFloat("speed", 1);
-            }
+            
         }
         else
         {
-            anim.SetFloat("speed", 0);
             horizontalMove = 0;
         }
         
@@ -342,7 +350,9 @@ public partial class Fighter : MonoBehaviour {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 0.8f);
         }
 
-        if(jump && jumpCount < 2 && rb.velocity.y < 0 && !recentlyAttacked)
+        print(jump);
+
+        if(jump && cc.m_jumpCount < 2 && rb.velocity.y < 0 && !recentlyAttacked)
         {
             rb.velocity = Vector2.zero;
         }
@@ -350,25 +360,24 @@ public partial class Fighter : MonoBehaviour {
         //move character
         if (!lockMovement && !specialJump)
         {
-            cc.Move(horizontalMove, jump && jumpCount < 2);
+            cc.Move(horizontalMove, jump && cc.m_jumpCount < 2);
 
-            if (jumpCount > 0 && jump)
+            if (cc.m_jumpCount > 0 && jump)
             {
                 doubleJumpUsed = true;
-                jumpCount++;
 
             }
 
             if (cc.m_doubleJumpEnabled)
             {
-                if (jumpCount < 1)
+                if (cc.m_jumpCount < 1)
                 {
                     
-                    jumpCount++;
+                    //jumpCount++;
                 }
             }
 
-            if(jumpCount > 1)
+            if(cc.m_jumpCount > 1)
             {
                 cc.m_doubleJumpUsed = doubleJumpUsed = true;
             }
@@ -406,7 +415,7 @@ public partial class Fighter : MonoBehaviour {
     public void Leap()
     {
         cc.m_AirControl = false;
-        jumpCount += 2;
+        //jumpCount += 2;
         specialJump = true;
         int direction = cc.m_FacingRight ? 1 : -1;
         cc.Move(forwardLeapSpeed * direction, jump, PlayerController2D.JumpType.Long);
@@ -416,7 +425,7 @@ public partial class Fighter : MonoBehaviour {
     public void BackLeap()
     {
         cc.m_AirControl = false;
-        jumpCount += 2;
+        //jumpCount += 2;
         specialJump = true;
         cc.Move(backwardLeapSpeed, jump, PlayerController2D.JumpType.Back);
         canDoubleJump = false;
@@ -425,7 +434,7 @@ public partial class Fighter : MonoBehaviour {
     public void BackStep()
     {
         cc.m_AirControl = false;
-        jumpCount += 2;
+        //jumpCount += 2;
         specialJump = true;
         cc.Move(backStepSpeed, jump, PlayerController2D.JumpType.Back);
         canDoubleJump = false;
@@ -498,7 +507,7 @@ public partial class Fighter : MonoBehaviour {
     }
 
 	public void isLanding() {
-		anim.SetBool ("isJumping", false);	
+			
 	
 	}
 

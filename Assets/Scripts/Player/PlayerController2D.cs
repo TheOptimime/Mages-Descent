@@ -14,12 +14,13 @@ public class PlayerController2D : MonoBehaviour
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
 	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
     public bool m_ceilingHold;
+    public int m_jumpCount;
     bool slowTurn;
 
 	const float k_GroundedRadius = .02f; // Radius of the overlap circle to determine if grounded
     public bool m_Grounded, m_lockDirection;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .02f; // Radius of the overlap circle to determine if the player can stand up
-	private Rigidbody2D m_Rigidbody2D;
+    public Rigidbody2D m_Rigidbody2D { get; private set; }
 
 	public bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public bool m_doubleJumpUsed, m_doubleJumpEnabled;
@@ -31,7 +32,7 @@ public class PlayerController2D : MonoBehaviour
 	public UnityEvent OnLandEvent;
     
 	private bool m_wasCrouching = false;
-	public Animator anim;
+	
 
 
     
@@ -64,7 +65,7 @@ public class PlayerController2D : MonoBehaviour
 		m_Grounded = false;
         
         m_Grounded = CheckGrounded();
-        
+        print("grounded: " + m_Grounded);
 
         
         Collider2D[] groundColliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -72,7 +73,9 @@ public class PlayerController2D : MonoBehaviour
 		{
 			if (groundColliders[i].gameObject != gameObject)
 			{
+                print("grounded is true");
 				m_Grounded = true;
+                m_jumpCount = 0;
 				if (!wasGrounded)
                 {
                     OnLandEvent.Invoke();
@@ -115,6 +118,11 @@ public class PlayerController2D : MonoBehaviour
     public void Move(float move, bool jump)
 	{
         print("Move Function A");
+
+        if (jump)
+        {
+            m_jumpCount++;
+        }
 
         if (m_ceilingHold && m_Grounded != true && jump)
         {
@@ -168,27 +176,11 @@ public class PlayerController2D : MonoBehaviour
 
 
 			
-			if (m_Rigidbody2D.velocity.y > 0) {
-				anim.SetInteger ("State", 1);
-				
-			} else 
-				anim.SetInteger ("State", 2);
-
-			if (m_Grounded) {
 			
-				anim.SetInteger ("State", 0);
-			}
 		
 
 		}
 	}
-
-            
-        
-
-        
-
-
 
 
 
@@ -196,6 +188,11 @@ public class PlayerController2D : MonoBehaviour
     public void Move(float move, bool jump, JumpType _jumpType)
     {
         print("Move Function B");
+
+        if (jump)
+        {
+            m_jumpCount++;
+        }
 
         //only control the player if grounded or airControl is turned on
         if (m_Grounded || m_AirControl)
