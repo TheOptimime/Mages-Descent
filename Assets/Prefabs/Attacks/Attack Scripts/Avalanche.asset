@@ -25,11 +25,11 @@ MonoBehaviour:
   xDisplacement: 0
   multiFireRate: 0.1
   speed: 18
-  lifetime: 4
+  lifetime: 2.3841858e+17
   delay: 1
   maxAttackDistance: 0
   chargeTime: 1
-  xPositionalDisplacement: 1
+  xPositionalDisplacement: 4
   hitStun:
     cancelTime: 0
     defaultTime: 0

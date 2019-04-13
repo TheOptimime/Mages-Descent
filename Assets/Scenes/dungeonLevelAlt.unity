@@ -1684,7 +1684,7 @@ PrefabInstance:
         type: 3}
       propertyPath: AttackList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 852eb7ff28eff4247aee9089ad89cf57,
+      objectReference: {fileID: 11400000, guid: c5c719c0e059cff4881810859c79448e,
         type: 2}
     - target: {fileID: 6221270546130274753, guid: cf3973b7033944c46bf596b25b715b27,
         type: 3}
@@ -19241,11 +19241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c9561e63f69746adfadfcf7e3f19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  knockback: {x: -2, y: 0}
-  hitstun:
-    cancelTime: 0.5
-    defaultTime: 1
 --- !u!58 &1256249606
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24514,7 +24509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1593554556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25864,11 +25859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c9561e63f69746adfadfcf7e3f19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  knockback: {x: -2, y: 0}
-  hitstun:
-    cancelTime: 0.5
-    defaultTime: 1
 --- !u!58 &1664591322
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29077,11 +29067,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c9561e63f69746adfadfcf7e3f19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  knockback: {x: -17.34, y: 3.63}
-  hitstun:
-    cancelTime: 3.44
-    defaultTime: 5.06
 --- !u!1 &1837384335
 GameObject:
   m_ObjectHideFlags: 0
@@ -30719,7 +30704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb135d1674bbff3499e78af060b811f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player2Cam: {fileID: 6980309879214712957}
 --- !u!1 &1947862917
 GameObject:
   m_ObjectHideFlags: 0
@@ -31763,11 +31747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c9561e63f69746adfadfcf7e3f19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  knockback: {x: -2, y: 0}
-  hitstun:
-    cancelTime: 0.5
-    defaultTime: 1
 --- !u!58 &2017963211
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32000,11 +31979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c9561e63f69746adfadfcf7e3f19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  knockback: {x: -2, y: 0}
-  hitstun:
-    cancelTime: 0.5
-    defaultTime: 1
 --- !u!58 &2030873212
 CircleCollider2D:
   m_ObjectHideFlags: 0
