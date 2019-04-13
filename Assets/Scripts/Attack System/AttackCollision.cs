@@ -181,7 +181,7 @@ public class AttackCollision : MonoBehaviour
             }
             else if (other.transform.tag == "Ground" || other.transform.tag == "Wall")
             {
-                if (!_as.attack.bounces)
+                if (!_as.attack.bounces || _as.bounceCount > _as.attack.bounceCount)
                 {
                     if (_as.followUpAttack != null)
                     {
@@ -227,26 +227,22 @@ public class AttackCollision : MonoBehaviour
                 {
                     if (_as.attack.attackPath == Attack.AttackPath.Meteor)
                     {
-                        RaycastHit2D raycastHit2D;
-                        if(Physics2D.Raycast(transform.position, Vector2.right, _as.attack.spriteAnimation.GetComponentInChildren<Collider2D>().bounds.extents.x) || Physics2D.Raycast(transform.position, Vector2.right, -_as.attack.spriteAnimation.GetComponentInChildren<Collider2D>().bounds.extents.x))
-                        {
-                            _as.direction *= -1;
-                            _as.speed = _as.attack.speed * _as.bounceCount;
-
-                            _as.bounceCount++;
-                        }
-                        
-
                         if (other.transform.tag == "Ground")
                         {
-                            _as.StartNextAttack(_as.followUpAttack);
+                            _as.ySpeed = -(_as.ySpeed / 3);
+                            _as.xSpeed = Mathf.Abs(_as.xSpeed / 3);
+                            _as.rb.gravityScale = _as.bounceCount;
 
+                            _as.bounceCount++;
+                            
                         }
                         else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast)
                         {
-                            _as.StartNextAttack(_as.followUpAttack);
+                            _as.direction *= -1;
+                            //_as.xSpeed = _as.attack.speed * _as.bounceCount;
+
+                            _as.bounceCount++;
                         }
-                        Destroy(this.gameObject);
 
 
                         if (pillarParticle != null)
@@ -272,6 +268,10 @@ public class AttackCollision : MonoBehaviour
                                 _as.StartNextAttack(_as.followUpAttack);
                             }
                             //Destroy(this.gameObject);
+                        }
+                        else
+                        {
+
                         }
                     }
                 }

@@ -10,7 +10,7 @@ public class AttackScript : MonoBehaviour {
     public Attack attack;
     [HideInInspector] public string user;
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     [HideInInspector] public float delay;
     public bool startDelayPassed;
@@ -36,13 +36,17 @@ public class AttackScript : MonoBehaviour {
 
     int castingPlayer;
     float boxColliderSize = 0.01f;
-    public float speed;
+    public float xSpeed, ySpeed;
     public int bounceCount;
     public GameObject followUpAttack;
 
     public Fighter usingFighter;
     public MeleeHitboxTrigger mht;
-    
+
+    bool velocityOn;
+
+    public float lifetime;
+    public float velocityDiv;
 
     void Start()
     {
@@ -56,7 +60,8 @@ public class AttackScript : MonoBehaviour {
 
         sr = attack.spriteAnimation.GetComponent<SpriteRenderer>();
 
-        speed = attack.speed;
+        lifetime = attack.lifetime;
+        xSpeed = attack.speed;
 
         if(attack.attackType == Attack.AttackType.Melee)
         {
@@ -65,7 +70,7 @@ public class AttackScript : MonoBehaviour {
 
         if (attack.bounces)
         {
-            attack.lifetime *= attack.bounceCount + 1;
+            lifetime *= attack.bounceCount + 1;
         }
         
         
@@ -97,10 +102,12 @@ public class AttackScript : MonoBehaviour {
             if (attack.attackPath == Attack.AttackPath.Meteor)
             {
                 sprite.transform.Rotate(new Vector3(0, 0, -45));
+                ySpeed = xSpeed;
             }
             else if(attack.attackPath == Attack.AttackPath.CrashDown)
             {
                 sprite.transform.Rotate(new Vector3(0, 0, -90));
+                ySpeed = xSpeed;
             }
         }
         
@@ -134,6 +141,11 @@ public class AttackScript : MonoBehaviour {
     void Update()
     {
         time += Time.deltaTime;
+
+        if(time % velocityDiv == 0)
+        {
+            velocityOn = false;
+        }
 
         if(time > delay && startDelayPassed == false  && attack.hasSpecialChargeFunction != true || activatedByPlayer && startDelayPassed == false)
         {
@@ -188,32 +200,34 @@ public class AttackScript : MonoBehaviour {
                 {
                     if (attack.attackPath == Attack.AttackPath.Straight)
                     {
-                        rb.velocity = new Vector2(speed * direction, 0);
+                        rb.velocity = new Vector2(xSpeed * direction, 0);
                     }
                     else if (attack.attackPath == Attack.AttackPath.Meteor)
                     {
-                        rb.velocity = new Vector2(speed * direction, -speed);
+                        if(velocityOn)
+                            rb.velocity = new Vector2(xSpeed * direction, -ySpeed);
                     }
                     else if (attack.attackPath == Attack.AttackPath.CrashDown)
                     {
-                        rb.velocity = new Vector2(0, -speed);
+                        if (velocityOn)
+                            rb.velocity = new Vector2(0, -ySpeed);
                     }
                     else if (attack.attackPath == Attack.AttackPath.SineWave)
                     {
-                        rb.velocity = new Vector2(speed * direction, Mathf.Sin(Time.time * frequency) * magnitude);
+                        rb.velocity = new Vector2(xSpeed * direction, Mathf.Sin(Time.time * frequency) * magnitude);
                     }
                     else if(attack.attackPath == Attack.AttackPath.Curved)
                     {
-                        rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * speed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * speed)/10 * Time.fixedDeltaTime);
+                        rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * xSpeed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * ySpeed)/10 * Time.fixedDeltaTime);
                     }
                     else if(attack.attackPath == Attack.AttackPath.Homing)
                     {
                         if(usingFighter != null)
                         {
-                            rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, speed * Time.fixedDeltaTime));
+                            rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, ySpeed * Time.fixedDeltaTime));
                             print(rb.velocity);
 
-                            rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * speed;
+                            rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * ySpeed;
                         }
 
                     }
