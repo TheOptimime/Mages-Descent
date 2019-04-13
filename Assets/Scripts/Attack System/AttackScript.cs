@@ -36,10 +36,12 @@ public class AttackScript : MonoBehaviour {
 
     int castingPlayer;
     float boxColliderSize = 0.01f;
-
+    public float speed;
+    public int bounceCount;
     public GameObject followUpAttack;
 
     public Fighter usingFighter;
+    public MeleeHitboxTrigger mht;
     
 
     void Start()
@@ -53,6 +55,19 @@ public class AttackScript : MonoBehaviour {
         rb.gravityScale = 0;
 
         sr = attack.spriteAnimation.GetComponent<SpriteRenderer>();
+
+        speed = attack.speed;
+
+        if(attack.attackType == Attack.AttackType.Melee)
+        {
+            //mht = sprite
+        }
+
+        if (attack.bounces)
+        {
+            attack.lifetime *= attack.bounceCount + 1;
+        }
+        
         
         if(boxCol = GetComponentInChildren<BoxCollider2D>())
         {
@@ -131,6 +146,11 @@ public class AttackScript : MonoBehaviour {
 
             if (time > attack.lifetime)
             {
+                if(attack.attackType == Attack.AttackType.Melee)
+                {
+                    usingFighter.anim.SetInteger("jab", 0);
+                }
+
                 // destroy this object
                 if (attack.lifetime <= 0)
                 {
@@ -162,38 +182,38 @@ public class AttackScript : MonoBehaviour {
     {
         if (startDelayPassed || activatedByPlayer)
         {
-            if (attack != null)
+            if (attack != null && attack.attackType != Attack.AttackType.Melee)
             {
                 if (attack.attackType == Attack.AttackType.Blast || attack.attackType == Attack.AttackType.MultipleBlast)
                 {
                     if (attack.attackPath == Attack.AttackPath.Straight)
                     {
-                        rb.velocity = new Vector2(attack.speed * direction, 0);
+                        rb.velocity = new Vector2(speed * direction, 0);
                     }
                     else if (attack.attackPath == Attack.AttackPath.Meteor)
                     {
-                        rb.velocity = new Vector2(attack.speed * direction, -attack.speed);
+                        rb.velocity = new Vector2(speed * direction, -speed);
                     }
                     else if (attack.attackPath == Attack.AttackPath.CrashDown)
                     {
-                        rb.velocity = new Vector2(0, -attack.speed);
+                        rb.velocity = new Vector2(0, -speed);
                     }
                     else if (attack.attackPath == Attack.AttackPath.SineWave)
                     {
-                        rb.velocity = new Vector2(attack.speed * direction, Mathf.Sin(Time.time * frequency) * magnitude);
+                        rb.velocity = new Vector2(speed * direction, Mathf.Sin(Time.time * frequency) * magnitude);
                     }
                     else if(attack.attackPath == Attack.AttackPath.Curved)
                     {
-                        rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * attack.speed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * attack.speed)/10 * Time.fixedDeltaTime);
+                        rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * speed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * speed)/10 * Time.fixedDeltaTime);
                     }
                     else if(attack.attackPath == Attack.AttackPath.Homing)
                     {
                         if(usingFighter != null)
                         {
-                            rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, attack.speed * Time.fixedDeltaTime));
+                            rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, speed * Time.fixedDeltaTime));
                             print(rb.velocity);
 
-                            rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * attack.speed;
+                            rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * speed;
                         }
 
                     }

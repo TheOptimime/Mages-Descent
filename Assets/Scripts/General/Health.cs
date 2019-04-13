@@ -60,7 +60,7 @@ public class Health : MonoBehaviour {
 
     public void Damage(int damage)
     {
-        if (invulnerable)
+        if (!invulnerable)
         {
             currentHealth -= damage;
         }

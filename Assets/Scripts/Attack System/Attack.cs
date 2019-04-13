@@ -23,15 +23,21 @@ public class Attack : ScriptableObject{
     public float attackCharge;
     public bool hasSpecialChargeFunction, burstOnDestroy;
 
+    public bool bounces;
+
+    public int bounceCount;
     public int spellPoints;
 
     public Vector2 knockback;
+    public DoubleTime coolDown;
 
     [HideInInspector] public List<int> _joystickCommand;
 
     public Attack followUpAttack, simultaneousAttack;
 
     public GameObject spriteAnimation, attackBase;
+
+    public AnimationClip meleeAnimationReference;
     
 
     public enum AttackPath
@@ -44,6 +50,7 @@ public class Attack : ScriptableObject{
         Curved,
         Boomerang,
         Homing,
+        Screen,
         Custom
     }
 

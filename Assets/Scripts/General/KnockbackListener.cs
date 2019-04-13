@@ -55,8 +55,11 @@ public class KnockbackListener : MonoBehaviour {
         {
             case KnockbackRecipient.Player:
                 {
+                    print("Knocking back player: " + knockback);
                     _fighter.rb.velocity = Vector2.zero;
-                    _fighter.rb.AddForce(knockback, ForceMode2D.Impulse);
+                    //_fighter.cc.m_Velocity = knockback;
+                    print(_fighter.cc.m_Velocity);
+                    //_fighter.rb.AddForce(knockback, ForceMode2D.Impulse);
                 }
                 break;
 

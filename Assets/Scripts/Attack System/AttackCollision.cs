@@ -32,6 +32,11 @@ public class AttackCollision : MonoBehaviour
             {
                 other.gameObject.GetComponent<Health>().Damage(_as.attack.damage);
 
+                if (other.transform.tag == "Player")
+                {
+                    other.gameObject.GetComponent<Fighter>().recentlyAttacked = true;
+                }
+
                 KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
                 Vector2 finalKnockback = _as.attack.knockback;
 
@@ -176,45 +181,101 @@ public class AttackCollision : MonoBehaviour
             }
             else if (other.transform.tag == "Ground" || other.transform.tag == "Wall")
             {
-                if(_as.followUpAttack != null)
+                if (!_as.attack.bounces)
+                {
+                    if (_as.followUpAttack != null)
+                    {
+                        if (_as.attack.attackPath == Attack.AttackPath.Meteor)
+                        {
+                            if (other.transform.tag == "Ground")
+                            {
+                                _as.StartNextAttack(_as.followUpAttack);
+
+                            }
+                            else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast)
+                            {
+                                _as.StartNextAttack(_as.followUpAttack);
+                            }
+                            Destroy(this.gameObject);
+                            print("destroy");
+
+                            if (pillarParticle != null)
+                                Instantiate(pillarParticle, transform.position, Quaternion.identity);
+
+                        }
+                    }
+
+
+                    if (_as.attack.attackType == Attack.AttackType.Blast)
+                    {
+                        if (_as.attack.followUpAttack != null)
+                        {
+                            if (_as.attack.elementEffect == Attack.ElementEffect.Burst)
+                            {
+                                _as.StartNextAttack(_as.followUpAttack);
+                            }
+                            else if (_as.attack.followUpType == Attack.FollowUpType.Auto)
+                            {
+                                // Automatically Starts Next Attack
+                                _as.StartNextAttack(_as.followUpAttack);
+                            }
+                            //Destroy(this.gameObject);
+                        }
+                    }
+                }
+                else if (_as.attack.bounces)
                 {
                     if (_as.attack.attackPath == Attack.AttackPath.Meteor)
                     {
+                        RaycastHit2D raycastHit2D;
+                        if(Physics2D.Raycast(transform.position, Vector2.right, _as.attack.spriteAnimation.GetComponentInChildren<Collider2D>().bounds.extents.x) || Physics2D.Raycast(transform.position, Vector2.right, -_as.attack.spriteAnimation.GetComponentInChildren<Collider2D>().bounds.extents.x))
+                        {
+                            _as.direction *= -1;
+                            _as.speed = _as.attack.speed * _as.bounceCount;
+
+                            _as.bounceCount++;
+                        }
+                        
+
                         if (other.transform.tag == "Ground")
                         {
                             _as.StartNextAttack(_as.followUpAttack);
-                            
+
                         }
                         else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast)
                         {
                             _as.StartNextAttack(_as.followUpAttack);
                         }
                         Destroy(this.gameObject);
-						print ("destroy");
 
-                        if(pillarParticle != null)
-						Instantiate (pillarParticle, transform.position, Quaternion.identity);
 
+                        if (pillarParticle != null)
+                        {
+                            // Whatever this is
+                            Instantiate(pillarParticle, transform.position, Quaternion.identity);
+                        }
+                    }
+                    
+
+
+                    if (_as.attack.attackType == Attack.AttackType.Blast)
+                    {
+                        if (_as.attack.followUpAttack != null)
+                        {
+                            if (_as.attack.elementEffect == Attack.ElementEffect.Burst)
+                            {
+                                _as.StartNextAttack(_as.followUpAttack);
+                            }
+                            else if (_as.attack.followUpType == Attack.FollowUpType.Auto)
+                            {
+                                // Automatically Starts Next Attack
+                                _as.StartNextAttack(_as.followUpAttack);
+                            }
+                            //Destroy(this.gameObject);
+                        }
                     }
                 }
                 
-
-                if (_as.attack.attackType == Attack.AttackType.Blast)
-                {
-                    if (_as.attack.followUpAttack != null)
-                    {
-                        if (_as.attack.elementEffect == Attack.ElementEffect.Burst)
-                        {
-                            _as.StartNextAttack(_as.followUpAttack);
-                        }
-                        else if (_as.attack.followUpType == Attack.FollowUpType.Auto)
-                        {
-                            // Automatically Starts Next Attack
-                            _as.StartNextAttack(_as.followUpAttack);
-                        }
-                        //Destroy(this.gameObject);
-                    }
-                }
 
                 if (_as.usingFighter.vibrationSphere.bounds.Contains(transform.position))
                 {
@@ -236,6 +297,11 @@ public class AttackCollision : MonoBehaviour
                 if (other.transform.tag == "Wall")
                 Destroy(gameObject, _as.attack.destroyTime);
             }
+            else if(other.transform.tag == "SpellGate")
+            {
+                Destroy(gameObject);
+            }
+
         }
 
     }
@@ -248,6 +314,11 @@ public class AttackCollision : MonoBehaviour
             {
                 // deal damage at a rate [if(time % rate)]
                 other.gameObject.GetComponent<Health>().Damage(_as.attack.damage);
+
+                if(other.transform.tag == "Player")
+                {
+                    other.gameObject.GetComponent<Fighter>().recentlyAttacked = true;
+                }
 
                 KnockbackListener knockbackScript = other.gameObject.GetComponent<KnockbackListener>();
                 knockbackScript.SetHitstun(_as.attack.hitStun);

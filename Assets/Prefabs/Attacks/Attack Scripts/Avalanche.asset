@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aba337f66310624c922f65cd40c0a20, type: 3}
+  m_Name: Avalanche
+  m_EditorClassIdentifier: 
+  name: Avalanche
+  description: 'Ah Valan Che
+
+'
+  damage: 8
+  multiFireCount: 12
+  attackLength: 0.2
+  animationLength: 0
+  animationCancelLength: 0
+  destroyTime: 0
+  xDisplacement: 0
+  multiFireRate: 0.1
+  speed: 18
+  lifetime: 4
+  delay: 1
+  maxAttackDistance: 0
+  chargeTime: 1
+  xPositionalDisplacement: 1
+  hitStun:
+    cancelTime: 0
+    defaultTime: 0
+  attackCharge: 2
+  hasSpecialChargeFunction: 0
+  burstOnDestroy: 0
+  bounces: 1
+  bounceCount: 0
+  spellPoints: 0
+  knockback: {x: 20, y: 20}
+  coolDown:
+    cancelTime: 2.3
+    defaultTime: 3
+  _joystickCommand: 
+  followUpAttack: {fileID: 11400000, guid: d1489923ee699cd4c9cc96d14db037ef, type: 2}
+  simultaneousAttack: {fileID: 0}
+  spriteAnimation: {fileID: 160792, guid: 7e9a3591984cda1499dc675622a57b0b, type: 3}
+  attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
+    type: 3}
+  meleeAnimationReference: {fileID: 0}
+  attackPath: 3
+  keyPoints: []
+  attackType: 2
+  element: 2
+  elementEffect: 3
+  chargeType: 1
+  followUpType: 1
+  joystickCommand: 0

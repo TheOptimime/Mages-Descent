@@ -85,6 +85,8 @@ public class PlayerController2D : MonoBehaviour
 			}
 		}
 
+        //print(m_Velocity);
+
     }
 
     public void CeilingCling()
@@ -135,7 +137,7 @@ public class PlayerController2D : MonoBehaviour
             if (m_Grounded != true && m_Rigidbody2D.velocity.y == 0 && !jump)
             {
                 //print("should fall");
-                m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_Rigidbody2D.gravityScale);
+                //m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_Rigidbody2D.gravityScale);
             }
         }
         

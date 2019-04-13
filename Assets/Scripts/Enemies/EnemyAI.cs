@@ -29,6 +29,7 @@ public class EnemyAI : AI {
 
     public EnemyState enemyState;
 
+    GameObject AttackHitbox;
 
     public bool respawnEnabled;
 
@@ -81,7 +82,7 @@ public class EnemyAI : AI {
     }
 
 
-    void Update() {
+    public virtual void Update() {
 
         UpdateEdgeDetection();
 
@@ -96,6 +97,8 @@ public class EnemyAI : AI {
         {
             case (EnemyState.Idle):
                 print("in idle");
+                anim.SetTrigger("Idle");
+
                 if (idleTimerSet != true)
                 {
                     idleTime = 0;
@@ -193,8 +196,8 @@ public class EnemyAI : AI {
                 float distanceFromPlayer = Mathf.Abs((transform.position - player.transform.position).magnitude);
                 float directionPlayerIsIn = -Mathf.Sign((transform.position - player.transform.position).magnitude);
 
-                //print("distance: " + distanceFromPlayer);
-                //print("attack range: " + attackRange);
+                anim.SetTrigger("Attacking");
+                
 
                 print(directionPlayerIsIn);
 
@@ -231,7 +234,7 @@ public class EnemyAI : AI {
                 break;
             case (EnemyState.Resting):
                 print("in resting");
-
+                anim.SetTrigger("Idle");
                 if (restTimerSet != true)
                 {
                     restTime = 0;
@@ -282,6 +285,7 @@ public class EnemyAI : AI {
                 if (enemyState == EnemyState.Idle || enemyState == EnemyState.Detecting || enemyState == EnemyState.Walking || enemyState != EnemyState.Resting && resting == false)
                 {
                     enemyState = EnemyState.Attacking;
+                    
                 }
             }
         }
@@ -443,5 +447,13 @@ public class EnemyAI : AI {
         }
     }
 
+    public void EnableAttackHitbox()
+    {
+        AttackHitbox.SetActive(true);
+    }
 
+    public void DisableAttackHitbox()
+    {
+        AttackHitbox.SetActive(false);
+    }
 }

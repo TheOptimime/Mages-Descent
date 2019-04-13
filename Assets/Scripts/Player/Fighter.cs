@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 #region
 [DisallowMultipleComponent]
@@ -27,6 +28,7 @@ public partial class Fighter : MonoBehaviour {
     public int comboCount;
     public float comboTimer, comboTime, defaultComboTime = 4;
     public bool attackIsInQueue, attackInProgress, attackIsSpecialHeld;
+    float vibrateLength;
 
     AttackScript specialHold;
     Attack attackInQueue;
@@ -36,6 +38,9 @@ public partial class Fighter : MonoBehaviour {
     InputHandler input;
     DoubleTime movementFreezeLength;
     public Vector2 recoveryVelocity;
+
+    public bool hasSword;
+    public bool isDead;
 
     Vector2 movePos;
 
@@ -71,7 +76,7 @@ public partial class Fighter : MonoBehaviour {
 
     [HideInInspector] public SpriteRenderer sr;
 
-    Animator anim;
+    public Animator anim;
 
     AudioSource audioSource;
 
@@ -90,6 +95,7 @@ public partial class Fighter : MonoBehaviour {
 
     public float castTime = 0;
     public float finishedCast = 1;
+    public bool respawnCalled;
 
     KnockbackListener knockbackListener;
     AilmentHandler ailmentHandler;
@@ -130,6 +136,20 @@ public partial class Fighter : MonoBehaviour {
         fas.cc = cc;
         fas.anim = anim;
 
+        /*
+        Fighter[] fighters = GameObject.FindObjectsOfType<Fighter>();
+
+        for(int i = 0; i < fighters.Length; i++)
+        {
+            if(fighters[i] == this)
+            {
+                if(PlayerID == fighters[i].PlayerID)
+                {
+                    Destroy(fighters[i]);
+                }
+            }
+        }
+        */
 
                 
         gm = FindObjectOfType<GameManager>();
@@ -144,132 +164,153 @@ public partial class Fighter : MonoBehaviour {
 
     void Update()
     {
-		
-        if(dabometer >= 100)
-        {
-            dabometer = 100;
+        vibrateLength -= Time.deltaTime;
 
-        }
-
-        if (recentlyAttacked)
+        if (vibrateLength <= 0)
         {
-            if (recoveryTimer > 0)
-            {
-                lockInput = lockMovement = true;
-                cc.m_lockDirection = true;
-
-                if (recoveryTime > recoveryTimer)
-                {
-                    //lockInput = lockMovement = false;
-                }
-                recoveryTimer -= Time.deltaTime;
-            }
-            else
-            {
-                recentlyAttacked = false;
-            }
-        }
-        else
-        {
-            if (movementFreezeLength.cancelTime > 0)
-            {
-                lockMovement = true;
-            }
-            else if (movementFreezeLength.cancelTime < 0)
-            {
-                lockMovement = false;
-                recentlyAttacked = false;
-            }
+            SetVibration(0);
         }
         
-        
-        if (recentlyAttacked && lockMovement != true)
-        {
-            // Player was just attacked
 
-            print("recovery time set: " + recoveryTimer);
-            recoveryTime = 0;
-            attackIsInQueue = false;
-            attackInQueue = null;
-            attackInProgress = false;
+        if (health.currentHealth <= 0 && respawnCalled != true)
+        {
+            print("dead");
+            isDead = true;
             lockMovement = true;
+            lockInput = true;
+            anim.SetBool("death", true);
+            respawnCalled = true;
+            StartCoroutine(SlowReload());
         }
-        else if (recentlyAttacked)
+
+        if (!isDead)
         {
-            print("recovering");
-            recoveryTimer -= Time.deltaTime;
-
-            if(recoveryTime > recoveryTimer)
+            if (dabometer >= 100)
             {
-                print("recovered");
+                dabometer = 100;
 
-                if (cc.m_Grounded)
+            }
+
+            if (recentlyAttacked)
+            {
+                if (recoveryTimer > 0)
                 {
-                    // Insert some lag time and stuff
-                    lockMovement = recentlyAttacked = false;
+                    lockInput = lockMovement = true;
+                    cc.m_lockDirection = true;
+
+                    if (recoveryTime > recoveryTimer)
+                    {
+                        //lockInput = lockMovement = false;
+                    }
+                    recoveryTimer -= Time.deltaTime;
                 }
                 else
                 {
-                    if (jump)
-                    {
-                        RecoveryJump();
-                    }
+                    recentlyAttacked = false;
                 }
-
-                
-                
             }
-        }
-        
-
-        if (!lockMovement)
-        {
-            Move();
-        }
-        else
-        {
-            //input.joystickPosition = 5;
-            //input.joystickRecord.Clear();
-        }
-        
-        isFacingRight = cc.m_FacingRight;
-
-        if(health.currentHealth <= 0)
-        {
-            Respawn();
-        }
-
-
-        if (cc.m_Grounded && IsGrounded())
-        {
-            cc.m_doubleJumpUsed = doubleJumpUsed = false;
-            //jumpCount = 0;
-            specialJump = false;
-            isLeaping = isBackLeaping = isBackStepping = false;
-            cc.m_AirControl = true;
-        }
-
-        if (attackIsInQueue)
-        {
-            if (!attackInProgress)
+            else
             {
+                if (movementFreezeLength.cancelTime > 0)
+                {
+                    lockMovement = true;
+                }
+                else if (movementFreezeLength.cancelTime < 0)
+                {
+                    lockMovement = false;
+                    recentlyAttacked = false;
+                }
+            }
 
+
+            //print(movementFreezeLength.cancelTime + " " + movementFreezeLength.defaultTime);
+
+
+            if (recentlyAttacked && lockMovement != true)
+            {
+                // Player was just attacked
+
+                print("recovery time set: " + recoveryTimer);
+                recoveryTime = 0;
+                attackIsInQueue = false;
+                attackInQueue = null;
+                attackInProgress = false;
+                lockMovement = true;
+            }
+            else if (recentlyAttacked)
+            {
+                print("recovering");
+                recoveryTimer -= Time.deltaTime;
+
+                if (recoveryTime > recoveryTimer)
+                {
+                    print("recovered");
+
+                    if (cc.m_Grounded)
+                    {
+                        // Insert some lag time and stuff
+                        lockMovement = recentlyAttacked = false;
+                    }
+                    else
+                    {
+                        if (jump)
+                        {
+                            RecoveryJump();
+                        }
+                    }
+
+
+
+                }
+            }
+
+
+            if (!lockMovement)
+            {
+                Move();
+            }
+            else
+            {
+                //input.joystickPosition = 5;
+                //input.joystickRecord.Clear();
+            }
+
+            isFacingRight = cc.m_FacingRight;
+
+
+            if (cc.m_Grounded && IsGrounded())
+            {
+                cc.m_doubleJumpUsed = doubleJumpUsed = false;
+                //jumpCount = 0;
+                specialJump = false;
+                isLeaping = isBackLeaping = isBackStepping = false;
+                cc.m_AirControl = true;
+            }
+
+            if (attackIsInQueue)
+            {
+                if (!attackInProgress)
+                {
+
+                }
+            }
+
+            movementFreezeLength.Decrement();
+            //print(movementFreezeLength.cancelTime);
+
+            //SetVibration((castTime / 100));
+            cc.m_lockDirection = lockMovement;
+            //print("Leaping: " + isLeaping + " BackStep: " + isBackStepping + "BackLeaping: " + isBackLeaping);
+
+            comboTime += Time.deltaTime;
+
+            if (comboTime > comboTimer)
+            {
+                comboCount = 0;
             }
         }
-
-        movementFreezeLength.Decrement();
-        //print(movementFreezeLength.cancelTime);
-
-        //SetVibration((castTime / 100));
-        cc.m_lockDirection = lockMovement;
-        //print("Leaping: " + isLeaping + " BackStep: " + isBackStepping + "BackLeaping: " + isBackLeaping);
-
-        comboTime += Time.deltaTime;
-
-        if (comboTime > comboTimer)
-        {
-            comboCount = 0;
-        }
+		
+        
 
         CameraShake();
     }
@@ -339,72 +380,75 @@ public partial class Fighter : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (rb.velocity.y < 0)
+        if (!isDead)
         {
-	
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1);
-
-        }
-        else if (rb.velocity.y > 0)
-        {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 0.8f);
-        }
-
-        print(jump);
-
-        if(jump && cc.m_jumpCount < 2 && rb.velocity.y < 0 && !recentlyAttacked)
-        {
-            rb.velocity = Vector2.zero;
-        }
-
-        //move character
-        if (!lockMovement && !specialJump)
-        {
-            cc.Move(horizontalMove, jump && cc.m_jumpCount < 2);
-
-            if (cc.m_jumpCount > 0 && jump)
+            if (rb.velocity.y < 0)
             {
-                doubleJumpUsed = true;
+
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1);
 
             }
-
-            if (cc.m_doubleJumpEnabled)
+            else if (rb.velocity.y > 0)
             {
-                if (cc.m_jumpCount < 1)
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 0.8f);
+            }
+
+            print(jump);
+
+            if (jump && cc.m_jumpCount < 2 && rb.velocity.y < 0 && !recentlyAttacked)
+            {
+                rb.velocity = Vector2.zero;
+            }
+
+            //move character
+            if (!lockMovement && !specialJump)
+            {
+                cc.Move(horizontalMove, jump && cc.m_jumpCount < 2);
+
+                if (cc.m_jumpCount > 0 && jump)
                 {
-                    
-                    //jumpCount++;
+                    doubleJumpUsed = true;
+
+                }
+
+                if (cc.m_doubleJumpEnabled)
+                {
+                    if (cc.m_jumpCount < 1)
+                    {
+
+                        //jumpCount++;
+                    }
+                }
+
+                if (cc.m_jumpCount > 1)
+                {
+                    cc.m_doubleJumpUsed = doubleJumpUsed = true;
+                }
+
+
+            }
+            else if (!lockMovement && specialJump)
+            {
+                if (isLeaping)
+                {
+                    print("is leaping");
+                    Leap();
+                }
+                else if (isBackLeaping)
+                {
+                    BackLeap();
+                }
+                else if (isBackStepping)
+                {
+                    BackStep();
                 }
             }
-
-            if(cc.m_jumpCount > 1)
-            {
-                cc.m_doubleJumpUsed = doubleJumpUsed = true;
-            }
-            
-            
         }
-        else if (!lockMovement && specialJump)
-        {
-            if (isLeaping)
-            {
-                print("is leaping");
-                Leap();
-            }
-            else if (isBackLeaping)
-            {
-                BackLeap();
-            }
-            else if (isBackStepping)
-            {
-                BackStep();
-            }
-        }
+        
 
         jump = false;
         horizontalMove = 0;
         
-
     }
 
     public bool IsGrounded()
@@ -453,6 +497,14 @@ public partial class Fighter : MonoBehaviour {
         print("l: " + leftMotor + " r: " + rightMotor);
     }
 
+    public void SetVibration(float leftMotor, float rightMotor, float vibrationLength)
+    {
+        input.vibrateLeftMotor = leftMotor;
+        input.vibrateRightMotor = rightMotor;
+
+        print("l: " + leftMotor + " r: " + rightMotor);
+    }
+
     private void CameraShake()
     {
        if (cameraShakeDuration > 0)
@@ -476,6 +528,8 @@ public partial class Fighter : MonoBehaviour {
     void Respawn()
     {
         transform.position = rm.activeSpawnPoint.position;
+        anim.SetBool("death", false);
+        respawnCalled = isDead = false;
         health.currentHealth = health.maxHealth;
     }
 
@@ -511,9 +565,20 @@ public partial class Fighter : MonoBehaviour {
 	
 	}
 
+    IEnumerator SlowReload()
+    {
+        yield return new WaitForSeconds(4);
+        Respawn();
+    }
+
 	public void particlePlayer() {
 		if (IsGrounded()) {
 			Instantiate (dustParticle, dustParticleSpawn.position, Quaternion.identity);
 		}
 	}
+
+    private void OnLevelWasLoaded(int level)
+    {
+        
+    }
 }

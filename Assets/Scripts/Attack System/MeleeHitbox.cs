@@ -8,7 +8,7 @@ public class MeleeHitbox : MonoBehaviour {
     Attack properties;
     float time;
     Collider2D col;
-    bool active;
+    public bool active;
     
     public MeleeHitbox(Attack baseAttack)
     {

@@ -12,35 +12,53 @@ public class PortalScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        ih = collision.gameObject.GetComponent<InputHandler>();
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if(ih != null)
+        if(collision.gameObject.tag == "Player")
         {
-            if (collision.gameObject.tag == "Player")
-            {
-                if (collision.gameObject.GetComponent<InputHandler>() == ih)
-                {
-                    if (ih.joystickPosition == 8)
-                    {
-                        timer += Time.deltaTime;
-                    }
-                }
-            }
-
-            if (timer >= 2.4f)
-            {
-                SceneManager.LoadScene(sceneNumber);
-            }
+            print("enter");
+            ih = collision.gameObject.GetComponent<InputHandler>();
+            print(ih);
         }
         
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            print("staying");
+            if (ih == null)
+            {
+                ih = collision.gameObject.GetComponent<InputHandler>();
+            }
+        }
+        
+        
+    }
+
+    private void Update()
+    {
+        if (ih != null)
+        {
+            if (ih.joystickPosition == 8)
+            {
+                timer += Time.deltaTime;
+            }
+
+            if (timer >= 0.4f)
+            {
+                SceneManager.LoadScene(sceneNumber);
+            }
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        ih = null;
-        timer = 0;
+        if(collision.gameObject.tag == "Player")
+        {
+            print("exited");
+            ih = null;
+            timer = 0;
+        }
+        
     }
 }

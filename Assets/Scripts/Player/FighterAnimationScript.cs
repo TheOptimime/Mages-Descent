@@ -10,44 +10,49 @@ public class FighterAnimationScript : MonoBehaviour
 
     private void Update()
     {
-        if (cc.m_Rigidbody2D.velocity.y < 0 && !cc.m_Grounded)
-        {
-            anim.SetInteger("State", 2);
-        }
+        
     }
 
     private void LateUpdate()
     {
 
-        if (cc.m_Grounded)
+        if (!fighter.isDead)
         {
-            anim.SetInteger("State", 0);
-        }
-        else if (cc.m_Rigidbody2D.velocity.y < 0 && !cc.m_Grounded)
-        {
-            anim.SetInteger("State", 2);
-        }
-        else if (cc.m_Rigidbody2D.velocity.y > 0)
-        {
-            anim.SetInteger("State", 1);
-        }
-        
+            if (cc.m_Grounded)
+            {
+                anim.SetInteger("State", 0);
+            }
+            else if (cc.m_Rigidbody2D.velocity.y < 0 && !cc.m_Grounded)
+            {
+                anim.SetInteger("State", 2);
+            }
+            else if (cc.m_Rigidbody2D.velocity.y > 0)
+            {
+                anim.SetInteger("State", 1);
+            }
 
-        
 
-        if(fighter.horizontalMove == 0)
-        {
-            anim.SetFloat("speed", 0);
+
+
+            if (fighter.horizontalMove == 0)
+            {
+                anim.SetFloat("speed", 0);
+            }
+            else
+            {
+                anim.SetFloat("speed", 1);
+            }
+
+            if (fighter.justLanded)
+            {
+                anim.SetBool("isJumping", false);
+            }
         }
         else
         {
-            anim.SetFloat("speed", 1);
+            //anim.SetTrigger("death");
         }
-
-        if (fighter.justLanded)
-        {
-            anim.SetBool("isJumping", false);
-        }
+        
         
     }
 }

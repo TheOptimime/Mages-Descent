@@ -1,22 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(SpellDatabase))]
 [RequireComponent(typeof(RespawnManager))]
 public class GameManager : MonoBehaviour {
 
+    public static GameManager instance;
+
     int frameCount, totalFrameCount;
     float betterFrameCount;
 
     float gameTimer;
-
+    
     GameObject[] players;
     RespawnManager rm;
 
-	// Use this for initialization
-	void Start () {
+    public GameObject mainPlayer;
+    public GameObject mainPlayerCamera;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    // Use this for initialization
+    void Start () {
+
+        if(instance == null)
+        {
+            instance = this;
+        }
+
+        if(instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+
+        mainPlayer = FindObjectOfType<Fighter>().gameObject;
+        if(mainPlayerCamera == null)
+        mainPlayerCamera = FindObjectOfType<Camera>().gameObject;
+
         players = GameObject.FindGameObjectsWithTag("Player");
         rm = GetComponent<RespawnManager>();
 
@@ -55,4 +81,36 @@ public class GameManager : MonoBehaviour {
             frameCount = 0;
         }
 	}
+
+    private void OnLevelWasLoaded(int level)
+    {
+        BGSwap();
+        mainPlayer.transform.position = GameObject.Find("SpawnPoint").transform.position;
+    }
+
+    void BGSwap()
+    {
+        foreach(Transform child in mainPlayerCamera.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        FindObjectOfType<ParallaxBackground>().parallaxCamera = mainPlayerCamera.GetComponent<ParallaxCamera>();
+
+        GameObject BG;
+
+        if (BG = GameObject.Find("BG_Stuff"))
+        {
+            print("BG Switch Type 1");
+            BG.transform.parent = mainPlayerCamera.transform;
+        }
+
+        if(BG != null)
+        {
+            print("not null");
+            BG.transform.parent = mainPlayerCamera.transform;
+            BG.transform.position = mainPlayer.transform.position;
+        }
+        
+    }
 }

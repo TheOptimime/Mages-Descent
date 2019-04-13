@@ -6,17 +6,11 @@ using UnityEngine.SceneManagement;
 public class startGame : MonoBehaviour {
 	public Animator transtitionAnim;
 	public string sceneName;
+    
 
-	// Use this for initialization
-	void Start () {
-		
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    void Update() {
 
-		if(Input.GetButtonDown("Submit")){
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetButtonDown("Submit")){
 			StartCoroutine (LoadScene());
 
 		}
@@ -26,7 +20,19 @@ public class startGame : MonoBehaviour {
 	IEnumerator LoadScene() {
 		transtitionAnim.SetTrigger ("end");
 		yield return new WaitForSeconds (1.5f);
-		SceneManager.LoadScene (sceneName);
+
+        // Fail-safe
+        if(SceneManager.GetSceneByName(sceneName).IsValid())
+        {
+            SceneManager.LoadScene (sceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        
+        
+		
 
 	}
 }

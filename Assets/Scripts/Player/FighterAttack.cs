@@ -34,7 +34,7 @@ public partial class Fighter {
             }
             else if (attack.attackType == Attack.AttackType.Melee)
             {
-
+                StartMeleeAttack(attack);
             }
             else if (attack.attackType == Attack.AttackType.Beam)
             {
@@ -52,7 +52,9 @@ public partial class Fighter {
         print("Cast projectile + " + attack.name);
         GameObject attackObject = new GameObject("Projectile");
         AttackScript spell = attackObject.AddComponent<AttackScript>();
-		anim.SetTrigger ("cast");
+        
+        anim.SetInteger("element", (int)attack.element);
+        anim.SetTrigger("cast");
 
         cc.FreezeVelocity();
         // Cast animation goes here... probably
@@ -107,14 +109,35 @@ public partial class Fighter {
                 StartAttack(attack.simultaneousAttack);
             }
         }
-        movementFreezeLength = new DoubleTime(attack.attackLength, attack.attackLength);
 
-        print("xDisp: " + attack.xDisplacement + comboCount);
+        if (attack.coolDown.defaultTime == 0 && attack.coolDown.cancelTime == 0)
+        {
+            movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
+        }
+        else
+        {
+            //movementFreezeLength = new DoubleTime();
+            movementFreezeLength = attack.coolDown;
+        }
+        //movementFreezeLength = new DoubleTime(attack.attackLength, attack.attackLength);
+
+        //print("xDisp: " + attack.xDisplacement + comboCount);
 
         if (attack.xDisplacement + comboCount != 0)
         {
             //rb.AddForce(new Vector2(rb.velocity.x + attack.xDisplacement * spell.direction, rb.velocity.y), ForceMode2D.Impulse);
-            rb.velocity = new Vector2((rb.velocity.x + attack.xDisplacement + comboCount) * spell.direction, rb.velocity.y);
+            if(attack.attackType != Attack.AttackType.MultipleBlast)
+            {
+                rb.velocity = new Vector2( Mathf.Abs(rb.velocity.x + attack.xDisplacement + comboCount) * -spell.direction, rb.velocity.y);
+            }
+            else
+            {
+                if(attack.attackPath == Attack.AttackPath.Straight)
+                {
+                    //rb.velocity = new Vector2(rb.velocity.x)
+                }
+            }
+            
             print("force applied");
         }
     }
@@ -122,8 +145,34 @@ public partial class Fighter {
     public void StartMeleeAttack(Attack attack)
     {
         cc.FreezeVelocity();
-        hitbox_Middle = new MeleeHitbox(attack);
-        hitbox_Middle.Activate();
+        
+
+        if(attack.name == "Jab 1")
+        {
+            // light
+            anim.SetInteger("jab", 1);
+            attack.lifetime = attack.meleeAnimationReference.length;
+        }
+        else if(attack.name == "Jab 2")
+        {
+            //mid
+            anim.SetInteger("jab", 1);
+        }
+
+
+        GameObject attackObject = new GameObject("Melee");
+        AttackScript sword = attackObject.AddComponent<AttackScript>();
+
+        print(attack.name);
+        sword.flipped = !cc.m_FacingRight;
+        sword.attack = attack;
+        sword.origin = transform.position;
+        sword.usingFighter = this;
+        sword.attack.lifetime = attack.meleeAnimationReference.length;
+        sword.mht = sword.attack.spriteAnimation.GetComponentInChildren<MeleeHitboxTrigger>();
+        sword.mht.hitbox = hitbox_Middle;
+        
+        //hitbox_Middle.Activate();
 
         if (attack.xDisplacement + comboCount != 0)
         {
@@ -145,7 +194,11 @@ public partial class Fighter {
 
             if (attack.chargeType == Attack.ChargeType.Instant)
             {
-                UseAttack(attack);
+                if(movementFreezeLength.cancelTime <= 0)
+                {
+                    print(movementFreezeLength.cancelTime + " " + movementFreezeLength.defaultTime);
+                    UseAttack(attack);
+                }
                 return;
             }
 
@@ -169,7 +222,16 @@ public partial class Fighter {
         {
             if (!recentlyAttacked)
             {
-                movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
+                if (attack.coolDown.defaultTime == 0 && attack.coolDown.cancelTime == 0)
+                {
+                    movementFreezeLength = new DoubleTime(attack.animationCancelLength, attack.animationLength);
+                }
+                else
+                {
+                    //movementFreezeLength = new DoubleTime();
+                    movementFreezeLength = attack.coolDown;
+                }
+                
                 if (attack.attackPath == Attack.AttackPath.Meteor)
                 {
                     attack.xPositionalDisplacement = Random.Range(0, 5);
@@ -230,7 +292,12 @@ public partial class Fighter {
                 if (castTime >= attackInQueue.chargeTime)
                 {
                     print("attack cast + " +attackInQueue.name);
-                    UseAttack(attackInQueue);
+                    if(movementFreezeLength.cancelTime <= 0)
+                    {
+                        print(movementFreezeLength.cancelTime + " " + movementFreezeLength.defaultTime);
+                        UseAttack(attackInQueue);
+                    }
+                    
                 }
             }
             else

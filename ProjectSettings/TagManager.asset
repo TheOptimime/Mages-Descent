@@ -22,10 +22,10 @@ TagManager:
   - Character
   - Background
   - midground
-  - 
-  - 
-  - 
-  - 
+  - EnemyCol
+  - Enemy
+  - CamLayerA
+  - CamLayerB
   - 
   - 
   - 
