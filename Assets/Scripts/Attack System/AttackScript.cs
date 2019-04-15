@@ -43,7 +43,7 @@ public class AttackScript : MonoBehaviour {
     public Fighter usingFighter;
     public MeleeHitboxTrigger mht;
 
-    bool velocityOn;
+    public bool velocityOn;
 
     public float lifetime;
     public float velocityDiv;
@@ -60,6 +60,7 @@ public class AttackScript : MonoBehaviour {
 
         sr = attack.spriteAnimation.GetComponent<SpriteRenderer>();
 
+        velocityDiv = attack.velocityDiv;
         lifetime = attack.lifetime;
         xSpeed = attack.speed;
 
@@ -142,10 +143,22 @@ public class AttackScript : MonoBehaviour {
     {
         time += Time.deltaTime;
 
-        if(time % velocityDiv == 0)
+        if (attack.bounces)
         {
-            velocityOn = false;
+            if(time % velocityDiv == 0)
+            {
+                velocityOn = true;
+            }
+            else
+            {
+                velocityOn = false;
+            }
         }
+        else
+        {
+            velocityOn = true;
+        }
+        
 
         if(time > delay && startDelayPassed == false  && attack.hasSpecialChargeFunction != true || activatedByPlayer && startDelayPassed == false)
         {
@@ -214,11 +227,17 @@ public class AttackScript : MonoBehaviour {
                     }
                     else if (attack.attackPath == Attack.AttackPath.SineWave)
                     {
-                        rb.velocity = new Vector2(xSpeed * direction, Mathf.Sin(Time.time * frequency) * magnitude);
+                        rb.velocity = new Vector2(xSpeed * direction, Mathf.Sin(time * frequency) * magnitude * 50);
+                    }
+                    else if(attack.attackPath == Attack.AttackPath.Circle)
+                    {
+                        rb.velocity = new Vector2(xSpeed * direction * Mathf.Cos(time * frequency), Mathf.Sin(time * frequency) * magnitude * 50 *ySpeed);
                     }
                     else if(attack.attackPath == Attack.AttackPath.Curved)
                     {
-                        rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * xSpeed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * ySpeed)/10 * Time.fixedDeltaTime);
+                        print("curve");
+                        //rb.velocity = new Vector2(Mathf.Abs(-0.7f * (7.6f + transform.position.y + 4.3f) * xSpeed * Time.fixedDeltaTime) * direction, (0.7f * ((transform.position.x * transform.position.x) + 7.6f * transform.position.x + 4.3f) * ySpeed)/10 * Time.fixedDeltaTime);
+                        rb.velocity = new Vector2(xSpeed * direction * Mathf.Cos(time * frequency), Mathf.Sin(time * frequency) * magnitude * 50);
                     }
                     else if(attack.attackPath == Attack.AttackPath.Homing)
                     {
@@ -230,6 +249,10 @@ public class AttackScript : MonoBehaviour {
                             rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * ySpeed;
                         }
 
+                    }
+                    else if(attack.attackPath == Attack.AttackPath.Boomerang)
+                    {
+                        rb.velocity = new Vector2(xSpeed * direction * Mathf.Cos(time * frequency), Mathf.Sin(time * frequency) * magnitude * 50 * ySpeed);
                     }
                 }
                 else if(attack.attackType == Attack.AttackType.Beam)

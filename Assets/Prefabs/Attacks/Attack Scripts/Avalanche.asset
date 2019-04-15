@@ -29,15 +29,16 @@ MonoBehaviour:
   delay: 1
   maxAttackDistance: 0
   chargeTime: 1
-  xPositionalDisplacement: 4
+  xPositionalDisplacement: 0
   hitStun:
     cancelTime: 0
     defaultTime: 0
-  attackCharge: 2
+  attackCharge: 1
   hasSpecialChargeFunction: 0
   burstOnDestroy: 0
-  bounces: 1
-  bounceCount: 4
+  bounces: 0
+  bounceCount: 50
+  velocityDiv: 580
   spellPoints: 0
   knockback: {x: 20, y: 20}
   coolDown:

@@ -10,51 +10,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0aba337f66310624c922f65cd40c0a20, type: 3}
-  m_Name: PSI Volley
+  m_Name: Ring of Fire
   m_EditorClassIdentifier: 
-  name: Avalanche
-  description: 'Ah Valan Che
-
-'
-  damage: 3
-  multiFireCount: 6
-  attackLength: 0.2
+  name: Ring of Fire
+  description: 
+  damage: 8
+  multiFireCount: 0
+  attackLength: 0
   animationLength: 0
   animationCancelLength: 0
   destroyTime: 0
   xDisplacement: 0
-  multiFireRate: 0.3
-  speed: 8
-  lifetime: 16
-  delay: 1.4
+  multiFireRate: 0
+  speed: 32
+  lifetime: 6
+  delay: 1
   maxAttackDistance: 0
   chargeTime: 0
-  xPositionalDisplacement: 4
+  xPositionalDisplacement: 0
   hitStun:
     cancelTime: 0
     defaultTime: 0
   attackCharge: 0
   hasSpecialChargeFunction: 0
   burstOnDestroy: 0
-  bounces: 1
-  bounceCount: 6
+  bounces: 0
+  bounceCount: 0
+  velocityDiv: 23.92
   spellPoints: 0
-  knockback: {x: 20, y: 20}
+  knockback: {x: 0, y: 0}
   coolDown:
-    cancelTime: 1
-    defaultTime: 1.2
+    cancelTime: 0.38
+    defaultTime: 0
   _joystickCommand: 
   followUpAttack: {fileID: 0}
   simultaneousAttack: {fileID: 0}
-  spriteAnimation: {fileID: 121954, guid: c849c99816049e5458f41c3e3ccf118c, type: 3}
+  spriteAnimation: {fileID: 121798, guid: 672a9f8d9b8441b47a4cc0a5c3d60b7c, type: 3}
   attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
     type: 3}
   meleeAnimationReference: {fileID: 0}
-  attackPath: 3
+  attackPath: 5
   keyPoints: []
-  attackType: 2
-  element: 5
-  elementEffect: 5
+  attackType: 1
+  element: 1
+  elementEffect: 2
   chargeType: 0
-  followUpType: 1
+  followUpType: 0
   joystickCommand: 0

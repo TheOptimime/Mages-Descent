@@ -36,6 +36,7 @@ public class KnockbackListener : MonoBehaviour {
         {
             case KnockbackRecipient.Player:
                 {
+                    print("Player Hitstun set: " + hitstun.cancelTime + " , " + hitstun.defaultTime);
                     _fighter.SetHitstunTimer(hitstun);
                 }
                 break;
@@ -44,7 +45,6 @@ public class KnockbackListener : MonoBehaviour {
                 {
                     _ai.SetHitstunTimer(hitstun);
                 }
-
                 break;
         }
     }
@@ -58,8 +58,8 @@ public class KnockbackListener : MonoBehaviour {
                     print("Knocking back player: " + knockback);
                     _fighter.rb.velocity = Vector2.zero;
                     //_fighter.cc.m_Velocity = knockback;
-                    print(_fighter.cc.m_Velocity);
-                    //_fighter.rb.AddForce(knockback, ForceMode2D.Impulse);
+                    //print(_fighter.cc.m_Velocity);
+                    _fighter.rb.AddForce(knockback, ForceMode2D.Impulse);
                 }
                 break;
 

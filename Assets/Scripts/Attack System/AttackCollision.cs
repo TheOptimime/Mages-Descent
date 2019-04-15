@@ -22,7 +22,7 @@ public class AttackCollision : MonoBehaviour
                     {
                         if (temp == _as.usingFighter)
                         {
-                            Destroy(gameObject);
+                            Destroy(gameObject.gameObject);
                         }
                     }
                 }
@@ -154,14 +154,14 @@ public class AttackCollision : MonoBehaviour
                         }
                         else if (_as.usingFighter == _player && _as.attack.attackPath == Attack.AttackPath.Homing)
                         {
-                            Destroy(this.gameObject);
+                            Destroy(this.gameObject.gameObject);
                         }
                     }
 
 
                 }
 
-                if (_as.attack.attackType == Attack.AttackType.Blast)
+                if (_as.attack.attackType == Attack.AttackType.Blast || _as.attack.attackType == Attack.AttackType.MultipleBlast)
                 {
                     if (_as.attack.followUpAttack != null)
                     {
@@ -176,7 +176,7 @@ public class AttackCollision : MonoBehaviour
                 _as.usingFighter.IncrementComboChain(_as.attack);
                 _as.usingFighter.dabometer += Mathf.Abs(((_as.attack.damage + _as.attack.lifetime - _as.time)/2) + _as.usingFighter.comboCount);
 
-                Destroy(gameObject, _as.attack.destroyTime);
+                Destroy(gameObject.gameObject, _as.attack.destroyTime);
 
             }
             else if (other.transform.tag == "Ground" || other.transform.tag == "Wall")
@@ -192,11 +192,11 @@ public class AttackCollision : MonoBehaviour
                                 _as.StartNextAttack(_as.followUpAttack);
 
                             }
-                            else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast)
+                            else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast || _as.attack.followUpAttack.attackType != Attack.AttackType.MultipleBlast)
                             {
                                 _as.StartNextAttack(_as.followUpAttack);
                             }
-                            Destroy(this.gameObject);
+                            Destroy(this.gameObject.gameObject);
                             print("destroy");
 
                             if (pillarParticle != null)
@@ -206,7 +206,7 @@ public class AttackCollision : MonoBehaviour
                     }
 
 
-                    if (_as.attack.attackType == Attack.AttackType.Blast)
+                    if (_as.attack.attackType == Attack.AttackType.Blast || _as.attack.attackType == Attack.AttackType.MultipleBlast)
                     {
                         if (_as.attack.followUpAttack != null)
                         {
@@ -232,11 +232,11 @@ public class AttackCollision : MonoBehaviour
                             _as.ySpeed = -(_as.ySpeed / 3);
                             _as.xSpeed = Mathf.Abs(_as.xSpeed / 3);
                             _as.rb.gravityScale = _as.bounceCount;
-
+                            _as.velocityOn = true;
                             _as.bounceCount++;
                             
                         }
-                        else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast)
+                        else if (_as.attack.followUpAttack.attackType != Attack.AttackType.Blast || _as.attack.followUpAttack.attackType != Attack.AttackType.MultipleBlast)
                         {
                             _as.direction *= -1;
                             //_as.xSpeed = _as.attack.speed * _as.bounceCount;
@@ -251,10 +251,17 @@ public class AttackCollision : MonoBehaviour
                             Instantiate(pillarParticle, transform.position, Quaternion.identity);
                         }
                     }
+                    else if(_as.attack.attackPath == Attack.AttackPath.CrashDown)
+                    {
+                        _as.ySpeed = -(_as.ySpeed / 3);
+                        _as.rb.gravityScale = _as.bounceCount;
+                        _as.velocityOn = true;
+                        _as.bounceCount++;
+                    }
                     
 
 
-                    if (_as.attack.attackType == Attack.AttackType.Blast)
+                    if (_as.attack.attackType == Attack.AttackType.Blast || _as.attack.attackType == Attack.AttackType.MultipleBlast)
                     {
                         if (_as.attack.followUpAttack != null)
                         {
@@ -267,11 +274,6 @@ public class AttackCollision : MonoBehaviour
                                 // Automatically Starts Next Attack
                                 _as.StartNextAttack(_as.followUpAttack);
                             }
-                            //Destroy(this.gameObject);
-                        }
-                        else
-                        {
-
                         }
                     }
                 }
@@ -295,11 +297,11 @@ public class AttackCollision : MonoBehaviour
                 }
                 
                 if (other.transform.tag == "Wall")
-                Destroy(gameObject, _as.attack.destroyTime);
+                Destroy(gameObject.gameObject, _as.attack.destroyTime);
             }
             else if(other.transform.tag == "SpellGate")
             {
-                Destroy(gameObject);
+                Destroy(gameObject.gameObject);
             }
 
         }
@@ -308,6 +310,8 @@ public class AttackCollision : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        // Beam and multi-hit stuff go here
+
         if (_as.startDelayPassed || _as.activatedByPlayer)
         {
             if (other.transform.tag == "Enemy" && other.gameObject.name != _as.user || other.transform.tag == "Player" && other.gameObject.name != _as.user)
@@ -338,12 +342,12 @@ public class AttackCollision : MonoBehaviour
                     }
                 }
 
-                Destroy(gameObject, _as.attack.destroyTime);
+                Destroy(gameObject.gameObject, _as.attack.destroyTime);
 
             }
             else if (other.transform.tag == "Ground" || other.transform.tag == "Wall")
             {
-                if (_as.attack.attackType == Attack.AttackType.Blast)
+                if (_as.attack.attackType == Attack.AttackType.Blast || _as.attack.attackType == Attack.AttackType.MultipleBlast)
                 {
                     if (_as.attack.followUpAttack != null)
                     {
@@ -361,7 +365,7 @@ public class AttackCollision : MonoBehaviour
                         }
                     }
                 }
-                Destroy(gameObject, _as.attack.destroyTime);
+                Destroy(gameObject.gameObject, _as.attack.destroyTime);
             }
         }
 
