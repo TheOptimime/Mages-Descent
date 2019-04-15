@@ -26,6 +26,7 @@ public class Attack : ScriptableObject{
     public bool bounces;
 
     public int bounceCount;
+    public float velocityDiv;
     public int spellPoints;
 
     public Vector2 knockback;
@@ -47,11 +48,19 @@ public class Attack : ScriptableObject{
         CrashDown,
         Meteor,
         SineWave,
+        Circle,
         Curved,
         Boomerang,
         Homing,
         Screen,
         Custom
+    }
+
+    public enum TargetType
+    {
+        None,
+        TargetStraight,
+        TargetLocal,
     }
 
     public enum AttackType

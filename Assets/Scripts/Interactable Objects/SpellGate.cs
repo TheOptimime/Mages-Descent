@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Health))]
 public class SpellGate : MonoBehaviour
 {
     public Attack.Element element;
     public Attack.AttackPath attackPath;
-    public int health;
+    public Health health;
 
     public bool requireElement, requireAttackPath, hasHealth;
 
@@ -15,9 +16,10 @@ public class SpellGate : MonoBehaviour
     {
         gameObject.tag = "SpellGate";
 
-        if(hasHealth && health == 0)
+        if(hasHealth && health.maxHealth == 0)
         {
             Debug.LogWarning("Health value not set. Setting to default value of 50");
+            health.currentHealth = health.maxHealth = 50;
         }
     }
 
@@ -26,7 +28,7 @@ public class SpellGate : MonoBehaviour
     {
         if (hasHealth)
         {
-            if(health <= 0)
+            if(health.currentHealth <= 0)
             {
                 Destroy(this.gameObject);
             }

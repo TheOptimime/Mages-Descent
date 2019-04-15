@@ -188,7 +188,7 @@ public partial class Fighter : MonoBehaviour {
             if (dabometer >= 100)
             {
                 dabometer = 100;
-
+                print("Dabometer Full");
             }
 
             if (recentlyAttacked)
@@ -541,7 +541,7 @@ public partial class Fighter : MonoBehaviour {
         {
             print("combo Inc");
             comboCount++;
-            comboTimer -= comboCount/64;
+            comboTimer -= (comboCount/64) * comboCount;
             comboTime = 0;
         }
         else if(comboTime > comboTimer)
@@ -560,7 +560,8 @@ public partial class Fighter : MonoBehaviour {
         recoveryTime = recovery.cancelTime;
     }
 
-	public void isLanding() {
+	public void isLanding()
+    {
 			
 	
 	}

@@ -38,6 +38,7 @@ MonoBehaviour:
   burstOnDestroy: 0
   bounces: 0
   bounceCount: 0
+  velocityDiv: 0
   spellPoints: 0
   knockback: {x: 20, y: 20}
   coolDown:
@@ -57,4 +58,4 @@ MonoBehaviour:
   elementEffect: 0
   chargeType: 0
   followUpType: 0
-  joystickCommand: 0
+  joystickCommand: 4
