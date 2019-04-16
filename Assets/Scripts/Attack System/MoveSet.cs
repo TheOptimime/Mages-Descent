@@ -38,7 +38,8 @@ public class MoveSet : MonoBehaviour {
         // Adds The Spellbooks to the Spellbook set
         for (int i = 0; i <= 2; i++)
         {
-            spellBookSet_A.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 6)));
+            //spellBookSet_A.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 6)));
+            spellBookSet_A.Add(new Item.Spellbook(Attack.Element.Fire));
             spellBookSet_B.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 6)));
             spellBookSet_C.Add(new Item.Spellbook((Attack.Element)Random.Range(1, 6)));
             
@@ -48,7 +49,7 @@ public class MoveSet : MonoBehaviour {
                 if(spellBookSet_A[i].element == a.element)
                 {
                     spellBookSet_A[i].attacks.Add(a);
-
+                    print(a.name);
                 }
 
                 if (spellBookSet_B[i].element == a.element)
@@ -61,11 +62,16 @@ public class MoveSet : MonoBehaviour {
                     spellBookSet_C[i].attacks.Add(a);
                 }
 
+                
             }
 
-            //print(spellBookSet_A[i].element + " " + spellBookSet_A[i].attacks.Count);
+            print(spellBookSet_A[i].element + " " + spellBookSet_A[i].attacks.Count);
             //print(spellBookSet_B[i].element + " " + spellBookSet_B[i].attacks.Count);
             //print(spellBookSet_C[i].element + " " + spellBookSet_C[i].attacks.Count);
+
+            //print(spellBookSet_A[i].attacks[i]);
+            //print(spellBookSet_B[i].attacks[i]);
+            //print(spellBookSet_C[i].attacks[i]);
         }
 
         

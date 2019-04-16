@@ -301,6 +301,10 @@ public class AttackCollision : MonoBehaviour
             }
             else if(other.transform.tag == "SpellGate")
             {
+                
+                if(other.transform.gameObject.GetComponent<SpellGate>().requireElement && other.transform.gameObject.GetComponent<SpellGate>().element == _as.attack.element)
+                    other.transform.gameObject.GetComponent<Health>().currentHealth -= _as.attack.damage;
+
                 Destroy(gameObject.gameObject);
             }
 
@@ -317,9 +321,17 @@ public class AttackCollision : MonoBehaviour
             if (other.transform.tag == "Enemy" && other.gameObject.name != _as.user || other.transform.tag == "Player" && other.gameObject.name != _as.user)
             {
                 // deal damage at a rate [if(time % rate)]
-                other.gameObject.GetComponent<Health>().Damage(_as.attack.damage);
+                Health health = other.gameObject.GetComponent<Health>();
+                health.Damage(_as.attack.damage);
 
-                if(other.transform.tag == "Player")
+                if (health.currentHealth < 0)
+                {
+                    // Player Spellbook EXP Gain
+                    
+                    //_as.usingFighter.moveset.spe
+                }
+
+                if (other.transform.tag == "Player")
                 {
                     other.gameObject.GetComponent<Fighter>().recentlyAttacked = true;
                 }

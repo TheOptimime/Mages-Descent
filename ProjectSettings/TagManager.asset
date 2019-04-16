@@ -9,6 +9,7 @@ TagManager:
   - Attack
   - Ground
   - hitbox
+  - SpellGate
   layers:
   - Default
   - TransparentFX

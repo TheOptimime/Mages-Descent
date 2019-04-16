@@ -16,6 +16,7 @@ MonoBehaviour:
   description: 
   damage: 8
   multiFireCount: 0
+  offset: {x: 6, y: 0}
   attackLength: 0
   animationLength: 0
   animationCancelLength: 0
@@ -56,4 +57,5 @@ MonoBehaviour:
   elementEffect: 2
   chargeType: 0
   followUpType: 0
-  joystickCommand: 0
+  targetType: 0
+  joystickCommand: 1

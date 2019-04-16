@@ -33,3 +33,22 @@ public struct MathC
         return (new Vector3(v1.x * v2.x, v1.y * v2.y, v1.z * v2.z));
     }
 }
+
+public struct SpellbookInfo
+{
+    public int spellBookSet, spellBook;
+
+    public SpellbookInfo(int _spellBookSet, int _spellBook)
+    {
+        spellBookSet = _spellBookSet;
+        spellBook = _spellBook;
+    }
+}
+
+public enum Affinity
+{
+    None,
+    Vengence,
+    Guile,
+    Remission
+}

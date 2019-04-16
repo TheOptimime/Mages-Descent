@@ -8,7 +8,7 @@ public class SplitScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("displays connected: " + Display.displays.Length);
+        //Debug.Log("displays connected: " + Display.displays.Length);
 
         if (Display.displays.Length > 1)
         {

@@ -111,6 +111,8 @@ public partial class Fighter : MonoBehaviour {
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+
+
     }
 
     void Start()
@@ -393,7 +395,7 @@ public partial class Fighter : MonoBehaviour {
                 rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 0.8f);
             }
 
-            print(jump);
+            //print(jump);
 
             if (jump && cc.m_jumpCount < 2 && rb.velocity.y < 0 && !recentlyAttacked)
             {
@@ -494,7 +496,7 @@ public partial class Fighter : MonoBehaviour {
         input.vibrateLeftMotor = leftMotor;
         input.vibrateRightMotor = rightMotor;
 
-        print("l: " + leftMotor + " r: " + rightMotor);
+        //print("l: " + leftMotor + " r: " + rightMotor);
     }
 
     public void SetVibration(float leftMotor, float rightMotor, float vibrationLength)
@@ -535,18 +537,18 @@ public partial class Fighter : MonoBehaviour {
 
     public void IncrementComboChain(Attack atk)
     {
-        print("Yeet");
+        //print("Yeet");
 
         if(comboTime < comboTimer)
         {
-            print("combo Inc");
+            //print("combo Inc");
             comboCount++;
             comboTimer -= (comboCount/64) * comboCount;
             comboTime = 0;
         }
         else if(comboTime > comboTimer)
         {
-            print("combo Inc");
+            //print("combo Inc");
             comboCount = 0;
             comboTimer = defaultComboTime;
         }

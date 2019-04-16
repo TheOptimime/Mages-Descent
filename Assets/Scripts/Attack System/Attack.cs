@@ -11,13 +11,15 @@ public class Attack : ScriptableObject{
 
     public int damage, multiFireCount;
 
+    public Vector2 offset;
+
     public float attackLength;
     [HideInInspector] public float animationLength, animationCancelLength, destroyTime;
     public float xDisplacement, multiFireRate, speed, lifetime, delay;
     public float maxAttackDistance;
     public float chargeTime = 0;
 
-    [HideInInspector] public float xPositionalDisplacement;
+    public float xPositionalDisplacement;
 
     public DoubleTime hitStun;
     public float attackCharge;
@@ -113,6 +115,7 @@ public class Attack : ScriptableObject{
     public ElementEffect elementEffect;
     public ChargeType chargeType;
     public FollowUpType followUpType;
+    public TargetType targetType;
     public JoystickCommands joystickCommand;
 
     

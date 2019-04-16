@@ -16,6 +16,7 @@ MonoBehaviour:
   description: Fire 3 blasts
   damage: 5
   multiFireCount: 3
+  offset: {x: 0, y: 0}
   attackLength: 0.8
   animationLength: 0
   animationCancelLength: 0
@@ -36,6 +37,7 @@ MonoBehaviour:
   burstOnDestroy: 0
   bounces: 0
   bounceCount: 0
+  velocityDiv: 0
   spellPoints: 0
   knockback: {x: 0, y: 0}
   coolDown:
@@ -55,4 +57,5 @@ MonoBehaviour:
   elementEffect: 2
   chargeType: 0
   followUpType: 1
-  joystickCommand: 4
+  targetType: 0
+  joystickCommand: 5

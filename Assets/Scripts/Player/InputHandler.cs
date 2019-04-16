@@ -159,78 +159,91 @@ public class InputHandler : MonoBehaviour {
             // Creates a record of the joystick inputs on button press
             frozenJoystickRecord = joystickRecord;
             buttonPressed = true;
-            // Checking if the inputs entered matched any of the spells
-            for (int i = 0; i < player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count; i++)
+
+            if(frozenJoystickRecord.Count < 2)
             {
-                int matchCount = 0;
 
-                // Makes a temporary copy of this joystick command
-                List<int> tempJoystickCommand = new List<int>();
-
-
-                if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] != null)
+            }
+            else
+            {
+                // Checking if the inputs entered matched any of the spells
+                for (int i = 0; i < player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count; i++)
                 {
-                    if (!player.isFacingRight)
-                    {
-                        FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
-                    }
-                    else
-                    {
-                        tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
-                    }
-                }
+                    int matchCount = 0;
 
-                if (tempJoystickCommand != new List<int>())
-                {
-                    if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
+                    // Makes a temporary copy of this joystick command
+                    List<int> tempJoystickCommand = new List<int>();
+
+
+                    if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] != null)
                     {
-                        for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
+                        if (!player.isFacingRight)
                         {
-                            //print(tempJoystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
-
-                            if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
-                            {
-                                // increments value if a matched input is found
-                                matchCount++;
-                                print("matchfound: " + matchCount);
-                            }
-
+                            FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
+                        }
+                        else
+                        {
+                            tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
                         }
                     }
 
-                    // Compares
-                    if (matchCount == tempJoystickCommand.Count)
+                    if (tempJoystickCommand != new List<int>())
                     {
+                        if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
+                        {
+                            for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
+                            {
+                                print(tempJoystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
+
+                                if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                                {
+                                    // increments value if a matched input is found
+                                    matchCount++;
+                                    print("matchfound: " + matchCount);
+                                }
+
+                            }
+                        }
+
+                        print("final match count: " + matchCount + " - " + player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].name);
+
+
+                        // Compares
+                        if (matchCount == tempJoystickCommand.Count && player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != JoystickCommands.None)
+                        {
+                            player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                            break;
+                        }
+                        else if (inputCorrection)
+                        {
+                            if (tempJoystickCommand.Count != 4)
+                            {
+                                if (matchCount == tempJoystickCommand.Count - 1 || matchCount == tempJoystickCommand.Count + 1)
+                                {
+                                    // Checks to see if the command input is either 1 over or under
+                                    player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                                }
+                            }
+                            else if (tempJoystickCommand.Count == 4)
+                            {
+                                // Check distance between 2 sticks points
+                                // if over at least 70, change
+                            }
+
+                        }
+
+                    }
+                    else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                    {
+                        // this is the generic attack
                         player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
                         break;
                     }
-                    else if (inputCorrection)
-                    {
-                        if(tempJoystickCommand.Count != 4)
-                        {
-                            if (matchCount == tempJoystickCommand.Count - 1 || matchCount == tempJoystickCommand.Count + 1)
-                            {
-                                // Checks to see if the command input is either 1 over or under
-                            }
-                        }
-                        else if (tempJoystickCommand.Count == 4)
-                        {
-                            // Check distance between 2 sticks points
-                            // if over at least 70, change
-                        }
-                        
-                    }
-                    
+
                 }
-                else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
-                {
-                    // this is the generic attack
-                    player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
-                    break;
-                }
+
 
             }
-
 
 
         }
@@ -302,11 +315,31 @@ public class InputHandler : MonoBehaviour {
                         }
                     }
 
+                    print("final match count: " + matchCount + " - " + player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].name);
+
                     // Compares
-                    if (matchCount == tempJoystickCommand.Count)
+                    if (matchCount == tempJoystickCommand.Count && player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != JoystickCommands.None)
                     {
                         player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
                         break;
+                    }
+                    else if (inputCorrection)
+                    {
+                        if (tempJoystickCommand.Count != 4)
+                        {
+                            if (matchCount == tempJoystickCommand.Count - 1 || matchCount == tempJoystickCommand.Count + 1)
+                            {
+                                // Checks to see if the command input is either 1 over or under
+                                player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                                break;
+                            }
+                        }
+                        else if (tempJoystickCommand.Count == 4)
+                        {
+                            // Check distance between 2 sticks points
+                            // if over at least 70, change
+                        }
+
                     }
 
                 }
@@ -396,12 +429,33 @@ public class InputHandler : MonoBehaviour {
 
                         }
                     }
+                    
+
+                    print("final match count: " + matchCount + " - "+ player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].name);
 
                     // Compares
-                    if (matchCount == tempJoystickCommand.Count)
+                    if (matchCount == tempJoystickCommand.Count && player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != JoystickCommands.None)
                     {
                         player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
                         break;
+                    }
+                    else if (inputCorrection)
+                    {
+                        if (tempJoystickCommand.Count != 4)
+                        {
+                            if (matchCount == tempJoystickCommand.Count - 1 || matchCount == tempJoystickCommand.Count + 1)
+                            {
+                                // Checks to see if the command input is either 1 over or under
+                                player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                                break;
+                            }
+                        }
+                        else if (tempJoystickCommand.Count == 4)
+                        {
+                            // Check distance between 2 sticks points
+                            // if over at least 70, change
+                        }
+
                     }
 
                 }
@@ -438,6 +492,411 @@ public class InputHandler : MonoBehaviour {
                 player.OnAttackButtonRelease();
             }
             
+        }
+        #endregion
+
+        #region L Button
+        if (prevState.Buttons.LeftShoulder == ButtonState.Released && state.Buttons.LeftShoulder == ButtonState.Pressed)
+        {
+            //print("L Button Pressed")
+            player.moveset.spellLoadOutSelected--;
+        }
+        else if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Pressed)
+        {
+            //print("L Button Held");
+        }
+        else if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Released)
+        {
+            //print("L Button Released");
+        }
+        #endregion
+
+        #region R Button
+        if (prevState.Buttons.RightShoulder == ButtonState.Released && state.Buttons.RightShoulder == ButtonState.Pressed)
+        {
+            //print("R Button Pressed");
+            player.moveset.spellLoadOutSelected++;
+        }
+        else if (prevState.Buttons.RightShoulder == ButtonState.Pressed && state.Buttons.RightShoulder == ButtonState.Pressed)
+        {
+            //print("R Button Held");
+        }
+        else if (prevState.Buttons.RightShoulder == ButtonState.Pressed && state.Buttons.RightShoulder == ButtonState.Released)
+        {
+            //print("R Button Released");
+        }
+        #endregion
+
+        frozenJoystickRecord = null;
+    }
+
+    void HandleKeys()
+    {
+        List<int> frozenJoystickRecord = new List<int>();
+        int buttonID;
+
+        KeyCode jumpKey, attack_A, attack_B, attack_C;
+
+        #region A Button
+        if (prevState.Buttons.A == ButtonState.Released && state.Buttons.A == ButtonState.Pressed)
+        {
+            player.jump = true;
+
+        }
+        else if (prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Pressed)
+        {
+            //print("A Button Held");
+
+            player.RelayJumpButtonInput();
+        }
+        else if (prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released)
+        {
+            //print("A Button Released");
+
+        }
+        #endregion
+
+        #region B Button
+        if (prevState.Buttons.B == ButtonState.Released && state.Buttons.B == ButtonState.Pressed)
+        {
+            buttonID = 0;
+            // B button is pressed
+            // Creates a record of the joystick inputs on button press
+            frozenJoystickRecord = joystickRecord;
+            buttonPressed = true;
+
+            if (frozenJoystickRecord.Count < 2)
+            {
+
+            }
+            else
+            {
+                // Checking if the inputs entered matched any of the spells
+                for (int i = 0; i < player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count; i++)
+                {
+                    int matchCount = 0;
+
+                    // Makes a temporary copy of this joystick command
+                    List<int> tempJoystickCommand = new List<int>();
+
+
+                    if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] != null)
+                    {
+                        if (!player.isFacingRight)
+                        {
+                            FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
+                        }
+                        else
+                        {
+                            tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
+                        }
+                    }
+
+                    if (tempJoystickCommand != new List<int>())
+                    {
+                        if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
+                        {
+                            for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
+                            {
+                                print(tempJoystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
+
+                                if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                                {
+                                    // increments value if a matched input is found
+                                    matchCount++;
+                                    print("matchfound: " + matchCount);
+                                }
+
+                            }
+                        }
+
+                        print("final match count: " + matchCount + " - " + player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].name);
+
+
+                        // Compares
+                        if (matchCount == tempJoystickCommand.Count && player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != JoystickCommands.None)
+                        {
+                            player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                            break;
+                        }
+                        else if (inputCorrection)
+                        {
+                            if (tempJoystickCommand.Count != 4)
+                            {
+                                if (matchCount == tempJoystickCommand.Count - 1 || matchCount == tempJoystickCommand.Count + 1)
+                                {
+                                    // Checks to see if the command input is either 1 over or under
+                                    player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                                }
+                            }
+                            else if (tempJoystickCommand.Count == 4)
+                            {
+                                // Check distance between 2 sticks points
+                                // if over at least 70, change
+                            }
+
+                        }
+
+                    }
+                    else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                    {
+                        // this is the generic attack
+                        player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                        break;
+                    }
+
+                }
+
+
+            }
+
+
+        }
+        else if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Pressed)
+        {
+            buttonID = 0;
+            //print("B Button Held");
+            if (player.attackIsInQueue)
+            {
+                player.RelayButtonInput();
+            }
+        }
+        else if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Released)
+        {
+            buttonID = 0;
+            //print("B Button Released");
+            if (player.attackIsInQueue)
+            {
+                player.OnAttackButtonRelease();
+            }
+
+        }
+        #endregion
+
+        #region X Button
+        if (prevState.Buttons.X == ButtonState.Released && state.Buttons.X == ButtonState.Pressed)
+        {
+            buttonID = 1;
+            // B button is pressed
+            // Creates a record of the joystick inputs on button press
+            frozenJoystickRecord = joystickRecord;
+            buttonPressed = true;
+            // Checking if the inputs entered matched any of the spells
+            for (int i = 0; i < player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count; i++)
+            {
+                int matchCount = 0;
+
+                // Makes a temporary copy of this joystick command
+                List<int> tempJoystickCommand = new List<int>();
+
+
+                if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] != null)
+                {
+                    if (!player.isFacingRight)
+                    {
+                        FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
+                    }
+                    else
+                    {
+                        tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
+                    }
+                }
+
+                if (tempJoystickCommand != null)
+                {
+                    if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
+                    {
+                        for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
+                        {
+                            print(tempJoystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
+
+                            if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                            {
+                                // increments value if a matched input is found
+                                matchCount++;
+                                print("matchfound: " + matchCount);
+                            }
+
+                        }
+                    }
+
+                    print("final match count: " + matchCount + " - " + player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].name);
+
+                    // Compares
+                    if (matchCount == tempJoystickCommand.Count && player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != JoystickCommands.None)
+                    {
+                        player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                        break;
+                    }
+                    else if (inputCorrection)
+                    {
+                        if (tempJoystickCommand.Count != 4)
+                        {
+                            if (matchCount == tempJoystickCommand.Count - 1 || matchCount == tempJoystickCommand.Count + 1)
+                            {
+                                // Checks to see if the command input is either 1 over or under
+                                player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                                break;
+                            }
+                        }
+                        else if (tempJoystickCommand.Count == 4)
+                        {
+                            // Check distance between 2 sticks points
+                            // if over at least 70, change
+                        }
+
+                    }
+
+                }
+                else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                {
+                    // this is the generic attack
+                    player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                    break;
+                }
+
+            }
+
+
+
+        }
+        else if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Pressed)
+        {
+            buttonID = 1;
+            //print("X Button Held");
+
+            if (player.attackIsInQueue)
+            {
+                player.RelayButtonInput();
+            }
+
+        }
+        else if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Released)
+        {
+            buttonID = 1;
+            //print("X Button Released");
+
+            if (player.attackIsInQueue)
+            {
+                player.OnAttackButtonRelease();
+            }
+
+        }
+        #endregion
+
+        #region Y Button
+        if (prevState.Buttons.Y == ButtonState.Released && state.Buttons.Y == ButtonState.Pressed)
+        {
+            buttonID = 2;
+            // B button is pressed
+            // Creates a record of the joystick inputs on button press
+            frozenJoystickRecord = joystickRecord;
+            buttonPressed = true;
+
+            // Checking if the inputs entered matched any of the spells
+            for (int i = 0; i < player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count; i++)
+            {
+                int matchCount = 0;
+
+                // Makes a temporary copy of this joystick command
+                List<int> tempJoystickCommand = new List<int>();
+
+
+                if (player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i] != null)
+                {
+                    print(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].name);
+
+                    if (!player.isFacingRight)
+                    {
+                        FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
+                    }
+                    else
+                    {
+                        tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
+                    }
+                }
+
+
+                if (tempJoystickCommand != null)
+                {
+                    if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
+                    {
+                        for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
+                        {
+                            print(tempJoystickCommand[joystickNumber] + " : " + frozenJoystickRecord[joystickNumber]);
+
+                            if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                            {
+                                // increments value if a matched input is found
+                                matchCount++;
+                                print("matchfound: " + matchCount);
+                            }
+
+                        }
+                    }
+
+
+                    print("final match count: " + matchCount + " - " + player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].name);
+
+                    // Compares
+                    if (matchCount == tempJoystickCommand.Count && player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != JoystickCommands.None)
+                    {
+                        player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                        break;
+                    }
+                    else if (inputCorrection)
+                    {
+                        if (tempJoystickCommand.Count != 4)
+                        {
+                            if (matchCount == tempJoystickCommand.Count - 1 || matchCount == tempJoystickCommand.Count + 1)
+                            {
+                                // Checks to see if the command input is either 1 over or under
+                                player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                                break;
+                            }
+                        }
+                        else if (tempJoystickCommand.Count == 4)
+                        {
+                            // Check distance between 2 sticks points
+                            // if over at least 70, change
+                        }
+
+                    }
+
+                }
+                else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                {
+                    // this is the generic attack
+                    player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                    break;
+                }
+
+            }
+
+
+
+        }
+        else if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Pressed)
+        {
+            buttonID = 2;
+            //print("Y Button Held");
+
+            if (player.attackIsInQueue)
+            {
+                player.RelayButtonInput();
+            }
+
+        }
+        else if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Released)
+        {
+            buttonID = 2;
+            //print("Y Button Released");
+
+            if (player.attackIsInQueue)
+            {
+                player.OnAttackButtonRelease();
+            }
+
         }
         #endregion
 

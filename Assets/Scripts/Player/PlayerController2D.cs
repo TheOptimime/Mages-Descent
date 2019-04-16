@@ -65,7 +65,7 @@ public class PlayerController2D : MonoBehaviour
 		m_Grounded = false;
         
         m_Grounded = CheckGrounded();
-        print("grounded: " + m_Grounded);
+        //print("grounded: " + m_Grounded);
 
         
         Collider2D[] groundColliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -73,7 +73,7 @@ public class PlayerController2D : MonoBehaviour
 		{
 			if (groundColliders[i].gameObject != gameObject)
 			{
-                print("grounded is true");
+                //print("grounded is true");
 				m_Grounded = true;
                 m_jumpCount = 0;
 				if (!wasGrounded)
@@ -119,7 +119,7 @@ public class PlayerController2D : MonoBehaviour
 
     public void Move(float move, bool jump)
 	{
-        print("Move Function A");
+        //print("Move Function A");
 
         if (jump)
         {
@@ -163,7 +163,7 @@ public class PlayerController2D : MonoBehaviour
 			// If the player should jump...
 			if (m_Grounded && jump) {
 				// Add a vertical force to the player.
-				print ("single ready");
+				//print ("single ready");
 				m_Grounded = false;
 				m_Rigidbody2D.velocity = (new Vector2 (0f, m_JumpForce));
 

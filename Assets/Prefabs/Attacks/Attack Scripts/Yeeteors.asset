@@ -18,6 +18,7 @@ MonoBehaviour:
 '
   damage: 20
   multiFireCount: 24
+  offset: {x: 0, y: 0}
   attackLength: 0.2
   animationLength: 0
   animationCancelLength: 0
@@ -54,8 +55,9 @@ MonoBehaviour:
   attackPath: 3
   keyPoints: []
   attackType: 2
-  element: 3
+  element: 1
   elementEffect: 0
   chargeType: 0
   followUpType: 0
+  targetType: 0
   joystickCommand: 4

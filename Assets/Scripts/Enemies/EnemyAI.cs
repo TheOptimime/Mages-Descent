@@ -96,7 +96,7 @@ public class EnemyAI : AI {
         switch (enemyState)
         {
             case (EnemyState.Idle):
-                print("in idle");
+                //print("in idle");
                 anim.SetTrigger("Idle");
 
                 if (idleTimerSet != true)
@@ -136,7 +136,7 @@ public class EnemyAI : AI {
                 idleTime += Time.deltaTime;
                 break;
 		case (EnemyState.Walking):
-			print ("in walking");
+			//print ("in walking");
                 
                 if(turnStyle == TurnStyle.TurnByEdge)
                 {
@@ -192,14 +192,14 @@ public class EnemyAI : AI {
                 break;
 
             case (EnemyState.Attacking):
-                print("in attacking");
+                //print("in attacking");
                 float distanceFromPlayer = Mathf.Abs((transform.position - player.transform.position).magnitude);
                 float directionPlayerIsIn = -Mathf.Sign((transform.position - player.transform.position).magnitude);
 
                 anim.SetTrigger("Attacking");
                 
 
-                print(directionPlayerIsIn);
+                //print(directionPlayerIsIn);
 
                 if (distanceFromPlayer < attackRange)
                 {

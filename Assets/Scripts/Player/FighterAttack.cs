@@ -20,6 +20,7 @@ public partial class Fighter {
                 {
                     StartAttack(attack);
                     dabometer = 0;
+                    health.invulnerabilityTimer = attack.lifetime;
                 }
             }
             else if (attack.attackType == Attack.AttackType.Blast)
@@ -52,7 +53,12 @@ public partial class Fighter {
         print("Cast projectile + " + attack.name);
         GameObject attackObject = new GameObject("Projectile");
         AttackScript spell = attackObject.AddComponent<AttackScript>();
-        
+
+        if (attack.attackType == Attack.AttackType.Special && attack.attackPath == Attack.AttackPath.Homing)
+        {
+
+        }
+
         anim.SetInteger("element", (int)attack.element);
         anim.SetTrigger("cast");
 
@@ -106,6 +112,8 @@ public partial class Fighter {
             }
             else
             {
+                
+                
                 StartAttack(attack.simultaneousAttack);
             }
         }
@@ -138,7 +146,7 @@ public partial class Fighter {
                 }
             }
             
-            print("force applied");
+            //print("force applied");
         }
     }
 
@@ -196,7 +204,7 @@ public partial class Fighter {
             {
                 if(movementFreezeLength.cancelTime <= 0)
                 {
-                    print(movementFreezeLength.cancelTime + " " + movementFreezeLength.defaultTime);
+                    //print(movementFreezeLength.cancelTime + " " + movementFreezeLength.defaultTime);
                     UseAttack(attack);
                 }
                 return;
@@ -234,8 +242,17 @@ public partial class Fighter {
                 
                 if (attack.attackPath == Attack.AttackPath.Meteor)
                 {
-                    attack.xPositionalDisplacement = Random.Range(0, 5);
+                    attack.offset.x = Random.Range(0, attack.xPositionalDisplacement);
                 }
+
+                if(attack.attackType == Attack.AttackType.Special)
+                {
+                    if (attack.attackPath == Attack.AttackPath.Homing)
+                    {
+                        //attack.offset.x = FindObjectOfType<Vortex>().transform.position.x;
+                    }
+                }
+                
                 StartAttack(attack);
 
                 yield return new WaitForSeconds(attack.multiFireRate);
@@ -302,7 +319,7 @@ public partial class Fighter {
             }
             else
             {
-                print("Error on releasing attack");
+                //print("Error on releasing attack");
             }
         }
 

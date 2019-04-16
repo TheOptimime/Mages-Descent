@@ -90,7 +90,7 @@ public class AI : MonoBehaviour {
             {
                 // test for wall
                 wallDetected = true;
-                print("wall detected");
+                //print("wall detected");
             }
             else
             {

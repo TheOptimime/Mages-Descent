@@ -47,11 +47,32 @@ public class AttackScript : MonoBehaviour {
 
     public float lifetime;
     public float velocityDiv;
+    public Vector2 targetPoint;
 
     void Start()
     {
-        origin.x += attack.xPositionalDisplacement;
-        transform.position = origin;
+        origin = origin + attack.offset;
+
+        if(attack.targetType == Attack.TargetType.TargetStraight)
+        {
+            RaycastHit2D hitInfo;
+            hitInfo = Physics2D.Raycast(transform.position, Vector2.right, attack.offset.x);
+
+            if(hitInfo.collider.gameObject.tag == "Enemy")
+            {
+                transform.position = hitInfo.collider.gameObject.transform.position;
+            }
+            else
+            {
+                transform.position = origin;
+            }
+        }
+        else
+        {
+            transform.position = origin;
+        }
+
+        
         gameObject.tag = "Attack";
 
         rb = gameObject.AddComponent<Rigidbody2D>();
@@ -145,7 +166,8 @@ public class AttackScript : MonoBehaviour {
 
         if (attack.bounces)
         {
-            if(time % velocityDiv == 0)
+            /*
+            if((int)time % velocityDiv == 0)
             {
                 velocityOn = true;
             }
@@ -153,6 +175,7 @@ public class AttackScript : MonoBehaviour {
             {
                 velocityOn = false;
             }
+            */
         }
         else
         {
@@ -241,12 +264,38 @@ public class AttackScript : MonoBehaviour {
                     }
                     else if(attack.attackPath == Attack.AttackPath.Homing)
                     {
-                        if(usingFighter != null)
+                        if(attack.hasSpecialChargeFunction && usingFighter != null)
                         {
                             rb.velocity = (Vector2.MoveTowards(transform.position, usingFighter.transform.position, ySpeed * Time.fixedDeltaTime));
                             print(rb.velocity);
 
                             rb.velocity = new Vector2(usingFighter.transform.position.x - transform.position.x, usingFighter.transform.position.y - transform.position.y) * ySpeed;
+                        }
+                        else if(attack.targetType == Attack.TargetType.TargetLocal)
+                        {
+                            RaycastHit2D[] raycastHit2D = Physics2D.CircleCastAll(transform.position, 10, Vector2.zero);
+
+
+                            for(int i = 0; i < raycastHit2D.Length; i++)
+                            {
+                                if (raycastHit2D[i].collider.gameObject.tag == "Enemy")
+                                {
+                                    rb.velocity = (Vector2.MoveTowards(transform.position, raycastHit2D[i].collider.gameObject.transform.position * xSpeed, ySpeed * Time.fixedDeltaTime));
+                                }
+                                else if (raycastHit2D[i].collider.gameObject.tag == "Player")
+                                {
+                                    if (raycastHit2D[i].collider.gameObject.GetComponent<Fighter>() != usingFighter)
+                                    {
+                                        rb.velocity = (Vector2.MoveTowards(transform.position, raycastHit2D[i].collider.gameObject.transform.position * xSpeed, ySpeed * Time.fixedDeltaTime));
+                                    }
+                                }
+                            }
+
+                            
+                        }
+                        else if(targetPoint != Vector2.zero)
+                        {
+                            rb.velocity = (Vector2.MoveTowards(transform.position, targetPoint * xSpeed , ySpeed * Time.fixedDeltaTime));
                         }
 
                     }
