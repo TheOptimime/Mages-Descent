@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 19812862}
   - component: {fileID: 19959462}
   - component: {fileID: 8255212}
+  - component: {fileID: 1781303153696326263}
+  - component: {fileID: 6092413939662421289}
   m_Layer: 0
   m_Name: LaserMissileBlue
   m_TagString: Untagged
@@ -27,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.803, y: 0, z: 0.201}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.44, y: 0, z: 0.201}
+  m_LocalScale: {x: 2.0725, y: 9.304535, z: 2.0725}
   m_Children:
   - {fileID: 439976}
   m_Father: {fileID: 0}
@@ -4715,6 +4717,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1781303153696326263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438acc2ce40ae2f45b3117fd6bfedbfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTimer: 1
+--- !u!114 &6092413939662421289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567a2b8ad5ad10d4c8c4482dfcd6ea73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &112944
 GameObject:
   m_ObjectHideFlags: 0
@@ -4741,8 +4768,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112944}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.74, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.4625, z: 1}
   m_Children: []
   m_Father: {fileID: 499462}
   m_RootOrder: 0
@@ -5103,7 +5130,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 0
       maxCurve:
@@ -5156,7 +5183,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 0
       maxCurve:
