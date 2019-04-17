@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: dungeon_tile_set_0
+  m_Name: library_tile_corner_right
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 5f36c61db7f96e44688dd2d0b1a23df9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc79b7a278d44c9419225ff090f6d9ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
