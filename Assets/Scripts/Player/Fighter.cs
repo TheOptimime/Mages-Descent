@@ -111,8 +111,6 @@ public partial class Fighter : MonoBehaviour {
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-
-
     }
 
     void Start()
@@ -137,27 +135,14 @@ public partial class Fighter : MonoBehaviour {
         fas.fighter = this;
         fas.cc = cc;
         fas.anim = anim;
-
-        /*
-        Fighter[] fighters = GameObject.FindObjectsOfType<Fighter>();
-
-        for(int i = 0; i < fighters.Length; i++)
-        {
-            if(fighters[i] == this)
-            {
-                if(PlayerID == fighters[i].PlayerID)
-                {
-                    Destroy(fighters[i]);
-                }
-            }
-        }
-        */
-
                 
         gm = FindObjectOfType<GameManager>();
         rm = FindObjectOfType<RespawnManager>();
 
-        //DontDestroyOnLoad(this.gameObject);
+        maxNumberOfJumps++;
+        cc.m_maxJumps = maxNumberOfJumps;
+
+        
 
         cc.m_doubleJumpEnabled = canDoubleJump;
 
@@ -166,6 +151,11 @@ public partial class Fighter : MonoBehaviour {
 
     void Update()
     {
+        if (cc.m_maxJumps != maxNumberOfJumps)
+        {
+            cc.m_maxJumps = maxNumberOfJumps;
+        }
+
         vibrateLength -= Time.deltaTime;
 
         if (vibrateLength <= 0)
@@ -397,7 +387,7 @@ public partial class Fighter : MonoBehaviour {
 
             //print(jump);
 
-            if (jump && cc.m_jumpCount < 2 && rb.velocity.y < 0 && !recentlyAttacked)
+            if (jump && cc.m_jumpCount < maxNumberOfJumps && rb.velocity.y < 0 && !recentlyAttacked)
             {
                 rb.velocity = Vector2.zero;
             }
@@ -405,7 +395,7 @@ public partial class Fighter : MonoBehaviour {
             //move character
             if (!lockMovement && !specialJump)
             {
-                cc.Move(horizontalMove, jump && cc.m_jumpCount < 2);
+                cc.Move(horizontalMove, jump && cc.m_jumpCount < maxNumberOfJumps);
 
                 if (cc.m_jumpCount > 0 && jump)
                 {

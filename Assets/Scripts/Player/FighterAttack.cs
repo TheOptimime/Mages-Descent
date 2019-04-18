@@ -5,7 +5,7 @@ using UnityEngine;
 public partial class Fighter {
 
 
-    MeleeHitbox hitbox_High, hitbox_Middle, hitbox_Low;
+    MeleeHitbox hitbox;
 
 
     public void UseAttack(Attack attack)
@@ -159,7 +159,7 @@ public partial class Fighter {
         {
             // light
             anim.SetInteger("jab", 1);
-            attack.lifetime = attack.meleeAnimationReference.length;
+            hitbox = new MeleeHitbox(attack);
         }
         else if(attack.name == "Jab 2")
         {
@@ -168,17 +168,7 @@ public partial class Fighter {
         }
 
 
-        GameObject attackObject = new GameObject("Melee");
-        AttackScript sword = attackObject.AddComponent<AttackScript>();
-
-        print(attack.name);
-        sword.flipped = !cc.m_FacingRight;
-        sword.attack = attack;
-        sword.origin = transform.position;
-        sword.usingFighter = this;
-        sword.attack.lifetime = attack.meleeAnimationReference.length;
-        sword.mht = sword.attack.spriteAnimation.GetComponentInChildren<MeleeHitboxTrigger>();
-        sword.mht.hitbox = hitbox_Middle;
+        
         
         //hitbox_Middle.Activate();
 

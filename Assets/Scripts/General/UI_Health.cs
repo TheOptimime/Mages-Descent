@@ -7,18 +7,18 @@ public class UI_Health : MonoBehaviour {
 
     public Image healthBar;
     private Health health;
-    public Fighter player;
+    //public Fighter player;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         health = GetComponent<Health>();
-        healthBar.fillAmount = (health.maxHealth/100);
+        healthBar.fillAmount = (health.currentHealth / health.maxHealth);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        healthBar.fillAmount = (health.currentHealth/100);
+        healthBar.fillAmount = (health.currentHealth/health.maxHealth);
     }
 }

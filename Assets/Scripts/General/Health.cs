@@ -31,6 +31,7 @@ public class Health : MonoBehaviour {
             if(time % regenRate == 0)
             {
                 currentHealth++;
+                time = 0;
             }
         }
         else if (degen)

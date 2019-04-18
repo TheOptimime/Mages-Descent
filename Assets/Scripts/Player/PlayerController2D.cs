@@ -20,11 +20,13 @@ public class PlayerController2D : MonoBehaviour
 	const float k_GroundedRadius = .02f; // Radius of the overlap circle to determine if grounded
     public bool m_Grounded, m_lockDirection;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .02f; // Radius of the overlap circle to determine if the player can stand up
+    public int m_maxJumps;
     public Rigidbody2D m_Rigidbody2D { get; private set; }
 
 	public bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public bool m_doubleJumpUsed, m_doubleJumpEnabled;
     public Vector3 m_Velocity = Vector3.zero;
+    float timer, ghostJumpTime = 0.2f;
 
 	[Header("Events")]
 	[Space]
@@ -85,6 +87,22 @@ public class PlayerController2D : MonoBehaviour
 			}
 		}
 
+        if (!m_Grounded)
+        {
+            timer += Time.deltaTime;
+
+            if(timer > ghostJumpTime)
+            {
+                if (m_jumpCount == 0)
+                {
+                    m_jumpCount++;
+                }
+            }
+        }
+        else
+        {
+            timer = 0;
+        }
         //print(m_Velocity);
 
     }
@@ -168,7 +186,7 @@ public class PlayerController2D : MonoBehaviour
 				m_Rigidbody2D.velocity = (new Vector2 (0f, m_JumpForce));
 
 				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-			} else if (!m_Grounded && m_doubleJumpEnabled && !m_doubleJumpUsed && jump) {
+			} else if (!m_Grounded && m_doubleJumpEnabled && m_jumpCount < m_maxJumps && jump) {
 				print ("double ready");
 				m_doubleJumpUsed = true;
 				m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, 0);
