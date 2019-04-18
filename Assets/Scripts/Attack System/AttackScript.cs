@@ -42,7 +42,7 @@ public class AttackScript : MonoBehaviour {
 
     public Fighter usingFighter;
     public bool enemyAttack;
-    public MeleeHitboxTrigger mht;
+//    public MeleeHitboxTrigger mht;
 
     public bool velocityOn;
 
