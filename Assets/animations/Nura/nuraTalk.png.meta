@@ -1,0 +1,1286 @@
+fileFormatVersion: 2
+guid: 368743055e43e2c4287830e3b44f7f57
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nuraTalk
+    21300002: Nura_Talk_00
+    21300004: Nura_Talk_01
+    21300006: Nura_Talk_02
+    21300008: Nura_Talk_03
+    21300010: Nura_Talk_04
+    21300012: Nura_Talk_05
+    21300014: Nura_Talk_06
+    21300016: Nura_Talk_07
+    21300018: Nura_Talk_08
+    21300020: Nura_Talk_09
+    21300022: Nura_Talk_10
+    21300024: Nura_Talk_11
+    21300026: Nura_Talk_12
+    21300028: Nura_Talk_13
+    21300030: Nura_Talk_14
+    21300032: Nura_Talk_15
+    21300034: Nura_Talk_16
+    21300036: Nura_Talk_17
+    21300038: Nura_Talk_18
+    21300040: Nura_Talk_19
+    21300042: Nura_Talk_20
+    21300044: Nura_Talk_21
+    21300046: Nura_Talk_22
+    21300048: Nura_Talk_23
+    21300050: Nura_Talk_24
+    21300052: Nura_Talk_25
+    21300054: Nura_Talk_26
+    21300056: Nura_Talk_27
+    21300058: Nura_Talk_28
+    21300060: Nura_Talk_29
+    21300062: Nura_Talk_30
+    21300064: Nura_Talk_31
+    21300066: Nura_Talk_32
+    21300068: Nura_Talk_33
+    21300070: Nura_Talk_34
+    21300072: Nura_Talk_35
+    21300074: Nura_Talk_36
+    21300076: Nura_Talk_37
+    21300078: Nura_Talk_38
+    21300080: Nura_Talk_39
+    21300082: Nura_Talk_40
+    21300084: Nura_Talk_41
+    21300086: Nura_Talk_42
+    21300088: Nura_Talk_43
+    21300090: Nura_Talk_44
+    21300092: Nura_Talk_45
+    21300094: Nura_Talk_46
+    21300096: Nura_Talk_47
+    21300098: Nura_Talk_48
+    21300100: Nura_Talk_49
+    21300102: Nura_Talk_50
+    21300104: Nura_Talk_51
+    21300106: Nura_Talk_52
+    21300108: Nura_Talk_53
+    21300110: Nura_Talk_54
+    21300112: Nura_Talk_55
+    21300114: Nura_Talk_56
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nura_Talk_00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eff25ed2ae5ddb41a8f5f13e80be092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_01
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 3462
+        width: 572
+        height: 633
+      alignment: 9
+      pivot: {x: 0.5113636, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6550ca1270dbfe4449f113fa600ab80c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_02
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 3462
+        width: 572
+        height: 633
+      alignment: 9
+      pivot: {x: 0.5113636, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e442c5f67e8bc44c924cb88acf1b916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_03
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622d8df0e9e82654897f8b2eb02c5398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_04
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2520c5de895455141a260860ce4eacde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_05
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 3462
+        width: 572
+        height: 633
+      alignment: 9
+      pivot: {x: 0.5113636, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bebf8a55990a7244a871266cd77f748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_06
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 3462
+        width: 572
+        height: 633
+      alignment: 9
+      pivot: {x: 0.5113636, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0cf6c8b01138241b9a17a07c8cc6ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_07
+      rect:
+        serializedVersion: 2
+        x: 3965
+        y: 3462
+        width: 552
+        height: 633
+      alignment: 9
+      pivot: {x: 0.4936594, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e79306bb55066b449c9b0088c020e13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_08
+      rect:
+        serializedVersion: 2
+        x: 4519
+        y: 3462
+        width: 551
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49274048, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3255f1ab616076240a2de57e554c3a72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_09
+      rect:
+        serializedVersion: 2
+        x: 5072
+        y: 3462
+        width: 552
+        height: 633
+      alignment: 9
+      pivot: {x: 0.4936594, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6dafecca415864b9aeadd49eaaface
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_10
+      rect:
+        serializedVersion: 2
+        x: 5626
+        y: 3462
+        width: 552
+        height: 633
+      alignment: 9
+      pivot: {x: 0.4936594, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b273a710f8f525e4c9ff8b633dc57877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_11
+      rect:
+        serializedVersion: 2
+        x: 6180
+        y: 3462
+        width: 552
+        height: 633
+      alignment: 9
+      pivot: {x: 0.4936594, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06f571a511060e409756b0c05da6426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_12
+      rect:
+        serializedVersion: 2
+        x: 6734
+        y: 3462
+        width: 551
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49274048, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce76ceb155954a489594cdb81bb9b5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_13
+      rect:
+        serializedVersion: 2
+        x: 7287
+        y: 3462
+        width: 552
+        height: 633
+      alignment: 9
+      pivot: {x: 0.4936594, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08531e3984297fe4b84d26db16b0b951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2827
+        width: 552
+        height: 633
+      alignment: 9
+      pivot: {x: 0.4936594, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa67f8df0e50fb409d11d70c5734e3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_15
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 2826
+        width: 593
+        height: 634
+      alignment: 9
+      pivot: {x: 0.52360874, y: 0.5126183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62f50460149a024aa88c5ac0565a16c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_16
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 2835
+        width: 545
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5073395, y: 0.5056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959b80c795feb6a4cac7ab8b18e63c9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_17
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 2836
+        width: 551
+        height: 624
+      alignment: 9
+      pivot: {x: 0.51814884, y: 0.50641024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da81a3b767fa7c5488d5cd455cfd48c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_18
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2828
+        width: 560
+        height: 632
+      alignment: 9
+      pivot: {x: 0.53660715, y: 0.5142405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c14916bf2173f846a9a8744d394e21f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_19
+      rect:
+        serializedVersion: 2
+        x: 2812
+        y: 2838
+        width: 533
+        height: 622
+      alignment: 9
+      pivot: {x: 0.5318949, y: 0.5080386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f421bb0e56effe4d9076bf46f282c67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_20
+      rect:
+        serializedVersion: 2
+        x: 3347
+        y: 2844
+        width: 534
+        height: 616
+      alignment: 9
+      pivot: {x: 0.5477528, y: 0.512987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81535e2b36a6b624f9dec62806b87eb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_21
+      rect:
+        serializedVersion: 2
+        x: 3883
+        y: 2844
+        width: 544
+        height: 616
+      alignment: 9
+      pivot: {x: 0.5615809, y: 0.512987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfd88fea3ea2134f95be084d46e1490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_22
+      rect:
+        serializedVersion: 2
+        x: 4429
+        y: 2830
+        width: 529
+        height: 630
+      alignment: 9
+      pivot: {x: 0.5510397, y: 0.515873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed42ef425b2963f4287dfe34673df7a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_23
+      rect:
+        serializedVersion: 2
+        x: 4960
+        y: 2842
+        width: 537
+        height: 618
+      alignment: 9
+      pivot: {x: 0.53910613, y: 0.51132685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a43d3f7c3e3633468436a43bb31fd8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_24
+      rect:
+        serializedVersion: 2
+        x: 5499
+        y: 2831
+        width: 556
+        height: 629
+      alignment: 9
+      pivot: {x: 0.5494604, y: 0.5166932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861ba771d7ae7d846938ff62eb526671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_25
+      rect:
+        serializedVersion: 2
+        x: 6057
+        y: 2833
+        width: 541
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5184843, y: 0.5183413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e937812e451045844b05d2941009539c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_26
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2842
+        width: 556
+        height: 618
+      alignment: 9
+      pivot: {x: 0.50629497, y: 0.51132685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf05dbc23bea9e44ac25921826f2fcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_27
+      rect:
+        serializedVersion: 2
+        x: 7158
+        y: 2838
+        width: 555
+        height: 622
+      alignment: 9
+      pivot: {x: 0.5054054, y: 0.5080386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c107b1227bbc243924fa2f886ae611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2199
+        width: 587
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5102215, y: 0.5056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b370c4ff055f7bd42a1d4bd00a62567e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_29
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 2200
+        width: 562
+        height: 624
+      alignment: 9
+      pivot: {x: 0.4830961, y: 0.50641024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e23a8408c0e3c429c1dc70773b967e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_30
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 2199
+        width: 561
+        height: 625
+      alignment: 9
+      pivot: {x: 0.48395723, y: 0.5056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd643846d5e80cd4795313bae1a11b73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_31
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 2184
+        width: 565
+        height: 640
+      alignment: 9
+      pivot: {x: 0.4858407, y: 0.5078125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76eaafb395e6fe343abadbff069e15b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_32
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 2191
+        width: 561
+        height: 633
+      alignment: 9
+      pivot: {x: 0.48039216, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51cf311596ad2be4ba1623a316215587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_33
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 2191
+        width: 562
+        height: 633
+      alignment: 9
+      pivot: {x: 0.48131672, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d48ee6fa9d5c24ab983eeb4635337a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_34
+      rect:
+        serializedVersion: 2
+        x: 3411
+        y: 2191
+        width: 575
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49304348, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4228d1ed9593a2549b55af03e4cd508f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_35
+      rect:
+        serializedVersion: 2
+        x: 3988
+        y: 2191
+        width: 568
+        height: 633
+      alignment: 9
+      pivot: {x: 0.48679578, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c3b1dda5358ab478cd84ea38c425c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_36
+      rect:
+        serializedVersion: 2
+        x: 4558
+        y: 2191
+        width: 565
+        height: 633
+      alignment: 9
+      pivot: {x: 0.4840708, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723db0fbe5e98434ead9d89ac8b7de70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_37
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 2191
+        width: 562
+        height: 633
+      alignment: 9
+      pivot: {x: 0.48131672, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883397e0231c20e4b811e5cdecc7e612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_38
+      rect:
+        serializedVersion: 2
+        x: 5689
+        y: 2191
+        width: 568
+        height: 633
+      alignment: 9
+      pivot: {x: 0.48679578, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bf7e7ba064bd14988e27af6cde2686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_39
+      rect:
+        serializedVersion: 2
+        x: 6259
+        y: 2191
+        width: 568
+        height: 633
+      alignment: 9
+      pivot: {x: 0.48679578, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abdab8efaa1f78446b877e99d3293896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_40
+      rect:
+        serializedVersion: 2
+        x: 6829
+        y: 2191
+        width: 566
+        height: 633
+      alignment: 9
+      pivot: {x: 0.48321554, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8bb3ce7acf0334f80f8a86aa0b4e2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_41
+      rect:
+        serializedVersion: 2
+        x: 7397
+        y: 2191
+        width: 565
+        height: 633
+      alignment: 9
+      pivot: {x: 0.48053098, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e66c3159d278a4c9351520545c75fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1547
+        width: 557
+        height: 635
+      alignment: 9
+      pivot: {x: 0.49102333, y: 0.511811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15dd2af32daa60540a788257910d6dcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_43
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1548
+        width: 568
+        height: 634
+      alignment: 9
+      pivot: {x: 0.4850352, y: 0.5126183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131fec8eefd9edd42b89df5c53ac7e1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_44
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1549
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49368232, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b49f5e38c7ea747ab9f9b7383bc16e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_45
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1548
+        width: 563
+        height: 634
+      alignment: 9
+      pivot: {x: 0.491119, y: 0.5126183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10124b7b05d9fef41932db3a73bc6903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_46
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 1548
+        width: 574
+        height: 634
+      alignment: 9
+      pivot: {x: 0.50261325, y: 0.5126183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d581b15a087be44ade290d032bc90a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_47
+      rect:
+        serializedVersion: 2
+        x: 2827
+        y: 1549
+        width: 555
+        height: 633
+      alignment: 9
+      pivot: {x: 0.4945946, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92605d08c3fc9343a2944f879c0b332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_48
+      rect:
+        serializedVersion: 2
+        x: 3384
+        y: 1546
+        width: 564
+        height: 636
+      alignment: 9
+      pivot: {x: 0.49024823, y: 0.5110063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6606122481fe9448ce9a9579401574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_49
+      rect:
+        serializedVersion: 2
+        x: 3950
+        y: 1547
+        width: 569
+        height: 635
+      alignment: 9
+      pivot: {x: 0.50878733, y: 0.511811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4202212e0a3c3674c9c04b9a75fa26a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c63dd4dd9ee4d45a8996bb460e5c26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_51
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d94e7a6874063340a74f2613d50b5c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_52
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3894cfbbb6bd647a1176be0f037210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_53
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd946a83e80df564eb794bc1c451ecb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_54
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8207509d3e61b44b8a129d996e72c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125572584865e7a499a24a32fe1524a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Talk_56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3462
+        width: 554
+        height: 633
+      alignment: 9
+      pivot: {x: 0.49548736, y: 0.5134281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7a3c9e317aa2e4d82facb669944850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1cf1403d9780b6c429f2585d09485d1e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

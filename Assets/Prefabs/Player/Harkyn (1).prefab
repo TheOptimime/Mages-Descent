@@ -594,6 +594,7 @@ GameObject:
   - component: {fileID: 1680216108}
   - component: {fileID: 1680216105}
   - component: {fileID: 140663906}
+  - component: {fileID: 3190529671771232067}
   m_Layer: 9
   m_Name: Harkyn (1)
   m_TagString: Player
@@ -1129,6 +1130,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
+--- !u!114 &3190529671771232067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680216104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb779d42571c52499108451cdb1f8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpellSetA:
+  - {fileID: 11400000, guid: 3c57a6693e8ba1c4cbde32669ec27235, type: 2}
+  - {fileID: 11400000, guid: cd94919336758b9439b41d41c8221391, type: 2}
+  - {fileID: 11400000, guid: 8b1db2648a63eb746964a88831778c83, type: 2}
+  SpellSetB:
+  - {fileID: 11400000, guid: 8b1db2648a63eb746964a88831778c83, type: 2}
+  - {fileID: 11400000, guid: 3c57a6693e8ba1c4cbde32669ec27235, type: 2}
+  - {fileID: 11400000, guid: cd94919336758b9439b41d41c8221391, type: 2}
+  SpellSetC:
+  - {fileID: 11400000, guid: cd94919336758b9439b41d41c8221391, type: 2}
+  - {fileID: 11400000, guid: 3c57a6693e8ba1c4cbde32669ec27235, type: 2}
+  - {fileID: 11400000, guid: 8b1db2648a63eb746964a88831778c83, type: 2}
 --- !u!1 &1717716704
 GameObject:
   m_ObjectHideFlags: 0

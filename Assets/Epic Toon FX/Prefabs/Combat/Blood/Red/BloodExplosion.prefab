@@ -4706,6 +4706,7 @@ GameObject:
   - component: {fileID: 19977426}
   - component: {fileID: 7514118704469698035}
   - component: {fileID: 653029413881061817}
+  - component: {fileID: 620258675101839072}
   m_Layer: 0
   m_Name: BloodExplosion
   m_TagString: Untagged
@@ -9402,6 +9403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438acc2ce40ae2f45b3117fd6bfedbfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyTimer: 0
 --- !u!82 &653029413881061817
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9498,6 +9500,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &620258675101839072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438acc2ce40ae2f45b3117fd6bfedbfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTimer: 2
 --- !u!1 &189844
 GameObject:
   m_ObjectHideFlags: 0
