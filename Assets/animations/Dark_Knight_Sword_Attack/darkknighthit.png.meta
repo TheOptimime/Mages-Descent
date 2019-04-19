@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: dc9c36fab9049454e9912c9581526508
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: darkknighthit
+    21300002: dark_knight_Left-Damage Taken_0
+    21300004: dark_knight_Left-Damage Taken_1
+    21300006: dark_knight_Left-Damage Taken_2
+    21300008: dark_knight_Left-Damage Taken_3
+    21300010: dark_knight_Left-Damage Taken_4
+    21300012: dark_knight_Left-Damage Taken_5
+    21300014: dark_knight_Left-Damage Taken_6
+    21300016: dark_knight_Left-Damage Taken_7
+    21300018: dark_knight_Left-Damage Taken_8
+    21300020: dark_knight_Left-Damage Taken_9
+    21300022: dark_knight_Left-Damage Taken_10
+    21300024: dark_knight_Left-Damage Taken_11
+    21300026: dark_knight_Left-Damage Taken_12
+    21300028: dark_knight_Left-Damage Taken_13
+    21300030: dark_knight_Left-Damage Taken_14
+    21300032: dark_knight_Left-Damage Taken_15
+    21300034: dark_knight_Left-Damage Taken_16
+    21300036: dark_knight_Left-Damage Taken_17
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1558
+        width: 371
+        height: 489
+      alignment: 9
+      pivot: {x: 0.34084782, y: 0.45093057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d78764c8afa364ba41d02c012b5159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1549
+        width: 390
+        height: 498
+      alignment: 9
+      pivot: {x: 0.35501164, y: 0.44278124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d7e3b2a3b84554bb48da95318889af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_2
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1542
+        width: 381
+        height: 505
+      alignment: 9
+      pivot: {x: 0.31877834, y: 0.44060406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e623c5aa12ea5e84f98b8d2c4bec5955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_3
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1537
+        width: 403
+        height: 510
+      alignment: 9
+      pivot: {x: 0.34604105, y: 0.4382452}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2c4214537321b458dea910b9fce6bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_4
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1540
+        width: 405
+        height: 507
+      alignment: 9
+      pivot: {x: 0.34680134, y: 0.44083837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152cd4b85ab86a142b7205070f8e6d62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1035
+        width: 393
+        height: 500
+      alignment: 9
+      pivot: {x: 0.37011334, y: 0.4470101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30208ddc2e3648442a9049135bb74dad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1045
+        width: 401
+        height: 490
+      alignment: 9
+      pivot: {x: 0.42008615, y: 0.45613277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0594760c6311a844a87a7815beb0dc8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_7
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1058
+        width: 405
+        height: 477
+      alignment: 9
+      pivot: {x: 0.47272727, y: 0.46856403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1a7edb689e66547a373211ffc8fab8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_8
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1075
+        width: 413
+        height: 460
+      alignment: 9
+      pivot: {x: 0.5168391, y: 0.48588055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247b674fed1a04049a45741ab18499ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_9
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1068
+        width: 424
+        height: 467
+      alignment: 9
+      pivot: {x: 0.53880787, y: 0.47859755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6866686de358ab14cb3d7035dbb69a50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 562
+        width: 431
+        height: 471
+      alignment: 9
+      pivot: {x: 0.5578992, y: 0.47453302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abba195007e2ef541a140b243c070732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_11
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 554
+        width: 437
+        height: 479
+      alignment: 9
+      pivot: {x: 0.57541084, y: 0.46660763}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1a9f1801fb2bf418f4dbb1e55c9e54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_12
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 548
+        width: 443
+        height: 485
+      alignment: 9
+      pivot: {x: 0.58341885, y: 0.4587733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce73f035b3c370344b698ef3ed30d408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_13
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 547
+        width: 441
+        height: 486
+      alignment: 9
+      pivot: {x: 0.58606476, y: 0.45988694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e12ed19dd737b8458ce87228c5c9630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 66
+        width: 441
+        height: 479
+      alignment: 9
+      pivot: {x: 0.56792414, y: 0.46660763}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee42748ce73c6744097f26f462511e40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_15
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 74
+        width: 431
+        height: 471
+      alignment: 9
+      pivot: {x: 0.5578992, y: 0.47453302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c861381b6e1f445b6cd856e7aa38d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_16
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 78
+        width: 425
+        height: 467
+      alignment: 9
+      pivot: {x: 0.5375401, y: 0.47859755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d7b4899adb61242ac54e4c3404a975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_Left-Damage Taken_17
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 85
+        width: 416
+        height: 460
+      alignment: 9
+      pivot: {x: 0.5299388, y: 0.48588055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbacff3059e6c942874d2ffc784b0d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 886d82632b1c0a540862cc188b09dc04
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

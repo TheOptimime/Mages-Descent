@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: b5693027fc5ba874889fce1f75be207b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: darkKnightAttack
+    21300002: dark_knight_sword_attack_00
+    21300004: dark_knight_sword_attack_01
+    21300006: dark_knight_sword_attack_02
+    21300008: dark_knight_sword_attack_03
+    21300010: dark_knight_sword_attack_04
+    21300012: dark_knight_sword_attack_05
+    21300014: dark_knight_sword_attack_06
+    21300016: dark_knight_sword_attack_07
+    21300018: dark_knight_sword_attack_08
+    21300020: dark_knight_sword_attack_09
+    21300022: dark_knight_sword_attack_10
+    21300024: dark_knight_sword_attack_11
+    21300026: dark_knight_sword_attack_12
+    21300028: dark_knight_sword_attack_13
+    21300030: dark_knight_sword_attack_14
+    21300032: dark_knight_sword_attack_15
+    21300034: dark_knight_sword_attack_16
+    21300036: dark_knight_sword_attack_17
+    21300038: dark_knight_sword_attack_18
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3592
+        width: 457
+        height: 503
+      alignment: 9
+      pivot: {x: 0.6222178, y: 0.4710671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc13dff7cdef9841a6af4950bb9bc63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_01
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 3539
+        width: 424
+        height: 556
+      alignment: 9
+      pivot: {x: 0.5804847, y: 0.4347956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54a028842c1da34cae4398bcd8752e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_02
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 3491
+        width: 416
+        height: 604
+      alignment: 9
+      pivot: {x: 0.53635937, y: 0.40355355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b6dbb7f3bb8f44d87eefcc39c79195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_03
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 3468
+        width: 416
+        height: 627
+      alignment: 9
+      pivot: {x: 0.5027055, y: 0.38875014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552ed4d6d3eb6524f8ad1832eb0ddda9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2836
+        width: 412
+        height: 630
+      alignment: 9
+      pivot: {x: 0.46146968, y: 0.38689896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ddb8a56d40cb0419a74d2c0c5bcef1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_05
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 2836
+        width: 391
+        height: 630
+      alignment: 9
+      pivot: {x: 0.38651025, y: 0.38689896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d031f4e6fc5694fa3d1f1d3d08be69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_06
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 2863
+        width: 458
+        height: 603
+      alignment: 9
+      pivot: {x: 0.3365186, y: 0.4042228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403f823c5473ae7499684be9f4cfb735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_07
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 2836
+        width: 412
+        height: 630
+      alignment: 9
+      pivot: {x: 0.49059588, y: 0.38689896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0350e3cc82865a04fad0e4fecb37328d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2255
+        width: 430
+        height: 579
+      alignment: 9
+      pivot: {x: 0.5816872, y: 0.42270526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197c56acb6a438e4d8d8ec85e363fb6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_09
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 2334
+        width: 524
+        height: 500
+      alignment: 9
+      pivot: {x: 0.6491518, y: 0.49649704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190ed72ebe7f10a4dbd44bee1c76af95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_10
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2343
+        width: 551
+        height: 491
+      alignment: 9
+      pivot: {x: 0.6953821, y: 0.5096711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61106e8ee9729c54285585c0f794cc6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1767
+        width: 607
+        height: 486
+      alignment: 9
+      pivot: {x: 0.68065166, y: 0.5066842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7279fd6741f1744a4e8d1f8f0df220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_12
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1762
+        width: 606
+        height: 491
+      alignment: 9
+      pivot: {x: 0.6295496, y: 0.5161908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc1725866661744ab2edfea66d1543d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_13
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1743
+        width: 544
+        height: 510
+      alignment: 9
+      pivot: {x: 0.62777036, y: 0.4969602}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081c28b33b2e41940bfdc4020e8f9650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1248
+        width: 462
+        height: 493
+      alignment: 9
+      pivot: {x: 0.60499364, y: 0.51004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c577f0da9b0facf419121f8fe915688e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_15
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1237
+        width: 457
+        height: 504
+      alignment: 9
+      pivot: {x: 0.6072365, y: 0.50882876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1539b7d22668143aafe9550a038fd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_16
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1230
+        width: 459
+        height: 511
+      alignment: 9
+      pivot: {x: 0.60023326, y: 0.50185853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa47c24b84d24b44b46c461c65eb546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3592
+        width: 457
+        height: 503
+      alignment: 9
+      pivot: {x: 0.59848374, y: 0.5018881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d209a1b8b8aae448ba8fcaf414018f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_sword_attack_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3592
+        width: 457
+        height: 503
+      alignment: 9
+      pivot: {x: 0.59848374, y: 0.5018881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8d12227628f1e41bd041770afa493f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3ccc2774f72ce924da6b1c3cf9c129fe
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: f4d324066372fcf4dbbce08a8b4ba714
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nura_idle
+    21300002: Nura_Idle_00
+    21300004: Nura_Idle_01
+    21300006: Nura_Idle_02
+    21300008: Nura_Idle_03
+    21300010: Nura_Idle_04
+    21300012: Nura_Idle_05
+    21300014: Nura_Idle_06
+    21300016: Nura_Idle_07
+    21300018: Nura_Idle_08
+    21300020: Nura_Idle_09
+    21300022: Nura_Idle_10
+    21300024: Nura_Idle_11
+    21300026: Nura_Idle_12
+    21300028: Nura_Idle_13
+    21300030: Nura_Idle_14
+    21300032: Nura_Idle_15
+    21300034: Nura_Idle_16
+    21300036: Nura_Idle_17
+    21300038: Nura_Idle_18
+    21300040: Nura_Idle_19
+    21300042: Nura_Idle_20
+    21300044: Nura_Idle_21
+    21300046: Nura_Idle_22
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nura_Idle_00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3466
+        width: 581
+        height: 629
+      alignment: 9
+      pivot: {x: 0.489673, y: 0.5071542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d37308b99a41543833bf154cbee12c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 2844
+        width: 565
+        height: 624
+      alignment: 9
+      pivot: {x: 0.48053098, y: 0.51121795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c746842b67edb64a857d6bdc38e3c53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_02
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 2215
+        width: 569
+        height: 624
+      alignment: 9
+      pivot: {x: 0.48769772, y: 0.51121795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febe579a08aedda4484e8806df7ba07a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_03
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1583
+        width: 580
+        height: 624
+      alignment: 9
+      pivot: {x: 0.5025862, y: 0.51121795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24293f4864ac51c4995107dab23374ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_04
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 957
+        width: 565
+        height: 624
+      alignment: 9
+      pivot: {x: 0.47699115, y: 0.51121795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada87d9128755e44e94cfb83833d63f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_05
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 320
+        width: 564
+        height: 626
+      alignment: 9
+      pivot: {x: 0.47251773, y: 0.50958467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e4b5064f2b30647aae5bacaa4dd784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_06
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2205
+        width: 561
+        height: 628
+      alignment: 9
+      pivot: {x: 0.47504455, y: 0.5079618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097edd41a72bfde41b0b3ad0f588467e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_07
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 2841
+        width: 594
+        height: 625
+      alignment: 9
+      pivot: {x: 0.49242425, y: 0.5104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5596d5907c586469454122df204b9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_08
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 2209
+        width: 559
+        height: 626
+      alignment: 9
+      pivot: {x: 0.47674417, y: 0.50958467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc4f7907e265e74caba76aeed77bfdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_09
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 2837
+        width: 564
+        height: 627
+      alignment: 9
+      pivot: {x: 0.47783688, y: 0.5103668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9504bb993e8d654478334ace81a60fb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2835
+        width: 574
+        height: 629
+      alignment: 9
+      pivot: {x: 0.4904181, y: 0.5071542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e37994d50fd544e9689160ba184b13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 320
+        width: 566
+        height: 626
+      alignment: 9
+      pivot: {x: 0.47968197, y: 0.5079872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a7404ac58c26044b8559532bad04f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 948
+        width: 562
+        height: 626
+      alignment: 9
+      pivot: {x: 0.47953737, y: 0.5079872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23717d3d608bd1d48bf0c375d4b8fb16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 3470
+        width: 585
+        height: 625
+      alignment: 9
+      pivot: {x: 0.4880342, y: 0.5088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6957de01d26447d48bc19e1bf8c06957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 951
+        width: 558
+        height: 625
+      alignment: 9
+      pivot: {x: 0.4722222, y: 0.5088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5e412b16af0e94aaf98b8a7feacf04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 3470
+        width: 572
+        height: 625
+      alignment: 9
+      pivot: {x: 0.48513985, y: 0.5104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6741fe66328e624db22ea4d18236a92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1576
+        width: 576
+        height: 627
+      alignment: 9
+      pivot: {x: 0.46961805, y: 0.5103668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea74f3e8725e6b848b8d9b869068c3bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 3468
+        width: 559
+        height: 627
+      alignment: 9
+      pivot: {x: 0.47674417, y: 0.50877196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e59aee2a90f7c448473809c409ba8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1578
+        width: 561
+        height: 626
+      alignment: 9
+      pivot: {x: 0.47504455, y: 0.50958467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861ac681ec4bc984fbe226ef60c71aab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2206
+        width: 565
+        height: 627
+      alignment: 9
+      pivot: {x: 0.47345132, y: 0.50877196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269e8a2517c01bf4d964b5370f4a8716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 948
+        width: 571
+        height: 626
+      alignment: 9
+      pivot: {x: 0.4737303, y: 0.50958467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77397720613899c44a201e7f5bc1c877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1589
+        width: 556
+        height: 624
+      alignment: 9
+      pivot: {x: 0.47571942, y: 0.51121795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34842329daa04794f95272c7838e2e95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nura_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 321
+        width: 568
+        height: 625
+      alignment: 9
+      pivot: {x: 0.47799295, y: 0.5104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8a121bee060444399e578a9086e26b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f384c488e2557a745b8ea856640532ae
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
