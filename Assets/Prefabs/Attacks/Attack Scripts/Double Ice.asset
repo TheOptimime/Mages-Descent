@@ -16,6 +16,7 @@ MonoBehaviour:
   description: Dun dun dun du du du dun
   damage: 7
   multiFireCount: 0
+  offset: {x: 0, y: 0}
   attackLength: 0
   animationLength: 0
   animationCancelLength: 0
@@ -56,4 +57,5 @@ MonoBehaviour:
   elementEffect: 3
   chargeType: 0
   followUpType: 1
-  joystickCommand: 0
+  targetType: 0
+  joystickCommand: 1
