@@ -79,6 +79,7 @@ public partial class Fighter : MonoBehaviour {
     public Animator anim;
 
     AudioSource audioSource;
+	public AudioClip footstep;
 
     public CircleCollider2D vibrationSphere;
     
@@ -568,6 +569,14 @@ public partial class Fighter : MonoBehaviour {
 		if (IsGrounded()) {
 			Instantiate (dustParticle, dustParticleSpawn.position, Quaternion.identity);
 		}
+	}
+
+	public void footstepSound() {
+		if (IsGrounded ()) {
+			audioSource.PlayOneShot (footstep, 1);
+		
+		}
+	
 	}
 
     private void OnLevelWasLoaded(int level)
