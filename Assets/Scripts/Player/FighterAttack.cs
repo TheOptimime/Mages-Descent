@@ -91,6 +91,18 @@ public partial class Fighter {
         if(attack.attackPath == Attack.AttackPath.Meteor || attack.attackPath == Attack.AttackPath.CrashDown)
         {
             spell.origin = meteorSpellCastPoint.position;
+            
+            if(attack.attackType == Attack.AttackType.MultipleBlast)
+            {
+                if (attack.attackPath == Attack.AttackPath.Meteor)
+                {
+                    spell.origin.x = Random.Range(0, attack.xPositionalDisplacement);
+                }
+                else if(attack.attackPath == Attack.AttackPath.CrashDown)
+                {
+                    spell.origin.x = Random.Range(0, attack.xPositionalDisplacement);
+                }
+            }
         }
         else if(attack.attackPath == Attack.AttackPath.Homing)
         {
@@ -103,8 +115,11 @@ public partial class Fighter {
         
         spell.direction = cc.m_FacingRight ? 1 : -1;
         spell.user = gameObject.name;
+        spell.origin += new Vector2(attack.offset.x * spell.direction, attack.offset.y);
 
-        if(attack.simultaneousAttack != null)
+        spell.transform.position = spell.origin;
+
+        if (attack.simultaneousAttack != null)
         {
             if(attack.attackType == Attack.AttackType.Melee)
             {
@@ -230,10 +245,7 @@ public partial class Fighter {
                     movementFreezeLength = attack.coolDown;
                 }
                 
-                if (attack.attackPath == Attack.AttackPath.Meteor)
-                {
-                    attack.offset.x = Random.Range(0, attack.xPositionalDisplacement);
-                }
+                
 
                 if(attack.attackType == Attack.AttackType.Special)
                 {
