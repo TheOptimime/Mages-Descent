@@ -314,13 +314,16 @@ public class EnemyAI : AI {
 
         }
 
-        if (isDead) {
+        if (isDead)
+        {
 			
 			print("enemy is dead");
 
             if (health.enabled == true)
             {
-                Instantiate(deathParticle, transform.position, Quaternion.identity);
+                print(deathParticle);
+                GameObject part = Instantiate(deathParticle, transform.position, Quaternion.identity);
+                //GameObject DeathParticle = Instantiate(deathParticle) as GameObject;
                 health.enabled = false;
             }
 

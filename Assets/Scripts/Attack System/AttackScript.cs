@@ -54,8 +54,7 @@ public class AttackScript : MonoBehaviour {
 
     void Start()
     {
-        origin = origin + attack.offset;
-        origin.x *= direction;
+        //origin = origin + new Vector2(attack.offset.x * direction, attack.offset.y);
         attackPath = attack.attackPath;
 
         if(attack.targetType == Attack.TargetType.TargetStraight)
