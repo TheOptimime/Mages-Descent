@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Triple Fire
   description: Fire 3 blasts
-  damage: 5
+  damage: 10
   multiFireCount: 3
   offset: {x: 0, y: 0}
   attackLength: 0.8
@@ -22,8 +22,8 @@ MonoBehaviour:
   animationCancelLength: 0
   destroyTime: 0
   xDisplacement: -0.2
-  multiFireRate: 0.5
-  speed: 2
+  multiFireRate: 0.2
+  speed: 20
   lifetime: 2
   delay: 1
   maxAttackDistance: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
   spellPoints: 0
   knockback: {x: 0, y: 0}
   coolDown:
-    cancelTime: 3
+    cancelTime: 1
     defaultTime: 4
   _joystickCommand: 080000000900000006000000
   followUpAttack: {fileID: 0}
@@ -58,4 +58,4 @@ MonoBehaviour:
   chargeType: 0
   followUpType: 1
   targetType: 0
-  joystickCommand: 5
+  joystickCommand: 9
