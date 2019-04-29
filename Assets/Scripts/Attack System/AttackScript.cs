@@ -64,16 +64,17 @@ public class AttackScript : MonoBehaviour {
 
             if(hitInfo.collider.gameObject.tag == "Enemy")
             {
-                transform.position = hitInfo.collider.gameObject.transform.position;
+                //transform.position = hitInfo.collider.gameObject.transform.position;
             }
             else
             {
-                transform.position = origin;
+                //transform.position = origin;
             }
         }
         else
         {
-            transform.position = origin;
+            print(origin);
+            //transform.position = origin;
         }
 
         

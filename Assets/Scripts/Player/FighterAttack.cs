@@ -96,11 +96,11 @@ public partial class Fighter {
             {
                 if (attack.attackPath == Attack.AttackPath.Meteor)
                 {
-                    spell.origin.x = Random.Range(0, attack.xPositionalDisplacement);
+                    spell.origin.x = meteorSpellCastPoint.position.x + Random.Range(0, attack.xPositionalDisplacement) + (spell.attack.offset.x * spell.direction);
                 }
                 else if(attack.attackPath == Attack.AttackPath.CrashDown)
                 {
-                    spell.origin.x = Random.Range(0, attack.xPositionalDisplacement);
+                    spell.origin.x = meteorSpellCastPoint.position.x + Random.Range(0, attack.xPositionalDisplacement);
                 }
             }
         }

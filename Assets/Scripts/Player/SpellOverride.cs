@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class SpellOverride : MonoBehaviour
 {
     public Attack[] SpellSetA, SpellSetB, SpellSetC;

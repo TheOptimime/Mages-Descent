@@ -89,7 +89,9 @@ public class EnemyAI : AI {
         if (enemyState == EnemyState.Walking)
         {
             anim.SetBool("isWalking", true);
-        } else {
+        }
+        else
+        {
             anim.SetBool("isWalking", false);
         }
 			
@@ -146,18 +148,11 @@ public class EnemyAI : AI {
                         print("edge detected");
                     }
                 }
-                if(turnStyle == TurnStyle.TurnByEdge)
-                {
-                    if (edgeDetected)
-                    {
-                        forceTurn = true;
-                        print("edge detected");
-                    }
-                }
                 else if(turnStyle == TurnStyle.TurnByDistance)
                 {
                     if(turnTime > turnTimer)
                     {
+                        turnTime = 0;
                         forceTurn = true;
                     }
                     else
@@ -173,7 +168,7 @@ public class EnemyAI : AI {
                 if (forceTurn)
                 {
                     direction *= -1;
-                    enemyState = EnemyState.Idle;
+                    enemyState = EnemyState.Detecting;
                 }
 
                 ec.Move(direction * speed, false, false);
@@ -205,7 +200,7 @@ public class EnemyAI : AI {
                 {
                     // can attack
 
-                    if(directionPlayerIsIn == 1)
+                    if(directionPlayerIsIn == direction)
                     {
                         // player is right
                         if (ec.m_FacingRight)
@@ -214,7 +209,7 @@ public class EnemyAI : AI {
                             enemyState = EnemyState.Resting;
                         }
                     }
-                    else if(directionPlayerIsIn == -1)
+                    else if(directionPlayerIsIn != direction)
                     {
                         // player is left
                         if (!ec.m_FacingRight)
@@ -228,7 +223,7 @@ public class EnemyAI : AI {
                 else
                 {
                     // moves towards player
-                    ec.Move(directionPlayerIsIn * walkToPlayerSpeed * Time.deltaTime, false, false);
+                    ec.Move(directionPlayerIsIn * (walkToPlayerSpeed * 2) * Time.deltaTime, false, false);
                 }
 
                 break;
@@ -260,7 +255,7 @@ public class EnemyAI : AI {
 
                     if (hitTimer == 0)
                     {
-                        hitTimer = Random.Range(0.5f, 2f);
+                        hitTimer = Random.Range(0.1f, 0.5f);
                     }
 
                     hitTimerSet = true;
@@ -269,6 +264,7 @@ public class EnemyAI : AI {
                 if (hitTime > hitTimer)
                 {
                     hit = false;
+                    hitTimerSet = false;
                     enemyState = EnemyState.Attacking;
                 }
 
@@ -280,7 +276,7 @@ public class EnemyAI : AI {
 
         if(player != null)
         {
-            if ((transform.position - player.transform.position).magnitude < attackRange)
+            if (Vector2.Distance(transform.position, player.transform.position) < attackRange)
             {
                 if (enemyState == EnemyState.Idle || enemyState == EnemyState.Detecting || enemyState == EnemyState.Walking || enemyState != EnemyState.Resting && resting == false)
                 {
