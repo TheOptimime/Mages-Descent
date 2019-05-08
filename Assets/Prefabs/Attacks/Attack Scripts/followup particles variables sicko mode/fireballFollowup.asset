@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0aba337f66310624c922f65cd40c0a20, type: 3}
-  m_Name: Lightning Crash
+  m_Name: fireballFollowup
   m_EditorClassIdentifier: 
-  name: Lightning Crash
+  name: 
   description: 
-  damage: 15
+  damage: 0
   multiFireCount: 0
   offset: {x: 0, y: 0}
   attackLength: 0
@@ -23,9 +23,9 @@ MonoBehaviour:
   destroyTime: 0
   xDisplacement: 0
   multiFireRate: 0
-  speed: 10
+  speed: 0
   lifetime: 2
-  delay: 1
+  delay: 0
   maxAttackDistance: 0
   chargeTime: 0
   xPositionalDisplacement: 0
@@ -39,23 +39,22 @@ MonoBehaviour:
   bounceCount: 0
   velocityDiv: 0
   spellPoints: 0
-  knockback: {x: 20, y: 4}
+  knockback: {x: 0, y: 0}
   coolDown:
     cancelTime: 0
     defaultTime: 0
   _joystickCommand: 
   followUpAttack: {fileID: 0}
   simultaneousAttack: {fileID: 0}
-  spriteAnimation: {fileID: 123722, guid: 0e953c794d5f3f74da4bc1bc07249ea6, type: 3}
-  attackBase: {fileID: 8465239412310887034, guid: 6146e73a080e60247a4aaa977a1ce782,
-    type: 3}
+  spriteAnimation: {fileID: 162482, guid: 99717fa5b7aacc94e91804bc304d2b93, type: 3}
+  attackBase: {fileID: 0}
   meleeAnimationReference: {fileID: 0}
-  attackPath: 2
+  attackPath: 1
   keyPoints: []
   attackType: 1
-  element: 4
-  elementEffect: 4
+  element: 0
+  elementEffect: 0
   chargeType: 0
-  followUpType: 1
+  followUpType: 0
   targetType: 0
-  joystickCommand: 3
+  joystickCommand: 0

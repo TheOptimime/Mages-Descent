@@ -1378,6 +1378,8 @@ public class InputHandler : MonoBehaviour {
 
             new List<int>() { 2, 3, 6, 9 },
             new List<int>() { 8, 9, 6, 3 },
+
+            
         };
 
         ComboInputReverse = new List<List<int>>
@@ -1398,6 +1400,8 @@ public class InputHandler : MonoBehaviour {
 
             new List<int>() { 2, 1, 4, 7 },
             new List<int>() { 8, 7, 4, 1 },
+
+            
     };
     }
 

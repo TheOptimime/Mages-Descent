@@ -55,7 +55,8 @@ public class Attack : ScriptableObject{
         Boomerang,
         Homing,
         Screen,
-        Custom
+        Custom,
+        SpawnInfront
     }
 
     public enum TargetType

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 19954024}
   - component: {fileID: 8269184}
   - component: {fileID: 69887610726070661}
+  - component: {fileID: 814624415734907420}
   m_Layer: 0
   m_Name: MysticMissilePurple
   m_TagString: Untagged
@@ -4778,6 +4779,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.42
+--- !u!114 &814624415734907420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57dd794ccccdc2540a116fa7d250b3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionParticle: {fileID: 112506, guid: 625fd74b8294443449d2aded4ac87947, type: 3}
 --- !u!1 &136024
 GameObject:
   m_ObjectHideFlags: 0

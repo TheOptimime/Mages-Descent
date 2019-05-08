@@ -58,4 +58,4 @@ MonoBehaviour:
   chargeType: 0
   followUpType: 1
   targetType: 0
-  joystickCommand: 6
+  joystickCommand: 3

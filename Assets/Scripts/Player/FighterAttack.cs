@@ -100,7 +100,7 @@ public partial class Fighter {
                 }
                 else if(attack.attackPath == Attack.AttackPath.CrashDown)
                 {
-                    spell.origin.x = meteorSpellCastPoint.position.x + Random.Range(0, attack.xPositionalDisplacement);
+                    spell.origin.x = spawnInfrontCastPoint.position.x + Random.Range(0, attack.xPositionalDisplacement);
                 }
             }
         }

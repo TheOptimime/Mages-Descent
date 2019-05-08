@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295713591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.49, y: 14.06, z: 0}
+  m_LocalPosition: {x: 5.7, y: 14.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1774065566}
@@ -428,6 +428,36 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &805963292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805963293}
+  m_Layer: 9
+  m_Name: SpawnInfront
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &805963293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805963292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.5, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1774065566}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &878025694
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +658,7 @@ Transform:
   - {fileID: 122349655}
   - {fileID: 146600317}
   - {fileID: 55213471}
+  - {fileID: 805963293}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -771,14 +802,14 @@ MonoBehaviour:
   spellDatabase: {fileID: 0}
   keyboardInputInUse: 0
   dPadInputInUse: 0
-  deadzone: 0.398
+  deadzone: 0.2
   RightTrigger_HoldLength: 0
   joystickPosition: 0
   lastJoystickPosition: 0
   joystickRecord: 
   Checkpoints: {x: 0, y: 0}
   joystick: {x: 0, y: 0}
-  inputCorrection: 0
+  inputCorrection: 1
   vibrateLeftMotor: 0
   vibrateRightMotor: 0
 --- !u!114 &1680216119
@@ -822,6 +853,7 @@ MonoBehaviour:
   spellCastPoint: {fileID: 1340598438}
   meteorSpellCastPoint: {fileID: 295713592}
   backSpellCastPoint: {fileID: 402865326}
+  spawnInfrontCastPoint: {fileID: 0}
   recoveryVelocity: {x: 0, y: 0}
   hasSword: 0
   isDead: 0
@@ -1137,7 +1169,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680216104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bb779d42571c52499108451cdb1f8cf, type: 3}
   m_Name: 

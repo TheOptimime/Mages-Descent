@@ -33,7 +33,7 @@ public partial class Fighter : MonoBehaviour {
     AttackScript specialHold;
     Attack attackInQueue;
 
-    public Transform spellCastPoint, meteorSpellCastPoint, backSpellCastPoint;
+    public Transform spellCastPoint, meteorSpellCastPoint, backSpellCastPoint, spawnInfrontCastPoint;
 
     InputHandler input;
     DoubleTime movementFreezeLength;

@@ -16,6 +16,7 @@ MonoBehaviour:
   description: Fires a beam... duh
   damage: 2
   multiFireCount: 0
+  offset: {x: 0, y: 0}
   attackLength: 5
   animationLength: 0
   animationCancelLength: 0
@@ -28,24 +29,34 @@ MonoBehaviour:
   maxAttackDistance: 9
   chargeTime: 0
   xPositionalDisplacement: 0
-  hitStun: 5
+  hitStun:
+    cancelTime: 0
+    defaultTime: 0
   attackCharge: 0
   hasSpecialChargeFunction: 0
   burstOnDestroy: 0
+  bounces: 0
+  bounceCount: 0
+  velocityDiv: 0
   spellPoints: 0
   knockback: {x: 0, y: 0}
+  coolDown:
+    cancelTime: 0
+    defaultTime: 0
   _joystickCommand: 
   followUpAttack: {fileID: 0}
   simultaneousAttack: {fileID: 0}
-  spriteAnimation: {fileID: 6787913549235450095, guid: ef7c405f88444b34aa93d59d936d698e,
+  spriteAnimation: {fileID: 6721890021856189060, guid: 2adca588996b6234fa7324034a38b302,
     type: 3}
   attackBase: {fileID: 8465239412310887034, guid: dde65ab684eec924793138336a50e475,
     type: 3}
+  meleeAnimationReference: {fileID: 0}
   attackPath: 1
   keyPoints: []
   attackType: 3
-  element: 3
+  element: 5
   elementEffect: 0
   chargeType: 0
   followUpType: 0
-  joystickCommand: 0
+  targetType: 0
+  joystickCommand: 3
