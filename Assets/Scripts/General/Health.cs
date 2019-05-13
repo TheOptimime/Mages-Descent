@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Health : MonoBehaviour {
 
@@ -10,6 +12,11 @@ public class Health : MonoBehaviour {
     public float regenRate, degenRate;
     public float timer, time, invulnerabilityTimer;
 
+    private TextMeshPro _tmpro;
+    private int lastDmgDealt;
+    public Transform numberSpawn;
+    
+
 
 
     bool invulnerable;
@@ -17,8 +24,13 @@ public class Health : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         currentHealth = maxHealth;
+        
+        
+        _tmpro.fontSize = 15;
+       
 
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -67,6 +79,10 @@ public class Health : MonoBehaviour {
         if (!invulnerable)
         {
             currentHealth -= damage;
+            
+            //Instantiate(_tmpro, numberSpawn.position, Quaternion.identity);
+            //_tmpro.text = damage.ToString();
+
         }
     }
 }

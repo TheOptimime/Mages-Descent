@@ -133,7 +133,7 @@ public class AttackScript : MonoBehaviour {
             }
             else if(attack.attackPath == Attack.AttackPath.CrashDown)
             {
-                //sprite.transform.Rotate(new Vector3(0, 0, -90));
+                sprite.transform.Rotate(new Vector3(0, 0, -90));
                 ySpeed = xSpeed;
             }
         }
@@ -248,11 +248,11 @@ public class AttackScript : MonoBehaviour {
                         if(velocityOn)
                             rb.velocity = new Vector2(xSpeed * direction, -ySpeed);
                     }
-                   /* else if (attackPath == Attack.AttackPath.CrashDown)
+                    else if (attackPath == Attack.AttackPath.CrashDown)
                     {
                         if (velocityOn)
                             rb.velocity = new Vector2(0, -ySpeed);
-                    }*/
+                    }
                     else if (attackPath == Attack.AttackPath.SineWave)
                     {
                         rb.velocity = new Vector2(xSpeed * direction, Mathf.Sin(time * frequency) * magnitude * 50);

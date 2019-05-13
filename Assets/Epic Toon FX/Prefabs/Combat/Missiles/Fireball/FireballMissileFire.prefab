@@ -13938,9 +13938,10 @@ GameObject:
   - component: {fileID: 8262750}
   - component: {fileID: 5368084683780155150}
   - component: {fileID: 8490324063315488402}
+  - component: {fileID: 7845627714489277577}
   m_Layer: 0
   m_Name: FireballMissileFire
-  m_TagString: FireBall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18720,6 +18721,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParticle: {fileID: 130848, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+--- !u!114 &7845627714489277577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c8f70be2acd1b4ea55c39b5aa80aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &166048
 GameObject:
   m_ObjectHideFlags: 0
