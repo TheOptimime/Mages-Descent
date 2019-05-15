@@ -39,13 +39,13 @@ public class EnemyAI : AI {
 
     public float attackRange, hitTimer;
     bool timerSet, idleTimerSet, hitTimerSet, restTimerSet;
-    public bool hit;
+    public bool hit, hitTarget;
     float timeLimit;
 
     bool isDead, respawnCalled, resting, playerInRange;
     bool hasRangedAttack, forceTurn;
 
-    public float turnTimer, turnTime, detectTime, detectTimer;
+    public float turnTimer, turnTime, detectTime, detectTimer, coolDownTimer, coolDownTime;
 
     public LayerMask ThisIsPlayer;
 
@@ -191,7 +191,12 @@ public class EnemyAI : AI {
                 float distanceFromPlayer = Mathf.Abs((transform.position - player.transform.position).magnitude);
                 float directionPlayerIsIn = -Mathf.Sign((transform.position - player.transform.position).magnitude);
 
-                anim.SetTrigger("Attacking");
+                if (hitTarget)
+                {
+                    hitTarget = false;
+                    enemyState = EnemyState.Resting;
+                }
+                
                 
 
                 //print(directionPlayerIsIn);
@@ -199,8 +204,9 @@ public class EnemyAI : AI {
                 if (distanceFromPlayer < attackRange)
                 {
                     // can attack
+                    anim.SetTrigger("Attacking");
 
-                    if(directionPlayerIsIn == direction)
+                    if (directionPlayerIsIn == direction)
                     {
                         // player is right
                         if (ec.m_FacingRight)
@@ -223,6 +229,7 @@ public class EnemyAI : AI {
                 else
                 {
                     // moves towards player
+                    enemyState = EnemyState.Walking;
                     ec.Move(directionPlayerIsIn * (walkToPlayerSpeed * 2) * Time.deltaTime, false, false);
                 }
 
@@ -280,7 +287,7 @@ public class EnemyAI : AI {
             {
                 if (enemyState == EnemyState.Idle || enemyState == EnemyState.Detecting || enemyState == EnemyState.Walking || enemyState != EnemyState.Resting && resting == false)
                 {
-                    enemyState = EnemyState.Attacking;
+                    //enemyState = EnemyState.Attacking;
                     
                 }
             }
@@ -291,6 +298,7 @@ public class EnemyAI : AI {
             Collider2D[] colliders = Physics2D.OverlapBoxAll(transform.position, sightBox.bounds.size, 0, ThisIsPlayer);
             if (colliders.Length > 0)
             {
+                print("ThisAttacking");
                 playerInRange = true;
                 direction = (int)Mathf.Sign(transform.position.x - colliders[0].gameObject.transform.position.x);
                 enemyState = EnemyState.Attacking;
@@ -444,11 +452,6 @@ public class EnemyAI : AI {
         {
             hit = true;
         }
-    }
-
-    public void EnableAttackHitbox()
-    {
-        AttackHitbox.SetActive(true);
     }
 
     public void DisableAttackHitbox()

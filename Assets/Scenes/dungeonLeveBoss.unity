@@ -13157,6 +13157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7a720f0a32f04488f1d9110faecc64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 1838630673}
   damage: 5
   knockback: {x: -12, y: 20}
   hitstun:
@@ -13368,6 +13369,7 @@ MonoBehaviour:
   attackRange: 2
   hitTimer: 0
   hit: 0
+  hitTarget: 0
   turnTimer: 3
   turnTime: 0
   detectTime: 0

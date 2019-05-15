@@ -29,6 +29,7 @@ public class InputHandler : MonoBehaviour {
     bool buttonPressed;
 
     public bool inputCorrection;
+    public float turnTimer, timer;
     int inputValue, prevInputValue;
 
     [Range(0,1)]
@@ -160,8 +161,78 @@ public class InputHandler : MonoBehaviour {
             frozenJoystickRecord = joystickRecord;
             buttonPressed = true;
 
-            if(frozenJoystickRecord.Count < 2)
+            if(frozenJoystickRecord.Count == 0)
             {
+                // Selects generic attack if there are no joystick commands
+
+                for(int i = 0; i < player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count; i++)
+                {
+                    if(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand == JoystickCommands.None)
+                    {
+                        player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                    }
+                }
+            }
+            else if(frozenJoystickRecord.Count < 2)
+            {
+                // Check every attack listed in the Spell Book
+                for (int i = 0; i < player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count; i++)
+                {
+                    int matchCount = 0;
+
+                    // Makes a temporary copy of this joystick command
+                    List<int> tempJoystickCommand = new List<int>();
+
+
+                    // Checks and flips direction of the joystick input depending on the direction of the player (Need to lock direction for half inputs)
+                    if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] != null)
+                    {
+                        if (!player.isFacingRight)
+                        {
+                            // Assigns flipped Input
+                            FlipInput(ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand], out tempJoystickCommand);
+                        }
+                        else
+                        {
+                            // Assigns default Input
+                            tempJoystickCommand = ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand];
+                        }
+                    }
+
+
+                    // Checks to see if the joystick matches the input
+                    if (tempJoystickCommand != new List<int>())
+                    {
+                        if (tempJoystickCommand.Count == frozenJoystickRecord.Count)
+                        {
+                            for (int joystickNumber = 0; joystickNumber < tempJoystickCommand.Count; joystickNumber++)
+                            {
+                                if (tempJoystickCommand[joystickNumber] == frozenJoystickRecord[joystickNumber])
+                                {
+                                    // increments value if a matched input is found
+                                    matchCount++;
+                                    print("matchfound: " + matchCount);
+                                }
+
+                            }
+                        }
+
+                        // Compares
+                        if (matchCount == tempJoystickCommand.Count && player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand != JoystickCommands.None)
+                        {
+                            player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                            break;
+                        }
+
+                    }
+                    else if (ComboInputNormal[(int)player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i].joystickCommand] == null || i >= player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks.Count)
+                    {
+                        // this is the generic attack
+                        player.SetAttackQueue(player.moveset.spellBookLoadout[player.moveset.spellLoadOutSelected][buttonID].attacks[i]);
+                        break;
+                    }
+
+                }
 
             }
             else
@@ -1378,8 +1449,6 @@ public class InputHandler : MonoBehaviour {
 
             new List<int>() { 2, 3, 6, 9 },
             new List<int>() { 8, 9, 6, 3 },
-
-            
         };
 
         ComboInputReverse = new List<List<int>>
@@ -1400,8 +1469,6 @@ public class InputHandler : MonoBehaviour {
 
             new List<int>() { 2, 1, 4, 7 },
             new List<int>() { 8, 7, 4, 1 },
-
-            
     };
     }
 
@@ -1436,9 +1503,84 @@ public class InputHandler : MonoBehaviour {
     {
         if(joystickRecord.Count > 0)
         {
-            if (joystickRecord[0] == 8 || joystickRecord[0] == 2)
+            if (joystickRecord[0] == 8)
             {
-                // lock direction for a bit
+                if (player.cc.m_FacingRight)
+                {
+                    if (joystickRecord[1] == 7 || joystickRecord[2] == 4)
+                    {
+                        // lock direction for a bit
+                        
+                    }
+                }
+                else
+                {
+                    if (joystickRecord[1] == 9 || joystickRecord[2] == 6)
+                    {
+                        // lock direction for a bit
+
+                    }
+                }
+            }
+            else if(joystickRecord[0] == 2)
+            {
+                if (player.cc.m_FacingRight)
+                {
+                    if (joystickRecord[1] == 1 || joystickRecord[2] == 4)
+                    {
+                        // lock direction for a bit
+
+                    }
+                }
+                else
+                {
+                    if (joystickRecord[1] == 3 || joystickRecord[2] == 6)
+                    {
+                        // lock direction for a bit
+
+                    }
+                }
+            }
+
+            // These other two may need more complex implementations if they can be supported with their starting directions (i.e. 6 and right)
+
+            else if(joystickRecord[0] == 6)
+            {
+                if (player.cc.m_FacingRight)
+                {
+                    if (joystickRecord[1] == 9 || joystickRecord[2] == 8)
+                    {
+                        // lock direction for a bit
+
+                    }
+                }
+                else
+                {
+                    if (joystickRecord[1] == 7 || joystickRecord[2] == 8)
+                    {
+                        // lock direction for a bit
+
+                    }
+                }
+            }
+            else if(joystickRecord[0] == 4)
+            {
+                if (player.cc.m_FacingRight)
+                {
+                    if (joystickRecord[1] == 7 || joystickRecord[2] == 4)
+                    {
+                        // lock direction for a bit
+
+                    }
+                }
+                else
+                {
+                    if (joystickRecord[1] == 9 || joystickRecord[2] == 6)
+                    {
+                        // lock direction for a bit
+
+                    }
+                }
             }
         }
         else if(joystickRecord.Count > 2)
