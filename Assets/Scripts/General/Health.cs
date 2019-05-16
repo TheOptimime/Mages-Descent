@@ -26,7 +26,8 @@ public class Health : MonoBehaviour {
         currentHealth = maxHealth;
         
         
-        _tmpro.fontSize = 15;
+        // Make a separate Health Ui Script
+        //_tmpro.fontSize = 15;
        
 
         
