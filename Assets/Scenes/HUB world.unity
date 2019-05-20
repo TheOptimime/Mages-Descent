@@ -376,6 +376,8 @@ GameObject:
   - component: {fileID: 109913781}
   - component: {fileID: 109913780}
   - component: {fileID: 109913779}
+  - component: {fileID: 109913785}
+  - component: {fileID: 109913784}
   m_Layer: 13
   m_Name: dummies_3
   m_TagString: Enemy
@@ -396,7 +398,7 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.45}
   m_Size: {x: 2.34, y: 4.01}
   m_Direction: 0
 --- !u!212 &109913777
@@ -416,7 +418,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: df24dca8654135c4a9aa4a575b1e674f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -435,7 +437,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300006, guid: 36e726af647f26f40bdb94b2e94abb54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -454,14 +456,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109913775}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7252542, y: 1.14, z: 0}
+  m_LocalRotation: {x: -0.008733628, y: -0.017439296, z: 0.0004819865, w: 0.9998096}
+  m_LocalPosition: {x: 1.42, y: 0.16, z: 0.11}
   m_LocalScale: {x: 0.63484, y: 0.63484, z: 0.63484}
   m_Children:
   - {fileID: 732120006}
   m_Father: {fileID: 0}
   m_RootOrder: 40
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1, y: -1.9990001, z: 0.07300001}
 --- !u!50 &109913779
 Rigidbody2D:
   serializedVersion: 4
@@ -569,6 +571,7 @@ MonoBehaviour:
   invulnerabilityTimer: 0
   numberSpawn: {fileID: 732120006}
   text: {fileID: 6107387214769858909, guid: 7f5d7331db2c22c4aa07425a79c2c098, type: 3}
+  takeDmg: 0
 --- !u!114 &109913782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,6 +618,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: EnemyController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &109913784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109913775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea106df33f05a249bf7d69569f48bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &109913785
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109913775}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b73d159f12bd78c409a45b69a5840857, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &126949466
 GameObject:
   m_ObjectHideFlags: 0
@@ -12717,7 +12751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1680216118, guid: 8d4048336c1d4c140ad052e824a6e47c, type: 3}
       propertyPath: speed
-      value: 1.5
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d4048336c1d4c140ad052e824a6e47c, type: 3}

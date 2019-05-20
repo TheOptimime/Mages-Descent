@@ -16,6 +16,8 @@ public class Health : MonoBehaviour {
     private int lastDmgDealt;
     public Transform numberSpawn;
     public GameObject text;
+
+    public bool takeDmg;
     
 
 
@@ -29,7 +31,8 @@ public class Health : MonoBehaviour {
         
         _tmpro.fontSize = 12;
         _tmpro = text.GetComponent<TextMeshPro>();
-        
+
+        takeDmg = false;
 
         
     }
@@ -73,20 +76,28 @@ public class Health : MonoBehaviour {
         {
             currentHealth = maxHealth;
         }
-		
-	}
+
+        if (takeDmg)
+        {
+            takeDmg = false;
+        }
+
+    }
 
     public void Damage(int damage)
     {
         if (!invulnerable)
         {
             currentHealth -= damage;
-            
-            
-            Instantiate(text, numberSpawn.position, Quaternion.identity);
-            _tmpro.text = damage.ToString();
-            
+
+            takeDmg = true;
+           // Instantiate(text, numberSpawn.position, Quaternion.identity);
+           // _tmpro.text = damage.ToString();
+
 
         }
+
+
+        
     }
 }
