@@ -1501,13 +1501,14 @@ public class InputHandler : MonoBehaviour {
 
     void SoftTurn()
     {
-        if(joystickRecord.Count > 0)
+
+        if(joystickRecord.Count > 2)
         {
             if (joystickRecord[0] == 8)
             {
                 if (player.cc.m_FacingRight)
                 {
-                    if (joystickRecord[1] == 7 || joystickRecord[2] == 4)
+                    if (joystickRecord[1] == 7)
                     {
                         // lock direction for a bit
                         
@@ -1515,7 +1516,7 @@ public class InputHandler : MonoBehaviour {
                 }
                 else
                 {
-                    if (joystickRecord[1] == 9 || joystickRecord[2] == 6)
+                    if (joystickRecord[1] == 9)
                     {
                         // lock direction for a bit
 
@@ -1526,7 +1527,7 @@ public class InputHandler : MonoBehaviour {
             {
                 if (player.cc.m_FacingRight)
                 {
-                    if (joystickRecord[1] == 1 || joystickRecord[2] == 4)
+                    if (joystickRecord[1] == 1)
                     {
                         // lock direction for a bit
 
@@ -1534,7 +1535,7 @@ public class InputHandler : MonoBehaviour {
                 }
                 else
                 {
-                    if (joystickRecord[1] == 3 || joystickRecord[2] == 6)
+                    if (joystickRecord[1] == 3)
                     {
                         // lock direction for a bit
 
@@ -1548,7 +1549,7 @@ public class InputHandler : MonoBehaviour {
             {
                 if (player.cc.m_FacingRight)
                 {
-                    if (joystickRecord[1] == 9 || joystickRecord[2] == 8)
+                    if (joystickRecord[1] == 9)
                     {
                         // lock direction for a bit
 
@@ -1556,7 +1557,7 @@ public class InputHandler : MonoBehaviour {
                 }
                 else
                 {
-                    if (joystickRecord[1] == 7 || joystickRecord[2] == 8)
+                    if (joystickRecord[1] == 7)
                     {
                         // lock direction for a bit
 
@@ -1581,13 +1582,6 @@ public class InputHandler : MonoBehaviour {
 
                     }
                 }
-            }
-        }
-        else if(joystickRecord.Count > 2)
-        {
-            if(joystickRecord[2] == 8 || joystickRecord[2] == 2)
-            {
-
             }
         }
         
