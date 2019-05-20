@@ -15,6 +15,7 @@ public class Health : MonoBehaviour {
     private TextMeshPro _tmpro;
     private int lastDmgDealt;
     public Transform numberSpawn;
+    public GameObject text;
     
 
 
@@ -26,8 +27,9 @@ public class Health : MonoBehaviour {
         currentHealth = maxHealth;
         
         
-        _tmpro.fontSize = 15;
-       
+        _tmpro.fontSize = 12;
+        _tmpro = text.GetComponent<TextMeshPro>();
+        
 
         
     }
@@ -80,8 +82,10 @@ public class Health : MonoBehaviour {
         {
             currentHealth -= damage;
             
-            //Instantiate(_tmpro, numberSpawn.position, Quaternion.identity);
-            //_tmpro.text = damage.ToString();
+            
+            Instantiate(text, numberSpawn.position, Quaternion.identity);
+            _tmpro.text = damage.ToString();
+            
 
         }
     }

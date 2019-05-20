@@ -32,6 +32,10 @@ tpsheetFileNames:
 - Assets/animations/Skeleton/skeleIdle.tpsheet
 - Assets/animations/spells/beam.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Scripts/Bosses/Hellhound/ANimations/body_idle.tpsheet
+- Assets/Scripts/Bosses/Hellhound/ANimations/skull1_idle.tpsheet
+- Assets/Scripts/Bosses/Hellhound/ANimations/skull2_idle.tpsheet
+- Assets/Scripts/Bosses/Hellhound/ANimations/skull3_idle.tpsheet
 textureFileNames:
 - Assets/animations/dark knight/darkknight_idle.png
 - Assets/animations/dark knight/darkknightidle.png
@@ -64,6 +68,10 @@ textureFileNames:
 - Assets/animations/Skeleton/skeleIdle.png
 - Assets/animations/spells/beam.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Scripts/Bosses/Hellhound/ANimations/body_idle.png
+- Assets/Scripts/Bosses/Hellhound/ANimations/skull1_idle.png
+- Assets/Scripts/Bosses/Hellhound/ANimations/skull2_idle.png
+- Assets/Scripts/Bosses/Hellhound/ANimations/skull3_idle.png
 normalmapFileNames:
 - 
 - 
@@ -96,4 +104,8 @@ normalmapFileNames:
 - 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
 enableDebugOutput: 0

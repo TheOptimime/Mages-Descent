@@ -1,0 +1,719 @@
+fileFormatVersion: 2
+guid: 6d7f31fe7acf9df44946a04c17d2a463
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skull3_idle
+    21300002: boss_hellhound_skull_3_00
+    21300004: boss_hellhound_skull_3_01
+    21300006: boss_hellhound_skull_3_02
+    21300008: boss_hellhound_skull_3_03
+    21300010: boss_hellhound_skull_3_04
+    21300012: boss_hellhound_skull_3_05
+    21300014: boss_hellhound_skull_3_06
+    21300016: boss_hellhound_skull_3_07
+    21300018: boss_hellhound_skull_3_08
+    21300020: boss_hellhound_skull_3_09
+    21300022: boss_hellhound_skull_3_10
+    21300024: boss_hellhound_skull_3_11
+    21300026: boss_hellhound_skull_3_12
+    21300028: boss_hellhound_skull_3_13
+    21300030: boss_hellhound_skull_3_14
+    21300032: boss_hellhound_skull_3_15
+    21300034: boss_hellhound_skull_3_16
+    21300036: boss_hellhound_skull_3_17
+    21300038: boss_hellhound_skull_3_18
+    21300040: boss_hellhound_skull_3_19
+    21300042: boss_hellhound_skull_3_20
+    21300044: boss_hellhound_skull_3_21
+    21300046: boss_hellhound_skull_3_22
+    21300048: boss_hellhound_skull_3_23
+    21300050: boss_hellhound_skull_3_24
+    21300052: boss_hellhound_skull_3_25
+    21300054: boss_hellhound_skull_3_26
+    21300056: boss_hellhound_skull_3_27
+    21300058: boss_hellhound_skull_3_28
+    21300060: boss_hellhound_skull_3_29
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1751
+        width: 206
+        height: 296
+      alignment: 9
+      pivot: {x: 1.631068, y: -0.13682432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3b177f9b0771445a9818ed56158da7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_01
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1742
+        width: 232
+        height: 305
+      alignment: 9
+      pivot: {x: 1.4568965, y: -0.10327869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcc8adaf2e87784c8585f81f5af7123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_02
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1730
+        width: 247
+        height: 317
+      alignment: 9
+      pivot: {x: 1.3684211, y: -0.061514195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05aee65b376dce342a718ab85f5027b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_03
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1722
+        width: 269
+        height: 325
+      alignment: 9
+      pivot: {x: 1.2490706, y: -0.02923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef76490a6f517f46afd7283e3926022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_04
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 1715
+        width: 275
+        height: 332
+      alignment: 9
+      pivot: {x: 1.1963637, y: 0.010542168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c73a204983860458f708550d2f862e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_05
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1720
+        width: 266
+        height: 327
+      alignment: 9
+      pivot: {x: 1.2218045, y: 0.013761468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ea469aca0c56541bc06cecc8c48828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_06
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1712
+        width: 244
+        height: 335
+      alignment: 9
+      pivot: {x: 1.295082, y: 0.031343285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d494aa81a6bbbd84c9457e90453ea91e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_07
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 1717
+        width: 235
+        height: 330
+      alignment: 9
+      pivot: {x: 1.3361702, y: 0.04090909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea3b77757b875845945dca7937462e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1384
+        width: 209
+        height: 326
+      alignment: 9
+      pivot: {x: 1.4114833, y: 0.04754601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712634fdf5212e349b71e205f899d37c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_09
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1384
+        width: 171
+        height: 326
+      alignment: 9
+      pivot: {x: 1.625731, y: 0.06288344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e21c7f6c122007419fff22b231aa2a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_10
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1390
+        width: 174
+        height: 320
+      alignment: 9
+      pivot: {x: 1.5977012, y: 0.0703125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9087652ccead5e446aa46a90b88f0ec1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_11
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1387
+        width: 175
+        height: 323
+      alignment: 9
+      pivot: {x: 1.5771428, y: 0.066563465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2f8ec221ad2ca47b06059f7a7973b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_12
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1387
+        width: 177
+        height: 323
+      alignment: 9
+      pivot: {x: 1.5423728, y: 0.060371518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb69002973267f4d90981949e7309c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_13
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1380
+        width: 175
+        height: 330
+      alignment: 9
+      pivot: {x: 1.5485715, y: 0.07121212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507d5616467d2db42be1ed8796b8b018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_14
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1383
+        width: 178
+        height: 327
+      alignment: 9
+      pivot: {x: 1.5280899, y: 0.056574922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4d27b73c94d20408ace9eec1a6de32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_15
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1379
+        width: 203
+        height: 331
+      alignment: 9
+      pivot: {x: 1.3743843, y: 0.043806646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfd8ee1940b8ff4aa63e3a2babd7749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_16
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1374
+        width: 234
+        height: 336
+      alignment: 9
+      pivot: {x: 1.2435898, y: 0.02232143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a9d839033705b4aaa2ac060578c39f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_17
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1372
+        width: 273
+        height: 338
+      alignment: 9
+      pivot: {x: 1.0989012, y: 0.00443787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e653277dfdf80a44eadbf621f9bfc3d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1045
+        width: 219
+        height: 325
+      alignment: 9
+      pivot: {x: 1.3333334, y: -0.035384614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecccbaf701ddaf47b4d4b68df29e1cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_19
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1058
+        width: 200
+        height: 312
+      alignment: 9
+      pivot: {x: 1.405, y: -0.07852564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6844b9e5cce8a844dbce2dade3dd792a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_20
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1060
+        width: 206
+        height: 310
+      alignment: 9
+      pivot: {x: 1.3932039, y: -0.08548387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcde1e03379d4704a945d7ba64170068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_21
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1067
+        width: 183
+        height: 303
+      alignment: 9
+      pivot: {x: 1.590164, y: -0.11056106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe187136b797284dad9cb06105162d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_22
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 1069
+        width: 181
+        height: 301
+      alignment: 9
+      pivot: {x: 1.6353592, y: -0.1179402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e333a64ff380e8459fbda66ae39fa7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_23
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1073
+        width: 190
+        height: 297
+      alignment: 9
+      pivot: {x: 1.6157895, y: -0.13299663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304da9c4610958549b71629c248b5c1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_24
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1074
+        width: 185
+        height: 296
+      alignment: 9
+      pivot: {x: 1.654054, y: -0.13682432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8eb799614b3a1f4fa59d536ceef8832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_25
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1074
+        width: 198
+        height: 296
+      alignment: 9
+      pivot: {x: 1.6060606, y: -0.13682432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daa610c4e9cbb24b9043d8c3f3554be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_26
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1075
+        width: 196
+        height: 295
+      alignment: 9
+      pivot: {x: 1.6530613, y: -0.14067796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843bea92217e4f34c837b353fffe9ea0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_27
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1075
+        width: 201
+        height: 295
+      alignment: 9
+      pivot: {x: 1.6467662, y: -0.14067796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74779bc31b87d1540ac7c49463c540f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 744
+        width: 200
+        height: 299
+      alignment: 9
+      pivot: {x: 1.665, y: -0.12541807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e16be8f061ccc4ea48937c8724cef8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_hellhound_skull_3_29
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 748
+        width: 205
+        height: 295
+      alignment: 9
+      pivot: {x: 1.6536585, y: -0.14067796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea485cda5e46b3e4dba6cab6694de775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 117e5dafa52c9c5469113efcd0dcdb2b
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
